@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>2016-17 | Internet Technology | MAKAUT</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="paper.css"/>
+</head>
+<body>
+<nav class="topbar">
+  <a href="index.html" class="back-btn">← Back to Home</a>
+  <div class="topbar-info">
+    <span class="topbar-year">2016–17</span>
+    <span class="topbar-code">CS/B.Tech/CSE/ODD/SEM-7/CS-705A</span>
+  </div>
+  <div class="topbar-meta"><span>⏱ 3 Hours</span><span>📋 70 Marks</span></div>
+</nav>
+<header class="paper-hero">
+  <div class="paper-hero-bg"></div>
+  <div class="paper-hero-content">
+    <div class="paper-badge">MAKAUT • Internet Technology</div>
+    <h1>2016 – 17 <span class="yr-accent">Solved Paper</span></h1>
+    <p>CS-705A &nbsp;|&nbsp; Full Marks: 70 &nbsp;|&nbsp; Time: 3 Hours</p>
+    <div class="paper-pills">
+      <span>Group A: 10 MCQs × 1 = 10</span>
+      <span>Group B: Any 3 × 5 = 15</span>
+      <span>Group C: Any 3 × 15 = 45</span>
+    </div>
+  </div>
+</header>
+<main class="paper-main">
+
+<!-- GROUP A -->
+<section class="group-section" id="groupA">
+  <div class="group-header">
+    <span class="group-label">Group A</span>
+    <h2>Multiple Choice Questions <span class="marks-tag">10 × 1 = 10</span></h2>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q1(i)</span><span class="qtext">The correct HTML tag for the biggest heading is</span><span class="qmarks">1 Mark</span></div>
+    <div class="options">
+      <div class="opt">a) &lt;h6&gt;</div><div class="opt">b) &lt;heading small&gt;</div>
+      <div class="opt">c) &lt;small heading&gt;</div><div class="opt correct">d) &lt;h1&gt;</div>
+    </div>
+    <div class="answer-box">
+      <div class="ans-label">✓ Answer: (d) &lt;h1&gt;</div>
+      <p>HTML headings range from <code>&lt;h1&gt;</code> (largest/most important) to <code>&lt;h6&gt;</code> (smallest). <code>&lt;h1&gt;</code> is typically used for the main page title. There are no tags like <code>&lt;heading small&gt;</code> or <code>&lt;small heading&gt;</code> in HTML.</p>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q1(ii)</span><span class="qtext">Which technology is NOT a part of J2EE architecture?</span><span class="qmarks">1 Mark</span></div>
+    <div class="options">
+      <div class="opt">a) JSP</div><div class="opt">b) Servlet</div>
+      <div class="opt">c) EJB</div><div class="opt correct">d) COBRA</div>
+    </div>
+    <div class="answer-box">
+      <div class="ans-label">✓ Answer: (d) COBRA (should be CORBA)</div>
+      <p>J2EE (Java 2 Enterprise Edition) includes <strong>JSP</strong> (JavaServer Pages), <strong>Servlet</strong>, <strong>EJB</strong> (Enterprise JavaBeans), JDBC, JMS, JNDI, etc. <strong>CORBA</strong> (Common Object Request Broker Architecture) is an OMG standard — not a J2EE component. The option "COBRA" is a typo for CORBA.</p>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q1(iii)</span><span class="qtext">EJB contains</span><span class="qmarks">1 Mark</span></div>
+    <div class="options">
+      <div class="opt">a) Unique interface</div><div class="opt">b) Four interfaces</div>
+      <div class="opt correct">c) Two interfaces</div><div class="opt">d) No interface</div>
+    </div>
+    <div class="answer-box">
+      <div class="ans-label">✓ Answer: (c) Two interfaces</div>
+      <p>An <strong>EJB (Enterprise JavaBean)</strong> traditionally consists of two interfaces: the <strong>Home interface</strong> (for creating/finding/removing bean instances) and the <strong>Remote interface</strong> (for defining business methods accessible by remote clients). In EJB 3.x this was simplified, but the classic answer is two interfaces.</p>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q1(iv)</span><span class="qtext">The JSP tags are interpreted by</span><span class="qmarks">1 Mark</span></div>
+    <div class="options">
+      <div class="opt">a) JSP compiler</div><div class="opt correct">b) JSP engine</div>
+      <div class="opt">c) JSP debugger</div><div class="opt">d) None of these</div>
+    </div>
+    <div class="answer-box">
+      <div class="ans-label">✓ Answer: (b) JSP engine</div>
+      <p>The <strong>JSP engine</strong> (part of the web container, e.g., Tomcat) processes JSP tags. It translates the JSP file into a Servlet, then compiles and executes it. The JSP engine handles all JSP-specific tags like <code>&lt;%  %&gt;</code>, <code>&lt;%= %&gt;</code>, <code>&lt;%@ %&gt;</code>.</p>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q1(v)</span><span class="qtext">Which protocol is stateless in nature?</span><span class="qmarks">1 Mark</span></div>
+    <div class="options">
+      <div class="opt">a) FTP</div><div class="opt correct">b) HTTP</div>
+      <div class="opt">c) TCP</div><div class="opt">d) UDP</div>
+    </div>
+    <div class="answer-box">
+      <div class="ans-label">✓ Answer: (b) HTTP</div>
+      <p><strong>HTTP is stateless</strong> — each request/response pair is completely independent. The server does not retain any memory of previous requests from the same client. Session state must be managed explicitly via cookies, sessions, or tokens. TCP is connection-oriented (stateful). FTP maintains a session.</p>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q1(vi)</span><span class="qtext">Variables are declared in JavaScript using which of the following?</span><span class="qmarks">1 Mark</span></div>
+    <div class="options">
+      <div class="opt">a) dim</div><div class="opt correct">b) var</div>
+      <div class="opt">c) function</div><div class="opt">d) variable</div>
+    </div>
+    <div class="answer-box">
+      <div class="ans-label">✓ Answer: (b) var</div>
+      <p>In JavaScript, variables are declared using <code>var</code> (function-scoped), <code>let</code> (block-scoped, ES6+), or <code>const</code> (block-scoped constant, ES6+). <code>dim</code> is used in Visual Basic. Example: <code>var x = 10; let name = "Alice"; const PI = 3.14;</code></p>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q1(vii)</span><span class="qtext">After a servlet is destroyed, garbage collection is performed by</span><span class="qmarks">1 Mark</span></div>
+    <div class="options">
+      <div class="opt">a) The server</div><div class="opt">b) The servlet</div>
+      <div class="opt">c) HTTP</div><div class="opt correct">d) JVM</div>
+    </div>
+    <div class="answer-box">
+      <div class="ans-label">✓ Answer: (d) JVM</div>
+      <p>After <code>destroy()</code> is called, the servlet object becomes eligible for garbage collection. Java's <strong>JVM (Java Virtual Machine)</strong> has an automatic garbage collector that reclaims memory from objects that are no longer referenced. Neither the server, HTTP, nor the servlet itself performs GC.</p>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q1(viii)</span><span class="qtext">The ____ in XML is equivalent to the schema in database.</span><span class="qmarks">1 Mark</span></div>
+    <div class="options">
+      <div class="opt">a) Element</div><div class="opt">b) Attribute</div>
+      <div class="opt">c) Parser</div><div class="opt correct">d) DTD</div>
+    </div>
+    <div class="answer-box">
+      <div class="ans-label">✓ Answer: (d) DTD</div>
+      <p><strong>DTD (Document Type Definition)</strong> defines the legal structure, elements, attributes, and their relationships for an XML document — just like a database schema defines the structure of tables. A document is "valid" if it conforms to its DTD. XML Schema (XSD) is a more powerful modern alternative.</p>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q1(ix)</span><span class="qtext">An XML parser is used to</span><span class="qmarks">1 Mark</span></div>
+    <div class="options">
+      <div class="opt">a) Display contents of XML</div><div class="opt">b) Read but not interpret</div>
+      <div class="opt correct">c) Read and interpret</div><div class="opt">d) None of these</div>
+    </div>
+    <div class="answer-box">
+      <div class="ans-label">✓ Answer: (c) Read and interpret</div>
+      <p>An XML parser <strong>reads and interprets</strong> an XML document — it checks well-formedness, optionally validates against a DTD/Schema, and makes the document's structure and content available to the application through a DOM tree or SAX events.</p>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q1(x)</span><span class="qtext">Which statement is true about XML?</span><span class="qmarks">1 Mark</span></div>
+    <div class="options">
+      <div class="opt">a) XML tags are case sensitive</div><div class="opt">b) XML documents must have a root tag</div>
+      <div class="opt">c) XML elements must be properly closed</div><div class="opt correct">d) All the statements are true</div>
+    </div>
+    <div class="answer-box">
+      <div class="ans-label">✓ Answer: (d) All the statements are true</div>
+      <p>All three are fundamental XML rules: (a) <code>&lt;Name&gt;</code> and <code>&lt;name&gt;</code> are different elements in XML. (b) Every XML document must have exactly one root element enclosing all others. (c) Every opening tag must have a matching closing tag (or be self-closed like <code>&lt;br/&gt;</code>).</p>
+    </div>
+  </div>
+</section>
+
+<!-- GROUP B -->
+<section class="group-section" id="groupB">
+  <div class="group-header">
+    <span class="group-label">Group B</span>
+    <h2>Short Answer Questions <span class="marks-tag">Answer any 3 × 5 = 15</span></h2>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q2</span><span class="qtext">Why dynamic webpage? Advantages of stylesheet? How to link stylesheet to webpage?</span><span class="qmarks">5 Marks</span></div>
+    <div class="answer-box">
+      <div class="ans-label">✓ Answer</div>
+      <h4>Why Dynamic Webpages?</h4>
+      <p>A <strong>dynamic webpage</strong> generates content at runtime based on user input, database queries, or time — unlike static pages that always show the same content. Dynamic pages enable: personalised content, real-time data updates, interactive forms, e-commerce, social media feeds, and user-specific dashboards — all without the user needing to reload the entire page.</p>
+      <h4>Advantages of Using Stylesheets</h4>
+      <ul>
+        <li><strong>Separation of concerns:</strong> HTML handles structure; CSS handles presentation — easier to maintain.</li>
+        <li><strong>Consistency:</strong> One CSS file can style hundreds of pages uniformly.</li>
+        <li><strong>Reduced HTML size:</strong> No inline style attributes on every element.</li>
+        <li><strong>Easy updates:</strong> Change one CSS rule to update style across all pages instantly.</li>
+        <li><strong>Responsive design:</strong> Media queries adapt layout to screen size.</li>
+        <li><strong>Reusability:</strong> Same stylesheet shared across multiple websites.</li>
+      </ul>
+      <h4>How to Link a Stylesheet</h4>
+      <pre>
+&lt;!-- 1. External CSS (recommended) — inside &lt;head&gt; --&gt;
+&lt;link rel="stylesheet" type="text/css" href="styles.css"&gt;
+
+&lt;!-- 2. Internal CSS — inside &lt;head&gt; --&gt;
+&lt;style&gt;
+  body { background: #fff; font-family: Arial; }
+  h1   { color: #6c63ff; }
+&lt;/style&gt;
+
+&lt;!-- 3. Inline CSS — on individual element --&gt;
+&lt;p style="color: red; font-size: 16px;"&gt;Hello&lt;/p&gt;
+
+&lt;!-- 4. Import inside CSS file --&gt;
+&lt;style&gt; @import url("other.css"); &lt;/style&gt;</pre>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q3</span><span class="qtext">Technologies for dynamic webpages. Why Java plays a vital role in dynamic webpage creation.</span><span class="qmarks">5 Marks</span></div>
+    <div class="answer-box">
+      <div class="ans-label">✓ Answer</div>
+      <h4>Technologies for Dynamic Webpages</h4>
+      <table class="cmp-table">
+        <thead><tr><th>Technology</th><th>Side</th><th>Use</th></tr></thead>
+        <tbody>
+          <tr><td>JavaScript</td><td>Client</td><td>DOM manipulation, AJAX, event handling</td></tr>
+          <tr><td>Java Servlets / JSP</td><td>Server</td><td>Generate dynamic HTML from Java logic</td></tr>
+          <tr><td>PHP</td><td>Server</td><td>Embed PHP in HTML, database-driven pages</td></tr>
+          <tr><td>ASP.NET</td><td>Server</td><td>Microsoft's server-side framework</td></tr>
+          <tr><td>Node.js</td><td>Server</td><td>JavaScript on server side</td></tr>
+          <tr><td>AJAX / Fetch API</td><td>Client</td><td>Async data loading without page reload</td></tr>
+          <tr><td>CSS + Animations</td><td>Client</td><td>Visual dynamic effects</td></tr>
+        </tbody>
+      </table>
+      <h4>Why Java Plays a Vital Role</h4>
+      <ul>
+        <li><strong>Servlets:</strong> Java classes that handle HTTP requests/responses on the server, generating dynamic content programmatically.</li>
+        <li><strong>JSP:</strong> Allows embedding Java code in HTML templates — processed by the JSP engine to produce dynamic pages.</li>
+        <li><strong>Platform independent:</strong> "Write once, run anywhere" — Java bytecode runs on any OS with JVM.</li>
+        <li><strong>JDBC:</strong> Java Database Connectivity enables servlets/JSP to query databases and inject live data into pages.</li>
+        <li><strong>Rich APIs:</strong> Java has extensive libraries for XML, JSON, web services, security, and networking.</li>
+        <li><strong>Multithreading:</strong> Servlet containers handle thousands of simultaneous requests efficiently.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q4</span><span class="qtext">JavaScript in client-side data validation with examples. Need for client-side validation.</span><span class="qmarks">5 Marks</span></div>
+    <div class="answer-box">
+      <div class="ans-label">✓ Answer</div>
+      <h4>Need for Client-Side Validation</h4>
+      <ul>
+        <li>Provides <strong>instant feedback</strong> to the user without a round-trip to the server.</li>
+        <li><strong>Reduces server load</strong> — invalid data never reaches the server.</li>
+        <li>Improves <strong>user experience</strong> — errors highlighted immediately.</li>
+        <li>Saves <strong>bandwidth</strong> — no unnecessary form submissions.</li>
+      </ul>
+      <h4>JavaScript Validation Examples</h4>
+      <pre>
+&lt;form onsubmit="return validateForm()"&gt;
+  Name:  &lt;input type="text"  id="name"&gt;
+  Email: &lt;input type="text"  id="email"&gt;
+  Age:   &lt;input type="number" id="age"&gt;
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+
+&lt;script&gt;
+function validateForm() {
+  var name  = document.getElementById("name").value.trim();
+  var email = document.getElementById("email").value.trim();
+  var age   = document.getElementById("age").value;
+
+  // 1. Empty check
+  if (name === "") {
+    alert("Name is required!"); return false;
+  }
+
+  // 2. Email format check using regex
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    alert("Enter a valid email!"); return false;
+  }
+
+  // 3. Range check
+  if (age &lt; 18 || age &gt; 100) {
+    alert("Age must be between 18 and 100!"); return false;
+  }
+
+  return true; // form submits only if all valid
+}
+&lt;/script&gt;</pre>
+      <p><strong>Note:</strong> Client-side validation improves UX but should always be backed by server-side validation — JavaScript can be disabled by users.</p>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q5</span><span class="qtext">What is Servlet? Servlet API? Lifecycle of a Servlet.</span><span class="qmarks">5 Marks</span></div>
+    <div class="answer-box">
+      <div class="ans-label">✓ Answer</div>
+      <h4>What is a Servlet?</h4>
+      <p>A <strong>Servlet</strong> is a Java class that runs on a web/application server (inside a Servlet Container like Tomcat) and handles HTTP requests to generate dynamic web content. It extends <code>javax.servlet.http.HttpServlet</code>.</p>
+      <h4>Servlet API</h4>
+      <p>The Servlet API is provided by two packages:</p>
+      <ul>
+        <li><code>javax.servlet</code> — generic interfaces: <code>Servlet</code>, <code>ServletRequest</code>, <code>ServletResponse</code>, <code>ServletConfig</code>, <code>ServletContext</code></li>
+        <li><code>javax.servlet.http</code> — HTTP-specific: <code>HttpServlet</code>, <code>HttpServletRequest</code>, <code>HttpServletResponse</code>, <code>HttpSession</code>, <code>Cookie</code></li>
+      </ul>
+      <h4>Servlet Lifecycle</h4>
+      <div class="diagram-box"><pre>
+  1. LOADING       — Container loads Servlet class (.class) into JVM
+  2. INSTANTIATION — Container creates ONE instance of the Servlet
+         │
+         ▼
+  3. init(ServletConfig)
+     — Called ONCE on first request (or at startup)
+     — Initialize DB connections, load config params
+         │
+         ▼
+  4. service(HttpServletRequest, HttpServletResponse)  ← called for EVERY request
+     — Dispatches to doGet(), doPost(), doPut(), doDelete() etc.
+     — Multiple threads can call service() simultaneously
+         │
+         ▼
+  5. destroy()
+     — Called ONCE before the servlet is unloaded
+     — Release resources (close DB connections, clean up)</pre></div>
+      <pre>
+// Minimal Servlet example
+import javax.servlet.*; import javax.servlet.http.*; import java.io.*;
+public class HelloServlet extends HttpServlet {
+    public void doGet(HttpServletRequest req, HttpServletResponse res)
+            throws IOException {
+        res.setContentType("text/html");
+        PrintWriter out = res.getWriter();
+        out.println("&lt;h1&gt;Hello from Servlet!&lt;/h1&gt;");
+    }
+}</pre>
+    </div>
+  </div>
+</section>
+
+<!-- GROUP C -->
+<section class="group-section" id="groupC">
+  <div class="group-header">
+    <span class="group-label">Group C</span>
+    <h2>Long Answer Questions <span class="marks-tag">Answer any 3 × 15 = 45</span></h2>
+  </div>
+
+  <!-- Q6 -->
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q6</span><span class="qtext">a) Internal valid XML with example &nbsp; b) Well-formed XML rules &nbsp; c) DOM vs SAX &nbsp; d) Explain DTD declarations</span><span class="qmarks">6+2+3+4 = 15</span></div>
+    <div class="answer-box">
+      <div class="ans-label">✓ Answer</div>
+      <h4>a) Internal Valid XML Document (6 marks)</h4>
+      <p>A <strong>valid XML document</strong> is one that is well-formed AND conforms to an associated DTD or Schema. An <strong>internal DTD</strong> is embedded within the XML file itself inside the <code>&lt;!DOCTYPE&gt;</code> declaration.</p>
+      <pre>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;!DOCTYPE library [
+  &lt;!ELEMENT library (book+)&gt;
+  &lt;!ELEMENT book (title, author, price)&gt;
+  &lt;!ELEMENT title  (#PCDATA)&gt;
+  &lt;!ELEMENT author (#PCDATA)&gt;
+  &lt;!ELEMENT price  (#PCDATA)&gt;
+  &lt;!ATTLIST book isbn CDATA #REQUIRED
+                 genre CDATA #IMPLIED&gt;
+]&gt;
+
+&lt;library&gt;
+  &lt;book isbn="978-0134685991" genre="Programming"&gt;
+    &lt;title&gt;Effective Java&lt;/title&gt;
+    &lt;author&gt;Joshua Bloch&lt;/author&gt;
+    &lt;price&gt;599&lt;/price&gt;
+  &lt;/book&gt;
+  &lt;book isbn="978-0596516178" genre="Web"&gt;
+    &lt;title&gt;JavaScript: The Good Parts&lt;/title&gt;
+    &lt;author&gt;Douglas Crockford&lt;/author&gt;
+    &lt;price&gt;450&lt;/price&gt;
+  &lt;/book&gt;
+&lt;/library&gt;</pre>
+      <p>This document is valid because: it has one root <code>&lt;library&gt;</code>, all elements match the DTD definitions, required attribute <code>isbn</code> is present on all <code>&lt;book&gt;</code> elements.</p>
+
+      <h4>b) Rules for Well-Formed XML Document (2 marks)</h4>
+      <ul>
+        <li>Must have exactly <strong>one root element</strong> enclosing all other elements.</li>
+        <li>All elements must have a <strong>closing tag</strong> (or be self-closed: <code>&lt;br/&gt;</code>).</li>
+        <li>Tags are <strong>case-sensitive</strong> — <code>&lt;Name&gt;</code> ≠ <code>&lt;name&gt;</code>.</li>
+        <li>Elements must be <strong>properly nested</strong> — no crossing tags.</li>
+        <li>Attribute values must be in <strong>quotes</strong> (single or double).</li>
+        <li>Special characters must use <strong>entities</strong>: <code>&amp;amp; &amp;lt; &amp;gt; &amp;quot; &amp;apos;</code></li>
+        <li>XML declaration should appear on the <strong>first line</strong>.</li>
+      </ul>
+
+      <h4>c) DOM vs SAX Parser (3 marks)</h4>
+      <table class="cmp-table">
+        <thead><tr><th>Feature</th><th>DOM</th><th>SAX</th></tr></thead>
+        <tbody>
+          <tr><td>Approach</td><td>Tree-based — loads entire document</td><td>Event-driven — streaming, sequential</td></tr>
+          <tr><td>Memory</td><td>High — whole doc in RAM</td><td>Low — processes node by node</td></tr>
+          <tr><td>Speed</td><td>Slower for large files</td><td>Faster for large files</td></tr>
+          <tr><td>Access</td><td>Random — navigate any node</td><td>Forward-only, no backtracking</td></tr>
+          <tr><td>Modification</td><td>Can read and write/modify</td><td>Read-only</td></tr>
+          <tr><td>Best use</td><td>Small/medium docs, frequent navigation</td><td>Large files, memory-constrained systems</td></tr>
+        </tbody>
+      </table>
+
+      <h4>d) Explain DTD Declarations (2+2 marks)</h4>
+      <p><strong>(i) <code>&lt;!ELEMENT section (title+, para(note | code*)&gt;</code></strong></p>
+      <ul>
+        <li>Declares an element named <code>section</code>.</li>
+        <li>It must contain: one or more <code>title</code> elements (<code>+</code> = one or more), followed by <code>para</code> elements.</li>
+        <li>Each <code>para</code> contains either <code>note</code> OR zero-or-more <code>code</code> elements (<code>|</code> = choice, <code>*</code> = zero or more).</li>
+      </ul>
+      <p><strong>(ii) <code>&lt;!ATTLIST sign signaturefile CDATA #IMPLIED email CDATA #REQUIRED&gt;</code></strong></p>
+      <ul>
+        <li>Declares attributes for element <code>sign</code>.</li>
+        <li><code>signaturefile</code>: type CDATA (character data, any string), <code>#IMPLIED</code> = optional attribute.</li>
+        <li><code>email</code>: type CDATA, <code>#REQUIRED</code> = this attribute MUST be present in every <code>&lt;sign&gt;</code> element.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Q7 -->
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q7</span><span class="qtext">a) Applet + lifecycle &nbsp; b) Client-server communication &nbsp; c) PERL script for current date</span><span class="qmarks">1+4+6+4 = 15</span></div>
+    <div class="answer-box">
+      <div class="ans-label">✓ Answer</div>
+      <h4>a) What is an Applet + Lifecycle (1+4 marks)</h4>
+      <p>A <strong>Java Applet</strong> is a small Java program embedded in an HTML page, downloaded from a web server and executed within the browser's JVM. Used for interactive graphics, animations, and mini-applications.</p>
+      <div class="diagram-box"><pre>
+  [init()]    → Called ONCE on loading. Initialise variables, load resources.
+      ↓
+  [start()]   → Called after init() and whenever page becomes visible again.
+      ↓
+  [paint()]   → Draws/redraws the applet. Called by browser or repaint().
+      ↓
+  [stop()]    → Called when user navigates away. Pause threads.
+      ↓
+  [destroy()] → Called once on browser close. Final cleanup.</pre></div>
+
+      <h4>b) Effective Client-Server Communication (6 marks)</h4>
+      <p>In a web environment, client-server communication follows the <strong>request-response model</strong>:</p>
+      <div class="diagram-box"><pre>
+  CLIENT (Browser)                         SERVER (Web/App Server)
+       │                                          │
+       │── HTTP Request ──────────────────────────►│
+       │   (GET /index.html HTTP/1.1)              │
+       │   Headers: Host, Accept, Cookie           │  Process request:
+       │                                           │  - Routing
+       │                                           │  - Authentication
+       │                                           │  - DB query
+       │                                           │  - Generate response
+       │◄── HTTP Response ────────────────────────│
+       │   (HTTP/1.1 200 OK)                       │
+       │   Headers: Content-Type, Set-Cookie       │
+       │   Body: HTML / JSON / XML                 │</pre></div>
+      <ul>
+        <li><strong>Sockets:</strong> Low-level TCP/IP communication — Java <code>Socket</code> / <code>ServerSocket</code>.</li>
+        <li><strong>HTTP:</strong> Application-layer protocol — most web communication.</li>
+        <li><strong>REST APIs:</strong> JSON over HTTP — modern web services.</li>
+        <li><strong>WebSockets:</strong> Persistent bidirectional channel — real-time apps (chat, live data).</li>
+        <li><strong>RMI:</strong> Java-specific — remote method calls between JVMs.</li>
+      </ul>
+
+      <h4>c) Perl Script to Show Current Date (4 marks)</h4>
+      <pre>
+#!/usr/bin/perl
+use strict;
+use warnings;
+use POSIX qw(strftime);
+
+# Method 1: Using POSIX strftime
+my $date = strftime "%d-%m-%Y", localtime;
+my $time = strftime "%H:%M:%S", localtime;
+print "Current Date : $date\n";
+print "Current Time : $time\n";
+
+# Method 2: Using localtime array
+my @months = qw(Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec);
+my @days   = qw(Sun Mon Tue Wed Thu Fri Sat);
+my ($sec, $min, $hour, $mday, $mon, $year, $wday) = localtime(time);
+$year += 1900;  # localtime returns years since 1900
+printf "Date: %s, %02d %s %d\n", $days[$wday], $mday, $months[$mon], $year;
+printf "Time: %02d:%02d:%02d\n", $hour, $min, $sec;
+
+# Output example:
+# Current Date : 16-06-2026
+# Current Time : 14:35:22</pre>
+    </div>
+  </div>
+
+  <!-- Q8 -->
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q8</span><span class="qtext">Congestion Policy, Congestion Avoidance, and Congestion Detection in TCP with diagrams.</span><span class="qmarks">3 × 5 = 15</span></div>
+    <div class="answer-box">
+      <div class="ans-label">✓ Answer</div>
+      <h4>1. Congestion Policy — Slow Start (5 marks)</h4>
+      <p>When a TCP connection begins (or after timeout), it enters <strong>Slow Start</strong> — the congestion window (cwnd) starts small and grows exponentially.</p>
+      <ul>
+        <li>Initially: <code>cwnd = 1 MSS</code> (Maximum Segment Size)</li>
+        <li>Each ACK received → <code>cwnd += 1 MSS</code> → doubles per RTT (exponential)</li>
+        <li>Continues until <code>cwnd ≥ ssthresh</code> (slow start threshold)</li>
+      </ul>
+      <div class="diagram-box"><pre>
+cwnd
+ 16│                    *
+  8│             *
+  4│       *
+  2│   *
+  1│*
+   └──────────────────── RTT
+    (Doubles each round — Slow Start)</pre></div>
+
+      <h4>2. Congestion Avoidance (5 marks)</h4>
+      <p>Once cwnd reaches ssthresh, TCP switches to <strong>Congestion Avoidance</strong> — linear (additive) growth.</p>
+      <ul>
+        <li>Each full RTT → <code>cwnd += 1 MSS</code> (linear growth)</li>
+        <li>This is <strong>AIMD: Additive Increase, Multiplicative Decrease</strong></li>
+        <li>Gently probes for more bandwidth without causing congestion</li>
+      </ul>
+      <div class="diagram-box"><pre>
+cwnd
+  │                        * * *
+  │                   * *
+  │              * *                ← Congestion Avoidance (linear)
+ssthresh──────*──────────────────────
+  │     *  *   ← Slow Start (exponential)
+  │  *
+  │*
+  └──────────────────────────── RTT</pre></div>
+
+      <h4>3. Congestion Detection (5 marks)</h4>
+      <p>TCP detects congestion through two signals:</p>
+      <p><strong>Signal 1 — Timeout:</strong></p>
+      <ul>
+        <li>Retransmission timer expires → packet assumed lost due to severe congestion</li>
+        <li><code>ssthresh = cwnd / 2</code></li>
+        <li><code>cwnd = 1 MSS</code> — restart Slow Start from scratch</li>
+      </ul>
+      <p><strong>Signal 2 — 3 Duplicate ACKs (Fast Retransmit):</strong></p>
+      <ul>
+        <li>Receiver gets out-of-order segments and sends duplicate ACKs for the last in-order segment</li>
+        <li>3 dup-ACKs = mild congestion (some packets still getting through)</li>
+        <li><code>ssthresh = cwnd / 2</code>, <code>cwnd = ssthresh</code> (Fast Recovery — no reset to 1)</li>
+        <li>Retransmit the missing segment immediately without waiting for timeout</li>
+      </ul>
+      <div class="diagram-box"><pre>
+  After Timeout:          After 3 dup-ACKs:
+  cwnd                    cwnd
+   │\                      │\
+   │ \   ssthresh/2        │ \   ssthresh/2
+   │  \──────────          │  *── (stays at ssthresh, Fast Recovery)
+   │   \                   │
+   1────*── slow start     └── no reset to 1</pre></div>
+    </div>
+  </div>
+
+  <!-- Q9 -->
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q9</span><span class="qtext">a) 205.16.37.39/28 — first/last address, subnet, masking, default vs subnet mask &nbsp; b) DoS + RTP + NVT utility</span><span class="qmarks">5+10 = 15</span></div>
+    <div class="answer-box">
+      <div class="ans-label">✓ Answer</div>
+      <h4>a) Address block 205.16.37.39/28 (5 marks)</h4>
+      <pre>
+/28 → 28 network bits, 4 host bits
+Subnet mask: 255.255.255.240
+Block size: 2^4 = 16
+
+Last octet = 39
+Blocks of 16: 0, 16, 32, 48...
+39 falls in block starting at 32
+
+Network (first) address : 205.16.37.32
+Broadcast (last) address: 205.16.37.47
+Usable hosts: 2^4 - 2 = 14  (.33 to .46)</pre>
+      <p><strong>Subnet:</strong> A logically subdivided segment of a network, created by borrowing bits from the host portion of an IP address.</p>
+      <p><strong>Is masking required?</strong> Yes — without a subnet mask, a device cannot determine which portion of an IP address is the network part and which is the host part. Routing decisions depend entirely on the mask.</p>
+      <table class="cmp-table">
+        <thead><tr><th></th><th>Default Mask</th><th>Subnet Mask</th></tr></thead>
+        <tbody>
+          <tr><td>Based on</td><td>IP address class (A/B/C)</td><td>Custom — borrowing host bits</td></tr>
+          <tr><td>Class A</td><td>255.0.0.0</td><td>e.g., 255.255.0.0</td></tr>
+          <tr><td>Class B</td><td>255.255.0.0</td><td>e.g., 255.255.255.0</td></tr>
+          <tr><td>Class C</td><td>255.255.255.0</td><td>e.g., 255.255.255.240</td></tr>
+        </tbody>
+      </table>
+
+      <h4>b) DoS Attack (4 marks)</h4>
+      <p>A <strong>Denial of Service (DoS) attack</strong> floods a target with traffic/requests to exhaust its resources (CPU, memory, bandwidth), making it unavailable to legitimate users. Types: SYN Flood, UDP Flood, Ping of Death, HTTP Flood. DDoS uses thousands of compromised hosts simultaneously. Defence: rate limiting, firewalls, CDN, anti-DDoS services.</p>
+
+      <h4>RTP — Real-time Transport Protocol (4 marks)</h4>
+      <p>RTP carries real-time audio/video over IP (UDP). Header contains: Version, Payload Type (codec), Sequence Number (for ordering/loss detection), Timestamp (synchronisation/jitter), SSRC (stream identifier). Used with RTCP for QoS monitoring (packet loss, jitter, delay stats).</p>
+
+      <h4>NVT Utility in Telnet (2 marks)</h4>
+      <p><strong>NVT (Network Virtual Terminal)</strong> provides a standardised, universal terminal interface for Telnet. Different systems have different terminal types — NVT acts as a common intermediate format so any client terminal can communicate with any server, regardless of their native terminal implementations.</p>
+    </div>
+  </div>
+
+  <!-- Q10 -->
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q10</span><span class="qtext">Short Notes (any 3): a) IPTV &nbsp; b) Web Crawler &nbsp; c) IP Security &nbsp; d) Proxy Firewall &nbsp; e) HTML DOM</span><span class="qmarks">3 × 5 = 15</span></div>
+    <div class="answer-box">
+      <div class="ans-label">✓ Answer</div>
+      <h4>a) IPTV (5 marks)</h4>
+      <p><strong>IPTV (Internet Protocol Television)</strong> delivers television content over IP networks (internet or managed private networks) instead of traditional cable or satellite.</p>
+      <ul>
+        <li><strong>Live TV:</strong> Uses IP Multicast + RTP — one stream sent to all group members efficiently.</li>
+        <li><strong>VoD (Video on Demand):</strong> Uses unicast — individual stream per viewer.</li>
+        <li><strong>Time-shifted TV:</strong> Catch-up/pause live TV.</li>
+        <li><strong>Protocols used:</strong> IGMP (multicast group management), RTP (stream delivery), RTSP (stream control), HTTP (VoD streaming).</li>
+        <li><strong>Advantages:</strong> Interactive features (EPG, pause, rewind), personalised content, global access, cheaper than cable.</li>
+        <li><strong>Examples:</strong> Netflix, Amazon Prime, Hotstar, YouTube TV, Jio TV.</li>
+      </ul>
+
+      <h4>b) Web Crawler (5 marks)</h4>
+      <p>An automated bot that systematically browses the web to index pages for search engines. Process: Start from seed URLs → download page → extract links → add to queue → index content → repeat. Respects <code>robots.txt</code>. Examples: Googlebot, Bingbot. Challenges: duplicate detection, dynamic JavaScript pages, rate limiting, infinite URL spaces.</p>
+
+      <h4>c) IP Security (IPSec) (5 marks)</h4>
+      <p><strong>IPSec</strong> is a suite of protocols providing security at the IP layer — authentication, integrity, and encryption of IP packets.</p>
+      <ul>
+        <li><strong>AH (Authentication Header):</strong> Provides integrity and source authentication. Does not encrypt.</li>
+        <li><strong>ESP (Encapsulating Security Payload):</strong> Provides encryption + integrity + authentication.</li>
+        <li><strong>Transport Mode:</strong> Encrypts payload only; original IP header intact.</li>
+        <li><strong>Tunnel Mode:</strong> Encrypts entire original IP packet; new outer header added. Used in VPNs.</li>
+        <li><strong>IKE (Internet Key Exchange):</strong> Negotiates security associations and manages keys.</li>
+      </ul>
+
+      <h4>d) Proxy Firewall (5 marks)</h4>
+      <p>Operates at Application Layer (Layer 7). All client-server communication passes through the proxy — neither side connects directly. Deep packet inspection of HTTP/FTP/SMTP content. Hides internal IP addresses. Caches content for performance. Can block URLs, scan for malware. Disadvantage: higher latency, one proxy per protocol.</p>
+
+      <h4>e) HTML DOM (5 marks)</h4>
+      <p>The <strong>HTML DOM (Document Object Model)</strong> is a programming interface that represents an HTML document as a tree of objects. JavaScript uses the DOM to dynamically access and manipulate the page.</p>
+      <pre>
+Document
+└── &lt;html&gt;
+    ├── &lt;head&gt;
+    │   └── &lt;title&gt; → "My Page"
+    └── &lt;body&gt;
+        ├── &lt;h1 id="main"&gt; → "Hello"
+        └── &lt;p class="text"&gt; → "World"
+
+// Access & modify:
+document.getElementById("main").textContent = "Hi!";
+document.querySelector(".text").style.color = "red";
+var newEl = document.createElement("p");
+newEl.textContent = "New paragraph";
+document.body.appendChild(newEl);</pre>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="paper-footer">
+  <div class="footer-inner">
+    <a href="index.html" class="back-btn-footer">← Back to All Papers</a>
+    <span>MAKAUT | CS-705A | Internet Technology | 2016–17</span>
+  </div>
+</footer>
+</body>
+</html>

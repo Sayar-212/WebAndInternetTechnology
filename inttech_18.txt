@@ -1,0 +1,103 @@
+CS/B.Tech/CSE/Odd/SEM-7/CS-705A/2018-19
+MAULANA ABUL KALAM AZAD UNIVERSITY OF TECHNOLOGY, WEST BENGAL
+
+Paper Code: CS-705A
+INTERNET TECHNOLOGY
+Time Allotted: 3 Hours
+Full Marks: 70
+
+The figures in the margin indicate full marks.
+Candidates are required to give their answers in their own words as far as practicable.
+Answer all groups.
+
+Group - A
+(Multiple Choice Type Questions)
+1. Choose the correct alternative for each of the following: (1x10=10)
+
+(i) HTML documents are saved in
+(a) ASCII text (c) Special binary format
+(b) Machine language codes (d) None of these
+
+(ii) The position of SSL in TCP/IP protocol suite is
+(a) between transport and internet layers. (c) between application and transport layers.
+(b) between data link and physical layers. (d) None of these
+
+(iii) The _____ in XML is equivalent to the schema in database
+(a) element (c) parser
+(b) attribute (d) DTD
+
+(iv) Which syntax is used to describe elements in CSS?
+(a) Protectors (c) Both (a) and (b)
+(b) Selectors (d) None of these
+
+(v) In Telnet, the client echoes the character on the screen but does not send it until a whole line is completed in
+(a) default mode (c) server mode
+(b) character mode (d) None of these
+
+(vi) HTTP status code is
+(a) two-digit code (c) four-digit code
+(b) three-digit code (d) five-digit code
+
+(vii) Cookies are stored in
+(a) Web Server (c) Database Server
+(b) Web Browser (d) Application Server
+
+(viii) In IPV4, what is the length of the data field given an HLEN value of 12 and length value of 40,000?
+(a) 39,988 (c) 40,048
+(b) 40,012 (d) 39,952
+
+(ix) Which of the following is correct regarding meta tag in HTML?
+(a) <meta>...</meta> (c) <metadata>...</metadata>
+(b) <meta name = ""/> (d) <metadata name = ""/>
+
+(x) In IPV6 option length is
+(a) 4 (c) 3
+(b) 5 (d) infinite
+
+
+Group - B
+(Short Answer Type Questions)
+Answer any three of the following. (5x3=15)
+
+2. Explain the life cycle of a JAVA servlet. (5)
+3. (a) What is Denial-of-service attack? (2)
+(b) Discuss briefly about proxy firewall. (3)
+4. Compare POST and GET methods. (5)
+5. Briefly explain JSP architecture. (5)
+6. (a) What is cookie? (2)
+(b) Why is HTTP stateless? (3)
+
+
+Group - C
+(Long Answer Type Questions)
+Answer any three of the following. (15x3=45)
+
+7. (a) What is URL? Explain different component of URL. (1+4)
+(b) Prepare an XML document for the following table with internal DTD definition: (6)
+NAME | STU ID | Department
+----------|--------|-----------
+Mr. XYZ | STU1 | SCE
+Mr. ABC | STU2 | I.T.
+(c) Write a simple servlet program which will return the current data and time. (4)
+
+8. (a) What is Web container? What is servlet engine? (4)
+(b) What is responsibility of MAIL Transfer agent? (6)
+(c) Create a JSP page to find the factorial of a number. (5)
+
+9. (a) Illustrate the basic tags of a HTML page with an example. (10)
+(b) Explain different stages of SMTP email delivery system with the help of a diagram. (5)
+
+10.(a) Write the steps required to create the DSN. (6)
+(b) Design a HTML form for registration to a website for a specific service. The form should contain at least one instance of the following form elements: (9)
+(i) Text Box
+(ii) Check Box
+(iii) Select Box
+(iv) Submit and Rest Button
+(v) Radio Button
+
+11. Write short notes (any three): (5x3=15)
+(a) HTML Image Map
+(b) VPN
+(c) SMTP
+(d) Gateway
+(e) Proxy firewall

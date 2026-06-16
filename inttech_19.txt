@@ -1,0 +1,125 @@
+CS/B.TECH/CSE(O)/ODD/SEM-7/CS-705A/2019-20
+MAULANA ABUL KALAM AZAD UNIVERSITY OF TECHNOLOGY, WEST BENGAL
+
+Paper Code: CS-705A
+PUID: 07015 (To be mentioned to the main answer script)
+INTERNET TECHNOLOGY
+Time Allotted: 3 Hours
+Full Marks: 70
+
+The figures in the margin indicate full marks.
+Candidates are required to give their answers in their own words as far as practicable.
+
+GROUP - A
+(Multiple Choice Type Questions)
+1. Choose the correct alternatives for any ten of the following: (10 x 1 = 10)
+
+i) ISP exchanges internet traffic between their networks by
+a) internet exchange point
+b) subscriber end point
+c) ISP end point
+d) none of these.
+
+ii) Which of the following strings is a correct XML name?
+a) xm| Extension
+b) xs| NewElement
+c) XMLElement#123
+d) All of these.
+
+iii) Which of the following strings is a correct XML name?
+a) _myElement
+b) my Element
+c) #myElement
+d) None of these.
+
+iv) Which of the following symbol is used to denote Arrays in Perl?
+a) #
+b) $
+c) @
+d) %
+
+v) Which of the following expression matches a line which begins with a ?
+a) /^a/
+b) /@a/
+c) /\$a/
+d) / a/
+
+vi) Language which features rich text processing capabilities and flexibility is
+a) Perl
+b) C
+c) Visual Basic
+d) Ada.
+
+vii) Which one of the following protocol is not used in internet?
+a) HTTP
+b) DHCP
+c) DNS
+d) None of these.
+
+viii) What is the correct syntax of the declaration which defines the XML version?
+a) <xml version ="A.0"/>
+b) <?xml version ="A.0"?>
+c) <?xml version ="A.O"/>
+d) None of these.
+
+ix) Valid XML document means (most appropriate)
+a) the document has root element
+b) the document contains at least one or more root element
+c) the XML document has DTD associated with it & it complies with that DTD
+d) Each element must nest inside any enclosing element property.
+
+x) Which of the following XML fragments is well-formed
+a) <?xml?>
+b) <?xml version ="A.0"?>
+c) <?xml encoding ="JIS"?>
+d) <?xml encoding ="JIS" version +"A.0"?>
+
+xi) Which statement is true?
+a) All the statements are true
+b) All XML elements must have a closing tag
+c) All XML elements must be lower case
+d) All XML documents must have a DTD.
+
+xii) Is it easier to process XML than HTML?
+a) Yes
+b) No
+c) Sometimes
+d) Can't say.
+
+
+GROUP - B
+(Short Answer Type Questions)
+Answer any three of the following. (3 x 5 = 15)
+
+2. Write down the features of scripting language. How markup language is different from scripting language? (3+2)
+3. Give examples of parameter passing applet. (5)
+4. Describe the RTP header format with diagram. (5)
+5. Why XML is superior to HTML? What are the different types of parser used in XML? (2+3)
+6. Explain active attack and passive attack. (5)
+
+
+GROUP - C
+(Long Answer Type Questions)
+Answer any three of the following. (3 x 15 = 45)
+
+7. a) What is the meaning of Hyper Text Transfer Protocol in WWW? What is URL? Explain the component of URL. (2+(1+4))
+b) Distinguish between GET and POST method in HTTP. (4)
+c) Explain different file transmission modes across FTP data connection. (4)
+
+8. a) What are tags? (2)
+b) What are some of the common lists that can be used when designing a page? (3)
+c) How do you insert a comment in HTML? (2)
+d) How do you create multicolored text in a webpage? (2)
+e) What are style sheets? (2)
+f) How do you create links to sections within the same page? (2)
+g) Does a hyperlink apply to text only? (2)
+
+9. a) What is the difference between an Applet and a Java Application? (5)
+b) What is the difference between applets loaded over the internet and applets loaded via the file system? (5)
+c) What is an Applet? Give one example of passing Parameter in Applet. (5)
+
+10. What is the process of making a class serializable? How does the communication with remote objects occur in RMI? What is the use of java.rmi.Remote Interface in RMI? Write a program to show the remote interface using RMI. (3+4+4+4)
+
+11. a) How RTP handles the timing issues in real time-data transport? (5)
+b) Describe the page rank algorithm in search engine and implementation. (5)
+c) How RTSP delivers live streaming over Internet? (5)

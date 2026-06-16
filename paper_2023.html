@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>2023-24 | Web & Internet Technology | MAKAUT</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="paper.css"/>
+</head>
+<body>
+
+<nav class="topbar">
+  <a href="index.html" class="back-btn">← Back to Home</a>
+  <div class="topbar-info">
+    <span class="topbar-year">2023–24</span>
+    <span class="topbar-code">CS/B.Tech(N)/EVEN/SEM-8/PEC-CS801D</span>
+  </div>
+  <div class="topbar-meta"><span>⏱ 3 Hours</span><span>📋 70 Marks</span></div>
+</nav>
+
+<header class="paper-hero">
+  <div class="paper-hero-bg"></div>
+  <div class="paper-hero-content">
+    <div class="paper-badge">MAKAUT • Web and Internet Technology</div>
+    <h1>2023 – 24 <span class="yr-accent">Solved Paper</span></h1>
+    <p>PEC-CS801D &nbsp;|&nbsp; Full Marks: 70 &nbsp;|&nbsp; Time: 3 Hours &nbsp;|&nbsp; SEM-8</p>
+    <div class="paper-pills">
+      <span>Group A: Any 10 × 1 = 10</span>
+      <span>Group B: Any 3 × 5 = 15</span>
+      <span>Group C: Any 3 × 15 = 45</span>
+    </div>
+  </div>
+</header>
+
+<main class="paper-main">
+
+<!-- GROUP A -->
+<section class="group-section" id="groupA">
+  <div class="group-header">
+    <span class="group-label">Group A</span>
+    <h2>Very Short Answer Questions <span class="marks-tag">Any 10 × 1 = 10</span></h2>
+  </div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(I)</span><span class="qtext">What equipment do I need for VoIP phone calls?</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>Hardware needed for VoIP:</strong></p>
+    <ul>
+      <li><strong>Broadband internet</strong> — minimum 100 kbps per call (DSL, fiber, cable, or mobile data).</li>
+      <li><strong>VoIP phone</strong> — IP phone that connects directly to the router, OR an ATA (Analog Telephone Adapter) to use a regular phone.</li>
+      <li><strong>Computer/Smartphone</strong> — with a softphone app (Skype, Zoom, Teams) and headset/microphone.</li>
+      <li><strong>Router</strong> — preferably with QoS (Quality of Service) support to prioritise voice traffic.</li>
+    </ul>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(II)</span><span class="qtext">What is the use of a namespace in Web Development?</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p>A <strong>namespace</strong> groups identifiers (element names, attributes, functions, variables) under a unique prefix to avoid naming conflicts when combining content from multiple sources.</p>
+    <ul>
+      <li><strong>In XML/XHTML:</strong> Namespaces prevent element name clashes when merging documents from different vocabularies: <code>&lt;svg xmlns="http://www.w3.org/2000/svg"&gt;</code></li>
+      <li><strong>In JavaScript:</strong> Wrapping code in an object/module to avoid polluting the global scope: <code>const MyApp = { utils: {}, models: {} };</code></li>
+      <li><strong>In CSS:</strong> CSS Modules / BEM methodology to scope class names per component.</li>
+    </ul>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(III)</span><span class="qtext">Which can read and render HTML web pages?</span><span class="qmarks">1M</span></div>
+  <div class="options"><div class="opt">a) Server</div><div class="opt correct">b) Web browser</div><div class="opt">c) Head tek</div></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer: (b) Web browser</div>
+    <p>A <strong>web browser</strong> (Chrome, Firefox, Safari, Edge) reads, parses, and renders HTML into a visual web page. It interprets HTML tags, applies CSS styling, and executes JavaScript. A server just delivers the HTML file — it does not render it.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(IV)</span><span class="qtext">Which feature of Perl provides code reusability? Give an example.</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p>Perl provides code reusability through <strong>Modules</strong> (and Packages). A module is a .pm file containing reusable subroutines and variables that can be loaded into any script.</p>
+    <pre>
+# File: MathUtils.pm
+package MathUtils;
+sub square { return $_[0] ** 2; }
+sub cube   { return $_[0] ** 3; }
+1;  # must return true
+
+# Using the module in a script:
+use MathUtils;
+print MathUtils::square(5);  # 25
+print MathUtils::cube(3);    # 27</pre>
+    <p>Also: <strong>subroutines</strong> (functions), <strong>OOP with bless</strong>, and CPAN (Comprehensive Perl Archive Network) for thousands of reusable modules.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(V)</span><span class="qtext">How Does a Race Condition Occur?</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p>A <strong>race condition</strong> occurs when two or more processes/threads access and modify <strong>shared data concurrently</strong>, and the final outcome depends on the unpredictable timing/order of their execution.</p>
+    <pre>
+// Example (JavaScript with shared counter):
+let counter = 0;
+// Thread 1:  reads counter (0), adds 1, writes back (1)
+// Thread 2:  reads counter (0), adds 1, writes back (1)
+// Expected: 2 — Actual: 1 (race condition — both read 0)</pre>
+    <p><strong>Prevention:</strong> Mutexes, semaphores, atomic operations, or JavaScript's single-threaded event loop (which avoids most race conditions).</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(VI)</span><span class="qtext">What is VoIP?</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>VoIP (Voice over Internet Protocol)</strong> is technology that converts analogue voice signals into digital packets and transmits them over IP networks (internet) instead of traditional PSTN telephone lines.</p>
+    <p>Process: Voice → ADC (digitise) → Codec (compress) → RTP packets → UDP/IP → internet → reassemble → DAC → sound. Examples: WhatsApp calls, Skype, Zoom, Google Meet. Cheaper than PSTN, especially for international calls.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(VII)</span><span class="qtext">How to get the coordinates of a mouse click on a canvas element?</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <pre>
+const canvas = document.getElementById("myCanvas");
+
+canvas.addEventListener("click", function(event) {
+    // getBoundingClientRect() gives canvas position relative to viewport
+    const rect = canvas.getBoundingClientRect();
+
+    // Subtract canvas offset from page-level mouse coords
+    const x = event.clientX - rect.left;
+    const y = event.clientY - rect.top;
+
+    console.log(`Click at: X=${x}, Y=${y}`);
+
+    // Draw a dot at click point
+    const ctx = canvas.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(x, y, 5, 0, Math.PI * 2);
+    ctx.fillStyle = "red";
+    ctx.fill();
+});</pre>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(VIII)</span><span class="qtext">What is the use of a selector in CSS?</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p>A <strong>CSS selector</strong> targets specific HTML elements to apply style rules. Without selectors, CSS cannot know which elements to style.</p>
+    <pre>
+p           { color: blue; }       /* element selector */
+.highlight  { background: yellow; } /* class selector */
+#main-title { font-size: 2rem; }   /* id selector */
+a:hover     { color: red; }        /* pseudo-class */
+input[type="email"] { border: 2px solid blue; } /* attribute */
+h1 + p      { margin-top: 0; }    /* adjacent sibling */
+div > span  { font-weight: bold; } /* direct child */</pre>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(IX)</span><span class="qtext">Can we load binary extension dynamically?</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>Yes</strong>, in Perl, binary extensions (XS modules compiled to .so/.dll files) can be loaded dynamically at runtime using the <code>DynaLoader</code> module or the <code>dl_load_file()</code> function. The <code>use</code> and <code>require</code> statements automatically trigger dynamic loading of XS modules when needed.</p>
+    <pre>
+# Perl automatically dynamically loads compiled XS module:
+use Storable;    # loads Storable.so / Storable.dll at runtime
+use List::Util;  # pure Perl or XS depending on installation
+
+# Manual dynamic loading:
+require DynaLoader;
+DynaLoader::dl_load_file("myextension.so");</pre>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(X)</span><span class="qtext">What is a JavaBean?</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p>A <strong>JavaBean</strong> is a reusable Java class that follows specific conventions:</p>
+    <ul>
+      <li><strong>No-arg constructor:</strong> Must have a public default constructor.</li>
+      <li><strong>Serializable:</strong> Must implement <code>java.io.Serializable</code>.</li>
+      <li><strong>Private fields:</strong> All properties are private.</li>
+      <li><strong>Getters/Setters:</strong> Public methods to access/modify properties (following naming: <code>getName()</code>, <code>setName()</code>).</li>
+    </ul>
+    <pre>
+public class Student implements java.io.Serializable {
+    private String name;
+    private int age;
+
+    public Student() {}  // no-arg constructor
+
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
+    public int getAge() { return age; }
+    public void setAge(int age) { this.age = age; }
+}</pre>
+    <p>Used in JSP via <code>&lt;jsp:useBean&gt;</code>, in Spring Framework, and GUI builders.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(XI)</span><span class="qtext">Will I be able to use my computer while making a VoIP call?</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>Yes.</strong> VoIP calls use very little CPU and bandwidth (typically 64–100 kbps). Modern computers are powerful enough to run VoIP in the background while performing other tasks like browsing, writing documents, or working on other applications simultaneously. The VoIP app runs as a background process. However, extremely CPU-intensive tasks or bandwidth saturation may affect call quality.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(XII)</span><span class="qtext">How to set fixed width for &lt;td&gt; in a table?</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <pre>
+/* Method 1: CSS on td directly */
+td { width: 150px; }
+
+/* Method 2: table-layout fixed (recommended for equal columns) */
+table { table-layout: fixed; width: 100%; }
+td    { width: 200px; overflow: hidden; text-overflow: ellipsis; }
+
+/* Method 3: colgroup */
+&lt;table&gt;
+  &lt;colgroup&gt;
+    &lt;col style="width: 100px"&gt;
+    &lt;col style="width: 250px"&gt;
+    &lt;col style="width: 150px"&gt;
+  &lt;/colgroup&gt;
+  &lt;tr&gt;&lt;td&gt;A&lt;/td&gt;&lt;td&gt;B&lt;/td&gt;&lt;td&gt;C&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+/* Method 4: Inline style */
+&lt;td style="width:200px"&gt;Content&lt;/td&gt;</pre>
+  </div></div>
+</section>
+
+<!-- GROUP B -->
+<section class="group-section" id="groupB">
+  <div class="group-header"><span class="group-label">Group B</span><h2>Short Answer Questions <span class="marks-tag">Any 3 × 5 = 15</span></h2></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q2</span><span class="qtext">Discuss about the layers of OSI Model.</span><span class="qmarks">5 Marks</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+  <div class="diagram-box"><pre>
+  Layer 7 │ APPLICATION   │ HTTP, FTP, SMTP, DNS, DHCP
+  Layer 6 │ PRESENTATION  │ SSL/TLS, JPEG, MPEG, encryption, compression
+  Layer 5 │ SESSION       │ NetBIOS, RPC — session establishment/maintenance
+  Layer 4 │ TRANSPORT     │ TCP, UDP — end-to-end, segmentation, flow control
+  Layer 3 │ NETWORK       │ IP, ICMP, ARP — routing, logical addressing
+  Layer 2 │ DATA LINK     │ Ethernet, Wi-Fi — MAC, framing, error detection
+  Layer 1 │ PHYSICAL      │ Cables, hubs, signals — bit transmission</pre></div>
+  <ul>
+    <li><strong>Layer 7 — Application:</strong> Provides network services directly to user applications. Where HTTP, FTP, email live.</li>
+    <li><strong>Layer 6 — Presentation:</strong> Data formatting, encryption/decryption, compression. Ensures data is in readable format for the application.</li>
+    <li><strong>Layer 5 — Session:</strong> Manages sessions (start, maintain, end) between applications. Handles synchronisation checkpoints.</li>
+    <li><strong>Layer 4 — Transport:</strong> Reliable end-to-end delivery. TCP = reliable, ordered; UDP = fast, unreliable. Port numbers live here.</li>
+    <li><strong>Layer 3 — Network:</strong> Logical addressing (IP), routing packets across multiple networks.</li>
+    <li><strong>Layer 2 — Data Link:</strong> MAC addresses, framing, error detection (CRC), and access to physical medium. Switches operate here.</li>
+    <li><strong>Layer 1 — Physical:</strong> Raw bit transmission over cables, fiber, or radio waves. Hubs, repeaters.</li>
+  </ul>
+  <p><strong>Mnemonic:</strong> <em>"All People Seem To Need Data Processing"</em> (7→1) or <em>"Please Do Not Throw Sausage Pizza Away"</em> (1→7).</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q3</span><span class="qtext">Explain Web Crawler with suitable example.</span><span class="qmarks">5 Marks</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+  <p>A <strong>web crawler</strong> (spider/bot) is an automated program that systematically browses the internet, discovering and indexing web pages for search engines.</p>
+  <h4>Algorithm</h4>
+  <div class="diagram-box"><pre>
+1. Start with seed URLs: ["https://example.com"]
+2. LOOP:
+   a. Dequeue URL from frontier
+   b. Check if already visited → skip if yes
+   c. Download HTML page (HTTP GET)
+   d. Parse HTML → extract all &lt;a href="..."&gt; links
+   e. Normalise &amp; filter links (same domain? robots.txt?)
+   f. Add unvisited links to frontier queue
+   g. Extract page text → send to indexer
+3. Repeat until queue empty or limit reached</pre></div>
+  <h4>Example (Python-style pseudocode)</h4>
+  <pre>
+visited = set()
+queue   = ["https://wikipedia.org"]
+
+while queue:
+    url = queue.pop(0)
+    if url in visited: continue
+    visited.add(url)
+
+    html = http_get(url)
+    index_content(url, html)          # store for search
+
+    links = extract_links(html)
+    for link in links:
+        if link not in visited and allowed_by_robots(link):
+            queue.append(link)</pre>
+  <ul>
+    <li><strong>robots.txt:</strong> File at root of website declaring which paths crawlers should not visit.</li>
+    <li><strong>Politeness:</strong> Crawlers add delays between requests to avoid overloading servers.</li>
+    <li><strong>Examples:</strong> Googlebot, Bingbot, Slurp (Yahoo).</li>
+    <li><strong>Challenges:</strong> Duplicate detection, JavaScript-rendered pages, infinite URL spaces, bot detection.</li>
+  </ul>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q4</span><span class="qtext">Differentiate between Intra-Domain and Inter-Domain Routing.</span><span class="qmarks">5 Marks</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+  <table class="cmp-table">
+    <thead><tr><th>Feature</th><th>Intra-Domain (IGP)</th><th>Inter-Domain (EGP)</th></tr></thead>
+    <tbody>
+      <tr><td>Scope</td><td>Within a single Autonomous System (AS)</td><td>Between different Autonomous Systems</td></tr>
+      <tr><td>Full name</td><td>Interior Gateway Protocol</td><td>Exterior Gateway Protocol</td></tr>
+      <tr><td>Protocols</td><td>RIP (distance vector), OSPF (link state), EIGRP</td><td>BGP (Border Gateway Protocol)</td></tr>
+      <tr><td>Metric</td><td>Hop count, bandwidth, delay, cost</td><td>AS path, policy rules</td></tr>
+      <tr><td>Scale</td><td>Smaller networks</td><td>Internet-scale (millions of routes)</td></tr>
+      <tr><td>Algorithm</td><td>Bellman-Ford (RIP) or Dijkstra (OSPF)</td><td>Path vector algorithm</td></tr>
+      <tr><td>Policy</td><td>Performance-driven (best path)</td><td>Policy-driven (business relationships)</td></tr>
+      <tr><td>Convergence</td><td>Fast (OSPF) to moderate (RIP)</td><td>Slow (BGP designed for stability)</td></tr>
+      <tr><td>Example</td><td>Routing inside Google's data centre network</td><td>Routing between Airtel AS and BSNL AS</td></tr>
+    </tbody>
+  </table>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q5</span><span class="qtext">How to create Image Accordion using HTML and CSS?</span><span class="qmarks">5 Marks</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+  <p>An image accordion displays multiple images side by side; hovering a panel expands it while the others shrink.</p>
+  <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+  .accordion {
+    display: flex;
+    width: 700px;
+    height: 300px;
+    gap: 6px;
+    overflow: hidden;
+  }
+  .panel {
+    flex: 1;                        /* equal width by default */
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: flex 0.5s ease;
+    position: relative;
+  }
+  .panel:hover { flex: 4; }         /* expand on hover */
+
+  .panel img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .panel .label {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    background: rgba(0,0,0,0.5);
+    color: white; font-weight: 600;
+    padding: 10px; font-size: 0.9rem;
+    opacity: 0; transition: opacity 0.3s;
+  }
+  .panel:hover .label { opacity: 1; }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class="accordion"&gt;
+    &lt;div class="panel"&gt;
+      &lt;img src="nature1.jpg" alt="Mountains"&gt;
+      &lt;div class="label"&gt;Mountains&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="panel"&gt;
+      &lt;img src="nature2.jpg" alt="Ocean"&gt;
+      &lt;div class="label"&gt;Ocean&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="panel"&gt;
+      &lt;img src="nature3.jpg" alt="Forest"&gt;
+      &lt;div class="label"&gt;Forest&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="panel"&gt;
+      &lt;img src="nature4.jpg" alt="Desert"&gt;
+      &lt;div class="label"&gt;Desert&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+  <p><strong>Key CSS:</strong> <code>display: flex</code> for side-by-side panels, <code>flex: 1</code> for equal default size, <code>flex: 4</code> on hover to expand, and <code>transition: flex 0.5s</code> for smooth animation.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q6</span><span class="qtext">Explain the working principle of VoIP.</span><span class="qmarks">5 Marks</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+  <div class="diagram-box"><pre>
+  SENDER SIDE                                    RECEIVER SIDE
+  ┌──────────┐                                   ┌──────────┐
+  │Microphone│                                   │ Speaker  │
+  └────┬─────┘                                   └────▲─────┘
+       │ Analog voice signal                          │ Analog
+       ▼                                              │
+  ┌──────────┐                                   ┌────┴─────┐
+  │   ADC    │ digitise (8000 samples/sec)        │   DAC    │ convert back
+  └────┬─────┘                                   └────▲─────┘
+       │ PCM digital audio                            │
+       ▼                                              │
+  ┌──────────┐                                   ┌────┴─────┐
+  │  Codec   │ compress (G.711/G.729/Opus)        │  Codec   │ decompress
+  └────┬─────┘                                   └────▲─────┘
+       │                                              │
+       ▼                                              │
+  ┌──────────┐                                   ┌────┴─────┐
+  │ Packetise│ RTP header + audio data            │  Jitter  │ reorder
+  └────┬─────┘                                   │  Buffer  │
+       │                                         └────▲─────┘
+       ▼                                              │
+  ┌───────────────────────────────────────────────────┴──┐
+  │              UDP / IP network (internet)              │
+  └──────────────────────────────────────────────────────┘</pre></div>
+  <ol>
+    <li><strong>Capture:</strong> Microphone captures voice as analogue signal.</li>
+    <li><strong>Digitise (ADC):</strong> Analogue-to-Digital Converter samples at 8000 Hz (G.711) or higher.</li>
+    <li><strong>Compress (Codec):</strong> G.711 = 64kbps (uncompressed); G.729 = 8kbps (compressed). Codec removes silence, reduces redundancy.</li>
+    <li><strong>Packetise:</strong> Compressed audio chunks wrapped in RTP header (sequence number, timestamp, SSRC).</li>
+    <li><strong>Transmit:</strong> RTP packets sent via UDP/IP over the internet (low latency).</li>
+    <li><strong>Jitter Buffer:</strong> Receiver buffers packets briefly (50–150ms) to smooth variable arrival times.</li>
+    <li><strong>Decompress → Playback:</strong> Codec decompresses; DAC converts digital back to analogue; speaker plays audio.</li>
+  </ol>
+  <p><strong>Signalling</strong> (call setup/teardown) handled separately by SIP or H.323, independent of RTP media flow.</p>
+  </div></div>
+</section>
+
+<!-- GROUP C -->
+<section class="group-section" id="groupC">
+  <div class="group-header">
+    <span class="group-label">Group C</span>
+    <h2>Long Answer Questions <span class="marks-tag">Any 3 × 15 = 45</span></h2>
+  </div>
+
+  <!-- Q7 -->
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q7</span><span class="qtext">Discuss the working principle of RTP, RTCP, RTSP, IPTV. Explain the role of SCO. [12+3]</span><span class="qmarks">15 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+
+      <h4>1. RTP — Real-time Transport Protocol (3 marks)</h4>
+      <p>RTP carries real-time audio/video over UDP. It does not guarantee delivery — it accepts some packet loss for low latency.</p>
+      <div class="diagram-box"><pre>
+RTP Header (12 bytes minimum):
+┌────┬────┬────┬────┬──────────┬───────────┬──────────┬──────────┐
+│ V  │ P  │ X  │ CC │    M     │    PT     │ Seq Num  │Timestamp │
+│2bit│1bit│1bit│4bit│   1bit   │   7bit    │  16bit   │  32bit   │
+└────┴────┴────┴────┴──────────┴───────────┴──────────┴──────────┘
+SSRC (32 bit) — identifies the synchronisation source</pre></div>
+      <ul>
+        <li><strong>Sequence number:</strong> Detects packet loss and reorders out-of-order packets.</li>
+        <li><strong>Timestamp:</strong> Enables playback synchronisation and jitter calculation.</li>
+        <li><strong>Payload Type (PT):</strong> Identifies codec (e.g., G.711 = PT 0).</li>
+        <li><strong>SSRC:</strong> Unique stream identifier when multiple streams exist.</li>
+      </ul>
+
+      <h4>2. RTCP — RTP Control Protocol (3 marks)</h4>
+      <p>Companion protocol to RTP. Sends periodic control packets on a separate port (RTP port + 1).</p>
+      <table class="cmp-table">
+        <thead><tr><th>Packet Type</th><th>Sent By</th><th>Contains</th></tr></thead>
+        <tbody>
+          <tr><td>SR (Sender Report)</td><td>Active sender</td><td>Packet count, byte count, timestamp, SSRC</td></tr>
+          <tr><td>RR (Receiver Report)</td><td>Passive receiver</td><td>Fraction lost, cumulative lost, jitter, delay</td></tr>
+          <tr><td>SDES</td><td>Any participant</td><td>Source description (CNAME, NAME)</td></tr>
+          <tr><td>BYE</td><td>Leaving participant</td><td>Stream termination notice</td></tr>
+        </tbody>
+      </table>
+      <p>Enables QoS monitoring: if packet loss &gt; 5%, receiver can request lower bitrate or switch codec.</p>
+
+      <h4>3. RTSP — Real Time Streaming Protocol (3 marks)</h4>
+      <p>Application-layer <strong>control</strong> protocol — like a TV remote for media servers. Does NOT carry media itself.</p>
+      <div class="diagram-box"><pre>
+Client                          Media Server
+  │── OPTIONS rtsp://server/stream ──────────►│  (capabilities)
+  │◄── 200 OK ─────────────────────────────────│
+  │── DESCRIBE ────────────────────────────────►│  (SDP description)
+  │◄── 200 OK (SDP: codec, ports) ─────────────│
+  │── SETUP track=audio ───────────────────────►│  (establish session)
+  │◄── 200 OK (Session: 12345) ────────────────│
+  │── PLAY Session: 12345 ─────────────────────►│  (start streaming)
+  │◄── 200 OK ─────────────────────────────────│
+  │════════════ RTP media stream ═══════════════│
+  │── PAUSE Session: 12345 ────────────────────►│
+  │── TEARDOWN Session: 12345 ─────────────────►│  (end session)</pre></div>
+      <p>Uses SDP (Session Description Protocol) in DESCRIBE response to negotiate codec, IP addresses, and RTP ports.</p>
+
+      <h4>4. IPTV — Internet Protocol Television (3 marks)</h4>
+      <p>Delivers television content over IP networks instead of traditional cable/satellite broadcast.</p>
+      <div class="diagram-box"><pre>
+IPTV Architecture:
+┌──────────┐    IGMP Join     ┌──────────────┐    RTP Multicast    ┌──────────┐
+│  Set-Top │◄────────────────►│  IPTV Head   │────────────────────►│  CDN /   │
+│   Box    │    RTSP Control  │    End       │    RTSP (VoD)       │  Edge    │
+└──────────┘                  └──────────────┘                     └──────────┘
+
+Live TV:  IP Multicast (IGMP) — one stream to many subscribers
+VoD:      IP Unicast + RTSP — individual stream per viewer</pre></div>
+      <ul>
+        <li><strong>Live TV:</strong> Uses IP multicast — efficient bandwidth (one stream, many receivers).</li>
+        <li><strong>Video on Demand (VoD):</strong> Uses unicast + RTSP — each viewer gets individual stream.</li>
+        <li><strong>Protocols:</strong> IGMP (multicast group join), RTP (media), RTSP (control), MPEG-TS (transport).</li>
+      </ul>
+
+      <h4>5. Role of SCO — Synchronous Connection Oriented Link (3 marks)</h4>
+      <p>SCO is a <strong>Bluetooth</strong> link type (not IP-based) that provides synchronous, reserved-bandwidth connections for voice.</p>
+      <ul>
+        <li>Reserves fixed time slots in the Bluetooth frame — guaranteed bandwidth and latency.</li>
+        <li>Used in Bluetooth headsets and hands-free kits for voice calls.</li>
+        <li>Provides 64 kbps full-duplex voice channel (same as PSTN).</li>
+        <li>Re-transmits lost packets immediately — prioritises voice quality over data throughput.</li>
+        <li>Contrast with ACL (Asynchronous Connection-Less): best-effort data link without reserved slots.</li>
+      </ul>
+      <p>In VoIP over Bluetooth: SCO carries the voice between phone and headset; RTP carries voice over IP between endpoints.</p>
+    </div>
+  </div>
+
+  <!-- Q8 -->
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q8</span><span class="qtext">Explain IP masquerading with example network. Role of NAT. Differentiate IPv4 and IPv6. Working process of POP3. [3+3+3+6]</span><span class="qmarks">15 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+
+      <h4>(a) IP Masquerading with Example Network [3 marks]</h4>
+      <p><strong>IP Masquerading</strong> is a form of NAT where all devices on a private LAN share a single public IP address. Outgoing packets have their source IP rewritten to the router's public IP; incoming responses are mapped back using port numbers.</p>
+      <div class="diagram-box"><pre>
+                    Internet (Public)
+                         │
+              Public IP: 203.0.113.50
+                         │
+                  ┌──────┴──────┐
+                  │   Router    │  ← performs IP Masquerading (NAT)
+                  │ 192.168.1.1 │
+                  └──────┬──────┘
+           Private LAN (192.168.1.0/24)
+          ┌──────┬───────┼───────┬──────┐
+       PC-A    PC-B    Phone   Laptop
+    .1.10    .1.20    .1.30   .1.40
+
+Outgoing: PC-A (192.168.1.10:5000) → Router rewrites to (203.0.113.50:60001)
+Incoming: (203.0.113.50:60001) → Router maps back to PC-A (192.168.1.10:5000)</pre></div>
+
+      <h4>(b) Role of NAT [3 marks]</h4>
+      <ul>
+        <li><strong>IPv4 conservation:</strong> Many private devices share one public IP — delays IPv4 exhaustion.</li>
+        <li><strong>Security:</strong> Internal network topology hidden from the internet — inbound connections blocked by default.</li>
+        <li><strong>Flexibility:</strong> ISP can change public IP without reconfiguring internal network.</li>
+        <li><strong>Types:</strong> Static NAT (1:1), Dynamic NAT (pool), PAT/NAPT (many:1 via ports — most common).</li>
+      </ul>
+
+      <h4>(c) IPv4 vs IPv6 [3 marks]</h4>
+      <table class="cmp-table">
+        <thead><tr><th>Feature</th><th>IPv4</th><th>IPv6</th></tr></thead>
+        <tbody>
+          <tr><td>Address size</td><td>32-bit (~4.3 billion)</td><td>128-bit (~3.4×10³⁸)</td></tr>
+          <tr><td>Notation</td><td>192.168.1.1 (dotted decimal)</td><td>2001:0db8::1 (hex colon)</td></tr>
+          <tr><td>Header size</td><td>20–60 bytes (variable)</td><td>40 bytes (fixed)</td></tr>
+          <tr><td>NAT required</td><td>Yes (due to scarcity)</td><td>No (address abundance)</td></tr>
+          <tr><td>Broadcast</td><td>Yes</td><td>No (uses multicast/anycast)</td></tr>
+          <tr><td>IPSec</td><td>Optional</td><td>Mandatory support</td></tr>
+          <tr><td>Auto-configuration</td><td>DHCP required</td><td>SLAAC + DHCPv6</td></tr>
+          <tr><td>Fragmentation</td><td>Routers and hosts</td><td>Hosts only</td></tr>
+        </tbody>
+      </table>
+
+      <h4>(d) Working Process of POP3 Protocol [6 marks]</h4>
+      <p><strong>POP3 (Post Office Protocol v3)</strong> retrieves email from a mail server to a local client. Port 110 (995 with SSL/TLS).</p>
+      <div class="diagram-box"><pre>
+Client (MUA)                    Mail Server
+  │── TCP connect port 110 ──────────────────►│
+  │◄── +OK POP3 server ready ─────────────────│
+  │── USER alice@example.com ─────────────────►│
+  │◄── +OK User accepted ─────────────────────│
+  │── PASS secretpassword ────────────────────►│
+  │◄── +OK Logged in ─────────────────────────│
+  │── STAT ───────────────────────────────────►│  (count + total size)
+  │◄── +OK 3 4521 ────────────────────────────│  (3 messages, 4521 bytes)
+  │── LIST ───────────────────────────────────►│  (list all messages)
+  │◄── +OK 3 messages ────────────────────────│
+  │◄── 1 1200 ────────────────────────────────│
+  │◄── 2 2100 ────────────────────────────────│
+  │◄── 3 1221 ────────────────────────────────│
+  │◄── . ─────────────────────────────────────│
+  │── RETR 1 ─────────────────────────────────►│  (retrieve message 1)
+  │◄── +OK 1200 octets ───────────────────────│
+  │◄── [full email content] ──────────────────│
+  │◄── . ─────────────────────────────────────│
+  │── DELE 1 ─────────────────────────────────►│  (mark for deletion)
+  │◄── +OK Message deleted ───────────────────│
+  │── QUIT ───────────────────────────────────►│
+  │◄── +OK Bye ───────────────────────────────│  (commits deletions)</pre></div>
+      <ul>
+        <li><strong>Authorization state:</strong> USER + PASS authentication.</li>
+        <li><strong>Transaction state:</strong> STAT, LIST, RETR, DELE commands.</li>
+        <li><strong>Update state:</strong> QUIT commits all DELE operations — messages removed from server.</li>
+        <li><strong>Default behaviour:</strong> Downloads and deletes from server (offline access). Contrast with IMAP which keeps mail on server for multi-device sync.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Q9 -->
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q9</span><span class="qtext">Write about string manipulators in JavaScript. Discuss XML and its importance. Illustrate GET and POST methods. [5+5+5]</span><span class="qmarks">15 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+
+      <h4>(a) String Manipulators in JavaScript [5 marks]</h4>
+      <pre>
+const s = "  Hello World, JavaScript!  ";
+
+// Length and access
+s.length;              // 28
+s.charAt(0);           // " " (space)
+s[6];                  // "H" (bracket notation)
+s.charCodeAt(6);       // 72 (Unicode of 'H')
+
+// Case conversion
+s.toUpperCase();       // "  HELLO WORLD, JAVASCRIPT!  "
+s.toLowerCase();       // "  hello world, javascript!  "
+
+// Search
+s.indexOf("World");    // 8
+s.lastIndexOf("o");    // 17
+s.includes("Java");    // true
+s.startsWith("  Hel"); // true
+s.endsWith("!  ");     // true
+
+// Extract and modify
+s.slice(2, 7);         // "Hello"
+s.substring(2, 7);     // "Hello"
+s.substr(2, 5);        // "Hello" (deprecated)
+s.split(", ");         // ["  Hello World", "JavaScript!  "]
+s.replace("World", "JS"); // "  Hello JS, JavaScript!  "
+s.replaceAll("o", "0");   // replaces all occurrences
+
+// Trim whitespace
+s.trim();              // "Hello World, JavaScript!"
+s.trimStart();         // removes leading spaces
+s.trimEnd();           // removes trailing spaces
+
+// Pad and repeat
+"42".padStart(5, "0"); // "00042"
+"Hi".repeat(3);        // "HiHiHi"
+
+// Template literals (ES6)
+const name = "Alice";
+const msg = `Hello, ${name}! You have ${5} messages.`;</pre>
+
+      <h4>(b) XML and Its Importance [5 marks]</h4>
+      <p><strong>XML (eXtensible Markup Language)</strong> is a markup language for storing and transporting structured data in a self-describing, human-readable format.</p>
+      <pre>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;bookstore&gt;
+  &lt;book category="web"&gt;
+    &lt;title lang="en"&gt;Web Technology&lt;/title&gt;
+    &lt;author&gt;Smith&lt;/author&gt;
+    &lt;price&gt;29.99&lt;/price&gt;
+  &lt;/book&gt;
+&lt;/bookstore&gt;</pre>
+      <p><strong>Importance:</strong></p>
+      <ul>
+        <li><strong>Platform independent:</strong> Data interchange between heterogeneous systems (Java ↔ Python ↔ .NET).</li>
+        <li><strong>Self-describing:</strong> Tags describe the data — no predefined schema needed (unlike HTML).</li>
+        <li><strong>Extensible:</strong> Users define their own tags and document structure.</li>
+        <li><strong>Validation:</strong> DTD and XML Schema enforce data integrity rules.</li>
+        <li><strong>Applications:</strong> Web services (SOAP), RSS feeds, SVG graphics, Android layouts, config files, SAML authentication.</li>
+      </ul>
+
+      <h4>(c) GET and POST Methods — Illustration [5 marks]</h4>
+      <table class="cmp-table">
+        <thead><tr><th>Feature</th><th>GET</th><th>POST</th></tr></thead>
+        <tbody>
+          <tr><td>Data location</td><td>URL query string</td><td>HTTP request body</td></tr>
+          <tr><td>Visibility</td><td>Visible in URL bar</td><td>Hidden in body</td></tr>
+          <tr><td>Cacheable</td><td>Yes</td><td>No</td></tr>
+          <tr><td>Bookmarkable</td><td>Yes</td><td>No</td></tr>
+          <tr><td>Data size limit</td><td>~2048 chars (browser limit)</td><td>No practical limit</td></tr>
+          <tr><td>Idempotent</td><td>Yes (safe to repeat)</td><td>No</td></tr>
+          <tr><td>Use case</td><td>Search, filter, read data</td><td>Login, registration, file upload</td></tr>
+        </tbody>
+      </table>
+      <pre>
+&lt;!-- GET: data appended to URL --&gt;
+&lt;form action="/search" method="GET"&gt;
+  &lt;input type="text" name="q" value="javascript"&gt;
+  &lt;input type="submit" value="Search"&gt;
+&lt;/form&gt;
+&lt;!-- Submits to: /search?q=javascript --&gt;
+
+&lt;!-- POST: data in request body --&gt;
+&lt;form action="/login" method="POST"&gt;
+  &lt;input type="text" name="username"&gt;
+  &lt;input type="password" name="password"&gt;
+  &lt;input type="submit" value="Login"&gt;
+&lt;/form&gt;
+&lt;!-- Body: username=alice&amp;password=secret (not in URL) --&gt;
+
+// JavaScript Fetch API
+fetch("/api/users?q=active", { method: "GET" });
+fetch("/api/users", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ name: "Alice", age: 22 })
+});</pre>
+    </div>
+  </div>
+
+  <!-- Q10 -->
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q10</span><span class="qtext">Default scope of Perl variables. Applet Life Cycle with example. Create and Store Cookies with example. [6+5+4]</span><span class="qmarks">15 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+
+      <h4>(a) Default Scope of Perl Variables [6 marks]</h4>
+      <table class="cmp-table">
+        <thead><tr><th>Declaration</th><th>Scope</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr><td><code>my $x</code></td><td>Lexical (private)</td><td>Visible only within enclosing block/file</td></tr>
+          <tr><td><code>our $x</code></td><td>Package (global within package)</td><td>Alias for package variable; visible in current package</td></tr>
+          <tr><td><code>local $x</code></td><td>Dynamic (temporary)</td><td>Temporarily overrides global until block ends</td></tr>
+          <tr><td><code>$x</code> (no keyword)</td><td>Package global</td><td>Default — lives in current package (main::)</td></tr>
+        </tbody>
+      </table>
+      <pre>
+#!/usr/bin/perl
+use strict;   # forces declaration with my/our
+
+# Package global (default without 'my') — lives in main::
+$global_var = "I am global";
+
+{
+    my $lexical = "only in this block";
+    print "$lexical\n";    # works here
+}
+# print $lexical;  # ERROR — out of scope
+
+our $shared = "visible in this package";
+$main::shared = "same variable via package name";
+
+sub demo_local {
+    local $global_var = "temporarily changed";
+    print "$global_var\n";   # "temporarily changed"
+}
+demo_local();
+print "$global_var\n";       # "I am global" — restored
+
+# Default scope summary:
+# Scalars ($), Arrays (@), Hashes (%) without 'my' → package globals in current package</pre>
+
+      <h4>(b) Applet Life Cycle with Example [5 marks]</h4>
+      <div class="diagram-box"><pre>
+Browser loads HTML page
+        │
+        ▼
+    init()     ← called once when applet first loaded
+        │
+        ▼
+    start()    ← called when page becomes active / visible
+        │
+        ▼
+    paint()    ← called to render graphics (can be called many times)
+        │
+        ▼
+    stop()     ← called when user leaves page / applet hidden
+        │
+        ▼
+  (user returns → start() → paint() again)
+        │
+        ▼
+   destroy()   ← called when browser closes / applet removed</pre></div>
+      <pre>
+import java.applet.Applet;
+import java.awt.*;
+
+public class MyApplet extends Applet {
+    private int count = 0;
+
+    public void init() {
+        setBackground(Color.WHITE);
+        count = 0;
+        System.out.println("init(): Applet initialized");
+    }
+
+    public void start() {
+        System.out.println("start(): Applet started");
+    }
+
+    public void paint(Graphics g) {
+        g.setColor(Color.BLUE);
+        g.drawString("Hello MAKAUT! Count: " + count, 50, 50);
+        System.out.println("paint(): Rendering frame");
+    }
+
+    public void stop() {
+        System.out.println("stop(): Applet stopped");
+    }
+
+    public void destroy() {
+        System.out.println("destroy(): Applet destroyed");
+    }
+}</pre>
+      <p>HTML embedding: <code>&lt;applet code="MyApplet.class" width="300" height="100"&gt;&lt;/applet&gt;</code></p>
+
+      <h4>(c) Create and Store Cookies — Illustration [4 marks]</h4>
+      <p><strong>Server-side (HTTP response header):</strong></p>
+      <pre>
+HTTP/1.1 200 OK
+Set-Cookie: session_id=abc123; Expires=Wed, 31 Dec 2025 23:59:59 GMT; Path=/; HttpOnly; Secure
+Set-Cookie: theme=dark; Max-Age=86400; Path=/</pre>
+      <p><strong>Client-side (JavaScript):</strong></p>
+      <pre>
+// Create cookie
+document.cookie = "username=Alice; expires=Fri, 31 Dec 2025 23:59:59 GMT; path=/";
+document.cookie = "visits=5; max-age=3600";  // expires in 1 hour
+
+// Read all cookies
+console.log(document.cookie);
+// "username=Alice; visits=5"
+
+// Read specific cookie
+function getCookie(name) {
+    const match = document.cookie.match(new RegExp("(^| )" + name + "=([^;]+)"));
+    return match ? match[2] : null;
+}
+console.log(getCookie("username"));  // "Alice"
+
+// Delete cookie (set expiry in past)
+document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";</pre>
+      <p><strong>Storage flow:</strong> Server sends <code>Set-Cookie</code> → Browser stores in cookie jar → Browser sends <code>Cookie:</code> header with every subsequent request to matching domain/path.</p>
+    </div>
+  </div>
+
+  <!-- Q11 -->
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q11</span><span class="qtext">Types of style sheets in CSS. Internet vs Intranet. Congestion Control in network. HTTP vs HTTPS. [5+3+5+2]</span><span class="qmarks">15 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+
+      <h4>(a) Different Types of Style Sheets in CSS [5 marks]</h4>
+      <pre>
+/* 1. INLINE CSS — style attribute on element (highest specificity) */
+&lt;p style="color: red; font-size: 18px;"&gt;Inline styled text&lt;/p&gt;
+
+/* 2. INTERNAL/EMBEDDED CSS — &lt;style&gt; tag in &lt;head&gt; */
+&lt;head&gt;
+  &lt;style&gt;
+    h1 { color: navy; }
+    .highlight { background: yellow; }
+  &lt;/style&gt;
+&lt;/head&gt;
+
+/* 3. EXTERNAL CSS — separate .css file (best practice) */
+&lt;head&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+
+/* styles.css */
+body { font-family: Arial; margin: 0; }
+nav  { background: #333; color: white; }
+
+/* 4. IMPORTED CSS — @import inside stylesheet */
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter");
+
+/* 5. USER AGENT STYLESHEET — browser default styles (lowest priority) */</pre>
+      <p><strong>Cascade priority (low → high):</strong> User agent → User styles → Author external → Author internal → Inline → <code>!important</code></p>
+
+      <h4>(b) Internet vs Intranet [3 marks]</h4>
+      <table class="cmp-table">
+        <thead><tr><th>Feature</th><th>Internet</th><th>Intranet</th></tr></thead>
+        <tbody>
+          <tr><td>Access</td><td>Public — anyone worldwide</td><td>Private — authorised employees only</td></tr>
+          <tr><td>Ownership</td><td>No single owner (decentralised)</td><td>Owned by one organisation</td></tr>
+          <tr><td>Security</td><td>Public firewalls, HTTPS</td><td>VPN, login, internal firewalls</td></tr>
+          <tr><td>Technology</td><td>TCP/IP, HTTP, DNS</td><td>Same technologies, isolated network</td></tr>
+          <tr><td>Example</td><td>www.google.com</td><td>hr.company.internal</td></tr>
+        </tbody>
+      </table>
+
+      <h4>(c) Role of Congestion Control in Network [5 marks]</h4>
+      <p>Congestion occurs when traffic exceeds network capacity — packets queue, drop, and retransmit, worsening the problem.</p>
+      <div class="diagram-box"><pre>
+Normal:  [Sender] ────► [Router] ────► [Receiver]   (low delay)
+
+Congested: [Sender] ═══► [Router ■■■] ──X──► [Receiver]
+                        (queue full, packets dropped)</pre></div>
+      <p><strong>TCP Congestion Control mechanisms:</strong></p>
+      <ul>
+        <li><strong>Slow Start:</strong> cwnd starts at 1 MSS, doubles each RTT until threshold or loss detected.</li>
+        <li><strong>Congestion Avoidance:</strong> After threshold, cwnd increases linearly (+1 MSS per RTT).</li>
+        <li><strong>Fast Retransmit:</strong> 3 duplicate ACKs → retransmit lost segment immediately (don't wait for timeout).</li>
+        <li><strong>Fast Recovery:</strong> After fast retransmit, halve cwnd and continue (don't go back to slow start).</li>
+        <li><strong>AIMD:</strong> Additive Increase, Multiplicative Decrease — fair sharing of bandwidth.</li>
+      </ul>
+      <p><strong>Network-level:</strong> RED (Random Early Detection) — routers drop packets probabilistically before queue is full to signal congestion early. ECN (Explicit Congestion Notification) — marks packets instead of dropping.</p>
+
+      <h4>(d) HTTP vs HTTPS [2 marks]</h4>
+      <table class="cmp-table">
+        <thead><tr><th>Feature</th><th>HTTP</th><th>HTTPS</th></tr></thead>
+        <tbody>
+          <tr><td>Full form</td><td>HyperText Transfer Protocol</td><td>HTTP Secure</td></tr>
+          <tr><td>Port</td><td>80</td><td>443</td></tr>
+          <tr><td>Encryption</td><td>None (plain text)</td><td>SSL/TLS encrypted</td></tr>
+          <tr><td>Security</td><td>Vulnerable to eavesdropping/MITM</td><td>Data integrity + authentication via certificates</td></tr>
+          <tr><td>URL prefix</td><td>http://</td><td>https://</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="paper-footer">
+  <div class="footer-inner">
+    <a href="index.html" class="back-btn-footer">← Back to All Papers</a>
+    <span>MAKAUT | PEC-CS801D | Web &amp; Internet Technology | 2023–24</span>
+  </div>
+</footer>
+</body>
+</html>

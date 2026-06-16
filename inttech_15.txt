@@ -1,0 +1,108 @@
+CS/B.Tech/CSE/Odd/Sem-7th/CS-705A/2015-16
+MAULANA ABUL KALAM AZAD UNIVERSITY OF TECHNOLOGY, WEST BENGAL
+CS-705A: INTERNET TECHNOLOGY
+
+Time Allotted: 3 Hours
+Full Marks: 70
+
+The questions are of equal value.
+The figures in the margin indicate full marks.
+Candidates are required to give their answers in their own words as far as practicable.
+All symbols are of usual significance.
+
+GROUP A
+(Multiple Choice Type Questions)
+1. Answer all questions. (10x1=10)
+
+(i) A web server by default runs on port.
+(A) 23 (C) 80
+(B) 25 (D) 22
+
+(ii) Which of the following methods is used to get information of a resource?
+(A) TOP (C) GET
+(B) HEAD (D) GRAB
+
+(iii) DHTML is for
+(A) Model (C) Controller
+(B) View (D) Servlet
+
+(iv) HTTP status code is
+(A) two-digit code (C) four-digit code
+(B) three-digit code (D) five-digit code
+
+(v) A remote object must be an instance of
+(A) java.rmi.RemoteObject (C) java.lang.Cloneable
+(B) java.io.Serializable (D) java.rmi.Remote
+
+(vi) Which of the following is a transport layer protocol in the TCP/IP protocol suit?
+(A) HTTP (C) SMTP
+(B) UDP (D) FTP
+
+(vii) A declaration is terminated by a
+(A) } - end curly bracket (C) ; semi colon
+(B) . - period (D) ! - exclamation sign
+
+(viii) Which of the following is recommended XML?
+(A) W3C (C) Sun
+(B) Microsoft (D) IEEE
+
+(ix) Which of the following is an invalid CSS selector?
+(A) Title selectors (C) TAG selectors
+(B) HEAD selectors (D) Id selectors
+
+(x) Which of the following technologies is used to display XML data?
+(A) CSS (C) XQuary
+(B) XPath (D) XHTML
+
+
+GROUP B
+(Short Answer Type Questions)
+Answer any three questions. (3x5=15)
+
+2. Write a Java Script program to validate email id using regular expression. (5)
+
+3. (a) What is firewall? (1)
+(b) Briefly explain any two types of firewall. (4)
+
+4. (a) What is network congestion? (2)
+(b) Describe congestion control strategies. (3)
+
+5. (a) What is Java applet? (2)
+(b) Differentiate between java applet and application program. (3)
+
+6. Describe different types of TCP Timers. (5)
+
+
+GROUP C
+(Long Answer Type Questions)
+Answer any three questions. (3x15=45)
+
+7. (a) Write down the features of scripting language. How markup language is different from scripting language? (3+2)
+(b) Create a HTML page with the following features Hyperlink, List and Form. (5)
+(c) Differentiate between Get and Post method. (5)
+
+8. (a) Why XML is superior to HTML. What are the different types of parser used in XML? (2+4)
+(b) Explain the life cycle of java applet. (5)
+(c) Explain briefly about the TCP/IP protocol suit. (4)
+
+9. (a) Discuss the basic principle of security. Explain active attack and passive attack with example. (4+4)
+(b) Differentiate between virus and worm. What is IP sniffing and IP spoofing? Explain DOS. (2+2+3)
+
+10.(a) An organization is granted a block of address with starting address 14.24.74.0/24. There are 256 addresses in this block. The organization needs to have 11 subnets, 2 subnets each having 64 addresses, 2 subnets each having 32 addresses, 3 subnets each having 16 addresses and 4 subnets each having 4 addresses. Design the subnets. (7)
+(b) With neat diagram differentiate between local and remote login. (5)
+(c) What is NVT? Why NVTs are required? (1+2)
+
+11. Write short notes on any three of the following: (3x5)
+(a) Web Crawler
+(b) RTP
+(c) NAT
+(d) SSL
+(e) SMTP
+
+ 
+Internet_Technology_CS705A_2015.txt
+ 
+ 
+ 
+ 
+Displaying Internet_Technology_CS705A_2015.txt.

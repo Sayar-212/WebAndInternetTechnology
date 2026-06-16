@@ -1,0 +1,141 @@
+MAULANA ABUL KALAM AZAD UNIVERSITY OF TECHNOLOGY, WEST BENGAL
+Paper Code: PEC-CS801D Web and Internet Technology
+
+========================================================================
+YEAR: 2024-2025
+Course Code: CS/B.TECH(N)/EVEN/SEM-8/8385/2024-2025
+========================================================================
+Time Allotted: 3 Hours
+Full Marks: 70
+The Figures in the margin indicate full marks.
+Candidate are required to give their answers in their own words as far as practicable
+
+Group-A (Very Short Answer Type Question)
+1. Answer any ten of the following: (1x10=10)
+(I) Explain RTP and mention the use of RTP.
+(II) Expand the term WWW and mention its' importance with respect to Internet.
+(III) Write the full form of CSS and mention its' significance.
+(IV) Explain paint() with respect to Java script or with respect to Java applet, whichever is applicable.
+(V) List the importance of Application Layer in Internet based services.
+(VI) Write the full form of SEO and explain the term briefly.
+(VII) What is FTP? What are the advantages of using FTP?
+(VIII) Expand the term HTML and mention the use of HTML with respect to websites.
+(IX) What is DNS? Mention the importance of DNS.
+(X) What do you mean by denial of service attacks
+(XI) Explain the PageRank technique with respect to web page searching.
+(XII) Differentiate between Internet and Intranet.
+
+Group-B (Short Answer Type Question)
+Answer any three of the following: (5x3=15)
+2. Define the term 'Cookie' and explain the process to create and store cookies. [5]
+3. What is code-viruses? Briefly explain the working process of code-virus. [5]
+4. Write the difference between domain and subdomain. [5]
+5. What is CGI? Provide an example of CGI script. [5]
+6. Explain Java Socket. Provide an appropriate example to demonstrate the Java Socket. [5]
+
+Group-C (Long Answer Type Question)
+Answer any three of the following: (15x3=45)
+7. (a) Write HTML script to demonstrate the text in Paragraphs. [5]
+(b) Explain different HTML Formatting Elements. [5]
+(c) Write HTML script to demonstrate HTML Links - Hyperlinks. [5]
+8. (a) What is code-viruses? [5]
+(b) What is Trojan horses? [5]
+(c) What is spoofing? [5]
+9. (a) What is POP3? [5]
+(b) What is SMTP ? [5]
+(c) What is HTTP? [5]
+10. (a) What is HTML Layout? What are the different tags used for this purpose? Write a HTML program to demonstrate the concept of Layout. [5]
+(b) Explain the need and functioning of CSS? Write a HTML program which includes CSS file. [5]
+(c) What is the use of HTML Forms? Mention the tags used for HTML Forms? Write a HTML program to display the inserting of inputs using different types of attribute. [5]
+11. (a) Write the difference between domain and subdomain. [5]
+(b) What is World Wide Web? [5]
+(c) What is network? [5]
+
+*** END OF PAPER ***
+
+
+========================================================================
+YEAR: 2023-2024
+Course Code: CS/B.TECH(N)/EVEN/SEM-8/8385/2023-2024
+========================================================================
+Time Allotted: 3 Hours
+Full Marks: 70
+The Figures in the margin indicate full marks.
+Candidate are required to give their answers in their own words as far as practicable
+
+Group-A (Very Short Answer Type Question)
+1. Answer any ten of the following: (1x10=10)
+(I) What equipment do I need for VoIP phone calls?
+(II) What is the use of a namespace in Web Development?
+(III) Which of the following can read and render HTML web pages
+a) server b) web browser c) head tek
+(IV) Which feature of Perl provides code reusability? Give an example.
+(V) How Does The Race Condition Occur?
+(VI) What is VoIP?
+(VII) How to get the coordinates of a mouse click on a canvas element?
+(VIII) What is the use of a selector in CSS?
+(IX) Can we load binary extension dynamically?
+(X) What Is A Javabean?
+(XI) Will I be able to use my computer while making a VoIP phone call?
+(XII) How to set fixed width for <td> in a table?
+
+Group-B (Short Answer Type Question)
+Answer any three of the following: (5x3=15)
+2. Discuss about the layers of OSI Model. [5]
+3. Explain Web Crawler with suitable example. [5]
+4. Differentiate between Intra Domain and Inter Domain Routing. [5]
+5. How to create Image Accordion using HTML and CSS? [5]
+6. Explain the working principle of VoIP. [5]
+
+Group-C (Long Answer Type Question)
+Answer any three of the following: (15x3=45)
+7. Discuss the working principle of RTP, RTCP, RTSP, IPTV. Explain the role of SCO. [12+3]
+8. Explain IP masquerading along with example network. Identify the role of NAT. Differentiate between IPV4 and IPV6. Write down the working process of POP3 protocol. [3+3+3+6]
+9. Write about string manipulators in JavaScript. Discuss about Extensible Markup Language and identify the importance of XML. Illustrate with example of GET and POST method. [5+5+5]
+10. What is the default scope of the Perl variables? Explain with example for each type. Discuss Applet Life Cycle along with example. Write the procedure to Create and Store Cookies. Illustrate with example. [6+5+4]
+11. Explain different types of style sheet in CSS with suitable examples. Differentiate between Internet and Intranet. Explain the role of Congestion Control in network. Identify the difference between HTTP and HTTPS. [5+3+5+2]
+
+*** END OF PAPER ***
+
+
+========================================================================
+YEAR: 2022-2023
+Course Code: CS/B.TECH(N)/EVEN/SEM-8/8385/2022-2023/1075
+========================================================================
+Time Allotted: 3 Hours
+Full Marks: 70
+The Figures in the margin indicate full marks.
+Candidate are required to give their answers in their own words as far as practicable
+
+Group-A (Very Short Answer Type Question)
+1. Answer any ten of the following: (1x10=10)
+(I) What is SVG and why is it used?
+(II) What are the form elements that support media content in HTML5?
+(III) Difference between the variables in which chomp function work?
+(IV) What Is Multiprogramming?
+(V) How do I make a VoIP phone call?
+(VI) What is the difference between SOAP and REST?
+(VII) What Is Encapsulation Technique?
+(VIII) Are there any advantages in using VoIP phone service?
+(IX) What is the use of CORS?
+(X) What are some of the types of CSS that are used?
+(XI) How to set the default value for an HTML <select> element
+(XII) What is the use of grouping in CSS3?
+
+Group-B (Short Answer Type Question)
+Answer any three of the following: (5x3=15)
+2. How to get the entire HTML document as a string in JavaScript? [5]
+3. How to create circular progress bar using SVG? [5]
+4. How to return HTML or build HTML using JavaScript? [5]
+5. Which functions in Perl allows you to include a module file or a module and what is the difference between them? [5]
+6. How to create Image Stack Illusion using HTML and CSS ? [5]
+
+Group-C (Long Answer Type Question)
+Answer any three of the following: (15x3=45)
+7. Write about array in javascript. [15]
+8. What data types does Perl support? explain with example [15]
+9. Define your own style sheet with example. [15]
+10. Write about functions in javascript. [15]
+11. Which Protocols Describe Voip Connections? Explain in details [15]
+
+*** END OF PAPER ***

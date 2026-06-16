@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>2024-25 | Web & Internet Technology | MAKAUT</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="paper.css"/>
+</head>
+<body>
+
+<nav class="topbar">
+  <a href="index.html" class="back-btn">← Back to Home</a>
+  <div class="topbar-info">
+    <span class="topbar-year">2024–25</span>
+    <span class="topbar-code">CS/B.Tech(N)/EVEN/SEM-8/PEC-CS801D</span>
+  </div>
+  <div class="topbar-meta"><span>⏱ 3 Hours</span><span>📋 70 Marks</span></div>
+</nav>
+
+<header class="paper-hero">
+  <div class="paper-hero-bg"></div>
+  <div class="paper-hero-content">
+    <div class="paper-badge">MAKAUT • Web and Internet Technology</div>
+    <h1>2024 – 25 <span class="yr-accent">Solved Paper</span></h1>
+    <p>PEC-CS801D &nbsp;|&nbsp; Full Marks: 70 &nbsp;|&nbsp; Time: 3 Hours &nbsp;|&nbsp; SEM-8</p>
+    <div class="paper-pills">
+      <span>Group A: Any 10 × 1 = 10</span>
+      <span>Group B: Any 3 × 5 = 15</span>
+      <span>Group C: Any 3 × 15 = 45</span>
+    </div>
+  </div>
+</header>
+
+<main class="paper-main">
+
+<!-- GROUP A -->
+<section class="group-section" id="groupA">
+  <div class="group-header">
+    <span class="group-label">Group A</span>
+    <h2>Very Short Answer Questions <span class="marks-tag">Any 10 × 1 = 10</span></h2>
+  </div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(I)</span><span class="qtext">Explain RTP and mention the use of RTP.</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>RTP (Real-time Transport Protocol)</strong> is a transport protocol designed to deliver real-time audio and video over IP networks using UDP.</p>
+    <p><strong>Uses:</strong> VoIP phone calls, video conferencing (Zoom, Teams), live streaming, IPTV, WebRTC. Provides sequence numbers (ordering), timestamps (synchronisation), and payload type identification (codec).</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(II)</span><span class="qtext">Expand the term WWW and mention its importance with respect to Internet.</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>WWW = World Wide Web.</strong> A system of interlinked hypertext documents and resources accessed via the internet using web browsers and HTTP.</p>
+    <p><strong>Importance:</strong> Enables global information sharing, e-commerce, online education, social media, cloud services, and universal access to knowledge through hyperlinks and URLs.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(III)</span><span class="qtext">Write the full form of CSS and mention its significance.</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>CSS = Cascading Style Sheets.</strong> A stylesheet language that controls the presentation of HTML documents.</p>
+    <p><strong>Significance:</strong> Separates content from design; controls layout, colours, fonts, animations; enables responsive design; ensures consistent look across pages; reduces HTML clutter.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(IV)</span><span class="qtext">Explain paint() with respect to JavaScript or Java applet, whichever is applicable.</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>paint()</strong> is a method in the <strong>Java Applet</strong> lifecycle — not JavaScript.</p>
+    <p>Called by the browser to render the applet's graphics on screen. Can be invoked multiple times (e.g., after resize or when <code>repaint()</code> is called). Used to draw shapes, text, and images using the <code>Graphics</code> object.</p>
+    <pre>
+public void paint(Graphics g) {
+    g.setColor(Color.BLUE);
+    g.drawString("Hello!", 50, 50);
+}</pre>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(V)</span><span class="qtext">List the importance of Application Layer in Internet based services.</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <ul>
+      <li>Provides network services directly to end-user applications (HTTP, FTP, SMTP, DNS).</li>
+      <li>Defines protocols for data exchange between client and server.</li>
+      <li>Handles user-level communication — web browsing, email, file transfer.</li>
+      <li>Closest layer to the user — where all internet applications operate.</li>
+      <li>Enables interoperability between different systems using standard protocols.</li>
+    </ul>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(VI)</span><span class="qtext">Write the full form of SEO and explain the term briefly.</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>SEO = Search Engine Optimization.</strong> The practice of improving a website's visibility and ranking in organic (unpaid) search engine results.</p>
+    <p>Techniques: keyword optimisation, quality content, meta tags, backlinks, mobile-friendly design, fast page load speed, and proper URL structure.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(VII)</span><span class="qtext">What is FTP? What are the advantages of using FTP?</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>FTP (File Transfer Protocol)</strong> is an application-layer protocol for transferring files between client and server over TCP (port 21 for control, port 20 for data).</p>
+    <p><strong>Advantages:</strong> Fast large file transfer, resume interrupted transfers, transfer multiple files/directories, user authentication, widely supported by all operating systems.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(VIII)</span><span class="qtext">Expand the term HTML and mention the use of HTML with respect to websites.</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>HTML = HyperText Markup Language.</strong> The standard markup language for creating web pages.</p>
+    <p><strong>Use:</strong> Defines the structure and content of webpages using elements/tags — headings, paragraphs, links, images, tables, forms. It is the skeleton of every website; CSS styles it and JavaScript makes it interactive.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(IX)</span><span class="qtext">What is DNS? Mention the importance of DNS.</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>DNS (Domain Name System)</strong> translates human-readable domain names (e.g., www.google.com) into IP addresses (e.g., 142.250.80.46) that computers use to communicate.</p>
+    <p><strong>Importance:</strong> Acts as the "phone book" of the internet; users don't need to remember IP addresses; enables load balancing and failover via multiple IP records; essential for email routing (MX records).</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(X)</span><span class="qtext">What do you mean by denial of service attacks?</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p>A <strong>DoS (Denial of Service)</strong> attack floods a server or network with excessive traffic, exhausting its resources (CPU, memory, bandwidth) and making it unavailable to legitimate users.</p>
+    <p><strong>DDoS (Distributed DoS):</strong> Uses thousands of compromised machines (botnet) to attack simultaneously — much harder to block. Examples: SYN flood, UDP flood, HTTP flood.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(XI)</span><span class="qtext">Explain the PageRank technique with respect to web page searching.</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>PageRank</strong> is Google's original algorithm for ranking web pages in search results based on link structure.</p>
+    <p>Core idea: A page is important if many high-quality pages link to it. Formula: PR(A) = (1−d)/N + d × Σ(PR(linking pages) / out-links). Higher PageRank → higher position in search results. Foundation of modern SEO.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(XII)</span><span class="qtext">Differentiate between Internet and Intranet.</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <table class="cmp-table">
+      <thead><tr><th>Internet</th><th>Intranet</th></tr></thead>
+      <tbody>
+        <tr><td>Public global network</td><td>Private organisational network</td></tr>
+        <tr><td>Accessible worldwide by anyone</td><td>Accessible only to authorised employees</td></tr>
+        <tr><td>No single owner</td><td>Owned and managed by one organisation</td></tr>
+        <tr><td>Example: www.google.com</td><td>Example: portal.company.internal</td></tr>
+      </tbody>
+    </table>
+  </div></div>
+</section>
+
+<!-- GROUP B -->
+<section class="group-section" id="groupB">
+  <div class="group-header"><span class="group-label">Group B</span><h2>Short Answer Questions <span class="marks-tag">Any 3 × 5 = 15</span></h2></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q2</span><span class="qtext">Define the term 'Cookie' and explain the process to create and store cookies.</span><span class="qmarks">5 Marks</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p>A <strong>cookie</strong> is a small text file (≤4 KB) stored in the user's browser containing key-value pairs, set by the web server to maintain state across HTTP's stateless requests.</p>
+    <h4>Creation &amp; Storage Process</h4>
+    <div class="diagram-box"><pre>
+1. Client → HTTP Request → Server
+2. Server processes request
+3. Server → HTTP Response with header:
+   Set-Cookie: session_id=abc123; Expires=Wed, 31 Dec 2025; Path=/; HttpOnly; Secure
+4. Browser stores cookie in its cookie jar (per domain)
+5. Client → subsequent requests include:
+   Cookie: session_id=abc123</pre></div>
+    <pre>
+// Server-side (Node.js example)
+res.setHeader("Set-Cookie", "user=Alice; Max-Age=3600; Path=/; HttpOnly");
+
+// Client-side JavaScript
+document.cookie = "theme=dark; expires=Fri, 31 Dec 2025 23:59:59 GMT; path=/";
+console.log(document.cookie);  // read all cookies</pre>
+    <p><strong>Types:</strong> Session cookies (deleted on browser close), Persistent cookies (with expiry), Secure (HTTPS only), HttpOnly (no JavaScript access — prevents XSS theft).</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q3</span><span class="qtext">What is code-viruses? Briefly explain the working process of code-virus.</span><span class="qmarks">5 Marks</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p>A <strong>code virus</strong> is malicious software that attaches its code to legitimate executable programs. When the infected program runs, the virus code executes.</p>
+    <h4>Working Process</h4>
+    <ol>
+      <li><strong>Infection:</strong> Virus injects its code into a host executable (.exe, .dll) or boot sector.</li>
+      <li><strong>Dormancy:</strong> Virus may remain hidden until a trigger condition (date, key press, program count).</li>
+      <li><strong>Activation:</strong> User runs the infected program — virus code executes first.</li>
+      <li><strong>Replication:</strong> Virus searches for other executables to infect, spreading to new files.</li>
+      <li><strong>Payload delivery:</strong> Destructive action — delete files, corrupt data, display messages, steal data, encrypt files (ransomware).</li>
+    </ol>
+    <p><strong>Types:</strong> File infectors, Boot sector viruses, Macro viruses (Word/Excel), Polymorphic viruses (change signature to evade antivirus), Worms (self-replicating without host).</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q4</span><span class="qtext">Write the difference between domain and subdomain.</span><span class="qmarks">5 Marks</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <table class="cmp-table">
+      <thead><tr><th>Feature</th><th>Domain</th><th>Subdomain</th></tr></thead>
+      <tbody>
+        <tr><td>Definition</td><td>Main registered name of a website</td><td>Child domain under a parent domain</td></tr>
+        <tr><td>Example</td><td>example.com</td><td>blog.example.com, shop.example.com</td></tr>
+        <tr><td>DNS record</td><td>A record or CNAME at root</td><td>A or CNAME record for subdomain prefix</td></tr>
+        <tr><td>Registration</td><td>Must be purchased from registrar</td><td>Free — created in DNS settings of parent</td></tr>
+        <tr><td>Independence</td><td>Standalone identity on the internet</td><td>Part of parent domain hierarchy</td></tr>
+        <tr><td>Use case</td><td>Main company website</td><td>Separate sections: mail.google.com, docs.google.com</td></tr>
+        <tr><td>SSL certificate</td><td>Covers root domain</td><td>Needs wildcard (*.example.com) or separate cert</td></tr>
+      </tbody>
+    </table>
+    <pre>
+DNS Hierarchy:
+  . (root)
+  └── com (TLD)
+      └── example.com (domain)
+          ├── www.example.com (subdomain)
+          ├── blog.example.com (subdomain)
+          └── api.example.com (subdomain)</pre>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q5</span><span class="qtext">What is CGI? Provide an example of CGI script.</span><span class="qmarks">5 Marks</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>CGI (Common Gateway Interface)</strong> is a standard protocol that allows a web server to execute external programs (scripts) and return their output as dynamic web content to the browser.</p>
+    <div class="diagram-box"><pre>
+Browser → HTTP Request → Web Server → CGI Script (Perl/Python)
+                              ↑              │
+                              └──── Output ──┘
+                         (HTML sent back to browser)</pre></div>
+    <pre>
+#!/usr/bin/perl
+# File: /cgi-bin/hello.pl
+use CGI qw(:standard);
+use strict;
+
+print header("text/html");          # HTTP header
+print start_html("CGI Demo");
+print h1("Hello, World from CGI!");
+
+my $name = param("name") || "Guest";
+print p("Welcome, ", b($name), "!");
+
+print end_html();
+</pre>
+    <pre>
+&lt;!-- HTML form that calls the CGI script --&gt;
+&lt;form action="/cgi-bin/hello.pl" method="get"&gt;
+  &lt;label&gt;Your name: &lt;input type="text" name="name"&gt;&lt;/label&gt;
+  &lt;input type="submit" value="Greet Me"&gt;
+&lt;/form&gt;</pre>
+    <p>CGI is largely replaced by modern frameworks (Node.js, PHP, Python Flask/Django) but the concept of server-side script generating dynamic HTML remains fundamental.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q6</span><span class="qtext">Explain Java Socket. Provide an appropriate example to demonstrate the Java Socket.</span><span class="qmarks">5 Marks</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p>A <strong>Java Socket</strong> is an endpoint for two-way communication between programs over a TCP/IP network. <code>ServerSocket</code> listens for connections; <code>Socket</code> connects client to server.</p>
+    <h4>Server Side</h4>
+    <pre>
+import java.net.*;
+import java.io.*;
+
+public class EchoServer {
+    public static void main(String[] args) throws Exception {
+        ServerSocket server = new ServerSocket(5000);
+        System.out.println("Server listening on port 5000...");
+
+        Socket client = server.accept();  // blocks until client connects
+        System.out.println("Client connected: " + client.getInetAddress());
+
+        BufferedReader in  = new BufferedReader(
+            new InputStreamReader(client.getInputStream()));
+        PrintWriter out = new PrintWriter(client.getOutputStream(), true);
+
+        String msg = in.readLine();
+        System.out.println("Received: " + msg);
+        out.println("Echo: " + msg);   // send response
+
+        client.close();
+        server.close();
+    }
+}</pre>
+    <h4>Client Side</h4>
+    <pre>
+import java.net.*;
+import java.io.*;
+
+public class EchoClient {
+    public static void main(String[] args) throws Exception {
+        Socket socket = new Socket("localhost", 5000);
+
+        PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
+        BufferedReader in = new BufferedReader(
+            new InputStreamReader(socket.getInputStream()));
+
+        out.println("Hello Server!");
+        System.out.println("Server says: " + in.readLine());
+
+        socket.close();
+    }
+}</pre>
+    <p><strong>Flow:</strong> Server binds to port → Client connects → TCP 3-way handshake → Data exchanged via streams → Connection closed.</p>
+  </div></div>
+</section>
+
+<!-- GROUP C -->
+<section class="group-section" id="groupC">
+  <div class="group-header">
+    <span class="group-label">Group C</span>
+    <h2>Long Answer Questions <span class="marks-tag">Any 3 × 15 = 45</span></h2>
+  </div>
+
+  <!-- Q7 -->
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q7</span><span class="qtext">(a) HTML script for Paragraphs. (b) HTML Formatting Elements. (c) HTML Hyperlinks. [5+5+5]</span><span class="qmarks">15 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+
+      <h4>(a) HTML Script to Demonstrate Paragraphs [5 marks]</h4>
+      <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;HTML Paragraphs&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Paragraph Demo&lt;/h1&gt;
+
+  &lt;p&gt;This is the first paragraph. HTML paragraphs are defined
+     with the &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tag. Browsers automatically add
+     space before and after each paragraph.&lt;/p&gt;
+
+  &lt;p&gt;This is the second paragraph. Each &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; element
+     creates a new block of text separated from others.&lt;/p&gt;
+
+  &lt;p&gt;Line break within a paragraph:&lt;br&gt;
+     This text appears on a new line but stays in the same paragraph.&lt;/p&gt;
+
+  &lt;hr&gt;  &lt;!-- horizontal rule — thematic break --&gt;
+
+  &lt;p&gt;Paragraph after a horizontal rule.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+      <h4>(b) Different HTML Formatting Elements [5 marks]</h4>
+      <table class="cmp-table">
+        <thead><tr><th>Tag</th><th>Effect</th><th>Semantic?</th></tr></thead>
+        <tbody>
+          <tr><td><code>&lt;b&gt;</code></td><td>Bold text</td><td>No (visual only)</td></tr>
+          <tr><td><code>&lt;strong&gt;</code></td><td>Important/bold text</td><td>Yes</td></tr>
+          <tr><td><code>&lt;i&gt;</code></td><td>Italic text</td><td>No</td></tr>
+          <tr><td><code>&lt;em&gt;</code></td><td>Emphasised/italic text</td><td>Yes</td></tr>
+          <tr><td><code>&lt;u&gt;</code></td><td>Underlined text</td><td>No</td></tr>
+          <tr><td><code>&lt;s&gt;</code> / <code>&lt;del&gt;</code></td><td>Strikethrough</td><td>del = deleted</td></tr>
+          <tr><td><code>&lt;mark&gt;</code></td><td>Highlighted text</td><td>Yes</td></tr>
+          <tr><td><code>&lt;small&gt;</code></td><td>Smaller text</td><td>Yes</td></tr>
+          <tr><td><code>&lt;sup&gt;</code> / <code>&lt;sub&gt;</code></td><td>Superscript / Subscript</td><td>Yes</td></tr>
+          <tr><td><code>&lt;code&gt;</code></td><td>Inline code</td><td>Yes</td></tr>
+          <tr><td><code>&lt;pre&gt;</code></td><td>Preformatted (preserves spaces)</td><td>Yes</td></tr>
+          <tr><td><code>&lt;blockquote&gt;</code></td><td>Block-level quotation</td><td>Yes</td></tr>
+          <tr><td><code>&lt;abbr title="..."&gt;</code></td><td>Abbreviation with tooltip</td><td>Yes</td></tr>
+        </tbody>
+      </table>
+      <pre>
+&lt;p&gt;Normal text with &lt;strong&gt;important&lt;/strong&gt; and &lt;em&gt;emphasised&lt;/em&gt; words.&lt;/p&gt;
+&lt;p&gt;Formula: E = mc&lt;sup&gt;2&lt;/sup&gt; and water: H&lt;sub&gt;2&lt;/sub&gt;O&lt;/p&gt;
+&lt;p&gt;&lt;mark&gt;Highlighted&lt;/mark&gt; exam term.&lt;/p&gt;
+&lt;blockquote cite="https://w3.org"&gt;
+  "The World Wide Web was created by Tim Berners-Lee."
+&lt;/blockquote&gt;</pre>
+
+      <h4>(c) HTML Script to Demonstrate Hyperlinks [5 marks]</h4>
+      <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+  &lt;h2&gt;HTML Links Demo&lt;/h2&gt;
+
+  &lt;!-- Basic external link --&gt;
+  &lt;a href="https://www.makaut.ac.in"&gt;Visit MAKAUT Website&lt;/a&gt;&lt;br&gt;
+
+  &lt;!-- Open in new tab --&gt;
+  &lt;a href="https://www.google.com" target="_blank" rel="noopener"&gt;
+    Google (new tab)
+  &lt;/a&gt;&lt;br&gt;
+
+  &lt;!-- Email link --&gt;
+  &lt;a href="mailto:student@example.com"&gt;Send Email&lt;/a&gt;&lt;br&gt;
+
+  &lt;!-- Phone link --&gt;
+  &lt;a href="tel:+911234567890"&gt;Call Us&lt;/a&gt;&lt;br&gt;
+
+  &lt;!-- Download link --&gt;
+  &lt;a href="notes.pdf" download&gt;Download Notes&lt;/a&gt;&lt;br&gt;
+
+  &lt;!-- Anchor link (same page) --&gt;
+  &lt;a href="#section2"&gt;Jump to Section 2&lt;/a&gt;
+
+  &lt;h2 id="section2"&gt;Section 2&lt;/h2&gt;
+  &lt;p&gt;You jumped here using an anchor link.&lt;/p&gt;
+
+  &lt;!-- Image as link --&gt;
+  &lt;a href="https://example.com"&gt;
+    &lt;img src="logo.png" alt="Click logo" width="100"&gt;
+  &lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+    </div>
+  </div>
+
+  <!-- Q8 -->
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q8</span><span class="qtext">(a) What is code-viruses? (b) What is Trojan horses? (c) What is spoofing? [5+5+5]</span><span class="qmarks">15 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+
+      <h4>(a) Code-Viruses [5 marks]</h4>
+      <p>A <strong>virus</strong> is malicious code that attaches to legitimate programs and replicates when the host program is executed.</p>
+      <ul>
+        <li><strong>File infector:</strong> Attaches to .exe, .com files.</li>
+        <li><strong>Boot sector virus:</strong> Infects the Master Boot Record (MBR).</li>
+        <li><strong>Macro virus:</strong> Written in VBA — infects Word/Excel documents.</li>
+        <li><strong>Polymorphic virus:</strong> Changes its code signature on each infection to evade antivirus.</li>
+      </ul>
+      <p><strong>Lifecycle:</strong> Infection → Dormancy → Activation → Replication → Payload. Requires user action (running infected file) to spread.</p>
+
+      <h4>(b) Trojan Horses [5 marks]</h4>
+      <p>A <strong>Trojan horse</strong> disguises itself as legitimate, useful software to trick users into installing it. Unlike viruses, Trojans do <strong>not self-replicate</strong>.</p>
+      <table class="cmp-table">
+        <thead><tr><th>Type</th><th>Behaviour</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td>Backdoor Trojan</td><td>Opens hidden remote access port</td><td>Attacker controls PC remotely</td></tr>
+          <tr><td>Downloader Trojan</td><td>Downloads and installs other malware</td><td>Installs ransomware after entry</td></tr>
+          <tr><td>Banking Trojan</td><td>Steals banking credentials</td><td>Zeus, Emotet</td></tr>
+          <tr><td>Ransom Trojan</td><td>Encrypts files, demands payment</td><td>WannaCry variant</td></tr>
+          <tr><td>Spy Trojan</td><td>Records keystrokes, screenshots</td><td>Keylogger disguised as game</td></tr>
+        </tbody>
+      </table>
+      <p>Named after the Greek Trojan Horse — appears harmless but contains hidden threat inside.</p>
+
+      <h4>(c) Spoofing [5 marks]</h4>
+      <p><strong>Spoofing</strong> is impersonating a trusted entity (device, user, IP, email) to gain unauthorised access or deceive victims.</p>
+      <table class="cmp-table">
+        <thead><tr><th>Type</th><th>What is faked</th><th>Attack goal</th></tr></thead>
+        <tbody>
+          <tr><td>IP Spoofing</td><td>Source IP address in packet header</td><td>Bypass IP-based access control, DDoS amplification</td></tr>
+          <tr><td>Email Spoofing</td><td>From: address in email header</td><td>Phishing — trick user into clicking malicious link</td></tr>
+          <tr><td>DNS Spoofing</td><td>DNS response (cache poisoning)</td><td>Redirect users to fake website</td></tr>
+          <tr><td>ARP Spoofing</td><td>MAC address in ARP reply</td><td>Man-in-the-middle on local network</td></tr>
+          <tr><td>Caller ID Spoofing</td><td>Phone number display</td><td>Social engineering phone scams</td></tr>
+          <tr><td>Website Spoofing</td><td>Fake website mimicking real one</td><td>Steal login credentials (phishing)</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Prevention:</strong> SPF/DKIM for email, HTTPS + certificate validation, ARP inspection, DNSSEC, firewall rules, user awareness training.</p>
+    </div>
+  </div>
+
+  <!-- Q9 -->
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q9</span><span class="qtext">(a) What is POP3? (b) What is SMTP? (c) What is HTTP? [5+5+5]</span><span class="qmarks">15 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+
+      <h4>(a) POP3 — Post Office Protocol v3 [5 marks]</h4>
+      <p>Application-layer protocol for <strong>retrieving</strong> email from a mail server to a local client. Port 110 (995 with SSL/TLS).</p>
+      <div class="diagram-box"><pre>
+Client                          Mail Server
+  │── Connect port 110 ──────────────────────►│
+  │── USER alice@example.com ────────────────►│
+  │── PASS secret ───────────────────────────►│
+  │── STAT ──────────────────────────────────►│  (message count)
+  │── LIST ──────────────────────────────────►│  (list messages)
+  │── RETR 1 ──────────────────────────────►│  (download msg 1)
+  │── DELE 1 ──────────────────────────────►│  (mark for delete)
+  │── QUIT ──────────────────────────────────►│  (commit deletes)</pre></div>
+      <ul>
+        <li>Downloads email to local device; typically deletes from server.</li>
+        <li>Simple, works offline after download.</li>
+        <li>Single-device oriented — contrast with IMAP (keeps mail on server, multi-device sync).</li>
+      </ul>
+
+      <h4>(b) SMTP — Simple Mail Transfer Protocol [5 marks]</h4>
+      <p>Application-layer protocol for <strong>sending</strong> email between mail servers and from client to server. Port 25 (587 for submission, 465 for SMTPS).</p>
+      <div class="diagram-box"><pre>
+Sender MUA → Sender MTA → Recipient MTA → Recipient MDA → Recipient MUA
+
+SMTP Session:
+  Client: EHLO mail.example.com
+  Server: 250 Hello
+  Client: MAIL FROM:&lt;alice@example.com&gt;
+  Server: 250 OK
+  Client: RCPT TO:&lt;bob@other.com&gt;
+  Server: 250 OK
+  Client: DATA
+  Server: 354 Start mail input
+  Client: Subject: Hello\n\nMessage body.\n.
+  Server: 250 Message accepted
+  Client: QUIT</pre></div>
+      <ul>
+        <li>Push protocol — only sends, never retrieves mail.</li>
+        <li>Uses MIME extension for attachments and non-ASCII content.</li>
+        <li>MTA (Mail Transfer Agent) routes mail using DNS MX records.</li>
+      </ul>
+
+      <h4>(c) HTTP — HyperText Transfer Protocol [5 marks]</h4>
+      <p>Application-layer protocol for the World Wide Web. Stateless request-response model. Port 80 (443 for HTTPS).</p>
+      <pre>
+GET /index.html HTTP/1.1
+Host: www.example.com
+User-Agent: Mozilla/5.0
+Accept: text/html
+
+HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 1234
+
+&lt;html&gt;...&lt;/html&gt;</pre>
+      <table class="cmp-table">
+        <thead><tr><th>Method</th><th>Purpose</th></tr></thead>
+        <tbody>
+          <tr><td>GET</td><td>Retrieve resource</td></tr>
+          <tr><td>POST</td><td>Submit data / create resource</td></tr>
+          <tr><td>PUT</td><td>Update/replace resource</td></tr>
+          <tr><td>DELETE</td><td>Remove resource</td></tr>
+          <tr><td>HEAD</td><td>GET without body (headers only)</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Status codes:</strong> 1xx Informational, 2xx Success (200 OK), 3xx Redirect (301), 4xx Client Error (404 Not Found), 5xx Server Error (500).</p>
+      <p><strong>Relationship:</strong> SMTP sends email; POP3/IMAP retrieves email; HTTP serves web pages. All three are application-layer protocols.</p>
+    </div>
+  </div>
+
+  <!-- Q10 -->
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q10</span><span class="qtext">(a) HTML Layout tags and program. (b) Need and functioning of CSS with external CSS program. (c) HTML Forms with input types. [5+5+5]</span><span class="qmarks">15 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+
+      <h4>(a) HTML Layout — Tags and Program [5 marks]</h4>
+      <p><strong>Semantic layout tags (HTML5):</strong></p>
+      <table class="cmp-table">
+        <thead><tr><th>Tag</th><th>Purpose</th></tr></thead>
+        <tbody>
+          <tr><td><code>&lt;header&gt;</code></td><td>Top section — logo, navigation</td></tr>
+          <tr><td><code>&lt;nav&gt;</code></td><td>Navigation links</td></tr>
+          <tr><td><code>&lt;main&gt;</code></td><td>Primary page content</td></tr>
+          <tr><td><code>&lt;article&gt;</code></td><td>Self-contained content block</td></tr>
+          <tr><td><code>&lt;section&gt;</code></td><td>Thematic grouping of content</td></tr>
+          <tr><td><code>&lt;aside&gt;</code></td><td>Sidebar / related content</td></tr>
+          <tr><td><code>&lt;footer&gt;</code></td><td>Bottom — copyright, links</td></tr>
+        </tbody>
+      </table>
+      <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;h1&gt;My Website&lt;/h1&gt;
+    &lt;nav&gt;
+      &lt;a href="/"&gt;Home&lt;/a&gt; | &lt;a href="/about"&gt;About&lt;/a&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;
+  &lt;main&gt;
+    &lt;article&gt;
+      &lt;h2&gt;Article Title&lt;/h2&gt;
+      &lt;p&gt;Main article content here.&lt;/p&gt;
+    &lt;/article&gt;
+    &lt;aside&gt;
+      &lt;h3&gt;Sidebar&lt;/h3&gt;
+      &lt;p&gt;Related links and ads.&lt;/p&gt;
+    &lt;/aside&gt;
+  &lt;/main&gt;
+  &lt;footer&gt;&lt;p&gt;&amp;copy; 2025 MAKAUT Student&lt;/p&gt;&lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+      <h4>(b) Need and Functioning of CSS + External CSS Program [5 marks]</h4>
+      <p><strong>Need for CSS:</strong></p>
+      <ul>
+        <li>Separates presentation from content — cleaner HTML.</li>
+        <li>One stylesheet styles entire website — easy global changes.</li>
+        <li>Enables responsive design via media queries.</li>
+        <li>Controls layout, typography, colours, animations consistently.</li>
+      </ul>
+      <p><strong>Functioning:</strong> Browser parses HTML → builds DOM tree → parses CSS → builds CSSOM → combines into Render tree → paints pixels on screen. Cascade resolves conflicting rules by specificity and source order.</p>
+      <pre>
+/* File: styles.css */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; background: #f4f4f4; }
+header { background: #333; color: white; padding: 15px 20px; }
+nav a { color: #fff; margin-right: 15px; text-decoration: none; }
+nav a:hover { color: #6c63ff; }
+main { display: flex; gap: 20px; padding: 20px; max-width: 1100px; margin: auto; }
+article { flex: 3; background: white; padding: 20px; border-radius: 8px; }
+aside  { flex: 1; background: #e8e8e8; padding: 15px; border-radius: 8px; }
+footer { background: #333; color: white; text-align: center; padding: 12px; }</pre>
+      <pre>
+&lt;!-- HTML links external CSS --&gt;
+&lt;head&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;</pre>
+
+      <h4>(c) HTML Forms — Tags and Input Types [5 marks]</h4>
+      <p><strong>Form tags:</strong> <code>&lt;form&gt;</code>, <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, <code>&lt;select&gt;</code>, <code>&lt;option&gt;</code>, <code>&lt;label&gt;</code>, <code>&lt;fieldset&gt;</code>, <code>&lt;legend&gt;</code>, <code>&lt;button&gt;</code></p>
+      <pre>
+&lt;form action="/submit" method="post" enctype="multipart/form-data"&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Student Registration&lt;/legend&gt;
+
+    &lt;label&gt;Name: &lt;input type="text" name="name" required&gt;&lt;/label&gt;&lt;br&gt;
+
+    &lt;label&gt;Email: &lt;input type="email" name="email" placeholder="you@mail.com"&gt;&lt;/label&gt;&lt;br&gt;
+
+    &lt;label&gt;Password: &lt;input type="password" name="pwd" minlength="8"&gt;&lt;/label&gt;&lt;br&gt;
+
+    &lt;label&gt;Age: &lt;input type="number" name="age" min="18" max="60"&gt;&lt;/label&gt;&lt;br&gt;
+
+    &lt;label&gt;DOB: &lt;input type="date" name="dob"&gt;&lt;/label&gt;&lt;br&gt;
+
+    Gender:
+    &lt;input type="radio" name="gender" value="M" id="m"&gt; &lt;label for="m"&gt;Male&lt;/label&gt;
+    &lt;input type="radio" name="gender" value="F" id="f"&gt; &lt;label for="f"&gt;Female&lt;/label&gt;&lt;br&gt;
+
+    Hobbies:
+    &lt;input type="checkbox" name="hobby" value="code"&gt; Coding
+    &lt;input type="checkbox" name="hobby" value="music"&gt; Music&lt;br&gt;
+
+    City:
+    &lt;select name="city"&gt;
+      &lt;option value=""&gt;-- Select --&lt;/option&gt;
+      &lt;option value="kol"&gt;Kolkata&lt;/option&gt;
+      &lt;option value="del"&gt;Delhi&lt;/option&gt;
+    &lt;/select&gt;&lt;br&gt;
+
+    Bio: &lt;textarea name="bio" rows="3" cols="40"&gt;&lt;/textarea&gt;&lt;br&gt;
+
+    Photo: &lt;input type="file" name="photo" accept="image/*"&gt;&lt;br&gt;
+
+  &lt;input type="submit" value="Register"&gt;
+  &lt;input type="reset"  value="Clear"&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;</pre>
+    </div>
+  </div>
+
+  <!-- Q11 -->
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q11</span><span class="qtext">(a) Difference between domain and subdomain. (b) What is World Wide Web? (c) What is network? [5+5+5]</span><span class="qmarks">15 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+
+      <h4>(a) Domain vs Subdomain [5 marks]</h4>
+      <table class="cmp-table">
+        <thead><tr><th>Feature</th><th>Domain</th><th>Subdomain</th></tr></thead>
+        <tbody>
+          <tr><td>Example</td><td>google.com</td><td>mail.google.com, maps.google.com</td></tr>
+          <tr><td>Level in DNS</td><td>Second-level domain (under TLD)</td><td>Third-level or deeper under domain</td></tr>
+          <tr><td>Registration</td><td>Purchased from domain registrar</td><td>Created free in DNS panel of parent domain</td></tr>
+          <tr><td>DNS control</td><td>Full DNS zone authority</td><td>Subset of parent domain's DNS</td></tr>
+          <tr><td>Hosting</td><td>Can point to any server/IP</td><td>Can point to different server than parent</td></tr>
+          <tr><td>Purpose</td><td>Primary web identity</td><td>Organise services: api., blog., shop.</td></tr>
+        </tbody>
+      </table>
+      <div class="diagram-box"><pre>
+URL: https://blog.shop.example.com/page
+      │      │    │       │
+   protocol │    │    domain (registered)
+         subdomain  subdomain
+                    TLD = .com</pre></div>
+
+      <h4>(b) World Wide Web [5 marks]</h4>
+      <p>The <strong>World Wide Web (WWW)</strong> is an information system built on top of the internet where documents and resources are identified by URLs, linked by hyperlinks, and accessed via web browsers using HTTP/HTTPS.</p>
+      <ul>
+        <li><strong>Invented:</strong> 1989 by Tim Berners-Lee at CERN.</li>
+        <li><strong>Components:</strong> Web browsers (client), web servers (host content), HTTP protocol (communication), HTML (content format), URLs (addressing).</li>
+        <li><strong>Hypertext:</strong> Documents linked to each other — click a link to jump to another page anywhere in the world.</li>
+        <li><strong>Not the same as the Internet:</strong> Internet is the physical/network infrastructure; WWW is a service running on it.</li>
+        <li><strong>Impact:</strong> Revolutionised communication, commerce, education, entertainment, and information access globally.</li>
+      </ul>
+
+      <h4>(c) What is a Network? [5 marks]</h4>
+      <p>A <strong>network</strong> is a collection of interconnected devices (computers, servers, routers, switches, printers) that communicate and share resources using communication protocols.</p>
+      <h4>Types of Networks</h4>
+      <table class="cmp-table">
+        <thead><tr><th>Type</th><th>Range</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td>LAN (Local Area Network)</td><td>Building/campus</td><td>Office Wi-Fi, college lab</td></tr>
+          <tr><td>MAN (Metropolitan Area Network)</td><td>City</td><td>City-wide cable network</td></tr>
+          <tr><td>WAN (Wide Area Network)</td><td>Country/global</td><td>The Internet</td></tr>
+          <tr><td>PAN (Personal Area Network)</td><td>Personal devices</td><td>Bluetooth headset to phone</td></tr>
+        </tbody>
+      </table>
+      <h4>Network Components</h4>
+      <ul>
+        <li><strong>Nodes:</strong> End devices — PCs, phones, servers.</li>
+        <li><strong>Links:</strong> Wired (Ethernet, fiber) or wireless (Wi-Fi, cellular).</li>
+        <li><strong>Routers:</strong> Forward packets between networks.</li>
+        <li><strong>Switches:</strong> Connect devices within a LAN.</li>
+        <li><strong>Protocols:</strong> TCP/IP, HTTP, DNS — rules for communication.</li>
+      </ul>
+      <div class="diagram-box"><pre>
+        Internet (WAN)
+             │
+        ┌────┴────┐
+      Router    Router
+        │          │
+    ┌───┴───┐  ┌──┴───┐
+   PC  PC  PC  Server  (LAN)</pre></div>
+      <p><strong>Benefits:</strong> Resource sharing (files, printers), communication (email, chat), centralised data management, internet access, collaboration.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="paper-footer">
+  <div class="footer-inner">
+    <a href="index.html" class="back-btn-footer">← Back to All Papers</a>
+    <span>MAKAUT | PEC-CS801D | Web &amp; Internet Technology | 2024–25</span>
+  </div>
+</footer>
+</body>
+</html>

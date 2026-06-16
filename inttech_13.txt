@@ -1,0 +1,160 @@
+Name: .............................................................. Roll No.: ............................................................ Invigilator's Signature: .......................................
+
+CS/B.Tech (CSE-NEW)/SEM-7/CS-705A/2013-14
+
+ 
+
+2013
+
+ 
+
+INTERNET TECHNOLOGY
+
+ 
+
+Time Allotted: 3 Hours | Full Marks: 70
+
+ 
+
+The figures in the margin indicate full marks.
+
+ 
+
+Candidates are required to give their answers in their own words as far as practicable.
+
+ 
+
+GROUP - A
+(Multiple Choice Type Questions)
+
+ 
+
+1. Choose the correct alternatives for the following: 10 × 1 = 10
+
+i) Cookie is created and sent by
+
+a) Web server
+b) Application server
+c) Web browser
+d) Database server.
+ii) SSL layer is located between ________ and ________
+
+a) Transport layer, Network layer
+b) Application layer, Transport layer
+c) Data-link layer, Physical layer
+d) Network layer, Data-link layer
+iii) Which HTML attribute is used to define inline styles ?
+
+a) Style
+b) Font
+c) Styles
+d) Div.
+iv) XML was designed to serve the ________ purpose.
+
+a) Format data
+b) Display data
+c) Transport data
+d) None of these.
+v) IP telephony is the example of
+
+a) Streaming live multimedia
+b) Real-time interactive multimedia
+c) Stored multimedia
+d) None of these.
+vi) Firewall is a specialized form of a
+
+a) bridge
+b) disk
+c) printer
+d) router.
+vii) Which of the following is not an applet life cycle method?
+
+a) init()
+b) run()
+c) destroy()
+d) paint().
+viii) In ________ the IP header of the original packet is also encrypted.
+
+a) only tunnel mode
+b) only transport mode
+c) both tunnel mode and transport mode
+d) none of these.
+ix) RMI is one type of
+
+a) distributed object application
+b) scripting language
+c) server side data validation technique
+d) none of these.
+x) NAT stands for
+
+a) Native Address Translation
+b) Network Address Translation
+c) Network Address Transmission
+d) Native Address Transmission.
+GROUP - B
+(Short Answer Type Questions)
+
+Answer any three of the following. 3 × 5 = 15
+
+2.
+
+a) What is associative array in PERL?
+b) Write a program to find length of a string in PERL. 2+3
+3.
+
+a) What is the purpose of 'Time to Live' field of IPv4 datagram format?
+b) How salt makes dictionary attack difficult?
+c) Write the names of the components of VPN. 2+2+1
+4.
+
+a) What are the advantages of JavaScript over HTML?
+b) What do you mean by DOM? Explain briefly. 2+3
+5. Design a firewall to block all traffic from 10.0.0.0/24 except port 23, 80 of TCP. 5
+
+6. Compare between SAX and DOM approach in respect of XML passing. 5
+
+GROUP - C
+(Long Answer Type Questions)
+
+Answer any three of the following. 3 × 15 = 45
+
+7.
+
+a) Using the FROM tag of HTML create a registration form containing the below mentioned fields:
+
+i) First Name (Using text boxes)
+ii) Last Name (Using text boxes)
+iii) E-mail ID (Using text boxes.)
+iv) Gender (Using radio button)
+v) Hobbies (Using check boxes)
+vi) Submit Button and Rest Button.
+b) In your browser there will be a textbox to enter your name. There will be a SUBMIT button. If your name field is empty then on submit this will give an alert that your name field is empty. If your name is more than 10 characters long then it will give an alert to enter your name properly. Else it will display your name in capital, bold and in red colour. 6
+8.
+
+a) Draw the various fields in IPv6 packet header. What is the purpose of next header field? 5
+
+A router with IP address 125.45.23.12 and Ethernet physical address 23:45:AB:4F:67:CD has received a packet for a destination with IP address 125.11.78.10 and Ethernet physical address AA:BB:A2:4F:67:CD. Show the entries in the ARP request packet sent by the router. Encapsulate the ARP request packet in a data link frame. Fill in all the fields. 7
+b) What is java RMI? Why is RMI useful under modern computing environment ? 3
+9.
+
+a) In a class B subnet, the IP address of one of the hosts and the mask are given below :
+
+IP Address : 125.134.112.66
+Mask : 255.255.224.0
+
+What are the first address (network address) and the last address (broadcast address) is this subnet? 5
+b) An organization granted a block of address with the beginning address 14.24.74.0/24. There are 256 addresses in this block. The organization needs to have 11 subnets. 2 subnets each have 64 addresses, 2 subnets each have 32 addresses, 3 subnets each have 16 addresses, 4 subnets each have 4 addresses. Design the subnets. 7
+c) What are content in the header of DNS response packet for a query for rabi.xyz.au.ac.in (let us take IP is 10.3.4.5) and name of server IP is 10.0.0.1)? 4
+d) What is multicast addressing ? Describe the working principle of transport gateway. 3
+10.
+
+a) What is XML? What is the basic structure of an XML document? 2+3
+b) Explain the life cycle of an applet using requisite figure. 4
+c) Create an XML document which has a root element emp. Root element contains more than one No. of employee element. Each employee has sub-element empname, id, gender and address. Address has the sub-element street, city, region, postalcode, countrycode. Street has two sub-elements street1 and street2. Countrycode has an attribute c_id. Write an external DTD to validate this XML. 6
+11. Write short notes on any three of the following: 3 × 5 = 15
+
+a) Java socket
+b) Packet filtering
+c) Image
+d) Java applet
+e) Web crawler.

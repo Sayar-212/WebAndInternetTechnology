@@ -1,0 +1,147 @@
+CS/B.TECH/CSE/ODD SEM/SEM-7/CS-705A/2016-17
+MAULANA ABUL KALAM AZAD UNIVERSITY OF TECHNOLOGY, WEST BENGAL
+
+ 
+
+Paper Code: CS-705A
+
+ 
+
+INTERNET TECHNOLOGY
+
+ 
+
+Time Allotted: 3 Hours
+Full Marks: 70
+The figures in the margin indicate full marks.
+Candidates are required to give their answers in their own words as far as practicable.
+GROUP - A
+(Multiple Choice Type Questions)
+
+ 
+
+1. Choose the correct alternatives for the following: 10 x 1 = 10
+
+ 
+
+i) The correct HTML tag for the biggest heading is
+
+a) <h6>
+
+ 
+b) <heading small>
+
+ 
+c) <small heading>
+
+ 
+d) <h1>
+
+ 
+ii) Which of the following technologies is not a part of J2EE architecture?
+
+a) JSP
+b) Servlet
+c) EJB
+d) COBRA.
+iii) EJB contains
+
+a) unique interface
+b) four interfaces
+c) two interfaces
+d) no interface.
+iv) The JSP tags are interpreted by
+
+a) JSP compiler
+b) JSP engine
+c) JSP debugger
+d) None of these.
+v) Which of the following protocols is stateless in nature?
+
+a) FTP
+b) HTTP
+c) TCP
+d) UDP
+vi) Variables are declared in Java Script using which of the following?
+
+a) dim
+b) var
+c) function
+d) variable.
+vii) After a servlet is destroyed, garbage collection is performed by
+
+a) the server
+b) the servlet
+c) HTTP
+d) JVM.
+viii) The ____ in XML is equivalent to the schema in database.
+
+a) Element
+b) Attribute
+c) Parser
+d) DTD.
+ix) An XML parser is used to
+
+a) display the contents of an XML document.
+b) read but not interpret
+c) read and interpret
+d) none of these.
+x) Which statement is true?
+
+a) XML tags are case sensitive
+b) XML documents must have a root tag
+c) XML elements must be properly closed
+d) All the statements are true.
+GROUP B
+(Short Answer Type Questions)
+
+ 
+
+Answer any three of the following. 3 x 5 = 15
+
+2. Why do we need to have a dynamic webpage ? What is the advantage of using style sheet in formatting the different elements of webpages in a website? How can we link a style sheet to a webpage?
+
+3. What are the different technologies available to make a webpage dynamic ? Why does Java play a vital role in dynamic webpage creation ?
+
+4. Write a brief note on the role of Java Script in client side data validation with suitable examples. State also briefly the need of client side validation.
+
+5. What is servlet? What do you understand by servlet API? Describe the life cycle of a servlet.
+
+GROUP - C
+(Long Answer Type Questions)
+
+ 
+
+Answer any three of the following. 3 x 15 = 45
+
+6.
+
+a) Explain an internal valid XML document with an example. (6)
+b) Write down the rules for creating a well formed XML document. (2)
+c) Write the differences between DOM and SAX parser in XML. (3)
+d) Explain the following: (2+2)
+
+(i) <! ELEMENT section (title +, para(note | code*)>
+
+ 
+(ii) <!ATTLIST sign signaturefile CDATA #implied email CDATA # required>
+
+ 
+7.
+
+a) What is Applet ? Discuss life-cycle of an Applet. (1+4)
+b) Discuss an effective communication between a client and a server. (6)
+c) Write a PERL script to show current date. (4)
+8. Discuss Congesting Policy, Congestion Avoidance and Congestion Detection in TCP with relevant diagrams. (3 x 5)
+
+9.
+
+a) A block of address is given to a small organization. It is known that one of the addresses is 205.16.37.39/28. What is the first and last address in the block? What is 'subnet' ? Is 'masking' required at all? What is the difference between default mask and subnet mask? (2+1+1+1)
+b) Explain Denial of Service (DoS) attacks. Discuss Real-time Transport Protocol (RTP). What is the utility of NVT character in remote logging applications such as Telnet? (4+4+2)
+10. Write short notes on any three of the following: (3 x 5)
+
+a) IPTV
+b) Web Crawler
+c) IP Security
+d) Proxy Firewall
+e) HTML DOM.

@@ -1,0 +1,106 @@
+CS/B.Tech/CSE/ODD/SEM-7/CS-705A/2017-18
+MAULANA ABUL KALAM AZAD UNIVERSITY OF TECHNOLOGY, WEST BENGAL
+
+Paper Code: CS-705A
+INTERNET TECHNOLOGY
+Time Allotted: 3 Hours
+Full Marks: 70
+
+The figures in the margin indicate full marks.
+Candidates are required to give their answers in their own words as far as practicable.
+
+GROUP - A
+(Multiple Choice Type Questions)
+1. Choose the correct alternatives for the following: (10x1=10)
+
+i) What type of protocol is HTTP?
+a) State aware b) Stateful
+c) Stateless d) Connection oriented.
+
+ii) Which of the following is the intra domain routing protocol?
+a) RIP b) OSPF
+c) BGP d) None of these.
+
+iii) Which of the following is not IPv6 address?
+a) Any cast b) Multicast
+c) Unicast d) Broadcast.
+
+iv) PERL stands for
+a) Practical Extraction and Reading Language.
+b) Practical Extraction and Report Language
+c) Practical Example and Report Language
+d) Practical Expert on Report Language
+
+v) RIP is based on
+a) Link State Routing b) Distance Vector Routing
+c) Path Vector Routing d) none of these.
+
+vi) Which statement is true?
+a) All the statements are true
+b) All XML elements must have a closing tag
+c) All XML elements must be in lower case
+d) All XML documents must have a DTD.
+
+vii) The position of SSL in TCP/IP protocol suite is
+a) between transport and internet layer
+b) between data link and physical layer
+c) between application and transport layer
+d) none of these.
+
+viii) Which HTML attribute is used to define inline styles?
+a) Class b) Styles
+c) Style d) Font.
+
+ix) Cookie is created and sent by
+a) Web browser b) Web server
+c) Application server d) Strut platform.
+
+x) Maximum size of the data portion of the IP data gram is
+a) 65555B b) 65535B
+c) 65515B d) none of these.
+
+
+GROUP - B
+(Short Answer Type Questions)
+Answer any three of the following. (3x5=15)
+
+2. What do you mean by Internet? Give a comparison for Intranet, Extranet and Internet. (2+3)
+3. State the difference between IPv4 and IPv6 packet format. (5)
+4. What is the difference between Worm and Trojan Horse? (5)
+5. A network IP address is given as 192.168.110.25/27. Find the subnet mask, network address and no. of host possible in the network. (5)
+6. What are XML schemas? How they are better than DTDs? (2+3)
+
+
+Group - C
+(Long Answer Type Questions)
+Answer any three of the following. (3x15=45)
+
+7. a) What is firewall? What are the basic needs of firewall?
+b) What are the different types of firewall?
+c) What is packet filtering?
+d) What is the purpose of proxy?
+e) Explain the functions of NAT. (4+2+2+3+4)
+
+8. a) Describe IP datagram format.
+b) Compare and contrast between Distance vector routing and Link state routing.
+c) Describe different types of link in OSPF protocol. (5+5+5)
+
+9. a) What is the default mask and broadcast address for class B? Specify the private IP range for class A address.
+b) Why dynamic routing is preferred over static routing algorithm in a network, which changes continuously?
+c) Distinguish between GET and POST method in HTTP.
+d) What are the differences between TCP and UDP? (4+4+4+3)
+
+10. a) In a class B subnet, the IP address of one of the hosts and the mask are given below:
+IP Address: 125.134.112.66
+Mask: 255.255.224.0
+What is the first address (network address) and the last address (broadcast address) in this subnet?
+b) An organization is granted a block of address with the beginning address 14.24.74.0/24. There are 256 addresses in this block. The origination needs to have 11 subnets, 2 subnets each has 64 addresses, 2 subnets each has 32 addresses, 3 subnets each has 16 addresses, 4 subnets each has 4 addresses. Design the subnets.
+c) What is the content in the header of the DNS response packet in a query for abc.xyz.au.ac.in (let us take IP is 10.3.4.5 and name server IP is 10.0.0.1)?
+d) What is multicast addressing? Describe the working principle of transport gateway. (1+6+5+3)
+
+11. Write short notes on any three of the following: (3x5)
+a) Proxy Firewall
+b) Three way handshaking in TCP connection establishment
+c) Java socket
+d) HTML Image Map
+e) Path vector routing.

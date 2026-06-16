@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>2022-23 | Web & Internet Technology | MAKAUT</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="paper.css"/>
+</head>
+<body>
+
+<nav class="topbar">
+  <a href="index.html" class="back-btn">← Back to Home</a>
+  <div class="topbar-info">
+    <span class="topbar-year">2022–23</span>
+    <span class="topbar-code">CS/B.Tech(N)/EVEN/SEM-8/PEC-CS801D</span>
+  </div>
+  <div class="topbar-meta"><span>⏱ 3 Hours</span><span>📋 70 Marks</span></div>
+</nav>
+
+<header class="paper-hero">
+  <div class="paper-hero-bg"></div>
+  <div class="paper-hero-content">
+    <div class="paper-badge">MAKAUT • Web and Internet Technology</div>
+    <h1>2022 – 23 <span class="yr-accent">Solved Paper</span></h1>
+    <p>PEC-CS801D &nbsp;|&nbsp; Full Marks: 70 &nbsp;|&nbsp; Time: 3 Hours &nbsp;|&nbsp; SEM-8</p>
+    <div class="paper-pills">
+      <span>Group A: Any 10 × 1 = 10</span>
+      <span>Group B: Any 3 × 5 = 15</span>
+      <span>Group C: Any 3 × 15 = 45</span>
+    </div>
+  </div>
+</header>
+
+<main class="paper-main">
+
+<!-- GROUP A -->
+<section class="group-section" id="groupA">
+  <div class="group-header">
+    <span class="group-label">Group A</span>
+    <h2>Very Short Answer Questions <span class="marks-tag">Any 10 × 1 = 10</span></h2>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q1(I)</span><span class="qtext">What is SVG and why is it used?</span><span class="qmarks">1M</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+      <p><strong>SVG (Scalable Vector Graphics)</strong> is an XML-based format for describing 2D vector graphics. Unlike raster images (JPG/PNG), SVG images are defined by mathematical paths and <strong>scale to any size without losing quality</strong>.</p>
+      <p><strong>Why used:</strong> Perfect for logos, icons, charts, and illustrations. Fully styleable with CSS, scriptable with JavaScript, accessible (text-based), small file size for simple graphics, and renders crisply on retina/4K screens.</p>
+      <pre>
+&lt;svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"&gt;
+  &lt;circle cx="50" cy="50" r="40" fill="#6c63ff" /&gt;
+  &lt;text x="50" y="55" text-anchor="middle" fill="white"&gt;SVG&lt;/text&gt;
+&lt;/svg&gt;</pre>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q1(II)</span><span class="qtext">What are the form elements that support media content in HTML5?</span><span class="qmarks">1M</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+      <p>HTML5 introduced several media-supporting elements:</p>
+      <ul>
+        <li><code>&lt;audio&gt;</code> — embeds audio with play/pause controls</li>
+        <li><code>&lt;video&gt;</code> — embeds video with controls</li>
+        <li><code>&lt;source&gt;</code> — specifies multiple media sources for audio/video</li>
+        <li><code>&lt;track&gt;</code> — adds subtitles/captions to video</li>
+        <li><code>&lt;canvas&gt;</code> — bitmap drawing surface via JavaScript</li>
+        <li><code>&lt;embed&gt;</code> — embeds external content (PDF, Flash legacy)</li>
+        <li><code>&lt;object&gt;</code> — embeds external resources</li>
+        <li><code>&lt;input type="file"&gt;</code> — file upload including media files</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q1(III)</span><span class="qtext">Difference between variables in which the chomp function works in Perl.</span><span class="qmarks">1M</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+      <p><code>chomp()</code> in Perl removes the <strong>trailing newline character</strong> (<code>\n</code>) from a string. It works on:</p>
+      <ul>
+        <li><strong>Scalar variable (<code>$var</code>):</strong> Removes one trailing newline from that single string.</li>
+        <li><strong>Array variable (<code>@arr</code>):</strong> Removes trailing newline from <em>every element</em> in the array.</li>
+      </ul>
+      <pre>
+my $str = "Hello\n";
+chomp($str);          # $str is now "Hello"
+
+my @lines = ("a\n", "b\n", "c\n");
+chomp(@lines);        # @lines is now ("a","b","c")</pre>
+      <p>Key difference: <code>chop()</code> removes the LAST character regardless; <code>chomp()</code> only removes newline.</p>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q1(IV)</span><span class="qtext">What is Multiprogramming?</span><span class="qmarks">1M</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+      <p><strong>Multiprogramming</strong> is an OS technique where <strong>multiple programs are loaded into memory simultaneously</strong>, and the CPU is switched between them to keep it busy. When one program is waiting for I/O, the CPU executes another program.</p>
+      <p><strong>Goal:</strong> Maximise CPU utilisation and system throughput. The CPU never sits idle waiting for slow I/O operations. Differs from multitasking (time-sharing) which switches rapidly to give illusion of simultaneous execution.</p>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q1(V)</span><span class="qtext">How do I make a VoIP phone call?</span><span class="qmarks">1M</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+      <p>To make a VoIP call you need:</p>
+      <ul>
+        <li><strong>Hardware:</strong> Broadband internet connection, microphone, speakers/headset.</li>
+        <li><strong>Software/App:</strong> A VoIP application — Skype, Zoom, WhatsApp, Google Meet, or a SIP client.</li>
+        <li><strong>Account:</strong> Register with a VoIP service provider if calling PSTN numbers.</li>
+      </ul>
+      <p><strong>Process:</strong> Open the app → enter the recipient's number/username → click Call → your voice is digitised, compressed (codec), packetised (RTP/UDP), transmitted over internet → reconstructed at receiver's end.</p>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q1(VI)</span><span class="qtext">What is the difference between SOAP and REST?</span><span class="qmarks">1M</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+      <table class="cmp-table">
+        <thead><tr><th>Feature</th><th>SOAP</th><th>REST</th></tr></thead>
+        <tbody>
+          <tr><td>Type</td><td>Protocol (strict standard)</td><td>Architectural style</td></tr>
+          <tr><td>Format</td><td>XML only</td><td>JSON, XML, HTML, plain text</td></tr>
+          <tr><td>Transport</td><td>HTTP, SMTP, TCP</td><td>HTTP only</td></tr>
+          <tr><td>State</td><td>Can be stateful</td><td>Stateless</td></tr>
+          <tr><td>Complexity</td><td>Complex, heavy</td><td>Simple, lightweight</td></tr>
+          <tr><td>Security</td><td>Built-in WS-Security</td><td>Uses HTTPS/OAuth</td></tr>
+          <tr><td>Use case</td><td>Enterprise, banking, legacy</td><td>Web APIs, mobile apps</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q1(VII)</span><span class="qtext">What is Encapsulation Technique?</span><span class="qmarks">1M</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+      <p>In <strong>networking</strong>, <strong>encapsulation</strong> is the process of wrapping data with protocol-specific headers (and sometimes trailers) at each layer of the network model as it travels down the stack before transmission.</p>
+      <pre>
+Application  → Data
+Transport    → [TCP/UDP Header] + Data         = Segment
+Network      → [IP Header] + Segment           = Packet
+Data Link    → [Frame Header] + Packet + [FCS] = Frame
+Physical     → Bits (electrical/optical signal)</pre>
+      <p>At the receiver, <strong>de-encapsulation</strong> strips headers layer by layer going up the stack.</p>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q1(VIII)</span><span class="qtext">Are there any advantages in using VoIP phone service?</span><span class="qmarks">1M</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+      <ul>
+        <li><strong>Cost:</strong> Much cheaper than PSTN — especially for long-distance and international calls.</li>
+        <li><strong>Portability:</strong> Make/receive calls from anywhere with internet.</li>
+        <li><strong>Features:</strong> Video calling, voicemail-to-email, call forwarding, conference calls — often free.</li>
+        <li><strong>Scalability:</strong> Easy to add users without extra physical lines.</li>
+        <li><strong>Integration:</strong> Integrates with CRM, email, and business software.</li>
+        <li><strong>No extra infrastructure:</strong> Uses existing internet connection.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q1(IX)</span><span class="qtext">What is the use of CORS?</span><span class="qmarks">1M</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+      <p><strong>CORS (Cross-Origin Resource Sharing)</strong> is a browser security mechanism that controls how web pages can make HTTP requests to a <strong>different domain</strong> than the one that served them (cross-origin requests).</p>
+      <p>Browsers enforce the <strong>Same-Origin Policy</strong> by default (blocks cross-origin AJAX). CORS allows servers to explicitly permit cross-origin access using HTTP headers:</p>
+      <pre>
+Access-Control-Allow-Origin: https://myapp.com
+Access-Control-Allow-Methods: GET, POST
+Access-Control-Allow-Headers: Content-Type</pre>
+      <p>Used when a frontend (React on port 3000) calls a backend API on a different domain/port.</p>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q1(X)</span><span class="qtext">What are some of the types of CSS used?</span><span class="qmarks">1M</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+      <ul>
+        <li><strong>Inline CSS:</strong> <code>&lt;p style="color:red"&gt;</code> — applied directly on element. Highest specificity.</li>
+        <li><strong>Internal CSS:</strong> <code>&lt;style&gt;</code> block inside <code>&lt;head&gt;</code>. Scoped to single page.</li>
+        <li><strong>External CSS:</strong> Separate <code>.css</code> file linked with <code>&lt;link&gt;</code>. Best practice for multi-page sites.</li>
+        <li><strong>Imported CSS:</strong> <code>@import url("other.css")</code> inside a CSS file.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q1(XI)</span><span class="qtext">How to set the default value for an HTML &lt;select&gt; element?</span><span class="qmarks">1M</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+      <p>Add the <code>selected</code> attribute to the desired <code>&lt;option&gt;</code>:</p>
+      <pre>
+&lt;select name="city"&gt;
+  &lt;option value=""&gt;-- Choose City --&lt;/option&gt;
+  &lt;option value="kol"&gt;Kolkata&lt;/option&gt;
+  &lt;option value="del" selected&gt;Delhi&lt;/option&gt;  &lt;!-- default --&gt;
+  &lt;option value="mum"&gt;Mumbai&lt;/option&gt;
+&lt;/select&gt;</pre>
+      <p>The option with <code>selected</code> will be pre-selected when the page loads. If no option has <code>selected</code>, the browser defaults to the first option.</p>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q1(XII)</span><span class="qtext">What is the use of grouping in CSS3?</span><span class="qmarks">1M</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+      <p><strong>Grouping selectors</strong> in CSS allows multiple selectors to share the same style rules, reducing code repetition:</p>
+      <pre>
+/* Without grouping — repetitive */
+h1 { color: blue; font-family: Arial; }
+h2 { color: blue; font-family: Arial; }
+p  { color: blue; font-family: Arial; }
+
+/* With grouping — clean and DRY */
+h1, h2, p { color: blue; font-family: Arial; }
+
+/* Grouping with different selectors */
+.header, #nav, .footer { background: #333; color: white; }</pre>
+      <p>Reduces file size, improves maintainability, and makes stylesheets easier to read.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GROUP B -->
+<section class="group-section" id="groupB">
+  <div class="group-header">
+    <span class="group-label">Group B</span>
+    <h2>Short Answer Questions <span class="marks-tag">Any 3 × 5 = 15</span></h2>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q2</span><span class="qtext">How to get the entire HTML document as a string in JavaScript?</span><span class="qmarks">5 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+      <p>JavaScript provides several ways to get the full HTML document as a string:</p>
+      <h4>Method 1: document.documentElement.outerHTML</h4>
+      <pre>
+// Gets the complete HTML from &lt;html&gt; to &lt;/html&gt;
+const fullHTML = document.documentElement.outerHTML;
+console.log(fullHTML);
+// Output: "&lt;html lang='en'&gt;&lt;head&gt;...&lt;/head&gt;&lt;body&gt;...&lt;/body&gt;&lt;/html&gt;"</pre>
+      <h4>Method 2: XMLSerializer</h4>
+      <pre>
+const serializer = new XMLSerializer();
+const htmlString = serializer.serializeToString(document);
+console.log(htmlString);</pre>
+      <h4>Method 3: Get specific sections</h4>
+      <pre>
+const headHTML = document.head.outerHTML;   // just &lt;head&gt;
+const bodyHTML = document.body.innerHTML;   // content inside &lt;body&gt;
+const bodyOuter = document.body.outerHTML;  // &lt;body&gt; + its content</pre>
+      <h4>Method 4: Fetch self (async)</h4>
+      <pre>
+fetch(window.location.href)
+  .then(res =&gt; res.text())
+  .then(html =&gt; console.log(html));
+// Fetches the original server-sent HTML (before JS modifications)</pre>
+      <p><strong>Most common:</strong> <code>document.documentElement.outerHTML</code> returns the live DOM state including all JS-applied changes.</p>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q3</span><span class="qtext">How to create a circular progress bar using SVG?</span><span class="qmarks">5 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+      <p>A circular progress bar uses SVG <code>&lt;circle&gt;</code> with <code>stroke-dasharray</code> and <code>stroke-dashoffset</code> to control what percentage of the circle is drawn.</p>
+      <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+  .progress-ring { transform: rotate(-90deg); }
+  .progress-ring__bg {
+    fill: none; stroke: #e8e8f0; stroke-width: 10;
+  }
+  .progress-ring__circle {
+    fill: none; stroke: #6c63ff; stroke-width: 10;
+    stroke-linecap: round;
+    stroke-dasharray: 251.2;   /* 2 * π * r = 2 * 3.14 * 40 */
+    stroke-dashoffset: 62.8;   /* offset = dasharray * (1 - progress/100) */
+    transition: stroke-dashoffset 0.5s ease;
+  }
+  .progress-text {
+    font-size: 1.4rem; font-weight: 700; fill: #6c63ff;
+  }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;svg width="120" height="120" viewBox="0 0 120 120"&gt;
+  &lt;circle class="progress-ring__bg" cx="60" cy="60" r="40"/&gt;
+  &lt;circle class="progress-ring__circle" id="ring" cx="60" cy="60" r="40"/&gt;
+  &lt;text x="60" y="65" text-anchor="middle" class="progress-text"
+        transform="rotate(90,60,60)"&gt;75%&lt;/text&gt;
+&lt;/svg&gt;
+
+&lt;script&gt;
+  function setProgress(percent) {
+    const r = 40;
+    const circumference = 2 * Math.PI * r;   // 251.2
+    const offset = circumference * (1 - percent / 100);
+    document.getElementById("ring").style.strokeDashoffset = offset;
+  }
+  setProgress(75);  // show 75%
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+      <p><strong>Key formula:</strong> <code>strokeDashoffset = circumference × (1 − progress/100)</code>. At 0% offset the full circle shows; increasing offset hides more of it.</p>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q4</span><span class="qtext">How to return HTML or build HTML using JavaScript?</span><span class="qmarks">5 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+      <h4>Method 1: innerHTML (simplest)</h4>
+      <pre>
+document.getElementById("container").innerHTML =
+  "&lt;h2&gt;Hello World&lt;/h2&gt;&lt;p&gt;Built with JS!&lt;/p&gt;";</pre>
+      <h4>Method 2: createElement + appendChild (safest — no XSS)</h4>
+      <pre>
+const h2 = document.createElement("h2");
+h2.textContent = "Safe Heading";
+h2.style.color = "purple";
+
+const p = document.createElement("p");
+p.textContent = "Paragraph content here.";
+
+const container = document.getElementById("app");
+container.appendChild(h2);
+container.appendChild(p);</pre>
+      <h4>Method 3: Template literals (clean for complex HTML)</h4>
+      <pre>
+function buildCard(name, role, img) {
+  return `
+    &lt;div class="card"&gt;
+      &lt;img src="${img}" alt="${name}"&gt;
+      &lt;h3&gt;${name}&lt;/h3&gt;
+      &lt;p&gt;${role}&lt;/p&gt;
+    &lt;/div&gt;
+  `;
+}
+document.getElementById("cards")
+  .insertAdjacentHTML("beforeend", buildCard("Alice", "Developer", "alice.jpg"));</pre>
+      <h4>Method 4: Return HTML from a function</h4>
+      <pre>
+function renderList(items) {
+  return `&lt;ul&gt;${items.map(i =&gt; `&lt;li&gt;${i}&lt;/li&gt;`).join("")}&lt;/ul&gt;`;
+}
+document.body.innerHTML += renderList(["HTML", "CSS", "JavaScript"]);</pre>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q5</span><span class="qtext">Perl functions to include a module — use vs require. What is the difference?</span><span class="qmarks">5 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+      <h4>use — Compile-time inclusion</h4>
+      <pre>
+use strict;           # loaded at compile time
+use warnings;         # loaded at compile time
+use POSIX qw(floor);  # imports specific functions
+
+# If module not found → script dies BEFORE running
+use NonExistent::Module;  # immediate fatal error</pre>
+      <h4>require — Runtime inclusion</h4>
+      <pre>
+# Loaded when this line executes (runtime)
+require POSIX;
+
+# Conditional loading — useful for optional modules
+if ($use_json) {
+    require JSON;
+    JSON->import();
+}
+
+# Require a file directly
+require "mymodule.pl";</pre>
+      <table class="cmp-table">
+        <thead><tr><th>Feature</th><th>use</th><th>require</th></tr></thead>
+        <tbody>
+          <tr><td>Loading time</td><td>Compile time (BEGIN block)</td><td>Runtime (when line executes)</td></tr>
+          <tr><td>Auto-import</td><td>Calls module's <code>import()</code> automatically</td><td>Does NOT call import() automatically</td></tr>
+          <tr><td>Error timing</td><td>Dies immediately if module not found</td><td>Dies when that line is reached</td></tr>
+          <tr><td>Conditional use</td><td>Cannot be conditional</td><td>Can be inside if/loop blocks</td></tr>
+          <tr><td>Best for</td><td>Essential, always-needed modules</td><td>Optional or dynamically chosen modules</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q6</span><span class="qtext">How to create Image Stack Illusion using HTML and CSS?</span><span class="qmarks">5 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+      <p>An image stack illusion uses CSS <code>transform</code> and <code>box-shadow</code> to make a single image look like a stack of photos.</p>
+      <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+  body { display: flex; justify-content: center;
+         align-items: center; height: 100vh; background: #f0f0f0; }
+
+  .stack { position: relative; width: 220px; height: 160px; }
+
+  /* Bottom layers — decorative rotated copies via pseudo-elements */
+  .stack::before,
+  .stack::after {
+    content: "";
+    position: absolute;
+    width: 220px; height: 160px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+  .stack::before {
+    transform: rotate(-5deg);
+    top: 6px; left: -6px;
+    z-index: 1;
+  }
+  .stack::after {
+    transform: rotate(3deg);
+    top: 3px; left: 3px;
+    z-index: 2;
+  }
+
+  /* Top (actual) image */
+  .stack img {
+    position: relative;
+    width: 220px; height: 160px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    z-index: 3;
+  }
+
+  /* Hover effect — fan out */
+  .stack:hover::before { transform: rotate(-10deg) translateX(-10px); }
+  .stack:hover::after  { transform: rotate(6deg)  translateX(6px); }
+  .stack::before, .stack::after,
+  .stack img { transition: transform 0.3s ease; }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class="stack"&gt;
+    &lt;img src="photo.jpg" alt="Stacked photo"&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+      <p>Key techniques: <strong>relative/absolute positioning</strong>, <strong>CSS pseudo-elements</strong> (<code>::before</code>, <code>::after</code>), <strong>rotate transform</strong>, <strong>z-index</strong> layering, and <strong>transition</strong> for smooth hover animation.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GROUP C -->
+<section class="group-section" id="groupC">
+  <div class="group-header">
+    <span class="group-label">Group C</span>
+    <h2>Long Answer Questions <span class="marks-tag">Any 3 × 15 = 45</span></h2>
+  </div>
+
+  <!-- Q7 -->
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q7</span><span class="qtext">Write about Arrays in JavaScript. [15]</span><span class="qmarks">15 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+      <h4>1. Creating Arrays</h4>
+      <pre>
+const arr1 = [1, 2, 3, 4, 5];              // Array literal (preferred)
+const arr2 = new Array(5);                  // Array of 5 empty slots
+const arr3 = new Array(10, 20, 30);         // [10, 20, 30]
+const mixed = ["Alice", 25, true, null, {role:"dev"}]; // mixed types</pre>
+
+      <h4>2. Accessing and Modifying</h4>
+      <pre>
+console.log(arr1[0]);        // 1  (zero-indexed)
+console.log(arr1.length);    // 5
+arr1[0] = 99;                // modify element
+console.log(arr1);           // [99, 2, 3, 4, 5]</pre>
+
+      <h4>3. Adding and Removing Elements</h4>
+      <pre>
+arr1.push(6);          // add to END        → [99,2,3,4,5,6]
+arr1.pop();            // remove from END   → [99,2,3,4,5]
+arr1.unshift(0);       // add to FRONT      → [0,99,2,3,4,5]
+arr1.shift();          // remove from FRONT → [99,2,3,4,5]
+arr1.splice(1, 2);     // remove 2 at index 1 → [99,4,5]
+arr1.splice(1, 0, 10, 20); // insert at index 1 → [99,10,20,4,5]</pre>
+
+      <h4>4. Searching and Checking</h4>
+      <pre>
+const nums = [10, 20, 30, 20, 40];
+nums.indexOf(20);           // 1 (first occurrence)
+nums.lastIndexOf(20);       // 3
+nums.includes(30);          // true
+nums.find(x =&gt; x &gt; 25);    // 30 (first match)
+nums.findIndex(x =&gt; x &gt; 25); // 2</pre>
+
+      <h4>5. Iteration Methods</h4>
+      <pre>
+const data = [1, 2, 3, 4, 5];
+
+// forEach — execute for each element
+data.forEach((val, i) =&gt; console.log(i, val));
+
+// map — transform each element, returns new array
+const doubled = data.map(x =&gt; x * 2);    // [2,4,6,8,10]
+
+// filter — keep elements matching condition
+const evens = data.filter(x =&gt; x % 2 === 0); // [2,4]
+
+// reduce — accumulate to single value
+const sum = data.reduce((acc, x) =&gt; acc + x, 0); // 15
+
+// every / some
+data.every(x =&gt; x &gt; 0);    // true (all positive)
+data.some(x =&gt; x &gt; 4);     // true (at least one &gt; 4)</pre>
+
+      <h4>6. Sorting and Reversing</h4>
+      <pre>
+const letters = ["banana", "apple", "cherry"];
+letters.sort();                      // ["apple","banana","cherry"]
+letters.reverse();                   // ["cherry","banana","apple"]
+
+const nums2 = [30, 5, 100, 2];
+nums2.sort((a, b) =&gt; a - b);        // [2, 5, 30, 100] ascending
+nums2.sort((a, b) =&gt; b - a);        // [100, 30, 5, 2] descending</pre>
+
+      <h4>7. Copying, Merging, Slicing</h4>
+      <pre>
+const a = [1, 2, 3];
+const b = [4, 5, 6];
+
+const merged = a.concat(b);          // [1,2,3,4,5,6]
+const copy   = [...a];               // spread — shallow copy
+const slice  = a.slice(1, 3);        // [2,3] (index 1 to 2)
+const flat   = [[1,2],[3,4]].flat(); // [1,2,3,4]</pre>
+
+      <h4>8. Destructuring and Spread</h4>
+      <pre>
+const [first, second, ...rest] = [10, 20, 30, 40, 50];
+// first=10, second=20, rest=[30,40,50]
+
+// Swap variables without temp
+let x = 1, y = 2;
+[x, y] = [y, x];   // x=2, y=1</pre>
+
+      <h4>9. Multidimensional Arrays</h4>
+      <pre>
+const matrix = [[1,2,3],[4,5,6],[7,8,9]];
+console.log(matrix[1][2]);   // 6
+matrix.forEach(row =&gt; console.log(row.join(" ")));</pre>
+    </div>
+  </div>
+
+  <!-- Q8 -->
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q8</span><span class="qtext">What data types does Perl support? Explain with examples. [15]</span><span class="qmarks">15 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+      <h4>1. Scalar ($) — Single Value</h4>
+      <pre>
+my $name   = "Alice";          # string
+my $age    = 25;               # integer
+my $pi     = 3.14159;          # float
+my $flag   = 1;                # boolean (1=true, 0/""=false)
+my $undef  = undef;            # undefined
+
+print "Name: $name, Age: $age\n";
+print "Length: ", length($name), "\n";   # 5
+print "Upper: ", uc($name), "\n";        # ALICE</pre>
+
+      <h4>2. Array (@) — Ordered List</h4>
+      <pre>
+my @fruits = ("apple", "banana", "cherry");
+print $fruits[0];              # apple (0-indexed)
+print scalar @fruits;          # 3 (length)
+print $#fruits;                # 2 (last index)
+
+push @fruits, "mango";        # add to end
+my $last = pop @fruits;       # remove from end
+unshift @fruits, "kiwi";      # add to front
+my $first = shift @fruits;    # remove from front
+
+foreach my $f (@fruits) { print "$f\n"; }
+
+my @nums = (5, 3, 1, 4, 2);
+my @sorted = sort @nums;                    # string sort
+my @nsorted = sort { $a &lt;=&gt; $b } @nums;   # numeric sort
+my @rev = reverse @nums;</pre>
+
+      <h4>3. Hash (%) — Key-Value Pairs</h4>
+      <pre>
+my %person = (
+    name  =&gt; "Bob",
+    age   =&gt; 30,
+    city  =&gt; "Kolkata"
+);
+
+print $person{name};           # Bob
+$person{email} = "bob@x.com"; # add new key
+
+my @keys   = keys %person;
+my @values = values %person;
+
+while (my ($k, $v) = each %person) {
+    print "$k: $v\n";
+}
+delete $person{age};           # remove key
+print exists $person{name} ? "exists" : "no"; # check key</pre>
+
+      <h4>4. References (\) — Pointers to Data</h4>
+      <pre>
+# Array reference
+my @arr = (1, 2, 3);
+my $aref = \@arr;
+print $$aref[0];               # 1
+print $aref-&gt;[1];             # 2 (arrow notation)
+
+# Hash reference
+my %h = (x =&gt; 10);
+my $href = \%h;
+print $href-&gt;{x};             # 10
+
+# Anonymous references
+my $anon_arr = [10, 20, 30];   # arrayref without named array
+my $anon_hash = {a =&gt; 1};     # hashref without named hash
+
+# Complex data structure
+my @students = (
+    { name =&gt; "Alice", grade =&gt; "A" },
+    { name =&gt; "Bob",   grade =&gt; "B" },
+);
+print $students[0]{name};      # Alice</pre>
+
+      <h4>5. Typeglob (*) — Symbol Table Entry</h4>
+      <pre>
+# *foo represents ALL variables named foo ($foo, @foo, %foo, &foo)
+our $color = "red";
+local *color = \"blue";  # temporarily alias
+print $color;            # blue</pre>
+
+      <h4>Special Variables</h4>
+      <pre>
+$_   # default variable for loops and many functions
+$!   # error message (errno)
+$0   # script name
+@ARGV # command line arguments
+%ENV  # environment variables</pre>
+    </div>
+  </div>
+
+  <!-- Q9 -->
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q9</span><span class="qtext">Define your own stylesheet with example. [15]</span><span class="qmarks">15 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+      <p>A complete custom CSS stylesheet demonstrating all major CSS features:</p>
+      <pre>
+/* ================================================
+   MY CUSTOM STYLESHEET — styles.css
+   ================================================ */
+
+/* 1. CSS Variables (Custom Properties) */
+:root {
+  --primary:   #6c63ff;
+  --secondary: #00d4ff;
+  --dark:      #0a0a0f;
+  --light:     #f8f9fa;
+  --text:      #333;
+  --radius:    10px;
+}
+
+/* 2. CSS Reset */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* 3. Element Selector */
+body { font-family: 'Inter', Arial, sans-serif; color: var(--text);
+       background: var(--light); line-height: 1.6; }
+
+/* 4. Class Selector */
+.container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+.card { background: white; border-radius: var(--radius);
+        padding: 24px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+
+/* 5. ID Selector */
+#header { background: var(--dark); color: white; padding: 16px 0; }
+#footer { text-align: center; padding: 20px; color: #777; }
+
+/* 6. Descendant &amp; Child Selectors */
+nav ul     { list-style: none; display: flex; gap: 24px; }
+nav ul &gt; li a { color: white; text-decoration: none; }
+
+/* 7. Pseudo-classes */
+a:hover    { color: var(--primary); text-decoration: underline; }
+button:active { transform: scale(0.97); }
+input:focus { outline: 2px solid var(--primary); border-radius: 4px; }
+li:nth-child(odd) { background: rgba(108,99,255,0.05); }
+
+/* 8. Pseudo-elements */
+h2::before { content: "# "; color: var(--primary); }
+p::first-line { font-weight: 600; }
+
+/* 9. Flexbox Layout */
+.flex-row { display: flex; gap: 20px; align-items: center; }
+.flex-col { display: flex; flex-direction: column; gap: 12px; }
+
+/* 10. Grid Layout */
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+
+/* 11. Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate { animation: fadeIn 0.6s ease forwards; }
+
+/* 12. Transitions */
+.btn { background: var(--primary); color: white; padding: 10px 24px;
+       border: none; border-radius: var(--radius); cursor: pointer;
+       transition: background 0.2s, transform 0.2s; }
+.btn:hover { background: #5a52e0; transform: translateY(-2px); }
+
+/* 13. Media Query — Responsive Design */
+@media (max-width: 768px) {
+  .grid-3  { grid-template-columns: 1fr; }
+  .flex-row { flex-direction: column; }
+  #header nav ul { flex-direction: column; gap: 12px; }
+}
+
+/* 14. CSS Gradient */
+.hero { background: linear-gradient(135deg, var(--primary), var(--secondary));
+        color: white; padding: 60px 20px; text-align: center; }</pre>
+      <p>Link to HTML: <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></p>
+    </div>
+  </div>
+
+  <!-- Q10 -->
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q10</span><span class="qtext">Write about Functions in JavaScript. [15]</span><span class="qmarks">15 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+      <h4>1. Function Declaration (Hoisted)</h4>
+      <pre>
+function greet(name) {
+    return "Hello, " + name + "!";
+}
+console.log(greet("Alice")); // Hello, Alice!
+// Can be called BEFORE declaration (hoisted)</pre>
+
+      <h4>2. Function Expression (Not hoisted)</h4>
+      <pre>
+const add = function(a, b) { return a + b; };
+console.log(add(3, 4)); // 7</pre>
+
+      <h4>3. Arrow Functions (ES6)</h4>
+      <pre>
+// Single expression — implicit return
+const square = x =&gt; x * x;
+console.log(square(5)); // 25
+
+// Multiple params
+const multiply = (a, b) =&gt; a * b;
+
+// Block body
+const factorial = n =&gt; {
+    if (n &lt;= 1) return 1;
+    return n * factorial(n - 1);
+};
+console.log(factorial(5)); // 120</pre>
+
+      <h4>4. Default Parameters</h4>
+      <pre>
+function power(base, exp = 2) { return Math.pow(base, exp); }
+console.log(power(3));    // 9  (exp defaults to 2)
+console.log(power(2, 10)); // 1024</pre>
+
+      <h4>5. Rest Parameters &amp; Spread</h4>
+      <pre>
+function sum(...nums) {
+    return nums.reduce((acc, n) =&gt; acc + n, 0);
+}
+console.log(sum(1, 2, 3, 4, 5)); // 15
+
+const nums = [1, 2, 3];
+console.log(Math.max(...nums));   // 3 (spread)</pre>
+
+      <h4>6. Closures</h4>
+      <pre>
+function makeCounter() {
+    let count = 0;
+    return {
+        increment: () =&gt; ++count,
+        decrement: () =&gt; --count,
+        value:     () =&gt; count
+    };
+}
+const counter = makeCounter();
+counter.increment(); counter.increment();
+console.log(counter.value()); // 2</pre>
+
+      <h4>7. Higher-Order Functions</h4>
+      <pre>
+// Function that takes a function as argument
+function applyTwice(fn, x) { return fn(fn(x)); }
+console.log(applyTwice(x =&gt; x * 2, 3)); // 12
+
+// Function that returns a function
+function multiplier(factor) {
+    return num =&gt; num * factor;
+}
+const triple = multiplier(3);
+console.log(triple(7)); // 21</pre>
+
+      <h4>8. IIFE (Immediately Invoked Function Expression)</h4>
+      <pre>
+(function() {
+    const secret = "I run immediately!";
+    console.log(secret);
+})();
+// secret is NOT accessible outside</pre>
+
+      <h4>9. Async Functions (ES8)</h4>
+      <pre>
+async function fetchUser(id) {
+    try {
+        const res = await fetch(`/api/users/${id}`);
+        const data = await res.json();
+        return data;
+    } catch (err) {
+        console.error("Error:", err);
+    }
+}
+fetchUser(1).then(user =&gt; console.log(user.name));</pre>
+
+      <h4>10. Generator Functions</h4>
+      <pre>
+function* range(start, end) {
+    for (let i = start; i &lt;= end; i++) yield i;
+}
+for (const num of range(1, 5)) console.log(num); // 1 2 3 4 5</pre>
+    </div>
+  </div>
+
+  <!-- Q11 -->
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q11</span><span class="qtext">Which Protocols Describe VoIP Connections? Explain in detail. [15]</span><span class="qmarks">15 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+      <h4>1. SIP — Session Initiation Protocol (5 marks)</h4>
+      <p>The most widely used VoIP signalling protocol. Handles call setup, modification, and teardown.</p>
+      <div class="diagram-box"><pre>
+Caller                  SIP Proxy               Callee
+  │── INVITE ─────────────────────────────────►│
+  │◄── 100 Trying ──────────────────────────────│
+  │◄── 180 Ringing ─────────────────────────────│
+  │◄── 200 OK (SDP media params) ───────────────│
+  │── ACK ──────────────────────────────────────►│
+  │════════ RTP Media Stream ════════════════════│
+  │── BYE ──────────────────────────────────────►│
+  │◄── 200 OK ──────────────────────────────────│</pre></div>
+      <p>SIP messages: INVITE, ACK, BYE, CANCEL, REGISTER, OPTIONS. SDP (Session Description Protocol) negotiates codec, IP, port.</p>
+
+      <h4>2. RTP — Real-time Transport Protocol</h4>
+      <p>Carries the actual voice/video data over UDP. Provides: sequence numbers (ordering), timestamps (sync/jitter), SSRC (stream ID), payload type (codec). Works with RTCP for QoS monitoring.</p>
+
+      <h4>3. RTCP — RTP Control Protocol</h4>
+      <p>Companion to RTP. Sends periodic control packets: SR (Sender Report) with stats, RR (Receiver Report) with loss/jitter. Allows both sides to monitor call quality and adapt (e.g., switch codec).</p>
+
+      <h4>4. H.323 — ITU-T Standard</h4>
+      <p>Older but still used enterprise VoIP standard. Uses: H.225 (call signalling), H.245 (media control), RAS (Registration, Admission, Status). More complex than SIP but more mature for enterprise PBX systems.</p>
+
+      <h4>5. MGCP — Media Gateway Control Protocol</h4>
+      <p>Controls media gateways (devices connecting PSTN to IP) from a centralised call agent. The gateway is "dumb" — the call agent (softswitch) does all the intelligence. Used by telephone carriers.</p>
+
+      <h4>6. Codecs Used in VoIP</h4>
+      <table class="rule-table">
+        <thead><tr><th>Codec</th><th>Bitrate</th><th>Quality</th><th>Use</th></tr></thead>
+        <tbody>
+          <tr><td>G.711</td><td>64 kbps</td><td>Excellent (PCM)</td><td>PSTN, LAN calls</td></tr>
+          <tr><td>G.729</td><td>8 kbps</td><td>Good (compressed)</td><td>Low-bandwidth WAN</td></tr>
+          <tr><td>G.722</td><td>48–64 kbps</td><td>HD Voice (wideband)</td><td>HD calls</td></tr>
+          <tr><td>Opus</td><td>6–510 kbps</td><td>Excellent adaptive</td><td>WebRTC, internet</td></tr>
+        </tbody>
+      </table>
+
+      <h4>Complete VoIP Call Flow</h4>
+      <div class="diagram-box"><pre>
+1. REGISTER:  SIP phone registers with SIP server
+2. INVITE:    Caller sends SIP INVITE to SIP server
+3. ROUTE:     SIP proxy routes to callee's SIP address
+4. NEGOTIATE: SDP in INVITE/200 OK negotiates codec &amp; ports
+5. ACK:       3-way handshake completes — call established
+6. MEDIA:     RTP packets flow UDP between caller &amp; callee
+7. QOS:       RTCP monitors packet loss, jitter, delay
+8. BYE:       Either party sends SIP BYE to end call</pre></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="paper-footer">
+  <div class="footer-inner">
+    <a href="index.html" class="back-btn-footer">← Back to All Papers</a>
+    <span>MAKAUT | PEC-CS801D | Web &amp; Internet Technology | 2022–23</span>
+  </div>
+</footer>
+</body>
+</html>

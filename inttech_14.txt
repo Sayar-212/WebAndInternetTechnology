@@ -1,0 +1,150 @@
+CS/B.Tech/CSE/odd/Sem-7th/CS-705A/2014-15 Time Allotted: 3 Hours | Full Marks: 70 CS-705A: INTERNET TECHNOLOGY
+
+The questions are of equal value. The figures in the margin indicate full marks. Candidates are required to give their answers in their own words as far as practicable.
+
+1. Answer all questions.
+
+GROUP A
+
+ 
+
+(Multiple Choice Type Questions) $10\times1=10$
+
+ 
+
+(i) What does a Markup tag tell the web browser?
+
+(A) how to organize the page
+(B) how to display message
+(C) how to display the page
+(D) none of these
+ 
+
+(ii) Which organization defines the Web Standards?
+
+(A) Apple Inc
+(B) World Wide Web Consortium (W3C)
+(C) Microsoft Corporation
+(D) IBM Corporation
+ 
+
+(iii) HTML documents are saved in
+
+(A) ASCII text
+(B) machine language codes
+(C) special binary format
+(D) none of these
+ 
+
+(iv) Which of the following is correct regarding meta tag in HTML?
+
+(A) <meta>...</meta>
+(B) <meta name = ""/>
+(C) <metadata>...</metadata>
+(D) <metadata name = ""/>
+ 
+
+(v) Which of the following is correct to set "Black" colour as Background of page?,
+
+(A) <body bgcolour $=^{\prime\prime}\#00000^{\prime\prime}>$
+(B) <body background $=^{\prime\prime}\#00000^{\prime\prime}>$
+(C) <body background colour $=^{\prime\prime}\#00000^{\prime\prime}>$
+(D) all of these
+ 
+
+(vi) How to embed an audio file in HTML?
+
+(A)
+(B)
+(C)
+(D) <embed music = "myfavsong.mid" width $=^{\prime\prime}100^{\prime\prime}$ height $=^{\prime\prime5^{\prime\prime}}$?
+ 
+
+(vii) Which syntax is used to describe elements in CSS?
+
+(A) protectors
+(B) selectors
+(C) both (A) and (B)
+(D) none of the mentioned
+ 
+
+(viii) Which of the following is tree view parser?
+
+(A) SAX
+(B) DOM
+(C) both (A) and (B)
+(D) none of these
+ 
+
+(ix) In telnet, the client echoes the character on the screen but does not send it until a whole line is completed in
+
+(A) default mode
+(B) character mode
+(C) server mode
+(D) none of the mentioned
+ 
+
+(x) ______ programs can be used to accomplish functions indirectly that an unauthorized user could not accomplish directly.
+
+(A) Zombie
+(B) Worm
+(C) Trojan Horses
+(D) Logic Bomb
+GROUP B
+
+ 
+
+(Short Answer Type Questions) Answer any three questions. $3\times5=15$
+
+2.
+
+(a) State diferent types of lists with examples in HTML. State the use of and tags. 3+2
+3.
+
+(a) What are the usage of: hover, active and: focus dynamic pseudo classes?
+(b) What is cookie? 3+2
+4.
+
+(a) Implement the following regular expression in Perl: a*bc.
+(b) What do you mean by spoofing? 3+2
+5.
+
+(a) What is Denial-of-service attack?
+(b) Discuss briefly about proxy firewall. 2+3
+6.
+
+(a) What is the difference between class selector and id selector in CSS.
+(b) Give coding example for inline styles of CSS. 3+2
+GROUP C
+
+ 
+
+(Long Answer Type Questions) Answer any three questions. $3\times15=45$
+
+7.
+
+(a) What do you mean by the term DNS? Explain DNS Recursive Resolution technique with a diagram.
+(b) What is the significance of NVT in TELNET remote login procedure? Describe different types of operational mode in TELNET. $(2+5)+(3+5)$
+8.
+
+(a) What is the meaning of the term 'Hypertext Transfer Protocol' in World Wide Web environment?
+(b) What is URL? Explain different component of URL.
+(c) Distinguish between GET and POST method in HTTP.
+(d) Explain different file transmission mode across FTP data connection. $2+(1+4)+4+4$
+9.
+
+(a) What is classless addressing scheme? How does NAT work?
+(b) What do you mean about the term 'Subnet'? Why masking is necessary? Distinguish between default mask and subnet mask.
+(c) A block of address is granted to a small organization. We know that one of the addresses is 205.16.37.39/28. What is the first and last addresses in the block?
+10.
+
+(a) Why MIME is used as an extension of SMTP for e-mail transferring system over network?
+(b) What is the responsibility of Mail Transfer agent?
+(c) Explain different stages of SMTP email delivery with the help of a diagram. 3+6+6
+11. Write short notes on any three of the following: 3x5
+
+(a) Three-way handshaking of TCP connection establishment
+(b) Path vector routing.
+(c) Proxy Firewall.
+(d) HTML Image Map.
+(e) XML tree.

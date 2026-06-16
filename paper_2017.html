@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>2017-18 | Internet Technology | MAKAUT</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="paper.css"/>
+</head>
+<body>
+<nav class="topbar">
+  <a href="index.html" class="back-btn">← Back to Home</a>
+  <div class="topbar-info">
+    <span class="topbar-year">2017–18</span>
+    <span class="topbar-code">CS/B.Tech/CSE/ODD/SEM-7/CS-705A</span>
+  </div>
+  <div class="topbar-meta"><span>⏱ 3 Hours</span><span>📋 70 Marks</span></div>
+</nav>
+<header class="paper-hero">
+  <div class="paper-hero-bg"></div>
+  <div class="paper-hero-content">
+    <div class="paper-badge">MAKAUT • Internet Technology</div>
+    <h1>2017 – 18 <span class="yr-accent">Solved Paper</span></h1>
+    <p>CS-705A &nbsp;|&nbsp; Full Marks: 70 &nbsp;|&nbsp; Time: 3 Hours</p>
+    <div class="paper-pills">
+      <span>Group A: 10 MCQs × 1 = 10</span>
+      <span>Group B: Any 3 × 5 = 15</span>
+      <span>Group C: Any 3 × 15 = 45</span>
+    </div>
+  </div>
+</header>
+<main class="paper-main">
+
+<!-- GROUP A -->
+<section class="group-section" id="groupA">
+  <div class="group-header"><span class="group-label">Group A</span><h2>Multiple Choice Questions <span class="marks-tag">10 × 1 = 10</span></h2></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(i)</span><span class="qtext">What type of protocol is HTTP?</span><span class="qmarks">1M</span></div>
+  <div class="options"><div class="opt">a) State aware</div><div class="opt">b) Stateful</div><div class="opt correct">c) Stateless</div><div class="opt">d) Connection oriented</div></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer: (c) Stateless</div><p>HTTP is <strong>stateless</strong> — each request is independent; the server retains no memory of previous requests. Sessions must be managed externally via cookies, tokens, or server-side session storage.</p></div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(ii)</span><span class="qtext">Which is the intra-domain routing protocol?</span><span class="qmarks">1M</span></div>
+  <div class="options"><div class="opt">a) RIP</div><div class="opt correct">b) OSPF</div><div class="opt">c) BGP</div><div class="opt">d) None</div></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer: (b) OSPF (also RIP qualifies — best answer is OSPF)</div><p>Both <strong>RIP</strong> and <strong>OSPF</strong> are intra-domain (IGP — Interior Gateway Protocols) used within an Autonomous System. <strong>BGP</strong> is an inter-domain (EGP) protocol. OSPF is the better/more modern choice. RIP is also an IGP but limited to 15 hops.</p></div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(iii)</span><span class="qtext">Which is NOT an IPv6 address type?</span><span class="qmarks">1M</span></div>
+  <div class="options"><div class="opt">a) Anycast</div><div class="opt">b) Multicast</div><div class="opt">c) Unicast</div><div class="opt correct">d) Broadcast</div></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer: (d) Broadcast</div><p>IPv6 supports <strong>Unicast</strong> (one-to-one), <strong>Multicast</strong> (one-to-many group), and <strong>Anycast</strong> (one-to-nearest). <strong>Broadcast does not exist in IPv6</strong> — it is replaced by multicast addresses for efficiency.</p></div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(iv)</span><span class="qtext">PERL stands for</span><span class="qmarks">1M</span></div>
+  <div class="options"><div class="opt">a) Practical Extraction and Reading Language</div><div class="opt correct">b) Practical Extraction and Report Language</div><div class="opt">c) Practical Example and Report Language</div><div class="opt">d) Practical Expert on Report Language</div></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer: (b) Practical Extraction and Report Language</div><p>Perl was originally created by Larry Wall in 1987 as a <strong>Practical Extraction and Report Language</strong> for text processing and generating reports. It is now a general-purpose scripting language famous for its powerful regular expression support.</p></div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(v)</span><span class="qtext">RIP is based on</span><span class="qmarks">1M</span></div>
+  <div class="options"><div class="opt">a) Link State Routing</div><div class="opt correct">b) Distance Vector Routing</div><div class="opt">c) Path Vector Routing</div><div class="opt">d) None</div></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer: (b) Distance Vector Routing</div><p><strong>RIP (Routing Information Protocol)</strong> uses the <strong>Bellman-Ford</strong> (distance vector) algorithm. Each router shares its entire routing table with direct neighbours. Metric = hop count (max 15). OSPF uses link state (Dijkstra). BGP uses path vector.</p></div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(vi)</span><span class="qtext">Which statement about XML is true?</span><span class="qmarks">1M</span></div>
+  <div class="options"><div class="opt correct">a) All the statements are true</div><div class="opt">b) All XML elements must have a closing tag</div><div class="opt">c) All XML elements must be in lower case</div><div class="opt">d) All XML documents must have a DTD</div></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer: (b) All XML elements must have a closing tag</div><p>Option (b) is the most accurate standalone truth. (c) is FALSE — XML is case-sensitive but tags can be any case. (d) is FALSE — a DTD is optional (document can be well-formed without one). So the correct single true statement is (b). Note: option (a) "all are true" is incorrect because (c) and (d) are false.</p></div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(vii)</span><span class="qtext">Position of SSL in TCP/IP protocol suite</span><span class="qmarks">1M</span></div>
+  <div class="options"><div class="opt">a) Transport and internet layer</div><div class="opt">b) Data link and physical layer</div><div class="opt correct">c) Application and transport layer</div><div class="opt">d) None</div></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer: (c) Between Application and Transport layer</div><p>SSL/TLS inserts itself <strong>between the Application layer and the Transport (TCP) layer</strong>. Applications pass data to SSL, which encrypts it before handing it to TCP. This is why HTTPS = HTTP + SSL/TLS.</p></div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(viii)</span><span class="qtext">Which HTML attribute defines inline styles?</span><span class="qmarks">1M</span></div>
+  <div class="options"><div class="opt">a) Class</div><div class="opt">b) Styles</div><div class="opt correct">c) Style</div><div class="opt">d) Font</div></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer: (c) style</div><p>The <code>style</code> attribute applies CSS directly on an HTML element: <code>&lt;p style="color:red; font-weight:bold"&gt;</code>. There is no <code>styles</code> or <code>font</code> attribute for this purpose.</p></div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(ix)</span><span class="qtext">Cookie is created and sent by</span><span class="qmarks">1M</span></div>
+  <div class="options"><div class="opt">a) Web browser</div><div class="opt correct">b) Web server</div><div class="opt">c) Application server</div><div class="opt">d) Strut platform</div></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer: (b) Web server</div><p>The <strong>web server creates the cookie</strong> and sends it to the browser via the <code>Set-Cookie</code> HTTP response header. The browser stores it and returns it in the <code>Cookie</code> request header on subsequent requests to the same domain.</p></div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(x)</span><span class="qtext">Maximum size of data portion of IP datagram is</span><span class="qmarks">1M</span></div>
+  <div class="options"><div class="opt">a) 65555B</div><div class="opt">b) 65535B</div><div class="opt correct">c) 65515B</div><div class="opt">d) None</div></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer: (c) 65515B</div><p>The <strong>Total Length</strong> field in the IPv4 header is 16 bits → maximum = 65535 bytes. The minimum IP header = 20 bytes. Maximum IP <em>options</em> = 40 bytes → max header = 60 bytes. Max data = 65535 − 20 = <strong>65515 bytes</strong> (with minimum header). Some questions accept 65515 or 65535-20=65515.</p></div></div>
+</section>
+
+<!-- GROUP B -->
+<section class="group-section" id="groupB">
+  <div class="group-header"><span class="group-label">Group B</span><h2>Short Answer Questions <span class="marks-tag">Any 3 × 5 = 15</span></h2></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q2</span><span class="qtext">What is Internet? Comparison of Intranet, Extranet and Internet.</span><span class="qmarks">2+3 = 5</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+  <h4>Internet (2 marks)</h4>
+  <p>The <strong>Internet</strong> is a global, publicly accessible network of interconnected computers and networks that use the <strong>TCP/IP protocol suite</strong> to communicate. It provides services like WWW, email, FTP, VoIP, and streaming. No single organisation owns it — it is a decentralised network of networks.</p>
+  <h4>Comparison (3 marks)</h4>
+  <table class="cmp-table">
+    <thead><tr><th>Feature</th><th>Intranet</th><th>Extranet</th><th>Internet</th></tr></thead>
+    <tbody>
+      <tr><td>Scope</td><td>Within one organisation</td><td>Between specific organisations</td><td>Global, public</td></tr>
+      <tr><td>Access</td><td>Employees only</td><td>Trusted partners/suppliers</td><td>Anyone</td></tr>
+      <tr><td>Security</td><td>High — fully controlled</td><td>Medium — controlled access</td><td>Low — open</td></tr>
+      <tr><td>Owner</td><td>Single organisation</td><td>Multiple organisations</td><td>No single owner</td></tr>
+      <tr><td>Example</td><td>Company HR portal</td><td>B2B supplier portal</td><td>www.google.com</td></tr>
+    </tbody>
+  </table>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q3</span><span class="qtext">Difference between IPv4 and IPv6 packet format.</span><span class="qmarks">5 Marks</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+  <table class="cmp-table">
+    <thead><tr><th>Feature</th><th>IPv4</th><th>IPv6</th></tr></thead>
+    <tbody>
+      <tr><td>Address length</td><td>32 bits (4 bytes)</td><td>128 bits (16 bytes)</td></tr>
+      <tr><td>Address space</td><td>~4.3 billion</td><td>~3.4 × 10³⁸</td></tr>
+      <tr><td>Header size</td><td>Variable (20–60 bytes)</td><td>Fixed 40 bytes</td></tr>
+      <tr><td>Checksum</td><td>Present in header</td><td>Removed (handled by upper layers)</td></tr>
+      <tr><td>Fragmentation</td><td>By routers and source</td><td>By source only</td></tr>
+      <tr><td>Broadcast</td><td>Supported</td><td>Not supported (uses multicast)</td></tr>
+      <tr><td>NAT</td><td>Required (address shortage)</td><td>Not required</td></tr>
+      <tr><td>Security</td><td>IPSec optional</td><td>IPSec mandatory</td></tr>
+      <tr><td>Auto-config</td><td>DHCP</td><td>SLAAC (stateless) + DHCPv6</td></tr>
+      <tr><td>Flow label</td><td>Absent</td><td>Present (20-bit flow label)</td></tr>
+    </tbody>
+  </table>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q4</span><span class="qtext">Difference between Worm and Trojan Horse.</span><span class="qmarks">5 Marks</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+  <table class="cmp-table">
+    <thead><tr><th>Feature</th><th>Worm</th><th>Trojan Horse</th></tr></thead>
+    <tbody>
+      <tr><td>Self-replication</td><td>Yes — replicates independently</td><td>No — does not self-replicate</td></tr>
+      <tr><td>Needs host file</td><td>No — standalone program</td><td>No — disguised as legitimate software</td></tr>
+      <tr><td>Spread method</td><td>Automatically over network (email, vulnerabilities)</td><td>User is tricked into running it</td></tr>
+      <tr><td>User action</td><td>Not required</td><td>Required (user executes it)</td></tr>
+      <tr><td>Primary damage</td><td>Network congestion, resource consumption</td><td>Data theft, backdoor, system damage</td></tr>
+      <tr><td>Example</td><td>WannaCry, Morris Worm, Code Red</td><td>Zeus (banking), RAT (Remote Access Trojan)</td></tr>
+      <tr><td>Detection</td><td>Unusual network traffic</td><td>Antivirus, behaviour analysis</td></tr>
+    </tbody>
+  </table>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q5</span><span class="qtext">IP address 192.168.110.25/27 — find subnet mask, network address, number of hosts.</span><span class="qmarks">5 Marks</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+  <pre>
+Given: IP = 192.168.110.25 / 27
+
+Step 1: Subnet Mask
+/27 = 27 network bits, 5 host bits
+Binary: 11111111.11111111.11111111.11100000
+Subnet Mask: 255.255.255.224
+
+Step 2: Block Size
+Block size = 2^5 = 32 (in last octet)
+Blocks: 0, 32, 64, 96, 128, 160, 192, 224
+
+Step 3: Which block does .25 fall in?
+0 ≤ 25 < 32  → Block starting at 0
+
+Network Address  : 192.168.110.0
+Broadcast Address: 192.168.110.31
+First usable host: 192.168.110.1
+Last usable host : 192.168.110.30
+
+Number of usable hosts = 2^5 - 2 = 30 hosts</pre>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q6</span><span class="qtext">What are XML Schemas? How are they better than DTDs?</span><span class="qmarks">2+3 = 5</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+  <h4>XML Schema (XSD) (2 marks)</h4>
+  <p>An <strong>XML Schema (XSD — XML Schema Definition)</strong> is a W3C-recommended language for defining the structure, content model, and data types of XML documents. It replaces DTD with much richer functionality.</p>
+  <pre>
+&lt;!-- Simple XSD example --&gt;
+&lt;xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;xs:element name="student"&gt;
+    &lt;xs:complexType&gt;
+      &lt;xs:sequence&gt;
+        &lt;xs:element name="name" type="xs:string"/&gt;
+        &lt;xs:element name="age"  type="xs:integer"/&gt;
+      &lt;/xs:sequence&gt;
+    &lt;/xs:complexType&gt;
+  &lt;/xs:element&gt;
+&lt;/xs:schema&gt;</pre>
+  <h4>XSD vs DTD (3 marks)</h4>
+  <table class="cmp-table">
+    <thead><tr><th>Feature</th><th>XML Schema (XSD)</th><th>DTD</th></tr></thead>
+    <tbody>
+      <tr><td>Syntax</td><td>Written in XML itself</td><td>Own non-XML syntax</td></tr>
+      <tr><td>Data types</td><td>Rich types: integer, date, boolean, string</td><td>Only CDATA, PCDATA (text only)</td></tr>
+      <tr><td>Namespaces</td><td>Fully supported</td><td>Not supported</td></tr>
+      <tr><td>Extensibility</td><td>Supports inheritance (extension/restriction)</td><td>Not supported</td></tr>
+      <tr><td>Cardinality</td><td>minOccurs / maxOccurs (any number)</td><td>Only ?, *, + operators</td></tr>
+      <tr><td>Tool support</td><td>Excellent IDE/validator support</td><td>Limited</td></tr>
+    </tbody>
+  </table>
+  </div></div>
+</section>
+
+<!-- GROUP C -->
+<section class="group-section" id="groupC">
+  <div class="group-header"><span class="group-label">Group C</span><h2>Long Answer Questions <span class="marks-tag">Any 3 × 15 = 45</span></h2></div>
+
+  <!-- Q7 -->
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q7</span><span class="qtext">a) Firewall — what + needs &nbsp; b) Types of firewall &nbsp; c) Packet filtering &nbsp; d) Proxy purpose &nbsp; e) NAT functions</span><span class="qmarks">4+2+2+3+4 = 15</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+  <h4>a) Firewall — Definition and Basic Needs (4 marks)</h4>
+  <p>A <strong>firewall</strong> is a network security system (hardware/software) that monitors and controls incoming/outgoing traffic based on predetermined security rules, creating a barrier between trusted internal networks and untrusted external networks.</p>
+  <p><strong>Basic needs:</strong></p>
+  <ul>
+    <li>Protect internal network from external attacks (hackers, malware).</li>
+    <li>Control access — block unauthorized access to internal resources.</li>
+    <li>Log and monitor all network traffic for audit/forensics.</li>
+    <li>Prevent data exfiltration — stop sensitive data leaving the network.</li>
+    <li>Guard against DoS/DDoS attacks.</li>
+    <li>Enforce organisational security policy.</li>
+  </ul>
+  <h4>b) Types of Firewall (2 marks)</h4>
+  <ul>
+    <li><strong>Packet Filtering:</strong> Network layer, checks IP/port headers.</li>
+    <li><strong>Stateful Inspection:</strong> Tracks connection state; more intelligent than packet filtering.</li>
+    <li><strong>Proxy / Application Firewall:</strong> Layer 7, deep content inspection.</li>
+    <li><strong>Next-Generation Firewall (NGFW):</strong> Combines DPI, IPS, application awareness, SSL inspection.</li>
+  </ul>
+  <h4>c) Packet Filtering (2 marks)</h4>
+  <p>Examines each packet independently based on: source/destination IP, protocol (TCP/UDP/ICMP), port numbers, and direction. Uses ACL rules — processed top to bottom; first match wins. <strong>Stateless</strong> — no connection tracking. Fast but cannot inspect payload or detect fragmentation attacks.</p>
+  <h4>d) Purpose of Proxy (3 marks)</h4>
+  <ul>
+    <li><strong>Intermediary:</strong> Client connects to proxy; proxy connects to server — neither side communicates directly.</li>
+    <li><strong>Anonymity:</strong> Hides client's real IP from the server.</li>
+    <li><strong>Content filtering:</strong> Blocks malicious URLs, scans content for viruses.</li>
+    <li><strong>Caching:</strong> Stores frequently requested pages — reduces latency and bandwidth.</li>
+    <li><strong>Access control:</strong> Restricts which sites users can access.</li>
+  </ul>
+  <h4>e) Functions of NAT (4 marks)</h4>
+  <ul>
+    <li><strong>Address translation:</strong> Converts private IPs (192.168.x.x) to public IP for internet communication.</li>
+    <li><strong>IP address conservation:</strong> Many devices share one public IP (PAT/NAT overload).</li>
+    <li><strong>Security:</strong> External hosts cannot directly initiate connections to internal hosts — hides internal topology.</li>
+    <li><strong>Types:</strong> Static (1:1), Dynamic (pool), PAT (many:1 using ports).</li>
+    <li><strong>Translation table:</strong> Maintains mapping of private:port ↔ public:port for all active connections.</li>
+  </ul>
+  <pre>
+Private             NAT Router           Internet
+192.168.1.10:3000 ↔ 203.0.113.1:5001 ↔ 8.8.8.8:443
+192.168.1.11:4500 ↔ 203.0.113.1:5002 ↔ 8.8.8.8:80</pre>
+  </div></div>
+
+  <!-- Q8 -->
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q8</span><span class="qtext">a) IP datagram format &nbsp; b) Distance vector vs Link state routing &nbsp; c) OSPF link types</span><span class="qmarks">5+5+5 = 15</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+  <h4>a) IP Datagram Format (5 marks)</h4>
+  <div class="diagram-box"><pre>
+ 0                   1                   2                   3
+ 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|Version|  IHL  |Type of Service|          Total Length         |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|         Identification        |Flags|      Fragment Offset    |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|  Time to Live |    Protocol   |         Header Checksum       |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                       Source Address (32 bits)                |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                    Destination Address (32 bits)              |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                    Options (if IHL > 5)        |   Padding    |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                          Data Payload                         |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+</pre></div>
+  <ul>
+    <li><strong>Version (4b):</strong> IPv4 = 4</li>
+    <li><strong>IHL (4b):</strong> Header length in 32-bit words (min=5=20 bytes)</li>
+    <li><strong>Total Length (16b):</strong> Entire datagram size in bytes</li>
+    <li><strong>Identification (16b):</strong> Fragment reassembly ID</li>
+    <li><strong>Flags (3b):</strong> DF (Don't Fragment), MF (More Fragments)</li>
+    <li><strong>TTL (8b):</strong> Max hops before discard</li>
+    <li><strong>Protocol (8b):</strong> Next layer: TCP=6, UDP=17, ICMP=1</li>
+  </ul>
+  <h4>b) Distance Vector vs Link State Routing (5 marks)</h4>
+  <table class="cmp-table">
+    <thead><tr><th>Feature</th><th>Distance Vector</th><th>Link State</th></tr></thead>
+    <tbody>
+      <tr><td>Algorithm</td><td>Bellman-Ford</td><td>Dijkstra (SPF)</td></tr>
+      <tr><td>Knowledge</td><td>Only neighbours + distances</td><td>Full network topology</td></tr>
+      <tr><td>Sharing</td><td>Routing table to neighbours only</td><td>LSAs (Link State Ads) to all routers</td></tr>
+      <tr><td>Convergence</td><td>Slow — count-to-infinity problem</td><td>Fast — consistent topology map</td></tr>
+      <tr><td>Loops</td><td>Prone to routing loops</td><td>Loop-free (complete topology view)</td></tr>
+      <tr><td>Memory</td><td>Low</td><td>Higher (stores full topology)</td></tr>
+      <tr><td>CPU</td><td>Low</td><td>Higher (runs Dijkstra)</td></tr>
+      <tr><td>Protocol</td><td>RIP, IGRP</td><td>OSPF, IS-IS</td></tr>
+    </tbody>
+  </table>
+  <h4>c) OSPF Link Types (5 marks)</h4>
+  <ul>
+    <li><strong>Point-to-Point:</strong> Direct link between exactly two routers. No DR/BDR election needed. E.g., serial WAN links.</li>
+    <li><strong>Broadcast (Transient):</strong> Multi-access network with many routers (e.g., Ethernet LAN). DR (Designated Router) and BDR elected to reduce LSA flooding.</li>
+    <li><strong>Non-Broadcast Multi-Access (NBMA):</strong> Like Frame Relay — multiple routers but no broadcast capability. DR/BDR still used. Manual neighbour configuration needed.</li>
+    <li><strong>Point-to-Multipoint:</strong> Collection of point-to-point links. No DR election. Flexible for partial-mesh topologies.</li>
+    <li><strong>Virtual Link:</strong> Logical tunnel through a non-backbone area to connect to area 0 (backbone). Used for discontiguous backbone areas.</li>
+  </ul>
+  </div></div>
+
+  <!-- Q9 -->
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q9</span><span class="qtext">a) Class B default mask + broadcast + Class A private range &nbsp; b) Dynamic vs static routing &nbsp; c) GET vs POST &nbsp; d) TCP vs UDP</span><span class="qmarks">4+4+4+3 = 15</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+  <h4>a) Class B Info + Class A Private Range (4 marks)</h4>
+  <ul>
+    <li><strong>Class B default mask:</strong> 255.255.0.0 (/16)</li>
+    <li><strong>Class B broadcast:</strong> Host bits all 1s — e.g., for network 172.16.0.0/16 → broadcast = 172.16.255.255</li>
+    <li><strong>Class A private IP range:</strong> 10.0.0.0 – 10.255.255.255 (10.0.0.0/8)</li>
+  </ul>
+  <h4>b) Dynamic vs Static Routing (4 marks)</h4>
+  <p><strong>Dynamic routing</strong> is preferred in continuously changing networks because:</p>
+  <ul>
+    <li>Automatically updates routing tables when topology changes (link failure, new router).</li>
+    <li>No manual intervention required — routers exchange routing information via protocols (OSPF, RIP, BGP).</li>
+    <li>Adapts to failures in real-time — finds alternate paths automatically.</li>
+    <li>Scales well for large, complex networks.</li>
+  </ul>
+  <p>Static routing requires manual update of every router's table when topology changes — impractical in dynamic environments.</p>
+  <h4>c) GET vs POST (4 marks)</h4>
+  <table class="cmp-table">
+    <thead><tr><th>Feature</th><th>GET</th><th>POST</th></tr></thead>
+    <tbody>
+      <tr><td>Data location</td><td>URL query string</td><td>HTTP request body</td></tr>
+      <tr><td>Visibility</td><td>Visible in URL/browser history</td><td>Not visible in URL</td></tr>
+      <tr><td>Security</td><td>Less secure</td><td>More secure</td></tr>
+      <tr><td>Data size</td><td>Limited (~2KB)</td><td>No limit</td></tr>
+      <tr><td>Caching</td><td>Cached, bookmarkable</td><td>Not cached</td></tr>
+      <tr><td>Use</td><td>Retrieve data</td><td>Submit/modify data</td></tr>
+    </tbody>
+  </table>
+  <h4>d) TCP vs UDP (3 marks)</h4>
+  <table class="cmp-table">
+    <thead><tr><th>Feature</th><th>TCP</th><th>UDP</th></tr></thead>
+    <tbody>
+      <tr><td>Connection</td><td>Connection-oriented (3-way handshake)</td><td>Connectionless</td></tr>
+      <tr><td>Reliability</td><td>Guaranteed delivery, ACKs, retransmission</td><td>No guarantee — fire and forget</td></tr>
+      <tr><td>Ordering</td><td>In-order delivery</td><td>No ordering</td></tr>
+      <tr><td>Speed</td><td>Slower (overhead)</td><td>Faster (minimal overhead)</td></tr>
+      <tr><td>Use cases</td><td>HTTP, FTP, SMTP, SSH</td><td>DNS, VoIP, video streaming, gaming</td></tr>
+    </tbody>
+  </table>
+  </div></div>
+
+  <!-- Q10 -->
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q10</span><span class="qtext">a) Subnet 125.134.112.66 / 255.255.224.0 &nbsp; b) 11-subnet design &nbsp; c) DNS response header &nbsp; d) Multicast + Transport Gateway</span><span class="qmarks">1+6+5+3 = 15</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+  <h4>a) Network and Broadcast Address (5 marks)</h4>
+  <pre>
+IP: 125.134.112.66   Mask: 255.255.224.0  →  /19
+Block size in 3rd octet = 256 - 224 = 32
+Blocks: 0, 32, 64, 96, 128...
+112 falls in block 96 (96 ≤ 112 < 128)
+
+Network Address  : 125.134.96.0
+Broadcast Address: 125.134.127.255
+Usable hosts     : 2^13 - 2 = 8190</pre>
+  <h4>b) 11-Subnet Design for 14.24.74.0/24 (6 marks)</h4>
+  <table class="rule-table">
+    <thead><tr><th>Subnet</th><th>Prefix</th><th>Network</th><th>Broadcast</th><th>Hosts</th></tr></thead>
+    <tbody>
+      <tr><td>S1 (64)</td><td>/26</td><td>14.24.74.0</td><td>14.24.74.63</td><td>62</td></tr>
+      <tr><td>S2 (64)</td><td>/26</td><td>14.24.74.64</td><td>14.24.74.127</td><td>62</td></tr>
+      <tr><td>S3 (32)</td><td>/27</td><td>14.24.74.128</td><td>14.24.74.159</td><td>30</td></tr>
+      <tr><td>S4 (32)</td><td>/27</td><td>14.24.74.160</td><td>14.24.74.191</td><td>30</td></tr>
+      <tr><td>S5 (16)</td><td>/28</td><td>14.24.74.192</td><td>14.24.74.207</td><td>14</td></tr>
+      <tr><td>S6 (16)</td><td>/28</td><td>14.24.74.208</td><td>14.24.74.223</td><td>14</td></tr>
+      <tr><td>S7 (16)</td><td>/28</td><td>14.24.74.224</td><td>14.24.74.239</td><td>14</td></tr>
+      <tr><td>S8 (4)</td><td>/30</td><td>14.24.74.240</td><td>14.24.74.243</td><td>2</td></tr>
+      <tr><td>S9 (4)</td><td>/30</td><td>14.24.74.244</td><td>14.24.74.247</td><td>2</td></tr>
+      <tr><td>S10 (4)</td><td>/30</td><td>14.24.74.248</td><td>14.24.74.251</td><td>2</td></tr>
+      <tr><td>S11 (4)</td><td>/30</td><td>14.24.74.252</td><td>14.24.74.255</td><td>2</td></tr>
+    </tbody>
+  </table>
+  <h4>c) DNS Response Header for abc.xyz.au.ac.in (5 marks)</h4>
+  <table class="rule-table">
+    <thead><tr><th>Field</th><th>Value</th></tr></thead>
+    <tbody>
+      <tr><td>ID</td><td>Same as query (e.g., 0xABCD)</td></tr>
+      <tr><td>QR</td><td>1 (Response)</td></tr>
+      <tr><td>Opcode</td><td>0 (Standard query)</td></tr>
+      <tr><td>AA (Authoritative)</td><td>1 (authoritative answer)</td></tr>
+      <tr><td>QDCOUNT</td><td>1 (one question)</td></tr>
+      <tr><td>ANCOUNT</td><td>1 (one answer RR)</td></tr>
+      <tr><td>Answer: Name</td><td>abc.xyz.au.ac.in</td></tr>
+      <tr><td>Answer: Type</td><td>A (IPv4 address record)</td></tr>
+      <tr><td>Answer: Class</td><td>IN (Internet)</td></tr>
+      <tr><td>Answer: TTL</td><td>e.g., 3600 seconds</td></tr>
+      <tr><td>Answer: RDATA</td><td>10.3.4.5</td></tr>
+      <tr><td>Name Server IP</td><td>10.0.0.1</td></tr>
+    </tbody>
+  </table>
+  <h4>d) Multicast Addressing + Transport Gateway (1+3 marks)</h4>
+  <p><strong>Multicast:</strong> One packet delivered to a group of interested receivers simultaneously. Class D addresses (224.0.0.0–239.255.255.255). Routers replicate only where needed. More efficient than broadcast (non-members ignored) and unicast (one copy each).</p>
+  <p><strong>Transport Gateway:</strong> A device that connects two networks using different transport-layer protocols (e.g., TCP ↔ ISO TP4). It terminates the transport connection on one side, re-encapsulates the data in the protocol of the other network, and re-establishes a connection. Acts as a protocol translator at Layer 4.</p>
+  </div></div>
+
+  <!-- Q11 -->
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q11</span><span class="qtext">Short Notes (any 3): a) Proxy Firewall &nbsp; b) TCP 3-way handshake &nbsp; c) Java Socket &nbsp; d) HTML Image Map &nbsp; e) Path Vector Routing</span><span class="qmarks">3 × 5 = 15</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+  <h4>a) Proxy Firewall</h4>
+  <p>Application-layer firewall; acts as intermediary; performs deep content inspection; hides internal IPs; caches content; blocks malicious URLs. Slower than packet filtering but far more secure. Needs separate proxy per protocol (HTTP proxy, FTP proxy, SMTP proxy).</p>
+  <h4>b) TCP Three-Way Handshake</h4>
+  <div class="diagram-box"><pre>
+Client                         Server
+  │── SYN (seq=x) ─────────────►│  Wants to connect
+  │◄── SYN-ACK (seq=y,ack=x+1) ─│  OK, here's my seq
+  │── ACK (ack=y+1) ────────────►│  Acknowledged
+  │════════ Data Transfer ════════│</pre></div>
+  <p>Step 1: Client sends SYN with its ISN (x). Step 2: Server responds SYN-ACK with own ISN (y) and ACK=x+1. Step 3: Client sends ACK=y+1. Both sides now know each other's sequence numbers. Connection is established and bidirectional data transfer begins.</p>
+  <h4>c) Java Socket</h4>
+  <pre>
+// Server
+ServerSocket ss = new ServerSocket(5000);
+Socket s = ss.accept();
+PrintWriter out = new PrintWriter(s.getOutputStream(), true);
+out.println("Hello Client!");
+s.close(); ss.close();
+
+// Client
+Socket s = new Socket("localhost", 5000);
+BufferedReader in = new BufferedReader(
+    new InputStreamReader(s.getInputStream()));
+System.out.println(in.readLine()); // Hello Client!
+s.close();</pre>
+  <h4>d) HTML Image Map</h4>
+  <p>Allows different areas of one image to act as separate clickable hyperlinks.</p>
+  <pre>
+&lt;img src="map.jpg" usemap="#mymap" alt="Map"&gt;
+&lt;map name="mymap"&gt;
+  &lt;area shape="rect"   coords="10,10,100,80" href="a.html"&gt;
+  &lt;area shape="circle" coords="200,100,50"   href="b.html"&gt;
+  &lt;area shape="poly"   coords="300,10,400,80,350,120" href="c.html"&gt;
+&lt;/map&gt;</pre>
+  <h4>e) Path Vector Routing</h4>
+  <p>Each routing entry contains the complete <strong>path</strong> (sequence of ASes) to reach the destination. Used by <strong>BGP</strong> (Border Gateway Protocol) for inter-domain routing on the internet. Loop prevention: if own AS number appears in the path, reject the route. Supports policy-based routing — can avoid certain ASes for business or political reasons. More flexible than distance vector; more scalable than link state for inter-domain use.</p>
+  </div></div>
+</section>
+</main>
+<footer class="paper-footer">
+  <div class="footer-inner">
+    <a href="index.html" class="back-btn-footer">← Back to All Papers</a>
+    <span>MAKAUT | CS-705A | Internet Technology | 2017–18</span>
+  </div>
+</footer>
+</body>
+</html>
