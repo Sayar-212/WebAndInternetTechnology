@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>2022-23 | Big Data Analysis | MAKAUT</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="paper.css"/>
+</head>
+<body>
+
+<nav class="topbar">
+  <a href="bigdata.html" class="back-btn">← Back to Big Data</a>
+  <div class="topbar-info">
+    <span class="topbar-year">2022–23</span>
+    <span class="topbar-code">CS/B.Tech(N)/EVEN/SEM-8/OEC-CS801A</span>
+  </div>
+  <div class="topbar-meta"><span>⏱ 3 Hours</span><span>📋 70 Marks</span></div>
+</nav>
+
+<header class="paper-hero">
+  <div class="paper-hero-bg"></div>
+  <div class="paper-hero-content">
+    <div class="paper-badge">MAKAUT • Big Data Analysis</div>
+    <h1>2022 – 23 <span class="yr-accent">Solved Paper</span></h1>
+    <p>OEC-CS801A &nbsp;|&nbsp; Full Marks: 70 &nbsp;|&nbsp; Time: 3 Hours &nbsp;|&nbsp; SEM-8</p>
+    <div class="paper-pills">
+      <span>Group A: Any 10 × 1 = 10</span>
+      <span>Group B: Any 3 × 5 = 15</span>
+      <span>Group C: Any 3 × 15 = 45</span>
+    </div>
+  </div>
+</header>
+
+<main class="paper-main">
+
+<!-- GROUP A -->
+<section class="group-section" id="groupA">
+  <div class="group-header">
+    <span class="group-label">Group A</span>
+    <h2>Very Short Answer Questions <span class="marks-tag">Any 10 × 1 = 10</span></h2>
+  </div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(I)</span><span class="qtext">________ operator executes a shell command from the Hive shell.</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p>The <strong>! (bang/exclamation)</strong> operator executes a shell command from the Hive shell.</p>
+    <p>Example: <code>!ls /user/hive/warehouse;</code> — runs the <code>ls</code> command directly from within the Hive CLI without leaving the session.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(II)</span><span class="qtext">The data being captured can be any form or structure. Which characteristic of Big Data are we talking about?</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>Variety.</strong> It refers to the different types and forms of data — structured (tables, databases), semi-structured (JSON, XML), and unstructured (images, videos, social media posts, logs).</p>
+    <p>Variety is one of the 5 V's of Big Data: Volume, Velocity, Variety, Veracity, and Value.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(III)</span><span class="qtext">Which NoSQL database stores data in nodes and edges?</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>Graph database</strong> (e.g., Neo4j, Amazon Neptune, JanusGraph).</p>
+    <p>Data is stored as <strong>nodes</strong> (entities) and <strong>edges</strong> (relationships between entities). Properties can be attached to both nodes and edges. Ideal for social networks, recommendation engines, and fraud detection.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(IV)</span><span class="qtext">Which term is used to denote the small subsets of a large file created by HDFS?</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>Blocks.</strong> HDFS splits large files into fixed-size blocks (default 128 MB in Hadoop 2.x, was 64 MB in Hadoop 1.x). Each block is stored independently across different DataNodes for parallel processing and fault tolerance through replication (default replication factor = 3).</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(V)</span><span class="qtext">YARN stands for: ________</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>Yet Another Resource Negotiator.</strong></p>
+    <p>YARN is the resource management layer of Hadoop 2.x. It separates resource management from job scheduling/monitoring, allowing multiple processing engines (MapReduce, Spark, Tez) to run on the same cluster.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(VI)</span><span class="qtext">Is HBase a NoSQL database?</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>Yes.</strong> Apache HBase is a <strong>column-family NoSQL database</strong> built on top of HDFS. It is modelled after Google's Bigtable and provides real-time read/write random access to large datasets. It is schema-less, distributed, and horizontally scalable.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(VII)</span><span class="qtext">________ step is performed by a data scientist after acquiring the data.</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>Data Preprocessing / Data Cleaning.</strong></p>
+    <p>After data acquisition, the data scientist cleans and preprocesses the raw data — handling missing values, removing duplicates, transforming formats, normalising data — before it can be used for analysis or model building.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(VIII)</span><span class="qtext">NoSQL databases are used mainly for handling large volumes of ________ data.</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>Unstructured</strong> (and semi-structured) data.</p>
+    <p>Unlike relational databases (RDBMS) which require predefined schemas, NoSQL databases can handle unstructured data such as JSON documents, key-value pairs, wide-column stores, and graph data — making them ideal for Big Data applications.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(IX)</span><span class="qtext">What is the default file size of an HDFS data block?</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>128 MB</strong> (in Hadoop 2.x and later). In Hadoop 1.x, the default block size was 64 MB.</p>
+    <p>The block size can be configured using the <code>dfs.blocksize</code> parameter in <code>hdfs-site.xml</code>. Larger blocks reduce NameNode memory usage but may waste space for small files.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(X)</span><span class="qtext">A ________ node acts as the Slave and is responsible for executing a Task assigned to it by the JobTracker.</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>TaskTracker</strong> node.</p>
+    <p>In Hadoop 1.x (MRv1), the TaskTracker runs on each slave node, accepts Map and Reduce tasks from the JobTracker, executes them in separate JVM processes, and reports progress/heartbeat back to the JobTracker. In Hadoop 2.x (YARN), this role is handled by the <strong>NodeManager</strong>.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(XI)</span><span class="qtext">Most NoSQL databases support automatic ________ meaning that you get high availability and disaster recovery.</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>Replication.</strong></p>
+    <p>NoSQL databases automatically replicate data across multiple nodes/data centres, ensuring high availability (data is accessible even if some nodes fail) and disaster recovery (data is not lost due to hardware failures). Examples: Cassandra uses configurable replication factor, MongoDB has replica sets.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(XII)</span><span class="qtext">The ________ and the EditLog are central data structures of HDFS.</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>FsImage</strong> (File System Image).</p>
+    <p><strong>FsImage:</strong> A snapshot of the entire HDFS file system metadata (directory structure, file-to-block mappings, permissions) at a point in time. <strong>EditLog:</strong> A transaction log that records every change made to the file system metadata after the last FsImage checkpoint. During startup, NameNode loads FsImage + replays EditLog to reconstruct current state.</p>
+  </div></div>
+</section>
+
+<!-- GROUP B -->
+<section class="group-section" id="groupB">
+  <div class="group-header"><span class="group-label">Group B</span><h2>Short Answer Questions <span class="marks-tag">Any 3 × 5 = 15</span></h2></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q2</span><span class="qtext">Explain the difference between parallel and distributed computing system.</span><span class="qmarks">5 Marks</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <table class="cmp-table">
+      <thead><tr><th>Feature</th><th>Parallel Computing</th><th>Distributed Computing</th></tr></thead>
+      <tbody>
+        <tr><td>Definition</td><td>Multiple processors work simultaneously on a single machine</td><td>Multiple independent machines work together over a network</td></tr>
+        <tr><td>Memory</td><td>Shared memory (all processors access same RAM)</td><td>Distributed memory (each machine has its own RAM)</td></tr>
+        <tr><td>Communication</td><td>Through shared memory / bus</td><td>Through network (message passing — RPC, HTTP)</td></tr>
+        <tr><td>Coupling</td><td>Tightly coupled</td><td>Loosely coupled</td></tr>
+        <tr><td>Fault Tolerance</td><td>Single point of failure (one machine)</td><td>Inherently fault-tolerant (other nodes continue)</td></tr>
+        <tr><td>Scalability</td><td>Vertical scaling (add more cores/RAM)</td><td>Horizontal scaling (add more machines)</td></tr>
+        <tr><td>Example</td><td>Multi-core CPU, GPU computing, OpenMP</td><td>Hadoop cluster, Apache Spark, cloud computing</td></tr>
+        <tr><td>Cost</td><td>Expensive single powerful machine</td><td>Commodity hardware (cost-effective)</td></tr>
+      </tbody>
+    </table>
+    <p><strong>Key Insight:</strong> Big Data systems like Hadoop use <strong>distributed computing</strong> — they distribute data and processing across many commodity machines, enabling horizontal scalability and fault tolerance through data replication.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q3</span><span class="qtext">What is the role of Name Node in an HDFS cluster?</span><span class="qmarks">5 Marks</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p>The <strong>NameNode</strong> is the <strong>master server</strong> in the HDFS architecture that manages the file system namespace and regulates client access to files.</p>
+    <h4>Key Roles of NameNode</h4>
+    <ul>
+      <li><strong>Metadata Management:</strong> Stores the file system tree and metadata — file names, permissions, block locations, replication factors — in memory (FsImage + EditLog).</li>
+      <li><strong>Block Mapping:</strong> Maintains the mapping of files to their constituent blocks and which DataNodes store each block replica.</li>
+      <li><strong>Client Request Handling:</strong> Receives file open/close/rename requests from clients and determines which DataNodes to read from or write to.</li>
+      <li><strong>Heartbeat Monitoring:</strong> Receives periodic heartbeats and block reports from DataNodes to confirm they are alive and track block locations.</li>
+      <li><strong>Replication Management:</strong> Ensures each block has the configured number of replicas; triggers re-replication when a DataNode goes down.</li>
+      <li><strong>Namespace Operations:</strong> Handles directory creation, deletion, renaming, and permission management.</li>
+    </ul>
+    <div class="diagram-box"><pre>
+                    NameNode (Master)
+                   ┌──────────────┐
+                   │  FsImage     │
+                   │  EditLog     │
+                   │  Block Map   │
+                   └──────┬───────┘
+            ┌─────────────┼─────────────┐
+       DataNode 1    DataNode 2    DataNode 3
+       [Block A1]    [Block A2]    [Block A1]
+       [Block B2]    [Block B1]    [Block B1]</pre></div>
+    <p><strong>Note:</strong> NameNode is a single point of failure in HDFS. Hadoop 2.x introduced <strong>Secondary NameNode</strong> (checkpointing) and <strong>NameNode HA</strong> (Active-Standby) to address this.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q4</span><span class="qtext">Define Business Intelligence (BI).</span><span class="qmarks">5 Marks</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>Business Intelligence (BI)</strong> refers to the strategies, technologies, and tools used to collect, integrate, analyse, and present business data to support better decision-making.</p>
+    <h4>Key Components of BI</h4>
+    <ul>
+      <li><strong>Data Warehousing:</strong> Central repository that stores historical data from multiple sources for analysis.</li>
+      <li><strong>ETL (Extract, Transform, Load):</strong> Process of extracting data from source systems, transforming it into a consistent format, and loading it into the warehouse.</li>
+      <li><strong>OLAP (Online Analytical Processing):</strong> Enables multi-dimensional analysis — slicing, dicing, drill-down, roll-up on data cubes.</li>
+      <li><strong>Reporting & Dashboards:</strong> Visual summaries of KPIs and metrics using tools like Tableau, Power BI, Looker.</li>
+      <li><strong>Data Mining:</strong> Discovering hidden patterns and insights using statistical and ML techniques.</li>
+    </ul>
+    <p><strong>Benefits:</strong> Faster and data-driven decisions, identify trends and anomalies, competitive advantage, improved operational efficiency, and better customer insights.</p>
+    <p><strong>BI vs Big Data Analytics:</strong> Traditional BI works on structured data in warehouses; Big Data analytics extends this to handle massive volumes of structured + unstructured data using tools like Hadoop, Spark.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q5</span><span class="qtext">Explain the CAP theorem.</span><span class="qmarks">5 Marks</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p>The <strong>CAP Theorem</strong> (Brewer's Theorem) states that a distributed system can guarantee at most <strong>two out of three</strong> properties simultaneously:</p>
+    <table class="cmp-table">
+      <thead><tr><th>Property</th><th>Meaning</th></tr></thead>
+      <tbody>
+        <tr><td><strong>C — Consistency</strong></td><td>Every read receives the most recent write (all nodes see the same data at the same time)</td></tr>
+        <tr><td><strong>A — Availability</strong></td><td>Every request gets a response (success/failure), even if some nodes are down</td></tr>
+        <tr><td><strong>P — Partition Tolerance</strong></td><td>System continues to operate even when network partitions (communication failures between nodes) occur</td></tr>
+      </tbody>
+    </table>
+    <h4>CAP Trade-offs in NoSQL Databases</h4>
+    <table class="cmp-table">
+      <thead><tr><th>Type</th><th>Guarantees</th><th>Examples</th></tr></thead>
+      <tbody>
+        <tr><td>CP (Consistency + Partition Tolerance)</td><td>Consistent reads, may reject writes during partition</td><td>HBase, MongoDB, Redis</td></tr>
+        <tr><td>AP (Availability + Partition Tolerance)</td><td>Always available, may serve stale data</td><td>Cassandra, DynamoDB, CouchDB</td></tr>
+        <tr><td>CA (Consistency + Availability)</td><td>Not practical in distributed systems (no partition tolerance)</td><td>Traditional RDBMS (single-node)</td></tr>
+      </tbody>
+    </table>
+    <p><strong>Key Insight:</strong> Since network partitions are unavoidable in distributed systems, real-world systems must choose between <strong>CP</strong> or <strong>AP</strong>. Many NoSQL databases offer tunable consistency (e.g., Cassandra allows configuring consistency level per query).</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q6</span><span class="qtext">As an HR manager of a company providing Big Data solutions, what characteristics would you look for while recruiting a data analyst?</span><span class="qmarks">5 Marks</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <h4>Key Characteristics for a Data Analyst</h4>
+    <ul>
+      <li><strong>Technical Skills:</strong>
+        <ul>
+          <li>Proficiency in SQL, Python/R for data analysis</li>
+          <li>Knowledge of Big Data tools — Hadoop, Spark, Hive, Pig</li>
+          <li>Experience with data visualisation — Tableau, Power BI, Matplotlib</li>
+          <li>Understanding of statistics and probability</li>
+          <li>Familiarity with databases — RDBMS and NoSQL (MongoDB, Cassandra, HBase)</li>
+        </ul>
+      </li>
+      <li><strong>Analytical Thinking:</strong> Ability to break down complex problems, identify patterns, and derive actionable insights from raw data.</li>
+      <li><strong>Domain Knowledge:</strong> Understanding of the industry (healthcare, finance, e-commerce) to contextualise data findings.</li>
+      <li><strong>Communication Skills:</strong> Ability to present findings to non-technical stakeholders through clear reports and visualisations.</li>
+      <li><strong>Attention to Detail:</strong> Ensuring data quality, identifying anomalies, and validating results.</li>
+      <li><strong>Problem-Solving:</strong> Creative approaches to handling messy, incomplete, or large-scale datasets.</li>
+      <li><strong>Continuous Learning:</strong> Willingness to keep up with rapidly evolving tools and technologies in the Big Data ecosystem.</li>
+    </ul>
+  </div></div>
+</section>
+
+<!-- GROUP C -->
+<section class="group-section" id="groupC">
+  <div class="group-header">
+    <span class="group-label">Group C</span>
+    <h2>Long Answer Questions <span class="marks-tag">Any 3 × 15 = 45</span></h2>
+  </div>
+
+  <!-- Q7 -->
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q7</span><span class="qtext">(a) Explain application of Big Data in Healthcare. (b) How do you deploy a Big Data solution? [6+9]</span><span class="qmarks">15 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+
+      <h4>(a) Applications of Big Data in Healthcare [6 marks]</h4>
+      <ul>
+        <li><strong>Electronic Health Records (EHR):</strong> Centralised patient records accessible across hospitals — medical history, prescriptions, lab results, imaging data. Enables faster diagnosis and reduces duplicate tests.</li>
+        <li><strong>Predictive Analytics:</strong> ML models predict disease outbreaks (e.g., COVID-19 spread modelling), patient readmission risk, and treatment outcomes based on historical data.</li>
+        <li><strong>Drug Discovery:</strong> Analysing genomic data and clinical trials to identify drug candidates faster. Reduces drug development time from 10+ years to a few years.</li>
+        <li><strong>Medical Imaging:</strong> Deep learning on X-rays, MRIs, CT scans to detect tumours, fractures, and anomalies with high accuracy (often surpassing human radiologists).</li>
+        <li><strong>Wearable Devices & IoT:</strong> Fitness trackers and smartwatches generate continuous health data (heart rate, blood oxygen, sleep patterns) — enabling remote patient monitoring.</li>
+        <li><strong>Fraud Detection:</strong> Identifying fraudulent insurance claims by analysing billing patterns and anomalies.</li>
+        <li><strong>Personalised Medicine:</strong> Tailoring treatment plans based on a patient's genetic profile, lifestyle, and historical response to medications.</li>
+      </ul>
+
+      <h4>(b) How to Deploy a Big Data Solution [9 marks]</h4>
+      <ol>
+        <li><strong>Identify Business Problem:</strong> Define the specific problem to solve — what questions need answering? What decisions will the data support?</li>
+        <li><strong>Data Source Identification:</strong> Identify all data sources — databases, APIs, IoT sensors, social media, logs. Assess data volume, velocity, variety.</li>
+        <li><strong>Choose Technology Stack:</strong>
+          <ul>
+            <li><strong>Storage:</strong> HDFS, Amazon S3, Azure Blob Storage</li>
+            <li><strong>Processing:</strong> MapReduce, Apache Spark, Apache Flink</li>
+            <li><strong>Database:</strong> HBase, Cassandra, MongoDB</li>
+            <li><strong>Query Engine:</strong> Hive, Pig, Presto</li>
+            <li><strong>Orchestration:</strong> Apache Airflow, Oozie</li>
+          </ul>
+        </li>
+        <li><strong>Data Ingestion:</strong> Set up pipelines to collect data — batch (Sqoop, Flume) or real-time (Kafka, Spark Streaming).</li>
+        <li><strong>Data Processing & ETL:</strong> Clean, transform, and enrich raw data. Handle missing values, duplicates, format conversion.</li>
+        <li><strong>Data Storage:</strong> Store processed data in appropriate format — Parquet/ORC for analytics, HBase for random access.</li>
+        <li><strong>Analysis & Modelling:</strong> Apply analytics — descriptive, diagnostic, predictive, or prescriptive. Build ML models if needed.</li>
+        <li><strong>Visualisation & Reporting:</strong> Deploy dashboards using Tableau, Grafana, or custom web apps for stakeholders.</li>
+        <li><strong>Monitoring & Scaling:</strong> Monitor cluster health (Ambari, Cloudera Manager), tune performance, scale horizontally by adding nodes as data grows.</li>
+      </ol>
+      <div class="diagram-box"><pre>
+Data Sources → Ingestion → Processing → Storage → Analytics → Visualisation
+ (IoT, DB,     (Kafka,    (Spark,      (HDFS,    (ML,        (Tableau,
+  Logs, API)    Flume)     MapReduce)    HBase)    Hive)       Grafana)</pre></div>
+    </div>
+  </div>
+
+  <!-- Q8 -->
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q8</span><span class="qtext">(a) What is NoSQL database? (b) Why is it used? (c) Advantages of NoSQL? (d) NoSQL vs Relational databases. [2+3+5+5]</span><span class="qmarks">15 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+
+      <h4>(a) What is NoSQL Database? [2 marks]</h4>
+      <p><strong>NoSQL (Not Only SQL)</strong> is a category of database management systems that do not follow the traditional relational (table-based) model. They are designed to handle large volumes of unstructured and semi-structured data with flexible schemas, horizontal scalability, and high performance.</p>
+
+      <h4>(b) Why is NoSQL Used? [3 marks]</h4>
+      <ul>
+        <li><strong>Big Data:</strong> Traditional RDBMS cannot efficiently handle petabytes of data — NoSQL databases scale horizontally across commodity hardware.</li>
+        <li><strong>Flexible Schema:</strong> Data models evolve rapidly in modern applications (social media, IoT). NoSQL allows schema-less or dynamic schema designs.</li>
+        <li><strong>High Velocity:</strong> Real-time applications (gaming, social media feeds, IoT) need low-latency reads/writes — NoSQL databases like Cassandra and Redis excel at this.</li>
+        <li><strong>Variety of Data:</strong> JSON documents, key-value pairs, graphs, wide-column data — NoSQL supports diverse data models.</li>
+        <li><strong>Cloud & Distributed:</strong> NoSQL databases are designed for distributed environments and cloud deployment.</li>
+      </ul>
+
+      <h4>(c) Advantages of NoSQL [5 marks]</h4>
+      <ul>
+        <li><strong>Horizontal Scalability:</strong> Add more nodes to the cluster instead of upgrading a single server. Scale out, not up.</li>
+        <li><strong>Flexible Data Model:</strong> No rigid schema — documents, key-value, columnar, or graph models. Adapts to changing requirements.</li>
+        <li><strong>High Performance:</strong> Optimised for specific access patterns — fast reads/writes for key-value stores, complex queries for graph databases.</li>
+        <li><strong>High Availability:</strong> Built-in replication and automatic failover ensure data is always accessible.</li>
+        <li><strong>Cost-Effective:</strong> Runs on commodity hardware; open-source options (MongoDB, Cassandra, HBase) reduce licensing costs.</li>
+        <li><strong>Developer Friendly:</strong> JSON-like documents map naturally to programming language objects; easier to develop with agile methodologies.</li>
+      </ul>
+
+      <h4>(d) NoSQL vs Relational Databases [5 marks]</h4>
+      <table class="cmp-table">
+        <thead><tr><th>Feature</th><th>Relational (RDBMS)</th><th>NoSQL</th></tr></thead>
+        <tbody>
+          <tr><td>Data Model</td><td>Tables with rows and columns</td><td>Document, Key-Value, Column-Family, Graph</td></tr>
+          <tr><td>Schema</td><td>Fixed, predefined schema</td><td>Dynamic, flexible schema</td></tr>
+          <tr><td>Scalability</td><td>Vertical (scale up)</td><td>Horizontal (scale out)</td></tr>
+          <tr><td>Query Language</td><td>SQL (standardised)</td><td>Varies — CQL, MongoDB queries, Gremlin</td></tr>
+          <tr><td>ACID</td><td>Full ACID compliance</td><td>Eventual consistency (some support ACID)</td></tr>
+          <tr><td>Joins</td><td>Complex joins supported</td><td>Generally no joins (denormalised data)</td></tr>
+          <tr><td>Best For</td><td>Structured data, transactions (banking)</td><td>Big Data, real-time apps, flexible data</td></tr>
+          <tr><td>Examples</td><td>MySQL, PostgreSQL, Oracle</td><td>MongoDB, Cassandra, HBase, Redis, Neo4j</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Q9 -->
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q9</span><span class="qtext">(a) Important features of Hadoop. (b) Different modes of Hadoop. (c) Core components of Hadoop. [5+5+5]</span><span class="qmarks">15 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+
+      <h4>(a) Important Features of Hadoop [5 marks]</h4>
+      <ul>
+        <li><strong>Open Source:</strong> Apache-licensed, free to use. Large community support and ecosystem.</li>
+        <li><strong>Distributed Storage & Processing:</strong> Data is stored and processed across multiple nodes in parallel.</li>
+        <li><strong>Scalability:</strong> Easily scales from a single server to thousands of commodity machines.</li>
+        <li><strong>Fault Tolerance:</strong> Data is replicated across multiple nodes (default 3). If a node fails, data is automatically recovered from replicas.</li>
+        <li><strong>Data Locality:</strong> Processing moves to where the data resides rather than moving data to processing — reduces network bottleneck.</li>
+        <li><strong>Cost-Effective:</strong> Uses commodity hardware instead of expensive specialised servers.</li>
+        <li><strong>Flexible Data Handling:</strong> Can process structured, semi-structured, and unstructured data.</li>
+        <li><strong>High Throughput:</strong> Optimised for large sequential reads/writes — ideal for batch processing of massive datasets.</li>
+      </ul>
+
+      <h4>(b) Different Modes in Which Hadoop Runs [5 marks]</h4>
+      <table class="cmp-table">
+        <thead><tr><th>Mode</th><th>Description</th><th>Use Case</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Standalone (Local) Mode</strong></td><td>Default mode. Runs as a single Java process on local file system (no HDFS, no YARN). No daemons running.</td><td>Debugging, development, testing MapReduce logic</td></tr>
+          <tr><td><strong>Pseudo-Distributed Mode</strong></td><td>Single machine simulates a cluster. Each Hadoop daemon (NameNode, DataNode, ResourceManager, NodeManager) runs as separate Java process on the same machine.</td><td>Learning, single-node testing with HDFS</td></tr>
+          <tr><td><strong>Fully-Distributed Mode</strong></td><td>Multiple machines forming a real cluster. Master nodes (NameNode, ResourceManager) and slave nodes (DataNode, NodeManager) on separate machines.</td><td>Production environments, actual Big Data processing</td></tr>
+        </tbody>
+      </table>
+
+      <h4>(c) Core Components of Hadoop [5 marks]</h4>
+      <div class="diagram-box"><pre>
+           Hadoop Ecosystem
+    ┌─────────────────────────┐
+    │        Hadoop           │
+    │  ┌───────┐  ┌────────┐ │
+    │  │ HDFS  │  │  YARN  │ │
+    │  │       │  │        │ │
+    │  └───────┘  └────────┘ │
+    │  ┌──────────────────┐  │
+    │  │   MapReduce      │  │
+    │  └──────────────────┘  │
+    │  ┌──────────────────┐  │
+    │  │  Hadoop Common   │  │
+    │  └──────────────────┘  │
+    └─────────────────────────┘</pre></div>
+      <ol>
+        <li><strong>HDFS (Hadoop Distributed File System):</strong> Distributed storage layer. Splits files into blocks and distributes them across DataNodes with replication. Components: NameNode (master — metadata), DataNode (slave — stores actual data blocks), Secondary NameNode (checkpointing).</li>
+        <li><strong>YARN (Yet Another Resource Negotiator):</strong> Resource management layer. Manages cluster resources and schedules jobs. Components: ResourceManager (master — allocates resources), NodeManager (slave — manages containers on each node), ApplicationMaster (per-application — negotiates resources).</li>
+        <li><strong>MapReduce:</strong> Distributed processing framework. Processes data in two phases — Map (filters and sorts) and Reduce (aggregates and summarises). Writes intermediate data to disk between phases.</li>
+        <li><strong>Hadoop Common:</strong> Shared utilities and libraries used by other Hadoop modules. Includes file system abstractions, RPC framework, serialisation, and configuration classes.</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- Q10 -->
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q10</span><span class="qtext">(a) What do you mean by schema-less databases? (b) Explain types of NoSQL databases. [3+12]</span><span class="qmarks">15 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+
+      <h4>(a) Schema-less Databases [3 marks]</h4>
+      <p>A <strong>schema-less database</strong> (or dynamic schema database) does not require a predefined structure before data can be inserted. Each record/document can have different fields and data types without altering a global table schema.</p>
+      <ul>
+        <li>No need to define columns, data types, or relationships in advance.</li>
+        <li>New fields can be added to individual documents without affecting existing data.</li>
+        <li>Ideal for agile development where data models evolve frequently.</li>
+      </ul>
+      <pre>
+// MongoDB example — two documents in the same collection with different fields:
+{ "name": "Alice", "age": 25, "email": "alice@mail.com" }
+{ "name": "Bob", "phone": "9876543210", "address": "Kolkata" }
+// No error — both are valid despite different structures.</pre>
+
+      <h4>(b) Types of NoSQL Databases [12 marks]</h4>
+
+      <p><strong>1. Key-Value Stores</strong></p>
+      <ul>
+        <li>Simplest NoSQL model — data stored as key-value pairs (like a dictionary/hash map).</li>
+        <li>Ultra-fast lookups by key; value can be any data type (string, JSON, binary).</li>
+        <li><strong>Examples:</strong> Redis, Amazon DynamoDB, Riak, Memcached.</li>
+        <li><strong>Use Cases:</strong> Session management, caching, user preferences, shopping carts.</li>
+      </ul>
+      <pre>
+Key: "user:1001"    → Value: {"name": "Alice", "role": "admin"}
+Key: "session:xyz"  → Value: {"token": "abc123", "expiry": 3600}</pre>
+
+      <p><strong>2. Document Stores</strong></p>
+      <ul>
+        <li>Data stored as JSON/BSON/XML documents. Each document is self-contained with nested structures.</li>
+        <li>Supports indexing and querying on document fields.</li>
+        <li><strong>Examples:</strong> MongoDB, CouchDB, Amazon DocumentDB.</li>
+        <li><strong>Use Cases:</strong> Content management, user profiles, catalogues, real-time analytics.</li>
+      </ul>
+
+      <p><strong>3. Column-Family (Wide-Column) Stores</strong></p>
+      <ul>
+        <li>Data organised by columns rather than rows. Column families group related columns together.</li>
+        <li>Efficient for reading/writing large datasets where only specific columns are needed.</li>
+        <li><strong>Examples:</strong> Apache Cassandra, HBase, Google Bigtable.</li>
+        <li><strong>Use Cases:</strong> Time-series data, IoT sensor data, event logging, analytics on specific columns.</li>
+      </ul>
+
+      <p><strong>4. Graph Databases</strong></p>
+      <ul>
+        <li>Data stored as nodes (entities), edges (relationships), and properties. Optimised for traversing relationships.</li>
+        <li>Excellent for highly connected data where joins would be expensive in RDBMS.</li>
+        <li><strong>Examples:</strong> Neo4j, Amazon Neptune, JanusGraph, ArangoDB.</li>
+        <li><strong>Use Cases:</strong> Social networks, recommendation engines, fraud detection, knowledge graphs.</li>
+      </ul>
+
+      <table class="cmp-table">
+        <thead><tr><th>Type</th><th>Data Model</th><th>Best For</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td>Key-Value</td><td>Key → Value</td><td>Caching, sessions</td><td>Redis</td></tr>
+          <tr><td>Document</td><td>JSON documents</td><td>Content, profiles</td><td>MongoDB</td></tr>
+          <tr><td>Column-Family</td><td>Row key + Column families</td><td>Analytics, time-series</td><td>Cassandra</td></tr>
+          <tr><td>Graph</td><td>Nodes + Edges</td><td>Relationships, networks</td><td>Neo4j</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Q11 -->
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q11</span><span class="qtext">(a) Job Scheduling in MapReduce — Fair Scheduler and Capacity Scheduler. (b) FileInputFormat class. (c) Types of MapReduce applications. [10+3+2]</span><span class="qmarks">15 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+
+      <h4>(a) Job Scheduling in MapReduce [10 marks]</h4>
+      <p>Job scheduling determines how multiple MapReduce jobs share cluster resources. Hadoop provides pluggable schedulers:</p>
+
+      <p><strong>(i) The Fair Scheduler</strong></p>
+      <ul>
+        <li>Developed by Facebook. Aims to give every user/pool a <strong>fair share</strong> of cluster resources over time.</li>
+        <li>Jobs are organised into <strong>pools</strong> (queues). Each pool gets an equal share of resources by default.</li>
+        <li>If a pool's jobs use less than its fair share, surplus resources are redistributed to other pools.</li>
+        <li>When a pool needs more resources, it gradually reclaims them as tasks from other pools finish.</li>
+        <li><strong>Preemption:</strong> If a pool has been starved for too long, it can preempt (kill) tasks from over-allocated pools to reclaim its fair share.</li>
+        <li>Supports <strong>priorities</strong> within pools and <strong>minimum share guarantees</strong>.</li>
+      </ul>
+
+      <p><strong>(ii) The Capacity Scheduler</strong></p>
+      <ul>
+        <li>Developed by Yahoo. Designed for <strong>multi-tenant</strong> clusters where organisations share a cluster.</li>
+        <li>Resources are divided into <strong>queues</strong>, each with a guaranteed minimum <strong>capacity</strong> (percentage of cluster).</li>
+        <li>Queues can use <strong>excess capacity</strong> from idle queues (elastic scheduling), but must return resources when needed.</li>
+        <li>Supports hierarchical queues (parent-child), ACLs (access control), and per-queue resource limits.</li>
+        <li>FIFO ordering within each queue by default, but supports priority ordering.</li>
+      </ul>
+
+      <table class="cmp-table">
+        <thead><tr><th>Feature</th><th>Fair Scheduler</th><th>Capacity Scheduler</th></tr></thead>
+        <tbody>
+          <tr><td>Goal</td><td>Equal resource sharing over time</td><td>Guaranteed capacity per queue</td></tr>
+          <tr><td>Preemption</td><td>Supports preemption</td><td>Limited preemption support</td></tr>
+          <tr><td>Developed by</td><td>Facebook</td><td>Yahoo</td></tr>
+          <tr><td>Organisation</td><td>Pools</td><td>Hierarchical queues</td></tr>
+          <tr><td>Best For</td><td>Interactive workloads, varied users</td><td>Multi-tenant production clusters</td></tr>
+        </tbody>
+      </table>
+
+      <h4>(b) FileInputFormat Class [3 marks]</h4>
+      <p><strong>FileInputFormat</strong> is the base class for all file-based InputFormats in Hadoop MapReduce. It handles:</p>
+      <ul>
+        <li><strong>Input Validation:</strong> Checks that the input paths exist and are accessible.</li>
+        <li><strong>Input Splitting:</strong> Splits input files into <strong>InputSplits</strong> — each split is processed by one Map task. Default split size = HDFS block size.</li>
+        <li><strong>Record Reading:</strong> Subclasses (TextInputFormat, KeyValueTextInputFormat, SequenceFileInputFormat) define how to read records from each split.</li>
+      </ul>
+      <pre>
+// Setting input format in driver code:
+FileInputFormat.addInputPath(job, new Path("/input/data"));
+job.setInputFormatClass(TextInputFormat.class); // default</pre>
+
+      <h4>(c) Types of MapReduce Applications [2 marks]</h4>
+      <ul>
+        <li><strong>Batch Processing:</strong> Processing large datasets in one go — log analysis, ETL, data transformation.</li>
+        <li><strong>Sorting & Searching:</strong> TeraSort, distributed grep, indexing.</li>
+        <li><strong>Data Mining:</strong> Pattern discovery, clustering, classification on large datasets.</li>
+        <li><strong>Machine Learning:</strong> Iterative algorithms (k-means, PageRank) over distributed data — though Spark is preferred for this now.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="paper-footer">
+  <div class="footer-inner">
+    <a href="bigdata.html" class="back-btn-footer">← Back to All Papers</a>
+    <span>MAKAUT | OEC-CS801A | Big Data Analysis | 2022–23</span>
+  </div>
+</footer>
+</body>
+</html>

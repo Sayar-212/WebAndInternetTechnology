@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>2023-24 | Big Data Analysis | MAKAUT</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="paper.css"/>
+</head>
+<body>
+
+<nav class="topbar">
+  <a href="bigdata.html" class="back-btn">← Back to Big Data</a>
+  <div class="topbar-info">
+    <span class="topbar-year">2023–24</span>
+    <span class="topbar-code">CS/B.Tech(N)/EVEN/SEM-8/OEROB801A</span>
+  </div>
+  <div class="topbar-meta"><span>⏱ 3 Hours</span><span>📋 70 Marks</span></div>
+</nav>
+
+<header class="paper-hero">
+  <div class="paper-hero-bg"></div>
+  <div class="paper-hero-content">
+    <div class="paper-badge">MAKAUT • Big Data Analysis</div>
+    <h1>2023 – 24 <span class="yr-accent">Solved Paper</span></h1>
+    <p>OEROB801A &nbsp;|&nbsp; Full Marks: 70 &nbsp;|&nbsp; Time: 3 Hours &nbsp;|&nbsp; SEM-8</p>
+    <div class="paper-pills">
+      <span>Group A: Any 10 × 1 = 10</span>
+      <span>Group B: Any 3 × 5 = 15</span>
+      <span>Group C: Any 3 × 15 = 45</span>
+    </div>
+  </div>
+</header>
+
+<main class="paper-main">
+
+<!-- GROUP A -->
+<section class="group-section" id="groupA">
+  <div class="group-header">
+    <span class="group-label">Group A</span>
+    <h2>Very Short Answer Questions <span class="marks-tag">Any 10 × 1 = 10</span></h2>
+  </div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(I)</span><span class="qtext">What is Pig Script interfaces?</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>Pig Script</strong> is a high-level data flow scripting language called <strong>Pig Latin</strong> used to write data analysis programs in Apache Pig. It runs on top of Hadoop and translates scripts into MapReduce jobs.</p>
+    <p><strong>Interfaces:</strong> (1) <strong>Grunt Shell</strong> — interactive command-line interface for running Pig Latin statements one at a time. (2) <strong>Script Mode</strong> — execute a .pig file containing Pig Latin commands. (3) <strong>Embedded Mode</strong> — embed Pig Latin within Java programs using the PigServer class.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(II)</span><span class="qtext">Which is a technique used to extract meaningful insights from data sets that are too large or complex to be processed by traditional data processing tools?</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>Big Data Analytics.</strong> It encompasses techniques like data mining, machine learning, statistical analysis, and natural language processing to extract meaningful patterns, trends, and insights from massive datasets that exceed the capabilities of traditional RDBMS and BI tools.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(III)</span><span class="qtext">What is the process of transforming structured and unstructured data into a format that can be easily analyzed?</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>Data Preprocessing</strong> (or Data Preparation/Data Wrangling). It involves cleaning, transforming, normalising, and integrating raw data into a consistent format suitable for analysis. Steps include handling missing values, removing duplicates, encoding categorical variables, and feature scaling.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(IV)</span><span class="qtext">What do you mean by indexing in HDFS?</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>Indexing in HDFS</strong> refers to creating an index (lookup structure) to enable faster data retrieval without scanning entire files. Since HDFS is designed for sequential reads of large files, native indexing is limited. Tools like <strong>HBase</strong> (built on HDFS) provide row-key based indexing, and <strong>Apache Lucene/Solr</strong> can be used for full-text indexing on HDFS data.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(V)</span><span class="qtext">Which is best described as a programming model that is used to construct Hadoop-based applications that can be scaled up and down?</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>MapReduce.</strong> It is a programming model for processing large datasets in parallel across a Hadoop cluster. It consists of two phases — <strong>Map</strong> (processes input key-value pairs to produce intermediate pairs) and <strong>Reduce</strong> (aggregates intermediate pairs by key to produce final output). Scales by adding more nodes.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(VI)</span><span class="qtext">What is Pig Latin model?</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>Pig Latin</strong> is the high-level data flow language used by Apache Pig. It provides a set of operators for loading, filtering, grouping, joining, sorting, and storing data. Pig Latin scripts are compiled into MapReduce jobs that run on Hadoop.</p>
+    <p>Key operators: <code>LOAD</code>, <code>FILTER</code>, <code>FOREACH</code>, <code>GROUP</code>, <code>JOIN</code>, <code>ORDER</code>, <code>STORE</code>, <code>DUMP</code>.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(VII)</span><span class="qtext">Which is a popular NoSQL database used for Big Data processing?</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>Apache Cassandra</strong> (or HBase, MongoDB). Cassandra is a distributed, wide-column NoSQL database designed for handling large amounts of data across many commodity servers with no single point of failure. It provides high availability and linear scalability. Used by Facebook, Netflix, Apple, and Instagram.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(VIII)</span><span class="qtext">What is the term used for the ability of a system to handle increasing amounts of data and traffic without compromising performance?</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>Scalability.</strong> There are two types: <strong>Vertical scalability</strong> (scaling up — adding more CPU/RAM to a single machine) and <strong>Horizontal scalability</strong> (scaling out — adding more machines to the cluster). Hadoop and NoSQL databases are designed for horizontal scalability.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(IX)</span><span class="qtext">What is Job Tracker in building blocks of Hadoop?</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>JobTracker</strong> is the master daemon in Hadoop 1.x (MRv1) responsible for:</p>
+    <ul>
+      <li>Accepting MapReduce job submissions from clients</li>
+      <li>Splitting jobs into Map and Reduce tasks</li>
+      <li>Assigning tasks to TaskTracker nodes (slaves)</li>
+      <li>Monitoring task progress and re-executing failed tasks</li>
+    </ul>
+    <p>In Hadoop 2.x (YARN), JobTracker's responsibilities are split between <strong>ResourceManager</strong> (resource allocation) and <strong>ApplicationMaster</strong> (job management).</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(X)</span><span class="qtext">Which is a method for analyzing data in which the data is split into smaller subsets and processed in parallel across multiple servers or nodes?</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>Distributed Computing</strong> (or Parallel Data Processing / MapReduce paradigm). Data is partitioned into smaller chunks, distributed across multiple nodes, and processed simultaneously. Each node works on its local subset, and results are aggregated. This is the core principle behind Hadoop's MapReduce framework.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(XI)</span><span class="qtext">What is the meaning of Hive Clients?</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>Hive Clients</strong> are the interfaces/tools used to interact with Apache Hive. They allow users to submit HiveQL queries and manage Hive metadata:</p>
+    <ul>
+      <li><strong>Thrift Client:</strong> Uses Hive's Thrift API for programmatic access from any language</li>
+      <li><strong>JDBC Client:</strong> Java-based connection to HiveServer2</li>
+      <li><strong>ODBC Client:</strong> Database connectivity for BI tools (Tableau, Excel)</li>
+      <li><strong>Beeline:</strong> Command-line client that connects to HiveServer2 via JDBC</li>
+    </ul>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(XII)</span><span class="qtext">What are the common input formats in Hadoop?</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p>Common input formats in Hadoop MapReduce:</p>
+    <ul>
+      <li><strong>TextInputFormat:</strong> Default. Each line is a record; key = byte offset, value = line content.</li>
+      <li><strong>KeyValueTextInputFormat:</strong> Each line is split into key-value by a separator (default: tab).</li>
+      <li><strong>SequenceFileInputFormat:</strong> Binary format for key-value pairs; supports compression. Used for intermediate MapReduce output.</li>
+      <li><strong>NLineInputFormat:</strong> Assigns exactly N lines per split (useful for fixed-size processing).</li>
+    </ul>
+  </div></div>
+</section>
+
+<!-- GROUP B -->
+<section class="group-section" id="groupB">
+  <div class="group-header"><span class="group-label">Group B</span><h2>Short Answer Questions <span class="marks-tag">Any 3 × 5 = 15</span></h2></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q2</span><span class="qtext">Explain the configuration parameters of a MapReduce framework.</span><span class="qmarks">5 Marks</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p>MapReduce configuration is defined in XML files (<code>mapred-site.xml</code>, <code>core-site.xml</code>) and can be overridden programmatically using the <code>Configuration</code> class.</p>
+    <h4>Key Configuration Parameters</h4>
+    <table class="cmp-table">
+      <thead><tr><th>Parameter</th><th>Purpose</th><th>Default</th></tr></thead>
+      <tbody>
+        <tr><td><code>mapreduce.framework.name</code></td><td>Execution framework — local or yarn</td><td>local</td></tr>
+        <tr><td><code>mapreduce.job.maps</code></td><td>Suggested number of map tasks</td><td>Based on input splits</td></tr>
+        <tr><td><code>mapreduce.job.reduces</code></td><td>Number of reduce tasks</td><td>1</td></tr>
+        <tr><td><code>mapreduce.map.memory.mb</code></td><td>Memory allocated per Map task container</td><td>1024 MB</td></tr>
+        <tr><td><code>mapreduce.reduce.memory.mb</code></td><td>Memory allocated per Reduce task container</td><td>1024 MB</td></tr>
+        <tr><td><code>mapreduce.input.fileinputformat.split.maxsize</code></td><td>Maximum input split size</td><td>Block size</td></tr>
+        <tr><td><code>mapreduce.map.output.compress</code></td><td>Enable compression of Map output</td><td>false</td></tr>
+        <tr><td><code>mapreduce.job.queuename</code></td><td>Queue to submit the job to (for scheduling)</td><td>default</td></tr>
+      </tbody>
+    </table>
+    <pre>
+// Setting parameters programmatically in Java:
+Configuration conf = new Configuration();
+conf.set("mapreduce.framework.name", "yarn");
+conf.setInt("mapreduce.job.reduces", 3);
+Job job = Job.getInstance(conf, "WordCount");</pre>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q3</span><span class="qtext">Explain the Pig Latin application flow.</span><span class="qmarks">5 Marks</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p>The Pig Latin application flow describes how a Pig script is processed from writing to execution:</p>
+    <div class="diagram-box"><pre>
+Pig Latin Script → Parser → Logical Plan → Optimizer → Physical Plan → MapReduce Plan → Hadoop Execution</pre></div>
+    <ol>
+      <li><strong>Write Pig Latin Script:</strong> User writes data flow operations using Pig Latin operators (LOAD, FILTER, GROUP, JOIN, STORE).</li>
+      <li><strong>Parser:</strong> Checks syntax and semantic correctness. Builds an AST (Abstract Syntax Tree).</li>
+      <li><strong>Logical Plan:</strong> Converts the parsed script into a directed acyclic graph (DAG) of logical operators. No execution yet — just a plan.</li>
+      <li><strong>Logical Optimizer:</strong> Applies optimisations — predicate pushdown, projection pruning, filter reordering — to improve performance.</li>
+      <li><strong>Physical Plan:</strong> Translates logical plan into physical operators that can be executed. Determines the order of operations.</li>
+      <li><strong>MapReduce Plan:</strong> Converts physical plan into one or more MapReduce jobs. Groups operators into Map and Reduce phases.</li>
+      <li><strong>Execution:</strong> MapReduce jobs are submitted to Hadoop cluster. YARN allocates resources, and tasks execute in parallel across DataNodes.</li>
+    </ol>
+    <pre>
+-- Example Pig Latin Script:
+data = LOAD '/input/students.csv' USING PigStorage(',') AS (name:chararray, marks:int);
+passed = FILTER data BY marks >= 40;
+grouped = GROUP passed ALL;
+count = FOREACH grouped GENERATE COUNT(passed);
+DUMP count;</pre>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q4</span><span class="qtext">What does a block in HDFS mean? Explain briefly.</span><span class="qmarks">5 Marks</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p>A <strong>block</strong> in HDFS is the smallest unit of data that HDFS can store and manage. When a file is uploaded to HDFS, it is split into fixed-size blocks and distributed across multiple DataNodes.</p>
+    <h4>Key Characteristics</h4>
+    <ul>
+      <li><strong>Default Size:</strong> 128 MB (Hadoop 2.x+), previously 64 MB in Hadoop 1.x. Configurable via <code>dfs.blocksize</code>.</li>
+      <li><strong>Distribution:</strong> Blocks are distributed across different DataNodes in the cluster for parallel processing.</li>
+      <li><strong>Replication:</strong> Each block is replicated (default factor = 3) across different nodes/racks for fault tolerance.</li>
+      <li><strong>Last Block:</strong> The last block of a file may be smaller than the block size. It only occupies the actual data size on disk (no padding).</li>
+      <li><strong>Metadata:</strong> NameNode stores block metadata (location, replication status) in memory; actual data is on DataNodes.</li>
+    </ul>
+    <div class="diagram-box"><pre>
+File: report.csv (300 MB)
+  → Block 1 (128 MB) → DataNode 1, DataNode 3, DataNode 5
+  → Block 2 (128 MB) → DataNode 2, DataNode 4, DataNode 1
+  → Block 3 (44 MB)  → DataNode 3, DataNode 5, DataNode 2</pre></div>
+    <p><strong>Why large blocks?</strong> Reduces NameNode memory usage (fewer blocks to track), reduces seek time relative to transfer time, and improves throughput for large sequential reads typical in Big Data processing.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q5</span><span class="qtext">Explain the different features of Hadoop.</span><span class="qmarks">5 Marks</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <ul>
+      <li><strong>Open Source:</strong> Apache-licensed, free to use with a large community and rich ecosystem (Hive, Pig, HBase, Spark).</li>
+      <li><strong>Scalability:</strong> Scales from a single server to thousands of commodity machines by simply adding nodes.</li>
+      <li><strong>Fault Tolerance:</strong> Data replicated across multiple nodes (default 3). If a node fails, data is automatically recovered from replicas.</li>
+      <li><strong>Data Locality:</strong> Computation is moved to where data resides rather than moving data to computation — drastically reduces network overhead.</li>
+      <li><strong>Distributed Storage (HDFS):</strong> Files are split into blocks and distributed across the cluster for parallel access.</li>
+      <li><strong>Distributed Processing (MapReduce/YARN):</strong> Processing happens in parallel across all nodes holding data.</li>
+      <li><strong>Cost-Effective:</strong> Runs on commodity hardware — no need for expensive specialised storage (SAN/NAS).</li>
+      <li><strong>Flexibility:</strong> Can handle any data type — structured, semi-structured, unstructured (text, images, logs, JSON).</li>
+      <li><strong>High Throughput:</strong> Optimised for batch processing of massive datasets with sequential read/write patterns.</li>
+      <li><strong>Reliability:</strong> Checksums for data integrity; automatic re-replication of under-replicated blocks.</li>
+    </ul>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q6</span><span class="qtext">What is the need for Data Locality in Hadoop?</span><span class="qmarks">5 Marks</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>Data Locality</strong> is the principle of moving computation to data rather than moving data to computation. It is one of the most important optimisation strategies in Hadoop.</p>
+    <h4>Why is Data Locality Needed?</h4>
+    <ul>
+      <li><strong>Reduces Network Bandwidth:</strong> Moving large datasets (terabytes/petabytes) across the network is extremely slow and expensive. By processing data locally, network traffic is minimised.</li>
+      <li><strong>Faster Processing:</strong> Reading data from local disk is much faster than reading over the network. Local reads can achieve ~100 MB/s vs ~10 MB/s over network.</li>
+      <li><strong>Efficient Resource Usage:</strong> Network bandwidth is a shared, limited resource. Data locality ensures other jobs aren't starved of bandwidth.</li>
+      <li><strong>Scalability:</strong> As cluster size grows, data locality ensures performance scales linearly — each node processes its local data.</li>
+    </ul>
+    <h4>Levels of Data Locality (in order of preference)</h4>
+    <table class="cmp-table">
+      <thead><tr><th>Level</th><th>Description</th><th>Performance</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Data-Local</strong></td><td>Task runs on the same node where the data block is stored</td><td>Best (local disk read)</td></tr>
+        <tr><td><strong>Rack-Local</strong></td><td>Task runs on a different node in the same rack</td><td>Good (intra-rack network)</td></tr>
+        <tr><td><strong>Off-Rack</strong></td><td>Task runs on a node in a different rack</td><td>Worst (inter-rack network)</td></tr>
+      </tbody>
+    </table>
+    <p>Hadoop's scheduler (YARN) prioritises data-local task assignment. It waits briefly for a data-local slot before falling back to rack-local or off-rack.</p>
+  </div></div>
+</section>
+
+<!-- GROUP C -->
+<section class="group-section" id="groupC">
+  <div class="group-header">
+    <span class="group-label">Group C</span>
+    <h2>Long Answer Questions <span class="marks-tag">Any 3 × 15 = 45</span></h2>
+  </div>
+
+  <!-- Q7 -->
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q7</span><span class="qtext">(a) What is MapReduce in Hadoop? (b) When to use MapReduce with Big Data? (c) Core methods of Reducer. [3+5+7]</span><span class="qmarks">15 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+
+      <h4>(a) What is MapReduce in Hadoop? [3 marks]</h4>
+      <p><strong>MapReduce</strong> is a programming model and processing engine in Hadoop for distributed computation on large datasets. It breaks processing into two phases:</p>
+      <ul>
+        <li><strong>Map Phase:</strong> Takes input key-value pairs, processes them, and outputs intermediate key-value pairs. Runs in parallel across all nodes holding input data.</li>
+        <li><strong>Reduce Phase:</strong> Takes all intermediate values for each unique key, aggregates them, and produces final output.</li>
+      </ul>
+      <div class="diagram-box"><pre>
+Input → Splitting → Mapping → Shuffling & Sorting → Reducing → Output
+                    (parallel)                       (parallel)</pre></div>
+
+      <h4>(b) When to Use MapReduce with Big Data? [5 marks]</h4>
+      <ul>
+        <li><strong>Batch Processing:</strong> When you need to process massive datasets (TBs/PBs) that don't require real-time results — log analysis, ETL pipelines, data warehouse loading.</li>
+        <li><strong>Text Processing:</strong> Word count, inverted index creation, log parsing, sentiment analysis on large text corpora.</li>
+        <li><strong>Data Transformation:</strong> Converting data formats, cleaning large datasets, denormalisation.</li>
+        <li><strong>Aggregation:</strong> Counting, summing, averaging over massive datasets — sales reports, web analytics, clickstream analysis.</li>
+        <li><strong>Sorting:</strong> Distributed sorting of large datasets (TeraSort benchmark).</li>
+        <li><strong>Graph Processing:</strong> Iterative algorithms like PageRank (though Spark/GraphX is preferred now).</li>
+      </ul>
+      <p><strong>When NOT to use:</strong> Real-time processing (use Spark Streaming/Flink), interactive queries (use Hive/Presto), iterative ML algorithms (use Spark MLlib).</p>
+
+      <h4>(c) Core Methods of Reducer [7 marks]</h4>
+      <p>The <strong>Reducer</strong> class in Hadoop MapReduce has three core methods that define its lifecycle:</p>
+
+      <p><strong>1. setup(Context context)</strong></p>
+      <ul>
+        <li>Called <strong>once</strong> before any reduce calls.</li>
+        <li>Used for one-time initialisation — loading configuration, opening connections, initialising counters.</li>
+      </ul>
+
+      <p><strong>2. reduce(KEY key, Iterable&lt;VALUE&gt; values, Context context)</strong></p>
+      <ul>
+        <li>Called <strong>once for each unique key</strong> in the sorted intermediate output.</li>
+        <li>Receives the key and an iterator over all values associated with that key.</li>
+        <li>Contains the core aggregation/processing logic.</li>
+        <li>Writes output using <code>context.write(key, value)</code>.</li>
+      </ul>
+
+      <p><strong>3. cleanup(Context context)</strong></p>
+      <ul>
+        <li>Called <strong>once</strong> after all reduce calls complete.</li>
+        <li>Used for cleanup — closing connections, flushing buffers, writing summary statistics.</li>
+      </ul>
+
+      <pre>
+import org.apache.hadoop.mapreduce.Reducer;
+import java.io.IOException;
+
+public class WordCountReducer extends Reducer&lt;Text, IntWritable, Text, IntWritable&gt; {
+
+    private IntWritable totalCount = new IntWritable();
+
+    @Override
+    protected void setup(Context context) throws IOException, InterruptedException {
+        // One-time initialization
+        // e.g., load configuration, open database connection
+    }
+
+    @Override
+    protected void reduce(Text key, Iterable&lt;IntWritable&gt; values, Context context)
+            throws IOException, InterruptedException {
+        int sum = 0;
+        for (IntWritable val : values) {
+            sum += val.get();          // Aggregate all values for this key
+        }
+        totalCount.set(sum);
+        context.write(key, totalCount); // Output: word → total count
+    }
+
+    @Override
+    protected void cleanup(Context context) throws IOException, InterruptedException {
+        // Final cleanup after all reduce() calls
+        // e.g., close connections, flush output
+    }
+}</pre>
+
+      <div class="diagram-box"><pre>
+Reducer Lifecycle:
+  setup() → reduce(key1, [v1,v2,v3]) → reduce(key2, [v4,v5]) → ... → cleanup()
+  [once]    [per unique key]           [per unique key]              [once]</pre></div>
+    </div>
+  </div>
+
+  <!-- Q8 -->
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q8</span><span class="qtext">(a) What is PIG? Explain its Installation Process. (b) Explain two execution types or modes in PIG. [7+8]</span><span class="qmarks">15 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+
+      <h4>(a) What is Apache Pig? [7 marks]</h4>
+      <p><strong>Apache Pig</strong> is a high-level platform for creating programs that run on Hadoop. It uses a scripting language called <strong>Pig Latin</strong> to express data analysis tasks. Pig abstracts the complexity of writing raw MapReduce Java code.</p>
+
+      <h4>Key Features</h4>
+      <ul>
+        <li><strong>High-Level Language:</strong> Pig Latin is easier to write than MapReduce Java code. 10 lines of Pig Latin ≈ 200 lines of Java MapReduce.</li>
+        <li><strong>Automatic Optimisation:</strong> Pig's compiler optimises the execution plan automatically.</li>
+        <li><strong>Extensibility:</strong> Users can write User Defined Functions (UDFs) in Java, Python, or JavaScript.</li>
+        <li><strong>Multi-Query Execution:</strong> Multiple Pig Latin statements can be batched and optimised together.</li>
+        <li><strong>ETL Focus:</strong> Designed for ETL (Extract, Transform, Load) operations on large datasets.</li>
+      </ul>
+
+      <h4>Installation Process</h4>
+      <ol>
+        <li><strong>Prerequisites:</strong> Java JDK 1.8+, Hadoop installed and configured, JAVA_HOME and HADOOP_HOME set.</li>
+        <li><strong>Download:</strong> Download Apache Pig binary from <code>https://pig.apache.org/releases.html</code>.</li>
+        <li><strong>Extract:</strong> <code>tar -xzf pig-x.x.x.tar.gz</code></li>
+        <li><strong>Set Environment Variables:</strong>
+          <pre>
+export PIG_HOME=/path/to/pig-x.x.x
+export PATH=$PATH:$PIG_HOME/bin
+export PIG_CLASSPATH=$HADOOP_HOME/etc/hadoop</pre>
+        </li>
+        <li><strong>Verify Installation:</strong> <code>pig -version</code> — should display Pig version.</li>
+        <li><strong>Launch Grunt Shell:</strong> <code>pig</code> (MapReduce mode) or <code>pig -x local</code> (local mode).</li>
+      </ol>
+
+      <h4>(b) Two Execution Modes in PIG [8 marks]</h4>
+
+      <p><strong>1. Local Mode</strong></p>
+      <ul>
+        <li>Runs on a <strong>single machine</strong> using the local file system — no Hadoop cluster needed.</li>
+        <li>Launched with: <code>pig -x local</code></li>
+        <li>All processing happens in a single JVM on the local machine.</li>
+        <li><strong>Use Case:</strong> Development, debugging, testing with small datasets before deploying to a cluster.</li>
+        <li>Input/output files are read from/written to the local file system.</li>
+      </ul>
+      <pre>
+-- Local Mode Example:
+$ pig -x local
+grunt> data = LOAD 'local_file.csv' USING PigStorage(',') AS (name:chararray, age:int);
+grunt> filtered = FILTER data BY age > 18;
+grunt> DUMP filtered;</pre>
+
+      <p><strong>2. MapReduce Mode (Hadoop Mode)</strong></p>
+      <ul>
+        <li>Default mode. Runs on a <strong>Hadoop cluster</strong> — Pig Latin scripts are compiled into MapReduce jobs.</li>
+        <li>Launched with: <code>pig</code> or <code>pig -x mapreduce</code></li>
+        <li>Requires a running Hadoop cluster with HDFS and YARN.</li>
+        <li>Input/output files are read from/written to <strong>HDFS</strong>.</li>
+        <li><strong>Use Case:</strong> Production environments, processing large datasets across the cluster.</li>
+      </ul>
+      <pre>
+-- MapReduce Mode Example:
+$ pig
+grunt> data = LOAD '/user/input/logs.csv' USING PigStorage(',') AS (ip:chararray, page:chararray);
+grunt> grouped = GROUP data BY page;
+grunt> counts = FOREACH grouped GENERATE group, COUNT(data);
+grunt> STORE counts INTO '/user/output/page_counts';</pre>
+
+      <table class="cmp-table">
+        <thead><tr><th>Feature</th><th>Local Mode</th><th>MapReduce Mode</th></tr></thead>
+        <tbody>
+          <tr><td>Cluster Required</td><td>No</td><td>Yes (Hadoop + YARN)</td></tr>
+          <tr><td>File System</td><td>Local file system</td><td>HDFS</td></tr>
+          <tr><td>Command</td><td><code>pig -x local</code></td><td><code>pig</code> or <code>pig -x mapreduce</code></td></tr>
+          <tr><td>Performance</td><td>Single machine — limited</td><td>Distributed — highly parallel</td></tr>
+          <tr><td>Use Case</td><td>Development & testing</td><td>Production</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Note:</strong> In Hadoop 2.x+, there is also a <strong>Tez Mode</strong> (<code>pig -x tez</code>) which uses Apache Tez instead of MapReduce for faster execution by reducing disk I/O between stages.</p>
+    </div>
+  </div>
+
+  <!-- Q9 -->
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q9</span><span class="qtext">(a) How do you convert unstructured data to structured data? (b) What is Data preprocessing? (c) Steps for data preparation. [5+3+7]</span><span class="qmarks">15 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+
+      <h4>(a) Converting Unstructured Data to Structured Data [5 marks]</h4>
+      <p>Unstructured data (text, images, audio, social media posts) lacks a predefined schema. Converting it to structured format enables analysis with traditional tools.</p>
+      <h4>Techniques</h4>
+      <ul>
+        <li><strong>Natural Language Processing (NLP):</strong> Extract entities (names, dates, locations), sentiment, and topics from text. Convert to structured tables with columns like entity_name, entity_type, sentiment_score.</li>
+        <li><strong>Regular Expressions:</strong> Parse log files and extract specific fields (IP address, timestamp, URL, status code) into structured columns.</li>
+        <li><strong>Image Recognition (Computer Vision):</strong> Classify images, detect objects, extract text (OCR) — output as structured labels, coordinates, and text fields.</li>
+        <li><strong>Speech-to-Text:</strong> Convert audio recordings to text transcripts, then apply NLP for structuring.</li>
+        <li><strong>Schema-on-Read:</strong> Apply structure at query time using tools like Hive (define external tables over raw data in HDFS).</li>
+        <li><strong>Data Parsing:</strong> Parse semi-structured formats (JSON, XML, CSV) into tabular format using ETL tools.</li>
+      </ul>
+      <pre>
+-- Example: Parsing Apache log file into structured data
+Raw log: 192.168.1.1 - - [21/Jun/2026:10:00:00] "GET /page.html HTTP/1.1" 200 1234
+
+Structured:
+| IP            | Date              | Method | URL         | Status | Size |
+|---------------|-------------------|--------|-------------|--------|------|
+| 192.168.1.1   | 2026-06-21 10:00  | GET    | /page.html  | 200    | 1234 |</pre>
+
+      <h4>(b) What is Data Preprocessing? [3 marks]</h4>
+      <p><strong>Data Preprocessing</strong> is the process of transforming raw, noisy, and incomplete data into a clean, consistent format suitable for analysis and modelling. It is a critical step in the data analysis pipeline — "garbage in, garbage out."</p>
+      <p><strong>Why needed:</strong> Real-world data is often missing values, inconsistent, contains duplicates, has outliers, and comes in different formats. Preprocessing ensures data quality and reliability of analysis results.</p>
+
+      <h4>(c) Steps Required for Data Preparation [7 marks]</h4>
+      <ol>
+        <li><strong>Data Collection:</strong> Gather data from multiple sources — databases, APIs, files, sensors, web scraping.</li>
+        <li><strong>Data Cleaning:</strong>
+          <ul>
+            <li>Handle missing values — imputation (mean/median/mode), deletion, or flagging.</li>
+            <li>Remove duplicates — identify and eliminate redundant records.</li>
+            <li>Fix inconsistencies — standardise formats (date formats, units, naming conventions).</li>
+            <li>Correct errors — typos, invalid values, out-of-range data.</li>
+          </ul>
+        </li>
+        <li><strong>Data Integration:</strong> Merge data from multiple sources into a unified dataset. Resolve naming conflicts and schema mismatches.</li>
+        <li><strong>Data Transformation:</strong>
+          <ul>
+            <li>Normalisation/Standardisation — scale numerical features to a common range.</li>
+            <li>Encoding — convert categorical variables to numerical (one-hot encoding, label encoding).</li>
+            <li>Aggregation — summarise data at different granularity levels.</li>
+          </ul>
+        </li>
+        <li><strong>Data Reduction:</strong> Reduce dataset size while preserving information — dimensionality reduction (PCA), sampling, feature selection.</li>
+        <li><strong>Data Validation:</strong> Verify data quality — check distributions, ranges, relationships, and business rules.</li>
+        <li><strong>Data Splitting:</strong> Split data into training, validation, and test sets (for ML tasks).</li>
+      </ol>
+      <div class="diagram-box"><pre>
+Raw Data → Collection → Cleaning → Integration → Transformation → Reduction → Validation → Ready for Analysis</pre></div>
+    </div>
+  </div>
+
+  <!-- Q10 -->
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q10</span><span class="qtext">(a) What is Hadoop? (b) Importance of Hadoop in Big Data analytics. (c) Core components of Hadoop. [3+6+6]</span><span class="qmarks">15 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+
+      <h4>(a) What is Hadoop? [3 marks]</h4>
+      <p><strong>Apache Hadoop</strong> is an open-source framework for distributed storage and processing of large datasets across clusters of commodity computers. Created by Doug Cutting and Mike Cafarella in 2006, inspired by Google's MapReduce and GFS (Google File System) papers.</p>
+      <p>Hadoop enables reliable, scalable, and cost-effective processing of petabytes of structured, semi-structured, and unstructured data.</p>
+
+      <h4>(b) Importance of Hadoop in Big Data Analytics [6 marks]</h4>
+      <ul>
+        <li><strong>Handles Volume:</strong> Can store and process petabytes of data — impossible with traditional RDBMS. HDFS distributes data across thousands of nodes.</li>
+        <li><strong>Handles Velocity:</strong> Tools like Kafka + Spark Streaming (in Hadoop ecosystem) process real-time data streams alongside batch processing.</li>
+        <li><strong>Handles Variety:</strong> Unlike RDBMS (structured only), Hadoop processes structured (tables), semi-structured (JSON, XML), and unstructured data (text, images, logs) equally well.</li>
+        <li><strong>Cost-Effective:</strong> Uses commodity hardware — organisations save millions by avoiding expensive SAN/NAS storage and enterprise software licenses.</li>
+        <li><strong>Fault Tolerant:</strong> Automatic data replication ensures no data loss even when hardware fails (which is expected in large clusters).</li>
+        <li><strong>Rich Ecosystem:</strong> Hive (SQL), Pig (scripting), HBase (NoSQL), Spark (fast processing), Kafka (streaming), Sqoop (RDBMS import) — comprehensive analytics toolkit.</li>
+        <li><strong>Industry Adoption:</strong> Used by Facebook (30+ PB), Yahoo (300+ PB), LinkedIn, Twitter, Amazon — proven at massive scale.</li>
+        <li><strong>Schema-on-Read:</strong> Store data first, define schema later — flexibility that traditional schema-on-write databases don't offer.</li>
+      </ul>
+
+      <h4>(c) Core Components of Hadoop [6 marks]</h4>
+      <div class="diagram-box"><pre>
+                    Hadoop Ecosystem
+┌──────────────────────────────────────────┐
+│  ┌────────────────────────────────────┐  │
+│  │         Hadoop Common              │  │
+│  │  (Utilities, Libraries, RPC)       │  │
+│  └────────────────────────────────────┘  │
+│  ┌──────────────┐  ┌─────────────────┐  │
+│  │    HDFS       │  │     YARN        │  │
+│  │  (Storage)    │  │  (Resources)    │  │
+│  │  NameNode     │  │  ResourceMgr    │  │
+│  │  DataNode     │  │  NodeManager    │  │
+│  └──────────────┘  └─────────────────┘  │
+│  ┌────────────────────────────────────┐  │
+│  │         MapReduce                  │  │
+│  │  (Processing Framework)            │  │
+│  └────────────────────────────────────┘  │
+└──────────────────────────────────────────┘</pre></div>
+
+      <p><strong>1. HDFS (Hadoop Distributed File System)</strong> — Distributed storage layer</p>
+      <ul>
+        <li><strong>NameNode (Master):</strong> Manages file system metadata — directory tree, file-to-block mapping, block locations. Stores FsImage and EditLog.</li>
+        <li><strong>DataNode (Slave):</strong> Stores actual data blocks on local disks. Sends heartbeats and block reports to NameNode.</li>
+        <li><strong>Secondary NameNode:</strong> Periodically merges FsImage with EditLog (checkpointing) — not a failover for NameNode.</li>
+      </ul>
+
+      <p><strong>2. YARN (Yet Another Resource Negotiator)</strong> — Resource management layer</p>
+      <ul>
+        <li><strong>ResourceManager (Master):</strong> Global resource allocation — scheduler and applications manager.</li>
+        <li><strong>NodeManager (Slave):</strong> Per-node agent managing containers, monitoring resource usage.</li>
+        <li><strong>ApplicationMaster:</strong> Per-application process that negotiates resources from ResourceManager and coordinates task execution.</li>
+      </ul>
+
+      <p><strong>3. MapReduce</strong> — Distributed processing framework</p>
+      <ul>
+        <li>Programming model with Map (parallel transformation) and Reduce (aggregation) phases.</li>
+        <li>Writes intermediate results to disk — reliable but slower than in-memory (Spark).</li>
+      </ul>
+
+      <p><strong>4. Hadoop Common</strong> — Shared utilities</p>
+      <ul>
+        <li>Java libraries and utilities needed by other Hadoop modules — file system abstractions, I/O, serialisation, networking, configuration.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Q11 -->
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q11</span><span class="qtext">Explain the complete building blocks of Hadoop. Draw the block diagram and explain all the blocks separately.</span><span class="qmarks">15 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+
+      <h4>Building Blocks of Hadoop — Complete Architecture</h4>
+
+      <div class="diagram-box"><pre>
+┌──────────────────────────────────────────────────────────────┐
+│                    HADOOP ECOSYSTEM                          │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐   │
+│  │                   CLIENT LAYER                        │   │
+│  │    CLI  │  Web UI  │  Java API  │  REST API           │   │
+│  └────────────────────────┬─────────────────────────────┘   │
+│                           │                                  │
+│  ┌────────────────────────▼─────────────────────────────┐   │
+│  │                YARN (Resource Manager)                 │   │
+│  │  ┌─────────────┐  ┌──────────┐  ┌────────────────┐  │   │
+│  │  │ Scheduler   │  │ App Mgr  │  │ App Master     │  │   │
+│  │  └─────────────┘  └──────────┘  └────────────────┘  │   │
+│  └────────────────────────┬─────────────────────────────┘   │
+│                           │                                  │
+│  ┌────────────────────────▼─────────────────────────────┐   │
+│  │              PROCESSING LAYER                         │   │
+│  │    MapReduce  │  Spark  │  Tez  │  Pig  │  Hive     │   │
+│  └────────────────────────┬─────────────────────────────┘   │
+│                           │                                  │
+│  ┌────────────────────────▼─────────────────────────────┐   │
+│  │                   HDFS (Storage)                       │   │
+│  │  ┌────────────┐  ┌──────────────────────────────┐    │   │
+│  │  │ NameNode   │  │  DataNode 1 │ DN 2 │ DN 3   │    │   │
+│  │  │ (metadata) │  │  (blocks)   │      │        │    │   │
+│  │  └────────────┘  └──────────────────────────────┘    │   │
+│  └──────────────────────────────────────────────────────┘   │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐   │
+│  │              HADOOP COMMON (Utilities)                │   │
+│  └──────────────────────────────────────────────────────┘   │
+└──────────────────────────────────────────────────────────────┘</pre></div>
+
+      <h4>1. HDFS — Hadoop Distributed File System (Storage Layer)</h4>
+      <p>The distributed storage system that stores data reliably across the cluster.</p>
+      <ul>
+        <li><strong>NameNode:</strong> Master server that manages file system namespace (directory tree, permissions, block mapping). Stores metadata in FsImage and EditLog. Single point of contact for clients. Does NOT store actual data.</li>
+        <li><strong>DataNode:</strong> Slave nodes that store actual data blocks on local disks. Send periodic heartbeats (3-second interval) and block reports (hourly) to NameNode. Serve read/write requests from clients.</li>
+        <li><strong>Secondary NameNode:</strong> Performs periodic checkpointing — merges FsImage with EditLog to prevent EditLog from growing too large. NOT a hot standby for NameNode.</li>
+        <li><strong>Blocks:</strong> Files are split into 128 MB blocks, replicated 3 times across different DataNodes/racks.</li>
+      </ul>
+
+      <h4>2. YARN — Yet Another Resource Negotiator (Resource Layer)</h4>
+      <p>Cluster resource management and job scheduling. Introduced in Hadoop 2.x to decouple resource management from MapReduce.</p>
+      <ul>
+        <li><strong>ResourceManager (RM):</strong> Global master — has two components: (1) Scheduler (allocates resources to applications) and (2) ApplicationsManager (accepts job submissions, launches first ApplicationMaster container).</li>
+        <li><strong>NodeManager (NM):</strong> Per-node agent — manages containers (isolated execution environments), monitors resource usage (CPU, memory), reports to ResourceManager via heartbeats.</li>
+        <li><strong>ApplicationMaster (AM):</strong> Per-application process — negotiates resources from RM, works with NMs to execute and monitor tasks. One AM per submitted job.</li>
+        <li><strong>Container:</strong> Logical bundle of resources (CPU + memory) allocated on a node. Each Map/Reduce task runs inside a container.</li>
+      </ul>
+
+      <h4>3. MapReduce (Processing Layer)</h4>
+      <p>Distributed processing framework running on YARN.</p>
+      <ul>
+        <li><strong>Map Phase:</strong> Input splits → Map tasks (parallel) → Intermediate key-value pairs.</li>
+        <li><strong>Shuffle & Sort:</strong> Framework groups all values by key and transfers them to Reducers.</li>
+        <li><strong>Reduce Phase:</strong> Aggregates values per key → Final output to HDFS.</li>
+        <li>YARN enables other engines (Spark, Tez, Flink) to also use the cluster — MapReduce is just one processing option.</li>
+      </ul>
+
+      <h4>4. Hadoop Common (Utilities Layer)</h4>
+      <p>Foundation layer providing shared utilities used by all Hadoop modules:</p>
+      <ul>
+        <li>File system abstractions (local, HDFS, S3)</li>
+        <li>RPC (Remote Procedure Call) framework for daemon communication</li>
+        <li>Serialisation (Writable interface)</li>
+        <li>Configuration system (XML-based property files)</li>
+        <li>Security (Kerberos authentication)</li>
+        <li>Metrics and logging</li>
+      </ul>
+
+      <h4>5. Client Layer</h4>
+      <ul>
+        <li><strong>CLI:</strong> Command-line tools — <code>hdfs dfs</code>, <code>yarn</code>, <code>mapred</code>.</li>
+        <li><strong>Web UI:</strong> NameNode UI (port 9870), ResourceManager UI (port 8088).</li>
+        <li><strong>Java API:</strong> Programmatic access via Hadoop Java libraries.</li>
+        <li><strong>REST API:</strong> WebHDFS for HTTP-based file operations.</li>
+      </ul>
+
+      <h4>6. Ecosystem Tools (Built on Core)</h4>
+      <table class="cmp-table">
+        <thead><tr><th>Tool</th><th>Purpose</th></tr></thead>
+        <tbody>
+          <tr><td>Hive</td><td>SQL-like queries on HDFS data (data warehouse)</td></tr>
+          <tr><td>Pig</td><td>Data flow scripting (ETL)</td></tr>
+          <tr><td>HBase</td><td>NoSQL database on HDFS (real-time access)</td></tr>
+          <tr><td>Sqoop</td><td>Import/export data between HDFS and RDBMS</td></tr>
+          <tr><td>Flume</td><td>Ingest streaming log data into HDFS</td></tr>
+          <tr><td>Oozie</td><td>Workflow scheduler for Hadoop jobs</td></tr>
+          <tr><td>ZooKeeper</td><td>Distributed coordination and configuration</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="paper-footer">
+  <div class="footer-inner">
+    <a href="bigdata.html" class="back-btn-footer">← Back to All Papers</a>
+    <span>MAKAUT | OEROB801A | Big Data Analysis | 2023–24</span>
+  </div>
+</footer>
+</body>
+</html>

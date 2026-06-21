@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>2024-25 | Big Data Analysis | MAKAUT</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="paper.css"/>
+</head>
+<body>
+
+<nav class="topbar">
+  <a href="bigdata.html" class="back-btn">← Back to Big Data</a>
+  <div class="topbar-info">
+    <span class="topbar-year">2024–25</span>
+    <span class="topbar-code">CS/B.Tech(N)/EVEN/SEM-8/OEC-CS801A</span>
+  </div>
+  <div class="topbar-meta"><span>⏱ 3 Hours</span><span>📋 70 Marks</span></div>
+</nav>
+
+<header class="paper-hero">
+  <div class="paper-hero-bg"></div>
+  <div class="paper-hero-content">
+    <div class="paper-badge">MAKAUT • Big Data Analysis</div>
+    <h1>2024 – 25 <span class="yr-accent">Solved Paper</span></h1>
+    <p>OEC-CS801A &nbsp;|&nbsp; Full Marks: 70 &nbsp;|&nbsp; Time: 3 Hours &nbsp;|&nbsp; SEM-8</p>
+    <div class="paper-pills">
+      <span>Group A: Any 10 × 1 = 10</span>
+      <span>Group B: Any 3 × 5 = 15</span>
+      <span>Group C: Any 3 × 15 = 45</span>
+    </div>
+  </div>
+</header>
+
+<main class="paper-main">
+
+<!-- GROUP A -->
+<section class="group-section" id="groupA">
+  <div class="group-header">
+    <span class="group-label">Group A</span>
+    <h2>Very Short Answer Questions <span class="marks-tag">Any 10 × 1 = 10</span></h2>
+  </div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(I)</span><span class="qtext">What is the process of combining data from multiple sources into a single unified view?</span><span class="qmarks">1M</span></div>
+  <div class="options">
+    <div class="opt">a) Data Mining</div>
+    <div class="opt">b) Data Warehousing</div>
+    <div class="opt correct">c) Data Integration</div>
+    <div class="opt">d) Data Processing</div>
+  </div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>c) Data Integration</strong> — the process of combining data from different sources (databases, files, APIs) into a single unified and consistent view. It involves ETL (Extract, Transform, Load), data mapping, and schema reconciliation.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(II)</span><span class="qtext">What is Avro?</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>Apache Avro</strong> is a row-based data serialisation framework developed within the Hadoop project. It uses JSON for defining data types/schemas and serialises data in a compact binary format.</p>
+    <p><strong>Key Features:</strong> Rich data structures, schema evolution (add/remove fields without breaking compatibility), self-describing files (schema embedded in file), language-independent (Java, Python, C++), and compact binary encoding. Widely used in Kafka for message serialisation.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(III)</span><span class="qtext">________ is a columnar storage format for Hadoop.</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>Apache Parquet.</strong> It is a columnar storage format optimised for analytics workloads in the Hadoop ecosystem. Data is stored column-by-column rather than row-by-row, enabling efficient compression and encoding. Ideal for queries that access only specific columns (reduces I/O significantly). Supported by Hive, Spark, Pig, and Impala.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(IV)</span><span class="qtext">________ is a Cassandra feature that optimizes the cluster consistency process.</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>Anti-Entropy Repair</strong> (or <strong>Read Repair</strong>). Cassandra uses several mechanisms to maintain consistency:</p>
+    <ul>
+      <li><strong>Read Repair:</strong> During reads, detects inconsistent replicas and updates stale ones in the background.</li>
+      <li><strong>Hinted Handoff:</strong> When a node is down, hints are stored on other nodes and replayed when the node comes back.</li>
+      <li><strong>Anti-Entropy Repair (nodetool repair):</strong> Uses Merkle trees to compare data across replicas and synchronise differences.</li>
+    </ul>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(V)</span><span class="qtext">List two data types associated with Hive.</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>Primitive Types:</strong> <code>INT</code>, <code>STRING</code>, <code>BOOLEAN</code>, <code>FLOAT</code>, <code>DOUBLE</code>, <code>BIGINT</code>, <code>TIMESTAMP</code>.</p>
+    <p><strong>Complex Types:</strong> <code>ARRAY</code> (ordered collection), <code>MAP</code> (key-value pairs), <code>STRUCT</code> (named fields), <code>UNIONTYPE</code>.</p>
+    <p>Example: <code>ARRAY&lt;STRING&gt;</code> — an array of strings, <code>MAP&lt;STRING, INT&gt;</code> — a map from string keys to integer values.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(VI)</span><span class="qtext">The need for data replication can arise in various scenarios like ________.</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p>The need for data replication arises in scenarios like:</p>
+    <ul>
+      <li><strong>Fault tolerance:</strong> Protecting against hardware failures — if one node fails, data is available on other replicas.</li>
+      <li><strong>Disaster recovery:</strong> Maintaining copies across data centres for recovery from site-wide failures.</li>
+      <li><strong>Load balancing:</strong> Distributing read requests across multiple replicas to reduce latency.</li>
+      <li><strong>Geographic distribution:</strong> Placing data closer to users in different regions for faster access.</li>
+    </ul>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(VII)</span><span class="qtext">Which of the following is a tool used for processing and analysing Big Data?</span><span class="qmarks">1M</span></div>
+  <div class="options">
+    <div class="opt correct">a) Hadoop</div>
+    <div class="opt">b) MySQL</div>
+    <div class="opt">c) PostgreSQL</div>
+    <div class="opt">d) Oracle</div>
+  </div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>a) Hadoop.</strong> Apache Hadoop is specifically designed for distributed storage and processing of Big Data. MySQL, PostgreSQL, and Oracle are traditional RDBMS — they handle structured data but are not designed for the scale and variety of Big Data (petabytes of unstructured data across clusters).</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(VIII)</span><span class="qtext">HDFS stands for?</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>Hadoop Distributed File System.</strong> It is the primary storage system of Hadoop — a distributed, scalable, and fault-tolerant file system designed to store very large files across multiple machines in a cluster. Inspired by Google File System (GFS).</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(IX)</span><span class="qtext">Which technique is used for identifying patterns in data by training a model on a dataset and using it to make predictions on new data?</span><span class="qmarks">1M</span></div>
+  <div class="options">
+    <div class="opt">a) Data Mining</div>
+    <div class="opt correct">b) Machine Learning</div>
+    <div class="opt">c) Natural Language Processing</div>
+    <div class="opt">d) Text Analytics</div>
+  </div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>b) Machine Learning.</strong> ML involves training models on historical data to learn patterns, then using the trained model to make predictions on new, unseen data. Types: Supervised (classification, regression), Unsupervised (clustering, dimensionality reduction), Reinforcement Learning.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(X)</span><span class="qtext">Hive specific commands can be run from Beeline, when the Hive ________ driver is used.</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>JDBC</strong> driver. Beeline is a JDBC client that connects to HiveServer2. When using the Hive JDBC driver (<code>org.apache.hive.jdbc.HiveDriver</code>), Beeline can execute HiveQL commands, DDL/DML statements, and Hive-specific commands through the HiveServer2 interface.</p>
+    <pre>
+beeline -u "jdbc:hive2://localhost:10000/default" -n username</pre>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(XI)</span><span class="qtext">Which of the following is NOT a data warehouse system that can be integrated with Hive?</span><span class="qmarks">1M</span></div>
+  <div class="options">
+    <div class="opt">A. Apache HBase</div>
+    <div class="opt correct">B. Apache Cassandra</div>
+    <div class="opt">C. Apache Druid</div>
+    <div class="opt">D. Apache Kylin</div>
+  </div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>B. Apache Cassandra</strong> — Cassandra is a NoSQL distributed database, not a data warehouse system, and does not have native integration with Hive. HBase integrates via Hive's StorageHandler, Druid integrates as a real-time data store, and Kylin provides OLAP cube building on top of Hive.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q1(XII)</span><span class="qtext">List one benefit of Trans-firewall analytics.</span><span class="qmarks">1M</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p><strong>Cross-organisational data analysis:</strong> Trans-firewall analytics enables analysing data across organisational boundaries (beyond firewalls) without physically moving sensitive data. This allows organisations to gain collaborative insights while maintaining data security and privacy compliance. Other benefits include detecting cross-domain fraud patterns and enabling federated analytics across partner organisations.</p>
+  </div></div>
+</section>
+
+<!-- GROUP B -->
+<section class="group-section" id="groupB">
+  <div class="group-header"><span class="group-label">Group B</span><h2>Short Answer Questions <span class="marks-tag">Any 3 × 5 = 15</span></h2></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q2</span><span class="qtext">Write an explanatory note on MapReduce Work Flow.</span><span class="qmarks">5 Marks</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p>The <strong>MapReduce workflow</strong> is a step-by-step process for distributed data processing in Hadoop:</p>
+    <div class="diagram-box"><pre>
+Input → Splitting → Mapping → Shuffling → Sorting → Reducing → Output
+
+     Input File (HDFS)
+          │
+    ┌─────┼─────┐
+    │     │     │
+  Split1 Split2 Split3          ← Input Splitting
+    │     │     │
+  Map1  Map2  Map3              ← Map Phase (parallel)
+    │     │     │
+    └─────┼─────┘
+          │
+    Shuffle & Sort               ← Framework handles this
+          │
+    ┌─────┼─────┐
+  Reduce1 Reduce2               ← Reduce Phase (parallel)
+    │     │
+  Output1 Output2               ← Final Output (HDFS)</pre></div>
+    <ol>
+      <li><strong>Input Splitting:</strong> Input file is divided into fixed-size splits (typically = HDFS block size, 128 MB). Each split is assigned to one Map task.</li>
+      <li><strong>Map Phase:</strong> Each Map task reads its input split, processes records using the user-defined <code>map()</code> function, and emits intermediate key-value pairs.</li>
+      <li><strong>Combiner (Optional):</strong> A local reducer that runs on the Map node to reduce data volume before shuffling — reduces network traffic.</li>
+      <li><strong>Shuffle & Sort:</strong> Framework partitions intermediate output by key, transfers data to Reducer nodes (shuffle), and sorts all values by key (sort).</li>
+      <li><strong>Reduce Phase:</strong> Each Reducer receives all values for its assigned keys, aggregates them using the user-defined <code>reduce()</code> function, and writes final output.</li>
+      <li><strong>Output:</strong> Final results are written to HDFS.</li>
+    </ol>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q3</span><span class="qtext">What are the functions of NameNode and DataNode in HDFS Architecture?</span><span class="qmarks">5 Marks</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <table class="cmp-table">
+      <thead><tr><th>Feature</th><th>NameNode (Master)</th><th>DataNode (Slave)</th></tr></thead>
+      <tbody>
+        <tr><td>Role</td><td>Manages file system metadata</td><td>Stores actual data blocks</td></tr>
+        <tr><td>Data Stored</td><td>File names, permissions, block IDs, block locations (in memory)</td><td>Raw data blocks on local disk</td></tr>
+        <tr><td>Files</td><td>FsImage + EditLog</td><td>Block files + checksum files</td></tr>
+        <tr><td>Client Interaction</td><td>Tells client which DataNodes to read/write</td><td>Serves actual read/write data to client</td></tr>
+        <tr><td>Heartbeat</td><td>Receives heartbeats from DataNodes</td><td>Sends heartbeats every 3 seconds to NameNode</td></tr>
+        <tr><td>Block Reports</td><td>Receives and processes block reports</td><td>Sends periodic block reports (list of all blocks)</td></tr>
+        <tr><td>Replication</td><td>Decides when and where to replicate blocks</td><td>Copies blocks to other DataNodes as instructed</td></tr>
+        <tr><td>Failure Handling</td><td>Detects dead DataNodes, triggers re-replication</td><td>If it fails, NameNode re-replicates its blocks from other nodes</td></tr>
+        <tr><td>Count</td><td>One per cluster (+ standby for HA)</td><td>Many per cluster (hundreds to thousands)</td></tr>
+      </tbody>
+    </table>
+    <div class="diagram-box"><pre>
+Client → NameNode: "Where is file.txt?"
+NameNode → Client: "Blocks A,B,C on DataNodes 1,3,5"
+Client → DataNode 1: "Send Block A"
+DataNode 1 → Client: [Block A data]</pre></div>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q4</span><span class="qtext">Discuss the advantages of YARN over MapReduce.</span><span class="qmarks">5 Marks</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <p>YARN (Hadoop 2.x) was introduced to overcome the limitations of MapReduce v1 (MRv1, Hadoop 1.x):</p>
+    <table class="cmp-table">
+      <thead><tr><th>Feature</th><th>MRv1 (Hadoop 1.x)</th><th>YARN (Hadoop 2.x)</th></tr></thead>
+      <tbody>
+        <tr><td>Resource Management</td><td>JobTracker handles both resource management AND job scheduling — single point of failure</td><td>Separated: ResourceManager (resources) + ApplicationMaster (per-job scheduling)</td></tr>
+        <tr><td>Scalability</td><td>Limited to ~4,000 nodes (JobTracker bottleneck)</td><td>Scales to 10,000+ nodes</td></tr>
+        <tr><td>Multi-Tenancy</td><td>Only MapReduce can run</td><td>Multiple frameworks: MapReduce, Spark, Tez, Flink on same cluster</td></tr>
+        <tr><td>Resource Allocation</td><td>Fixed map/reduce slots — wasteful</td><td>Dynamic containers with configurable CPU/memory</td></tr>
+        <tr><td>Fault Tolerance</td><td>JobTracker failure = all jobs fail</td><td>Only the ApplicationMaster for that specific job needs restart</td></tr>
+        <tr><td>Utilisation</td><td>Poor — idle map slots can't be used by reduce tasks</td><td>Better — resources are shared dynamically across all applications</td></tr>
+      </tbody>
+    </table>
+    <p><strong>Key Advantage:</strong> YARN transforms Hadoop from a batch-only MapReduce system into a <strong>general-purpose cluster operating system</strong> that supports interactive queries (Tez), stream processing (Flink), and in-memory computing (Spark) alongside batch MapReduce.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q5</span><span class="qtext">List some common types of financial frauds prevalent in the current business scenario.</span><span class="qmarks">5 Marks</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <h4>Common Types of Financial Frauds</h4>
+    <ul>
+      <li><strong>Identity Theft:</strong> Stealing personal information (PAN, Aadhaar, credit card numbers) to open accounts, make purchases, or file fraudulent tax returns.</li>
+      <li><strong>Credit Card Fraud:</strong> Unauthorised use of credit/debit card information — card skimming, online card-not-present fraud, counterfeit cards.</li>
+      <li><strong>Insurance Fraud:</strong> Staging accidents, inflating claims, claiming for pre-existing conditions, or faking death for insurance payouts.</li>
+      <li><strong>Money Laundering:</strong> Converting illegally obtained money into legitimate assets through a series of complex transactions (placement → layering → integration).</li>
+      <li><strong>Ponzi/Pyramid Schemes:</strong> Investment fraud where returns to existing investors are paid from new investors' money rather than actual profits. Example: Saradha scam in India.</li>
+      <li><strong>Cyber Fraud:</strong> Phishing emails, fake websites, vishing (phone scams), smishing (SMS scams) to steal banking credentials.</li>
+      <li><strong>Insider Trading:</strong> Trading stocks based on non-public, material information about a company — illegal and unfair to other investors.</li>
+      <li><strong>Invoice/Billing Fraud:</strong> Creating fake invoices, inflating expenses, duplicate billing, ghost employee schemes.</li>
+      <li><strong>Tax Fraud:</strong> Underreporting income, overclaiming deductions, hiding money in offshore accounts.</li>
+    </ul>
+    <p><strong>Role of Big Data:</strong> Big Data analytics can detect fraud patterns by analysing transaction volumes in real-time, identifying anomalies using ML models, and cross-referencing data across multiple sources.</p>
+  </div></div>
+
+  <div class="qblock"><div class="qblock-header"><span class="qno">Q6</span><span class="qtext">Explain the key features of NoSQL database.</span><span class="qmarks">5 Marks</span></div>
+  <div class="answer-box"><div class="ans-label">✓ Answer</div>
+    <ul>
+      <li><strong>Flexible Schema:</strong> No rigid table structure required. Documents/records can have different fields. Schema evolves without downtime or migrations.</li>
+      <li><strong>Horizontal Scalability:</strong> Scale out by adding more commodity nodes to the cluster. Data is automatically distributed (sharding/partitioning).</li>
+      <li><strong>High Availability:</strong> Built-in data replication across multiple nodes/data centres. Automatic failover when nodes go down.</li>
+      <li><strong>High Performance:</strong> Optimised for specific access patterns — key-value lookups (sub-millisecond), document queries, graph traversals.</li>
+      <li><strong>Distributed Architecture:</strong> Data is distributed across multiple nodes. No single point of failure (masterless in Cassandra).</li>
+      <li><strong>Multiple Data Models:</strong> Key-Value (Redis), Document (MongoDB), Column-Family (Cassandra), Graph (Neo4j) — choose the model that fits your use case.</li>
+      <li><strong>Eventual Consistency:</strong> Many NoSQL databases favour availability over immediate consistency (AP in CAP theorem). Tunable consistency levels available.</li>
+      <li><strong>Big Data Ready:</strong> Designed to handle massive volumes of structured, semi-structured, and unstructured data.</li>
+      <li><strong>Developer Friendly:</strong> JSON-like data formats, flexible APIs, and easy integration with modern programming languages.</li>
+    </ul>
+  </div></div>
+</section>
+
+<!-- GROUP C -->
+<section class="group-section" id="groupC">
+  <div class="group-header">
+    <span class="group-label">Group C</span>
+    <h2>Long Answer Questions <span class="marks-tag">Any 3 × 15 = 45</span></h2>
+  </div>
+
+  <!-- Q7 -->
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q7</span><span class="qtext">(a) Different types of Big Data Analytics. (b) Formats for handling semi-structured data. [8+7]</span><span class="qmarks">15 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+
+      <h4>(a) Different Types of Big Data Analytics [8 marks]</h4>
+
+      <p><strong>1. Descriptive Analytics — "What happened?"</strong></p>
+      <ul>
+        <li>Analyses historical data to understand past events and trends.</li>
+        <li>Uses aggregation, summarisation, data mining, and visualisation.</li>
+        <li><strong>Examples:</strong> Monthly sales reports, website traffic dashboards, customer demographics analysis.</li>
+        <li><strong>Tools:</strong> Hive, SQL, Tableau, Power BI.</li>
+      </ul>
+
+      <p><strong>2. Diagnostic Analytics — "Why did it happen?"</strong></p>
+      <ul>
+        <li>Digs deeper into data to find root causes of events or patterns.</li>
+        <li>Uses drill-down, data discovery, correlation analysis.</li>
+        <li><strong>Examples:</strong> Why did sales drop in Q3? Why are customers churning in a specific region?</li>
+        <li><strong>Techniques:</strong> Root cause analysis, hypothesis testing, regression analysis.</li>
+      </ul>
+
+      <p><strong>3. Predictive Analytics — "What will happen?"</strong></p>
+      <ul>
+        <li>Uses statistical models and machine learning to forecast future outcomes based on historical data.</li>
+        <li><strong>Examples:</strong> Predicting customer churn, stock price forecasting, demand planning, disease outbreak prediction.</li>
+        <li><strong>Techniques:</strong> Regression, classification, time-series analysis, neural networks.</li>
+        <li><strong>Tools:</strong> Spark MLlib, Python scikit-learn, TensorFlow.</li>
+      </ul>
+
+      <p><strong>4. Prescriptive Analytics — "What should we do?"</strong></p>
+      <ul>
+        <li>Recommends specific actions to achieve desired outcomes. Goes beyond prediction to optimisation.</li>
+        <li><strong>Examples:</strong> Dynamic pricing recommendations, optimal delivery routes, personalised treatment plans.</li>
+        <li><strong>Techniques:</strong> Optimisation algorithms, simulation, A/B testing, reinforcement learning.</li>
+        <li>Most complex and valuable type of analytics.</li>
+      </ul>
+
+      <table class="cmp-table">
+        <thead><tr><th>Type</th><th>Question</th><th>Complexity</th><th>Value</th></tr></thead>
+        <tbody>
+          <tr><td>Descriptive</td><td>What happened?</td><td>Low</td><td>Low</td></tr>
+          <tr><td>Diagnostic</td><td>Why did it happen?</td><td>Medium</td><td>Medium</td></tr>
+          <tr><td>Predictive</td><td>What will happen?</td><td>High</td><td>High</td></tr>
+          <tr><td>Prescriptive</td><td>What should we do?</td><td>Highest</td><td>Highest</td></tr>
+        </tbody>
+      </table>
+
+      <h4>(b) Formats for Handling Semi-Structured Data [7 marks]</h4>
+      <p>Semi-structured data has some organisational properties (tags, markers) but doesn't conform to rigid table schemas.</p>
+
+      <table class="cmp-table">
+        <thead><tr><th>Format</th><th>Description</th><th>Use Case</th></tr></thead>
+        <tbody>
+          <tr><td><strong>JSON</strong> (JavaScript Object Notation)</td><td>Lightweight text-based format using key-value pairs and arrays. Human-readable.</td><td>Web APIs, configuration files, MongoDB documents, Kafka messages</td></tr>
+          <tr><td><strong>XML</strong> (eXtensible Markup Language)</td><td>Tag-based hierarchical format with schemas (XSD) and transformation (XSLT).</td><td>Enterprise data exchange, SOAP web services, configuration</td></tr>
+          <tr><td><strong>Avro</strong></td><td>Row-based binary serialisation with embedded JSON schema. Supports schema evolution.</td><td>Hadoop data serialisation, Kafka, data pipelines</td></tr>
+          <tr><td><strong>Parquet</strong></td><td>Columnar binary format with efficient compression. Schema embedded in file.</td><td>Analytics queries, Spark/Hive data storage</td></tr>
+          <tr><td><strong>ORC</strong> (Optimised Row Columnar)</td><td>Columnar format optimised for Hive. High compression, predicate pushdown.</td><td>Hive data warehousing, batch analytics</td></tr>
+          <tr><td><strong>CSV/TSV</strong></td><td>Comma/Tab separated values. Simple but lacks schema and nesting support.</td><td>Data export/import, spreadsheets</td></tr>
+          <tr><td><strong>Protocol Buffers (Protobuf)</strong></td><td>Google's binary serialisation. Faster and smaller than JSON/XML.</td><td>gRPC services, inter-service communication</td></tr>
+          <tr><td><strong>YAML</strong></td><td>Human-readable data serialisation. Superset of JSON with support for comments.</td><td>Configuration files (Kubernetes, Docker, Ansible)</td></tr>
+        </tbody>
+      </table>
+
+      <pre>
+// JSON Example:
+{ "name": "Alice", "age": 25, "courses": ["Big Data", "ML"] }
+
+// XML Example:
+&lt;student&gt;&lt;name&gt;Alice&lt;/name&gt;&lt;age&gt;25&lt;/age&gt;&lt;/student&gt;
+
+// Avro Schema:
+{ "type": "record", "name": "Student",
+  "fields": [ {"name": "name", "type": "string"}, {"name": "age", "type": "int"} ] }</pre>
+    </div>
+  </div>
+
+  <!-- Q8 -->
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q8</span><span class="qtext">(a) Short note on HBase. (b) Clusters in Cassandra and YAML file. (c) Replication factor in Cassandra. [15]</span><span class="qmarks">15 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+
+      <h4>(a) Apache HBase [~7 marks]</h4>
+      <p><strong>Apache HBase</strong> is an open-source, distributed, column-family NoSQL database built on top of HDFS. It is modelled after Google's Bigtable and provides real-time random read/write access to large datasets.</p>
+
+      <h4>Key Features</h4>
+      <ul>
+        <li><strong>Column-Family Store:</strong> Data is organised into column families. Each row can have different columns within a family.</li>
+        <li><strong>Linear Scalability:</strong> Scales horizontally by adding RegionServers. Can handle billions of rows × millions of columns.</li>
+        <li><strong>Strong Consistency:</strong> Unlike Cassandra (eventual), HBase provides strong consistency — reads always return the latest write.</li>
+        <li><strong>Automatic Sharding:</strong> Tables are automatically split into regions and distributed across RegionServers.</li>
+        <li><strong>Built on HDFS:</strong> Leverages HDFS for fault-tolerant storage with automatic replication.</li>
+        <li><strong>Real-Time Queries:</strong> Supports random read/write operations (unlike HDFS which is optimised for batch/sequential).</li>
+      </ul>
+
+      <h4>HBase Architecture</h4>
+      <div class="diagram-box"><pre>
+Client → ZooKeeper → HMaster → RegionServer
+                                    │
+                              ┌─────┼─────┐
+                            Region  Region  Region
+                              │
+                        ┌─────┼─────┐
+                     MemStore  HFile  WAL (Write-Ahead Log)
+                                │
+                              HDFS</pre></div>
+      <ul>
+        <li><strong>HMaster:</strong> Manages RegionServers, handles schema changes, load balancing.</li>
+        <li><strong>RegionServer:</strong> Handles read/write requests for regions assigned to it.</li>
+        <li><strong>Region:</strong> A subset of a table's rows (horizontal partition).</li>
+        <li><strong>ZooKeeper:</strong> Coordination service — tracks which RegionServer serves which region.</li>
+        <li><strong>MemStore:</strong> In-memory write buffer. Flushed to HFiles on HDFS when full.</li>
+        <li><strong>WAL:</strong> Write-Ahead Log for crash recovery.</li>
+      </ul>
+
+      <h4>(b) Clusters in Cassandra & YAML File [~5 marks]</h4>
+      <p><strong>Cassandra Cluster:</strong> A collection of nodes (machines) that work together to store and manage data. Key concepts:</p>
+      <ul>
+        <li><strong>Node:</strong> A single Cassandra instance running on a machine.</li>
+        <li><strong>Rack:</strong> A logical grouping of nodes (typically in the same physical rack for fault tolerance).</li>
+        <li><strong>Data Centre:</strong> A collection of racks. Can represent physical data centres or cloud regions.</li>
+        <li><strong>Cluster:</strong> The complete set of all data centres, racks, and nodes.</li>
+        <li><strong>Peer-to-Peer:</strong> No master node — all nodes are equal. Uses gossip protocol for inter-node communication.</li>
+        <li><strong>Partitioner:</strong> Determines which node stores which data using consistent hashing (partition key → token → node).</li>
+      </ul>
+
+      <p><strong>YAML File (cassandra.yaml):</strong> The primary configuration file for Cassandra. Located in <code>conf/</code> directory.</p>
+      <ul>
+        <li><strong>cluster_name:</strong> Name of the cluster (all nodes must have the same name)</li>
+        <li><strong>listen_address:</strong> IP address the node listens on for inter-node communication</li>
+        <li><strong>rpc_address:</strong> Address for client connections (CQL)</li>
+        <li><strong>seed_provider:</strong> List of seed nodes for bootstrapping (joining the cluster)</li>
+        <li><strong>endpoint_snitch:</strong> Determines node topology (which rack/DC)</li>
+        <li><strong>partitioner:</strong> Hash algorithm for data distribution (default: Murmur3Partitioner)</li>
+        <li><strong>data_file_directories:</strong> Paths for storing SSTable data files</li>
+      </ul>
+
+      <h4>(c) Replication Factor in Cassandra [~3 marks]</h4>
+      <p>The <strong>replication factor (RF)</strong> defines how many copies of each piece of data are stored across the cluster. It is set per keyspace (database).</p>
+      <ul>
+        <li><strong>RF = 1:</strong> Only one copy — no redundancy. If that node fails, data is lost.</li>
+        <li><strong>RF = 3:</strong> Three copies on different nodes — recommended for production. Can tolerate 2 node failures.</li>
+        <li><strong>Rule of thumb:</strong> RF should be odd (1, 3, 5) for effective quorum calculations.</li>
+      </ul>
+      <pre>
+CREATE KEYSPACE my_keyspace WITH replication = {
+  'class': 'SimpleStrategy',
+  'replication_factor': 3
+};
+
+-- For multi-data centre:
+CREATE KEYSPACE my_keyspace WITH replication = {
+  'class': 'NetworkTopologyStrategy',
+  'DC1': 3,
+  'DC2': 2
+};</pre>
+      <p><strong>Consistency Level + RF:</strong> With RF=3, a <code>QUORUM</code> read/write requires 2 out of 3 nodes to respond — balancing consistency and availability.</p>
+    </div>
+  </div>
+
+  <!-- Q9 -->
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q9</span><span class="qtext">(a) Structured vs Unstructured data. (b) Internal vs External data sources. (c) Typical sources of Big Data. [5+5+5]</span><span class="qmarks">15 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+
+      <h4>(a) Structured vs Unstructured Data [5 marks]</h4>
+      <table class="cmp-table">
+        <thead><tr><th>Feature</th><th>Structured Data</th><th>Unstructured Data</th></tr></thead>
+        <tbody>
+          <tr><td>Definition</td><td>Data with a predefined schema and fixed format</td><td>Data without a predefined schema or format</td></tr>
+          <tr><td>Format</td><td>Tables, rows, columns (relational)</td><td>Text, images, audio, video, social media</td></tr>
+          <tr><td>Storage</td><td>RDBMS (MySQL, Oracle, PostgreSQL)</td><td>NoSQL, HDFS, Data Lakes, Object Storage</td></tr>
+          <tr><td>Querying</td><td>Easy — SQL queries</td><td>Difficult — requires NLP, ML, computer vision</td></tr>
+          <tr><td>Schema</td><td>Schema-on-Write (defined before insertion)</td><td>Schema-on-Read (structure applied at query time)</td></tr>
+          <tr><td>Volume</td><td>~20% of all data</td><td>~80% of all data</td></tr>
+          <tr><td>Examples</td><td>Employee database, bank transactions, inventory</td><td>Emails, PDFs, videos, social media posts, sensor data</td></tr>
+          <tr><td>Analysis</td><td>Traditional BI tools</td><td>Big Data tools (Hadoop, Spark, ML frameworks)</td></tr>
+        </tbody>
+      </table>
+
+      <h4>(b) Internal vs External Data Sources [5 marks]</h4>
+      <table class="cmp-table">
+        <thead><tr><th>Feature</th><th>Internal Sources</th><th>External Sources</th></tr></thead>
+        <tbody>
+          <tr><td>Origin</td><td>Within the organisation</td><td>Outside the organisation</td></tr>
+          <tr><td>Control</td><td>Full control over data quality and access</td><td>Limited control — depends on provider</td></tr>
+          <tr><td>Examples</td><td>CRM databases, ERP systems, sales records, employee data, server logs, financial records</td><td>Social media (Twitter, Facebook), government data, market research, weather data, third-party APIs</td></tr>
+          <tr><td>Cost</td><td>Already available (collected as part of operations)</td><td>May require purchase or subscription (e.g., market data feeds)</td></tr>
+          <tr><td>Reliability</td><td>High — directly controlled and validated</td><td>Variable — depends on source credibility</td></tr>
+          <tr><td>Timeliness</td><td>Real-time access possible</td><td>May have delays or update frequencies</td></tr>
+          <tr><td>Privacy</td><td>Subject to internal policies</td><td>Subject to external regulations (GDPR, CCPA)</td></tr>
+        </tbody>
+      </table>
+
+      <h4>(c) Typical Sources of Big Data [5 marks]</h4>
+      <ul>
+        <li><strong>Social Media:</strong> Facebook, Twitter/X, Instagram, LinkedIn — user posts, likes, shares, comments, follower networks. Billions of data points daily.</li>
+        <li><strong>IoT Sensors:</strong> Smart devices, industrial sensors, wearables (Fitbit, Apple Watch), smart home devices — continuous streams of temperature, pressure, location, health data.</li>
+        <li><strong>Transaction Data:</strong> E-commerce purchases, banking transactions, stock market trades, point-of-sale records — high volume, high velocity.</li>
+        <li><strong>Web & Clickstream:</strong> Website logs, search queries, page views, user navigation patterns, ad impressions — used for analytics and personalisation.</li>
+        <li><strong>Machine-Generated Data:</strong> Server logs, application logs, network traffic, system metrics — massive volumes generated automatically.</li>
+        <li><strong>Healthcare Data:</strong> EHR (Electronic Health Records), medical imaging (X-rays, MRIs), genomic data, clinical trial data.</li>
+        <li><strong>Government & Public Data:</strong> Census data, weather data, satellite imagery, public transport data, crime statistics.</li>
+        <li><strong>Multimedia:</strong> Video (YouTube — 500 hours uploaded/minute), audio (Spotify, podcasts), images (Instagram — 100M photos/day).</li>
+        <li><strong>Scientific Data:</strong> CERN's Large Hadron Collider (~1 PB/second), astronomical surveys, climate models.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Q10 -->
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q10</span><span class="qtext">(a) Different types of data. (b) Example scenarios of using unstructured data. (c) What is Big Data? Benefits for Healthcare. [4+5+6]</span><span class="qmarks">15 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+
+      <h4>(a) Different Types of Data [4 marks]</h4>
+      <table class="cmp-table">
+        <thead><tr><th>Type</th><th>Description</th><th>Examples</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Structured Data</strong></td><td>Organised in predefined format (rows/columns), easily queryable via SQL</td><td>Relational databases, spreadsheets, CSV files</td></tr>
+          <tr><td><strong>Semi-Structured Data</strong></td><td>Has some organisational properties (tags/markers) but no rigid schema</td><td>JSON, XML, YAML, email (headers + body), HTML</td></tr>
+          <tr><td><strong>Unstructured Data</strong></td><td>No predefined format or schema — raw data requiring specialised processing</td><td>Text documents, images, videos, audio, social media posts</td></tr>
+          <tr><td><strong>Quasi-Structured Data</strong></td><td>Textual data with irregular structure that can be parsed with effort</td><td>Web clickstream logs, server logs with varying formats</td></tr>
+        </tbody>
+      </table>
+
+      <h4>(b) Example Scenarios of Using Unstructured Data [5 marks]</h4>
+      <ul>
+        <li><strong>Social Media Sentiment Analysis:</strong> Analysing millions of tweets and Facebook posts to gauge public opinion about a brand, product, or political candidate. NLP extracts sentiment (positive/negative/neutral) from unstructured text.</li>
+        <li><strong>Medical Imaging Diagnosis:</strong> Using deep learning on unstructured X-ray, MRI, and CT scan images to detect tumours, fractures, and diseases. AI can often match or exceed radiologist accuracy.</li>
+        <li><strong>Customer Support Analysis:</strong> Processing unstructured support tickets, chat logs, and call recordings to identify common complaints, measure customer satisfaction, and improve service.</li>
+        <li><strong>Surveillance & Security:</strong> Analysing CCTV video feeds using computer vision for facial recognition, anomaly detection, crowd monitoring, and threat identification.</li>
+        <li><strong>Legal Document Review:</strong> Using NLP to scan thousands of unstructured legal documents, contracts, and case files to find relevant clauses, precedents, and evidence during litigation.</li>
+        <li><strong>Voice Assistants:</strong> Processing unstructured voice commands (Alexa, Siri, Google Assistant) — speech-to-text → NLP → intent recognition → response generation.</li>
+      </ul>
+
+      <h4>(c) What is Big Data? Benefits for Healthcare [6 marks]</h4>
+      <p><strong>Big Data</strong> refers to extremely large and complex datasets that cannot be processed, managed, or analysed by traditional data processing tools. Characterised by the <strong>5 V's</strong>:</p>
+      <table class="cmp-table">
+        <thead><tr><th>V</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Volume</strong></td><td>Massive amounts of data — terabytes to petabytes</td></tr>
+          <tr><td><strong>Velocity</strong></td><td>Speed of data generation and processing — real-time streams</td></tr>
+          <tr><td><strong>Variety</strong></td><td>Different types — structured, semi-structured, unstructured</td></tr>
+          <tr><td><strong>Veracity</strong></td><td>Quality and accuracy of data — noisy, incomplete, inconsistent</td></tr>
+          <tr><td><strong>Value</strong></td><td>Business value derived from analysing the data</td></tr>
+        </tbody>
+      </table>
+
+      <h4>Benefits of Big Data for Healthcare Industries</h4>
+      <ul>
+        <li><strong>Early Disease Detection:</strong> Analysing patient history, genetic data, and lifestyle factors to predict disease risk before symptoms appear (e.g., diabetes, heart disease).</li>
+        <li><strong>Personalised Treatment:</strong> Genomic data analysis enables precision medicine — treatments tailored to a patient's genetic profile rather than one-size-fits-all approaches.</li>
+        <li><strong>Operational Efficiency:</strong> Optimising hospital operations — bed management, staff scheduling, supply chain, reducing wait times using predictive models.</li>
+        <li><strong>Drug Discovery:</strong> Analysing molecular data, clinical trial results, and research papers to accelerate drug discovery and reduce development costs (from billions to millions).</li>
+        <li><strong>Epidemic Prediction:</strong> Tracking disease outbreaks by analysing travel data, social media, and hospital records in real-time (e.g., COVID-19 spread modelling).</li>
+        <li><strong>Reducing Costs:</strong> Predictive maintenance of medical equipment, reducing unnecessary tests, preventing readmissions — saving billions annually.</li>
+        <li><strong>Clinical Decision Support:</strong> AI-powered tools that assist doctors with diagnosis by analysing symptoms, medical history, and the latest research papers.</li>
+        <li><strong>Remote Patient Monitoring:</strong> Wearable IoT devices streaming real-time health data — enabling proactive care for chronic disease patients without hospital visits.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Q11 -->
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q11</span><span class="qtext">(a) Concept of regions in HBase. (b) Hadoop Integration. (c) Cassandra CQL collections. [5+5+5]</span><span class="qmarks">15 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+
+      <h4>(a) Concept of Regions in HBase [5 marks]</h4>
+      <p>A <strong>Region</strong> in HBase is a horizontal partition of a table containing a contiguous range of rows sorted by row key. Regions are the basic unit of scalability and distribution.</p>
+
+      <ul>
+        <li><strong>Automatic Splitting:</strong> When a region grows beyond a threshold (default ~10 GB), HBase automatically splits it into two smaller regions at the midpoint.</li>
+        <li><strong>Region Assignment:</strong> Each region is served by exactly one RegionServer. HMaster assigns regions to RegionServers for load balancing.</li>
+        <li><strong>Components:</strong> Each region contains a MemStore (in-memory write buffer) per column family, and HFiles (on-disk sorted key-value files).</li>
+        <li><strong>Write Path:</strong> Client write → WAL (Write-Ahead Log) → MemStore → (when full) Flush to HFile on HDFS.</li>
+        <li><strong>Read Path:</strong> Check MemStore → Check Block Cache → Read HFiles → Merge results.</li>
+      </ul>
+
+      <div class="diagram-box"><pre>
+Table: students
+  Row Key Range: A-M → Region 1 (on RegionServer 1)
+  Row Key Range: N-Z → Region 2 (on RegionServer 2)
+
+When Region 1 grows too large:
+  Region 1 splits → Region 1a (A-F) + Region 1b (G-M)</pre></div>
+
+      <p><strong>Meta Table:</strong> A special HBase table (<code>hbase:meta</code>) that stores the mapping of row key ranges to regions and their hosting RegionServers. ZooKeeper stores the location of the Meta table.</p>
+
+      <h4>(b) Hadoop Integration [5 marks]</h4>
+      <p><strong>Hadoop Integration</strong> refers to connecting Hadoop with various tools, databases, and systems in the ecosystem to build end-to-end data pipelines:</p>
+
+      <table class="cmp-table">
+        <thead><tr><th>Integration</th><th>Tool</th><th>Purpose</th></tr></thead>
+        <tbody>
+          <tr><td>RDBMS ↔ HDFS</td><td><strong>Apache Sqoop</strong></td><td>Import data from MySQL/Oracle to HDFS; export HDFS results back to RDBMS</td></tr>
+          <tr><td>Real-Time Logs → HDFS</td><td><strong>Apache Flume</strong></td><td>Collect and ingest streaming log data from web servers into HDFS</td></tr>
+          <tr><td>Stream Processing</td><td><strong>Apache Kafka</strong></td><td>Real-time data streaming pipeline; feeds data into HDFS/Spark/Flink</td></tr>
+          <tr><td>SQL on HDFS</td><td><strong>Apache Hive</strong></td><td>SQL-like queries on HDFS data using HiveQL; data warehousing</td></tr>
+          <tr><td>Scripting on HDFS</td><td><strong>Apache Pig</strong></td><td>Pig Latin scripts for ETL and data transformation on HDFS data</td></tr>
+          <tr><td>NoSQL on HDFS</td><td><strong>Apache HBase</strong></td><td>Random read/write access on data stored in HDFS; column-family store</td></tr>
+          <tr><td>In-Memory Processing</td><td><strong>Apache Spark</strong></td><td>Fast processing (100x faster than MapReduce); integrates with HDFS/YARN</td></tr>
+          <tr><td>Workflow Scheduling</td><td><strong>Apache Oozie</strong></td><td>Schedule and manage complex Hadoop job workflows (DAGs)</td></tr>
+          <tr><td>Coordination</td><td><strong>Apache ZooKeeper</strong></td><td>Distributed coordination, configuration management, leader election</td></tr>
+        </tbody>
+      </table>
+
+      <div class="diagram-box"><pre>
+Data Sources → Ingestion Layer → HDFS (Storage) → Processing → Output
+  (RDBMS)      (Sqoop, Flume,    (NameNode +      (MapReduce,    (Hive tables,
+   (Logs)       Kafka)            DataNodes)        Spark, Pig)    HBase, Reports)
+   (APIs)                                                          </pre></div>
+
+      <h4>(c) Cassandra CQL Collections [5 marks]</h4>
+      <p><strong>CQL (Cassandra Query Language) Collections</strong> allow storing multiple values in a single column. Cassandra supports three collection types:</p>
+
+      <p><strong>1. SET — Unordered collection of unique values</strong></p>
+      <pre>
+CREATE TABLE users (
+  id UUID PRIMARY KEY,
+  name text,
+  emails set&lt;text&gt;
+);
+
+INSERT INTO users (id, name, emails) VALUES (uuid(), 'Alice', {'alice@gmail.com', 'alice@work.com'});
+
+-- Add to set:
+UPDATE users SET emails = emails + {'alice@new.com'} WHERE id = ...;
+
+-- Remove from set:
+UPDATE users SET emails = emails - {'alice@work.com'} WHERE id = ...;</pre>
+
+      <p><strong>2. LIST — Ordered collection (allows duplicates)</strong></p>
+      <pre>
+CREATE TABLE posts (
+  id UUID PRIMARY KEY,
+  title text,
+  tags list&lt;text&gt;
+);
+
+INSERT INTO posts (id, title, tags) VALUES (uuid(), 'Big Data', ['hadoop', 'hdfs', 'hadoop']);
+
+-- Append to list:
+UPDATE posts SET tags = tags + ['spark'] WHERE id = ...;
+
+-- Prepend:
+UPDATE posts SET tags = ['intro'] + tags WHERE id = ...;</pre>
+
+      <p><strong>3. MAP — Key-value pairs</strong></p>
+      <pre>
+CREATE TABLE students (
+  id UUID PRIMARY KEY,
+  name text,
+  scores map&lt;text, int&gt;
+);
+
+INSERT INTO students (id, name, scores) VALUES (uuid(), 'Bob', {'math': 95, 'science': 88});
+
+-- Add/update entry:
+UPDATE students SET scores['english'] = 92 WHERE id = ...;
+
+-- Delete entry:
+DELETE scores['science'] FROM students WHERE id = ...;</pre>
+
+      <table class="cmp-table">
+        <thead><tr><th>Collection</th><th>Ordered?</th><th>Duplicates?</th><th>Access Pattern</th></tr></thead>
+        <tbody>
+          <tr><td><strong>SET</strong></td><td>No (sorted internally)</td><td>No</td><td>Add/remove unique values</td></tr>
+          <tr><td><strong>LIST</strong></td><td>Yes (insertion order)</td><td>Yes</td><td>Append/prepend, index access</td></tr>
+          <tr><td><strong>MAP</strong></td><td>No (sorted by key)</td><td>No (unique keys)</td><td>Key-based access</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Note:</strong> Collections are best for small amounts of data (hundreds of values, not thousands). For large collections, use a separate table with clustering columns.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="paper-footer">
+  <div class="footer-inner">
+    <a href="bigdata.html" class="back-btn-footer">← Back to All Papers</a>
+    <span>MAKAUT | OEC-CS801A | Big Data Analysis | 2024–25</span>
+  </div>
+</footer>
+</body>
+</html>

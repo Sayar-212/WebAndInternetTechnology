@@ -1,0 +1,58 @@
+MAULANA ABUL KALAM AZAD UNIVERSITY OF TECHNOLOGY, WEST BENGAL
+Paper Code: OEC-CS801A Big Data Analysis
+CS/B.TECH(N)/EVEN/SEM-8/8303/2022-2023
+Time Allotted: 3 Hours                                         Full Marks: 70
+
+================================================================================
+Group-A (Very Short Answer Type Question)
+================================================================================
+1. Answer any ten of the following:                            [1 x 10 = 10]
+
+(I)    ________ operator executes a shell command from the Hive shell.
+(II)   The data being captured can be any form or structure. Which characteristic of Big Data are we talking about?
+(III)  Which NoSQL database store data in nodes and edges?
+(IV)   Which term is used to denote the small subsets of a large file created by HDFS?
+(V)    YARN stands for: ________
+(VI)   Is HBase a NoSQL database?
+(VII)  ________ the step is performed by data scientist after acquiring the data.
+(VIII) NoSQL databases is used mainly for handling large volumes of ________ data.
+(IX)   What is the default file size of an HDFS data block?
+(X)    A ________ node acts as the Slave and is responsible for executing a Task assigned to it by the JobTracker.
+(XI)   Most NoSQL databases support automatic ________ meaning that you get high availability and disaster recovery.
+(XII)  The ________ and the EditLog are central data structures of HDFS.
+
+================================================================================
+Group-B (Short Answer Type Question)
+================================================================================
+Answer any three of the following:                             [5 x 3 = 15]
+
+2. Explain the difference between parallel and distributed computing system?          [5]
+3. What is the role of Name Node in an HDFS cluster?                                  [5]
+4. Define Business Intelligence (BI).                                                  [5]
+5. Explain the CAP theorem.                                                            [5]
+6. As an HR manager of a company providing Big Data solutions to clients, what characteristics would you look for while recruiting a potential candidate for the position of a data analyst?  [5]
+
+================================================================================
+Group-C (Long Answer Type Question)
+================================================================================
+Answer any three of the following:                             [15 x 3 = 45]
+
+7. (a) Explain application in BigData in Healthcare.                                   [6]
+   (b) How do you deploy a Big Data solution?                                          [9]
+
+8. (a) What is NoSQL database?                                                         [2]
+   (b) Why it is used?                                                                 [3]
+   (c) What are the advantages of NoSQL?                                               [5]
+   (d) List the differences between NoSQL and relational databases.                    [5]
+
+9. (a) Explain some important features of Hadoop.                                      [5]
+   (b) Explain the different modes in which Hadoop run.                                [5]
+   (c) Explain the core components of Hadoop.                                          [5]
+
+10. (a) What do you mean by schema-less databases?                                     [3]
+    (b) Explain types of NoSQL Databases?                                              [12]
+
+11. (a) Explain Job Scheduling in MapReduce. How it is done in case of
+        (i) The Fair Scheduler  (ii) The Capacity Scheduler.                           [10]
+    (b) Write a short note on the FileInputFormat class.                               [3]
+    (c) Explain the types of MapReduce applications.                                   [2]

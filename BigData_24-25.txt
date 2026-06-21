@@ -1,0 +1,84 @@
+MAULANA ABUL KALAM AZAD UNIVERSITY OF TECHNOLOGY, WEST BENGAL
+Paper Code: OEC-CS801A Big Data Analysis
+CS/B.TECH(N)/EVEN/SEM-8/8303/2024-2025
+Time Allotted: 3 Hours                                         Full Marks: 70
+
+================================================================================
+Group-A (Very Short Answer Type Question)
+================================================================================
+1. Answer any ten of the following:                            [1 x 10 = 10]
+
+(I)    What is the process of combining data from multiple sources into a single unified view?
+       a) Data Mining
+       b) Data Warehousing
+       c) Data Integration
+       d) Data Processing
+
+(II)   What is Avro?
+
+(III)  ________ is a columnar storage format for Hadoop.
+
+(IV)   ________ is a Cassandra feature that optimizes the cluster consistency process.
+
+(V)    List two data types associated with Hive.
+
+(VI)   The need for data replication can arise in various scenarios like ________.
+
+(VII)  Which of the following is a tool used for processing and analysing Big Data?
+       a) Hadoop
+       b) MySQL
+       c) PostgreSQL
+       d) Oracle
+
+(VIII) HDFS stands for?
+
+(IX)   Which of the following is a technique used for identifying patterns in data by training a model on a dataset and using it to make predictions on new data?
+       a) Data Mining
+       b) Machine Learning
+       c) Natural Language Processing
+       d) Text Analytics
+
+(X)    Hive specific commands can be run from Beeline, when the Hive ________ driver is used.
+
+(XI)   Which of the following is NOT a data warehouse system that can be integrated with Hive?
+       A. Apache HBase
+       B. Apache Cassandra
+       C. Apache Druid
+       D. Apache Kylin
+
+(XII)  List one benefit of Trans-firewall analytics.
+
+================================================================================
+Group-B (Short Answer Type Question)
+================================================================================
+Answer any three of the following:                             [5 x 3 = 15]
+
+2. Write an explanatory note on MapReduce Work Flow.                                   [5]
+3. What are the functions of NameNode, DataNode in HDFS Architecture?                 [5]
+4. Discuss the advantages of YARN over MapReduce.                                      [5]
+5. List some common types of financial frauds prevalent in the current business scenario.  [5]
+6. Explain the key features of NoSQL database.                                         [5]
+
+================================================================================
+Group-C (Long Answer Type Question)
+================================================================================
+Answer any three of the following:                             [15 x 3 = 45]
+
+7. (a) What are the different types of Big Data Analytics? Explain them briefly.       [8+7]
+   (b) What are the different formats in which semi-structured data can be handled?
+
+8. (a) Write a short note on HBase.                                                    [15]
+   (b) What are clusters in Cassandra? What is a YAML file in Cassandra?
+   (c) What do you mean by replication factor in Cassandra?
+
+9. (a) Compare and contrast between structured and unstructured data.                  [5+5+5]
+   (b) Compare between the Internal and External Sources of Data.
+   (c) Write about the typical sources of Big Data.
+
+10. (a) Explain the different types of data.                                           [4]
+    (b) Explain the example scenarios of using unstructured data.                      [5]
+    (c) What is Big Data? List the benefits of Big Data for Healthcare Industries.     [6]
+
+11. (a) Discuss the concept of regions in HBase.                                       [5]
+    (b) Explain Hadoop Integration.                                                    [5]
+    (c) How are the Cassandra CQL collections used?                                    [5]
