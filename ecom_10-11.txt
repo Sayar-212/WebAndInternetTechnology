@@ -1,0 +1,103 @@
+CS/B.TECH(CSE)/SEPARATE SUPPLE/SEM-8/CS-801E/2011
+E-COMMERCE & ERP
+Time Allotted: 3 Hours                          Full Marks: 70
+
+GROUP - A (Multiple Choice Type Questions)
+1. Choose the correct alternatives for the following: (10 x 1 = 10)
+
+i) SET protocol is used for
+   a) securing message transfer
+   b) securing card transaction
+   c) securing authentication
+   d) securing overall e-Commerce.
+
+ii) A/an ________ is a network that links selected resources of a company's internet with its customers, suppliers or other business partners.
+   a) internet
+   b) extranet
+   c) VPN
+   d) wide area network.
+
+iii) How many types of trade cycle are there in e-commerce?
+   a) One
+   b) Two
+   c) Three
+   d) Four.
+
+iv) eBay is an example of a/an ________ e-commerce site.
+   a) B2C
+   b) EDI
+   c) C2C
+   d) B2B.
+
+v) The main purpose of digital signature is
+   a) non-repudiation
+   b) authenticity
+   c) confidentiality
+   d) all of these.
+
+vi) VAN provides
+   a) secure connection
+   b) restore transmission
+   c) communication with other VAN's
+   d) all of these.
+
+vii) The equipments required in a call centre are
+   a) Cables
+   b) Headsets
+   c) LAN
+   d) all of these.
+
+viii) A firewall may be implemented in
+   a) routers which connect intranet to internet
+   b) bridges used in an intranet
+   c) expensive modem
+   d) user's application programs.
+
+ix) DES is a
+   a) Secret key symmetric algorithm
+   b) Secret key asymmetric algorithm
+   c) Public key symmetric algorithm
+   d) none of these.
+
+x) Example(s) of e-money is/are
+   a) Credit card
+   b) Debit card
+   c) Charge card
+   d) all of these.
+
+GROUP - B (Short Answer Type Questions)
+Answer any three of the following: (3 x 5 = 15)
+
+2. Explain the features needed for a B2B platform.
+3. Explain SET protocol.
+4. Distinguish between private key and public key cryptography.
+5. What do you mean by knowledge engineering and business process redesign?
+6. What is ERP's role in SCM?
+
+GROUP - C (Long Answer Type Questions)
+Answer any three of the following. (3 x 15 = 45)
+
+7. a) What is E-commerce?
+   b) Describe some of the advantages and the limitations of E-commerce.
+   c) What are the threats of E-commerce?
+   d) What is E-governance?
+
+8. a) What do you mean by supply chain of E-commerce?
+   b) Why is Supply Chain Management vital for E-commerce?
+   c) Explain the role played by E-supply Chain planning tools in managing the supply chain of an E-business.
+   d) How does supply chain management portals help E-commerce in managing supply chain?
+
+9. a) What is EDI? What are the advantages of EDI?
+   b) What is UN/EDIFACT?
+   c) What is Firewall?
+   d) State the functions of Firewall in e-Commerce?
+
+10. a) What is ERP? Why BPR is required prior to ERP implementation?
+    b) What are the reasons for the growth of ERP market? What are the advantages of ERP system?
+
+11. Write short notes on any three of the following: (3 x 5 = 15)
+    a) VPN
+    b) Digital Certificate
+    c) CRM
+    d) Data Warehouse
+    e) SCE framework.

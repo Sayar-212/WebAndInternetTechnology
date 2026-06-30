@@ -1,0 +1,105 @@
+CS/B.TECH(CSE)/SEM-8/CS-801E/2010
+E-COMMERCE AND ERP
+Time Allotted: 3 Hours                          Full Marks: 70
+
+GROUP - A (Multiple Choice Type Questions)
+1. Choose the correct alternatives for the following: (10 x 1 = 10)
+
+i) Symmetric encryption involves
+   a) Public key
+   b) Private key
+   c) both of these
+   d) none of these.
+
+ii) Some modules of ERP packages are
+   a) Finance
+   b) Sales & Distribution
+   c) Quality Management
+   d) none of these.
+
+iii) There are ________ types of Business Transaction models.
+   a) one
+   b) two
+   c) three
+   d) four.
+
+iv) Which one of the following is a protocol for secure messaging?
+   a) PGP
+   b) PEM
+   c) S/MIME
+   d) All of these.
+
+v) iGov.com is an example of
+   a) B2B
+   b) B2C
+   c) B2G
+   d) C2B.
+
+vi) Investment management is a sub-system of
+   a) Sales & Distribution
+   b) Finance
+   c) Quality Management
+   d) None of these.
+
+vii) In RSA algorithm ________ numbers are involved.
+   a) odd
+   b) even
+   c) prime
+   d) All of these.
+
+viii) The e-cash is generally stored in the customer's computer in the form of an
+   a) e-chain
+   b) e-money
+   c) e-wallet
+   d) none of these.
+
+ix) E-business S/W is best defined to manage
+   a) buyer applications
+   b) seller applications
+   c) all of these
+   d) none of these.
+
+x) ________ occurs when one business transmits computer-readable data in a standard format to another business.
+   a) EFT
+   b) VAN
+   c) EDI
+   d) LAN.
+
+GROUP - B (Short Answer Type Questions)
+Answer any three of the following. (3 x 5 = 15)
+
+2. Describe the impact of EDI on the Supply Chain Management of a manufacturing plant.
+3. What is supplier centric B2B electronic commerce?
+4. What is meant by technological convergence? What are its implications?
+5. Compare charge card with credit card.
+6. Describe how RSA and DES algorithms can be used for EDI security.
+
+GROUP - C (Long Answer Type Questions)
+Answer any three of the following. (3 x 15 = 45)
+
+7. a) Define firewall and state its functions in e-commerce.
+   b) What are digital signatures? How do they differ from digital certificates?
+   c) Given two prime numbers p=17, q=29. Find out n, e, d in RSA encryption process.
+   d) "A proper BPR exercise helps in implementation." Comment.
+
+8. a) What is e-cash? Explain in brief the steps involved in the operation of e-cash by an individual.
+   b) What are the security requirements for safe e-payments?
+   c) Why is supply chain vital for e-commerce?
+   d) Explain the role played by e-supply chain planning tools in managing supply chain of an e-business.
+
+9. a) What is ERP? How is ERP and e-commerce related to each other?
+   b) What is Business Process Redesign? Why is it necessary to do BPR before implementing ERP?
+   c) Define WAP. Explain its importance in e-commerce.
+   d) What is ubiquity? Define content. What is content partnership?
+
+10. a) What is key wrapping? How is it useful?
+    b) Define EDI and discuss its various essential elements. Discuss EDIFACT standard.
+    c) In today's world it is not practical to have i) an ERP system without e-commerce ii) an e-commerce system without ERP. Comment on (i) and (ii).
+    d) Explain how a supply chain portal works.
+
+11. Write short notes on any three of the following: (3 x 5 = 15)
+    a) Software piracy
+    b) Call centre
+    c) SCE framework
+    d) Message Digest
+    e) Intrusion Detection System.

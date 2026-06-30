@@ -1,0 +1,52 @@
+CS/B.TECH(N)/EVEN/SEM-8/8261/2022-2023/1124
+MAULANA ABUL KALAM AZAD UNIVERSITY OF TECHNOLOGY, WEST BENGAL
+Paper Code: OEC-CS802A/OECIT802A          E-Commerce and ERP
+Time Allotted: 3 Hours                          Full Marks: 70
+
+Group-A (Very Short Answer Type Question)
+1. Answer any ten of the following: (1 x 10 = 10)
+
+(I)   What is 'EOQ' in Inventory control?
+(II)  What is URL?
+(III) Compared to B2C e-commerce, B2B e-commerce is ________
+(IV)  What is email marketing?
+(V)   EDI stands for ________
+(VI)  VMI stands for ________
+(VII) What type of E-Commerce is tenders and submission of application?
+(VIII) What is called sale or purchase of items without physically visiting a shop?
+(IX)  What is E-Business?
+(X)   The purchase of machinery, equipment, or materials must go through the ________ department.
+(XI)  What is a virtual storefront?
+(XII) SMTP refers to ________
+
+Group-B (Short Answer Type Question)
+Answer any three of the following: (5 x 3 = 15)
+
+2. What are the 4 C's of Digital Marketing?
+3. Explain the Internet Marketing in detail.
+4. What are the features of E-commerce?
+5. Discuss EDI architecture.
+6. Explain the internet industry structure with diagram?
+
+Group-C (Long Answer Type Question)
+Answer any three of the following: (15 x 3 = 45)
+
+7. (a) Write down the benefits of electronic web commerce. [5]
+   (b) Distinguish between Internet and Intranet. [5]
+   (c) What is Firewall? [3]
+   (d) What do you mean by Electronic Marketers? [2]
+
+8. (a) Explain any 5 types of Electronic Payment Systems. [10]
+   (b) Discuss the impact of e-commerce in the following areas: [5]
+       (i) Marketing
+       (ii) Finance and Accounting
+
+9. (a) Define Convergence, Collaborative Computing, Content Management & Call Center. [10]
+   (b) How is e-mail useful for E-Commerce? Is it secure to transact through e-mail? Explain and justify. [5]
+
+10. (a) Distinguish between e-business and e-commerce. [5]
+    (b) Discuss how E-Commerce is helpful to business success. [5]
+    (c) Write about Tangible and Intangible benefits of e-business. [5]
+
+11. (a) Draw and explain the architecture of an online shopping e-commerce portal that sells a large number of different types of goods. [10]
+    (b) Discuss how E-Commerce is helpful to business success. [5]

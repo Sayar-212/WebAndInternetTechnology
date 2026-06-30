@@ -1,0 +1,104 @@
+CS/B.Tech(CSE)/SEP. SUPPLE/SEM-8/CS-801E/2012
+E-COMMERCE & ERP
+Time Allotted: 3 Hours                          Full Marks: 70
+
+GROUP - A (Multiple Choice Type Questions)
+1. Choose the correct alternatives for the following: (10 x 1 = 10)
+
+i) Symmetric encryption involves
+   a) Public key
+   b) Private key
+   c) both of these
+   d) none of these.
+
+ii) Some modules of ERP packages are
+   a) Finance
+   b) Sales & Distribution
+   c) Quality Management
+   d) None of these.
+
+iii) All e-commerce applications follow the ________ model.
+   a) Client-server
+   b) Distributed
+   c) Mainframe
+   d) none of these.
+
+iv) Which one of these is a protocol for secure messaging?
+   a) PGP
+   b) PEM
+   c) S/MIME
+   d) All of these.
+
+v) iGov.com is an example of
+   a) B2B
+   b) B2C
+   c) B2G
+   d) C2B.
+
+vi) ISP stands for
+   a) Internet Service Provider
+   b) Intranet Service Provider
+   c) International Service Protocol
+   d) International Service Provider.
+
+vii) In RSA algorithm ________ numbers are involved.
+   a) ODD
+   b) EVEN
+   c) PRIME
+   d) All of these.
+
+viii) The e-cash is generally stored in the customers computer in the form of an
+   a) E-chain
+   b) E-money
+   c) E-wallet
+   d) none of these.
+
+ix) E-business S/W is best defined to manage
+   a) Buyer applications
+   b) Seller applications
+   c) all of these
+   d) none of these.
+
+x) A Firewall may be implemented in
+   a) routers which connect intranet to internet
+   b) bridges used in an intranet
+   c) expensive modem
+   d) user's application programs.
+
+GROUP - B (Short Answer Type Questions)
+Answer any three of the following. (3 x 5 = 15)
+
+2. What is e-Governance & how does it work?
+3. What are the advantages of e-marketing over normal marketing?
+4. Distinguish between Public Key & Private Key.
+5. What are the advantages & disadvantages of e-Commerce over normal commerce?
+6. What is Firewall? State the functions of firewall in e-Commerce?
+
+GROUP - C (Long Answer Type Questions)
+Answer any three of the following. (3 x 15 = 45)
+
+7. a) What is ERP?
+   b) What is Business Process Redesign? Why is it necessary to do Business Process Redesign before implementing ERP?
+   c) How are ERP & e-commerce related to each other?
+   d) State some of the direct benefit of ERP.
+
+8. a) What is EDI?
+   b) Describe briefly the basic components of EDI.
+   c) Explain the benefits of an EDI system over a non-EDI system.
+   d) What is the importance of EDI in e-commerce?
+
+9. a) What do you mean by supply chain of E-commerce?
+   b) Why is Supply Chain Management vital for e-commerce?
+   c) Explain the role played by e-Supply Chain Planning tools in managing the Supply Chain of an E-Business.
+   d) How does Supply Chain Management Portals help e-commerce in managing supply chain?
+
+10. a) What role does cryptography play in e-commerce?
+    b) Briefly explain RSA & DES algorithm.
+    c) What are the threats of e-commerce?
+
+11. Write short notes on any three of the following: (3 x 5 = 15)
+    a) Call Centre
+    b) EDIFACT
+    c) Software Piracy
+    d) Collaborative Computing
+    e) Digital Signature.

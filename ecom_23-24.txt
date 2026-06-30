@@ -1,0 +1,50 @@
+CS/B.TECH(N)/EVEN/SEM-8/8261/2023-2024/1019
+MAULANA ABUL KALAM AZAD UNIVERSITY OF TECHNOLOGY, WEST BENGAL
+Paper Code: OEC-CS802A/OECIT802A          E-Commerce and ERP
+Time Allotted: 3 Hours                          Full Marks: 70
+
+Group-A (Very Short Answer Type Question)
+1. Answer any ten of the following: (1 x 10 = 10)
+
+(I)   Name programming languages used to develop web applications.
+(II)  Explain the meaning of E-procurement.
+(III) Give an example where social media is used as a strategic tool for enhancing E-commerce business.
+(IV)  What do you mean by Collaborative Computing?
+(V)   How do large companies monitor and track cargo deliveries to their customers?
+(VI)  Give an idea about 'Stored-value card'.
+(VII) What is the full form of VAN and what purpose is it used for?
+(VIII) Explain what do you mean by 'certificate revocation list (CRL)'.
+(IX)  Give two applications of E-Commerce.
+(X)   Give two applications of M-Commerce.
+(XI)  What according to you should be the ethical principles of E-Commerce?
+(XII) Give an example in which an e-business focuses on brand identity as a strategy for their online business performance.
+
+Group-B (Short Answer Type Question)
+Answer any three of the following: (5 x 3 = 15)
+
+2. Explain with an example how cart reminders can be used for E-marketing. [5]
+3. Identify the different steps in EDI implementation. [5]
+4. Discuss the threats of E-Commerce. [5]
+5. Discuss the different ways by which the Internet helps E-Commerce. [5]
+6. Explain the meaning of Customer-premises equipment or customer-provided equipment (CPE). Give examples. [5]
+
+Group-C (Long Answer Type Question)
+Answer any three of the following: (15 x 3 = 45)
+
+7. (a) Discuss the different E-Commerce business models based on transaction type. [8]
+   (b) Give examples of the business models (based on transaction type) that you have mentioned. [4]
+   (c) Outline the challenges of E-Governance in India. [3]
+
+8. (a) What do you think is Supply Chain Management? [5]
+   (b) Discuss the merits of implementing an ERP system before Supply Chain. [5]
+   (c) Discuss the benefits of integrating Supply Chain and ERP systems. [5]
+
+9. (a) Discuss the security issues related to E-payments. [9]
+   (b) Discuss your ideas about cryptocurrency as an e-payment mechanism. [6]
+
+10. (a) Discuss the different E-Commerce marketing strategies. [6]
+    (b) Explain in detail how you will do E-marketing for your online bookstore. [9]
+
+11. (a) Differentiate between public key and private key cryptography. [5]
+    (b) Outline the different services provided by SSL. [5]
+    (c) Write the algorithm of RSA. [5]

@@ -1,0 +1,94 @@
+CS/B.TECH/CSE/EVEN/SEM-8/CS-802E/2015-16
+E-COMMERCE
+Time Allotted: 3 Hours                          Full Marks: 70
+
+GROUP - A (Multiple Choice Type Questions)
+1. Choose the correct alternatives for the following: (10 x 1 = 10)
+
+i) Which one of the following is not an E-Commerce?
+   a) B2C
+   b) B2G
+   c) B2D
+   d) B2B.
+
+ii) The default port of HTTP is
+   a) 81
+   b) 80
+   c) 70
+   d) 71.
+
+iii) ISP stands for
+   a) Internet Service Provider
+   b) Internet Service Protocol
+   c) Intranet Service Protocol
+   d) none of these.
+
+iv) Electronic commerce is enabled by
+   a) EDP era technologies
+   b) MIS era technologies
+   c) Internet era technologies
+   d) all of these.
+
+v) Friction in a transaction is defined as
+   a) overhead
+   b) loss
+   c) profit
+   d) none of these.
+
+vi) Flood attack by attackers happens on
+   a) router
+   b) hub
+   c) switch
+   d) server.
+
+vii) Which one of the following is ASCII protocol?
+   a) SNMP
+   b) SMTP
+   c) SET
+   d) PGP.
+
+viii) Credit Card payment is under
+   a) B2B e-commerce
+   b) B2C e-commerce
+   c) C2C e-commerce
+   d) none of these.
+
+ix) E-trading is also called
+   a) E-brokering
+   b) E-supply
+   c) E-auctions
+   d) both (a) and (b).
+
+x) DES stands for
+   a) Data Encryption Standard
+   b) Digital Encryption Standard
+   c) Double Encryption Standard
+   d) Data Encryption System.
+
+GROUP B (Short Answer Type Questions)
+Answer any three of the following. (3 x 5 = 15)
+
+2. Define Electronic Data Interchange. What are the components of Electronic Data Interchange?
+3. Explain how SSL protocol is used for secure transaction. Explain the advantages of e-commerce.
+4. Discuss in brief virtual auction. Explain the differences between virtual auction and reverse auction.
+5. What is Firewall? State the function of Firewall in e-commerce.
+6. What role does SCM play in Business to Business model i.e. B2B e-commerce?
+
+GROUP-C (Long Answer Type Questions)
+Answer any three of the following. (3 x 15 = 45)
+
+7. Explain the different types of digital documents. How risk is handled in e-Payment system? Explain how Smart Cards and Credit Cards have roles in e-commerce applications.
+
+8. Describe the functional requirements for online selling and what specialized services and servers perform these functions. Who are the stakeholders in e-commerce information system? Explain the benefits and limitations of e-commerce. Explain the concept of 'Business Content' in SAP Business Information Warehouse.
+
+9. a) Define digital cash or e-cash. Explain with example how an online banking system works.
+   b) Explain the working principle of DES algorithm.
+
+10. Distinguish between SSL and SET protocol. Explain EAN coding system for EDI message. Explain the ways and means of protecting online website operations from hackers.
+
+11. Write short notes on any three of the following: (3 x 5 = 15)
+    a) RSA algorithm
+    b) Trade cycle and different stages of a Trade cycle
+    c) Data Warehouse
+    d) Decision support system
+    e) Collaborative computing.

@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>2022-23 | E-Commerce & ERP | MAKAUT</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="paper.css"/>
+</head>
+<body>
+
+<nav class="topbar">
+  <a href="ecom.html" class="back-btn">← Back to E-Commerce</a>
+  <div class="topbar-info">
+    <span class="topbar-year">2022–23</span>
+    <span class="topbar-code">CS/B.TECH(N)/EVEN/SEM-8/8261/2022-2023/1124</span>
+  </div>
+  <div class="topbar-meta"><span>⏱ 3 Hours</span><span>📋 70 Marks</span></div>
+</nav>
+
+<header class="paper-hero">
+  <div class="paper-hero-bg"></div>
+  <div class="paper-hero-content">
+    <div class="paper-badge">MAKAUT • OEC-CS802A / OECIT802A</div>
+    <h1>2022 – 23 <span class="yr-accent">Solved Paper</span></h1>
+    <p>E-Commerce and ERP &nbsp;|&nbsp; Full Marks: 70 &nbsp;|&nbsp; Time: 3 Hours &nbsp;|&nbsp; SEM-8</p>
+    <div class="paper-pills">
+      <span>Group A: Any 10 × 1 = 10</span>
+      <span>Group B: Any 3 × 5 = 15</span>
+      <span>Group C: Any 3 × 15 = 45</span>
+    </div>
+  </div>
+</header>
+
+<main class="paper-main">
+
+<!-- ======== GROUP A ======== -->
+<section class="group-section" id="groupA">
+  <div class="group-header">
+    <span class="group-label">Group A</span>
+    <h2>Very Short Answer Questions <span class="marks-tag">Any 10 × 1 = 10</span></h2>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q1(I)</span><span class="qtext">What is 'EOQ' in Inventory control?</span><span class="qmarks">1M</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+      <p><strong>EOQ (Economic Order Quantity)</strong> is the optimal order quantity that minimises total inventory costs — balancing ordering costs (cost per order) and holding costs (cost of carrying inventory). Formula:</p>
+      <pre>
+EOQ = √(2DS/H)
+Where:
+  D = Annual demand (units/year)
+  S = Cost per order (ordering/setup cost)
+  H = Annual holding cost per unit
+
+Example: D=1000, S=₹50, H=₹2 → EOQ = √(2×1000×50/2) = √50000 ≈ 224 units</pre>
+      <p>Ordering exactly EOQ units each time minimises the sum of ordering + holding costs. In e-commerce SCM, EOQ helps determine how much to reorder from suppliers to minimise total procurement cost.</p>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q1(II)</span><span class="qtext">What is URL?</span><span class="qmarks">1M</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+      <p><strong>URL (Uniform Resource Locator)</strong> is the complete web address used to locate a resource on the internet. Structure:</p>
+      <pre>
+https://www.amazon.in/laptop/dp/B09XYZ?ref=nav#reviews
+  │       │            │     │   │          │     │
+  │     subdomain   domain  path param  query  fragment
+protocol</pre>
+      <p>Components: <strong>Protocol</strong> (https://, ftp://), <strong>Domain</strong> (amazon.in), <strong>Path</strong> (/laptop/dp/), <strong>Query parameters</strong> (?ref=nav), <strong>Fragment</strong> (#reviews). Every web page, image, API endpoint, and downloadable file has a unique URL.</p>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q1(III)</span><span class="qtext">Compared to B2C e-commerce, B2B e-commerce is ________</span><span class="qmarks">1M</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+      <p>Compared to B2C, B2B e-commerce is <strong>larger in volume, more complex in process, and higher in average transaction value</strong>. B2B involves: higher order values, longer sales cycles, negotiated pricing, credit terms, multi-person approval workflows, ERP/EDI integration, contract-based relationships, and regulatory compliance requirements. B2B global e-commerce is estimated at 5–6× the size of B2C by transaction value.</p>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q1(IV)</span><span class="qtext">What is email marketing?</span><span class="qmarks">1M</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+      <p><strong>Email marketing</strong> is the use of email to send targeted commercial messages to a list of subscribers — promoting products, sharing news, sending offers, or nurturing customer relationships. Types: promotional emails (discounts, launches), transactional emails (order confirmation, shipping alerts), newsletter, cart abandonment reminders, re-engagement campaigns. Email marketing has the highest ROI of all digital channels (~$42 return per $1 spent). Tools: Mailchimp, Klaviyo, SendGrid, HubSpot.</p>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q1(V)</span><span class="qtext">EDI stands for ________</span><span class="qmarks">1M</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+      <p><strong>EDI = Electronic Data Interchange</strong> — the direct computer-to-computer exchange of standard business documents (purchase orders, invoices, shipping notices) between organisations in a machine-readable, agreed format. Used extensively in B2B supply chain transactions. Standards: ANSI X12 (North America), UN/EDIFACT (international).</p>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q1(VI)</span><span class="qtext">VMI stands for ________</span><span class="qmarks">1M</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+      <p><strong>VMI = Vendor Managed Inventory</strong> — a supply chain model where the <strong>supplier (vendor) takes responsibility for managing and replenishing the buyer's inventory</strong>, rather than the buyer placing orders. The vendor monitors the buyer's stock levels (via EDI or portal) and proactively ships replenishment when stock drops to a trigger level. Benefits: reduces buyer's inventory management burden, improves replenishment speed, reduces stockouts. Common in retail (Walmart-P&amp;G VMI is a classic example).</p>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q1(VII)</span><span class="qtext">What type of E-Commerce is tenders and submission of applications?</span><span class="qmarks">1M</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+      <p>Tenders and submission of applications is <strong>B2G (Business-to-Government)</strong> e-commerce — where businesses interact with government for procurement, contract bids, licence applications, and compliance submissions. Examples: GeM (Government e-Marketplace), CPPP (Central Public Procurement Portal), NSIC tender portal, state government e-procurement portals. Government entities issue tenders → businesses submit bids electronically → government evaluates and awards contracts.</p>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q1(VIII)</span><span class="qtext">What is called sale or purchase of items without physically visiting a shop?</span><span class="qmarks">1M</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+      <p>This is called <strong>e-Commerce (Electronic Commerce)</strong> or specifically <strong>online shopping</strong> — buying or selling goods and services over the internet without visiting a physical store. The customer browses products on a website or app, places an order electronically, pays digitally, and the product is delivered to their location. Also referred to as <strong>virtual shopping</strong> or <strong>remote shopping</strong>.</p>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q1(IX)</span><span class="qtext">What is E-Business?</span><span class="qmarks">1M</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+      <p><strong>e-Business (Electronic Business)</strong> is the use of internet and digital technologies to conduct <em>all</em> aspects of business operations — not just buying and selling (e-commerce) but also supply chain management, internal operations, customer service, employee collaboration, HR, and partner communication. e-Business = e-Commerce + digital back-office operations. Example: A company doing e-business uses its website for sales (e-commerce), EDI for supplier transactions, an intranet for employee collaboration, CRM for customer management, and ERP for internal operations — all digitally integrated.</p>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q1(X)</span><span class="qtext">The purchase of machinery, equipment, or materials must go through the ________ department.</span><span class="qmarks">1M</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+      <p>The purchase of machinery, equipment, or materials must go through the <strong>Procurement / Purchase department</strong> (also called Materials Management or Supply Chain department). This department: issues purchase requisitions, selects and evaluates vendors, raises purchase orders, negotiates terms, and manages the procure-to-pay process. In ERP (SAP), this is the <strong>MM (Materials Management)</strong> module.</p>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q1(XI)</span><span class="qtext">What is a virtual storefront?</span><span class="qmarks">1M</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+      <p>A <strong>virtual storefront</strong> (or online store / e-shop) is a website or app that replicates the functions of a physical retail store in the digital world — displaying products with descriptions and images, allowing customers to browse and search, add items to a cart, and complete purchases online. It is the customer-facing front-end of an e-commerce business. Examples: Amazon storefront, Flipkart store page, Shopify-powered stores. Unlike a physical store, it operates 24×7, serves unlimited customers simultaneously, and has no geographic boundaries.</p>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q1(XII)</span><span class="qtext">SMTP refers to ________</span><span class="qmarks">1M</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+      <p><strong>SMTP = Simple Mail Transfer Protocol</strong> — the standard internet protocol for <strong>sending email</strong> from a mail client to a mail server, and between mail servers. Uses port 25 (server-to-server), 587 (client submission), or 465 (SMTPS). ASCII text-based protocol. Complementary protocols: POP3 and IMAP are used for <em>receiving</em> email. In e-commerce: SMTP powers all transactional emails — order confirmations, shipping alerts, password reset emails.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======== GROUP B ======== -->
+<section class="group-section" id="groupB">
+  <div class="group-header">
+    <span class="group-label">Group B</span>
+    <h2>Short Answer Questions <span class="marks-tag">Any 3 × 5 = 15</span></h2>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q2</span><span class="qtext">What are the 4 C's of Digital Marketing?</span><span class="qmarks">5 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+      <p>The <strong>4 C's of Digital Marketing</strong> reframe the traditional 4 P's (Product, Price, Place, Promotion) from the customer's perspective:</p>
+      <ul>
+        <li><strong>1. Customer (Consumer solution):</strong> Instead of "Product" — focus on understanding and solving the customer's needs and problems. Design products/services around what the customer actually wants. In e-commerce: personalised product recommendations, user reviews, customer feedback loops.</li>
+        <li><strong>2. Cost (to the customer):</strong> Instead of "Price" — the total cost to the customer includes not just price but time, effort, shipping, and emotional cost. e-Commerce reduces cost: competitive pricing, free shipping thresholds, easy comparison.</li>
+        <li><strong>3. Convenience:</strong> Instead of "Place" — make it as easy as possible for customers to buy. 24×7 access, mobile apps, one-click purchase, multiple payment options, fast delivery, easy returns — all reduce friction.</li>
+        <li><strong>4. Communication:</strong> Instead of "Promotion" — two-way dialogue rather than one-way broadcast. Engage customers through social media, email, live chat, reviews, community forums. Build relationships rather than just pushing messages.</li>
+      </ul>
+      <p>The 4 C's acknowledge that in the digital age, power has shifted from sellers to buyers — marketing must be customer-centric, not product-centric.</p>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q3</span><span class="qtext">Explain Internet Marketing in detail.</span><span class="qmarks">5 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+      <p><strong>Internet Marketing</strong> (Digital Marketing / Online Marketing) is the promotion of products and services using digital channels over the internet to reach and engage target audiences, drive traffic, generate leads, and convert sales.</p>
+      <h4>Key Channels</h4>
+      <ul>
+        <li><strong>SEO (Search Engine Optimisation):</strong> Optimising website content and structure to rank higher in organic Google/Bing search results — free, sustainable traffic. On-page SEO (keywords, meta tags, content quality) + Off-page SEO (backlinks).</li>
+        <li><strong>SEM (Search Engine Marketing / PPC):</strong> Paid search ads (Google Ads) — appear above organic results for specific keywords. Pay-per-click model — only pay when user clicks.</li>
+        <li><strong>Social Media Marketing:</strong> Build brand presence and engage audiences on Facebook, Instagram, Twitter/X, LinkedIn, YouTube, TikTok. Organic posts + paid social ads + influencer partnerships.</li>
+        <li><strong>Email Marketing:</strong> Targeted email campaigns to segmented subscriber lists — promotions, newsletters, cart abandonment, re-engagement. Highest ROI digital channel.</li>
+        <li><strong>Content Marketing:</strong> Creating valuable, relevant content (blogs, videos, infographics, podcasts) that attracts and educates the target audience — builds brand authority and drives organic traffic.</li>
+        <li><strong>Affiliate Marketing:</strong> Partners (affiliates) promote products and earn commission per sale. e.g., Amazon Associates programme — bloggers and influencers earn % of referred sales.</li>
+        <li><strong>Display Advertising:</strong> Banner ads on websites and apps via Google Display Network or programmatic platforms.</li>
+        <li><strong>Influencer Marketing:</strong> Partnering with social media influencers (macro/micro) to promote products to their follower base.</li>
+      </ul>
+      <h4>Advantages over Traditional Marketing</h4>
+      <p>Precise targeting, real-time analytics, lower cost, global reach, measurable ROI, personalisation, retargeting capability. See 2011-12 Q3 for full comparison table.</p>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q4</span><span class="qtext">What are the features of E-commerce?</span><span class="qmarks">5 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+      <p>Kenneth Laudon identifies <strong>8 unique features</strong> of e-commerce technology that distinguish it from traditional commerce:</p>
+      <ul>
+        <li><strong>1. Ubiquity:</strong> Available everywhere — home, office, mobile — 24×7. Commerce not bound by physical location or time.</li>
+        <li><strong>2. Global reach:</strong> Marketplace extends across national and cultural boundaries — access to 5 billion internet users worldwide.</li>
+        <li><strong>3. Universal standards:</strong> Uses internet standards (TCP/IP, HTTP, HTML) — the same set of technical standards worldwide, reducing market entry costs.</li>
+        <li><strong>4. Richness:</strong> Supports rich media — video, audio, animation, live chat, AR product try-on — far richer than any other marketing medium.</li>
+        <li><strong>5. Interactivity:</strong> Allows two-way communication — customer reviews, chat support, personalised recommendations, social sharing — unlike passive TV or print.</li>
+        <li><strong>6. Information density:</strong> Vast amounts of product information, price comparisons, and reviews available to both buyers and sellers — reduces information asymmetry.</li>
+        <li><strong>7. Personalisation / Customisation:</strong> Technology enables personalised marketing messages and product customisation for individual users at mass scale.</li>
+        <li><strong>8. Social technology:</strong> Social networks, user-generated content, reviews, and social commerce features create communities around products and brands.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q5</span><span class="qtext">Discuss EDI architecture.</span><span class="qmarks">5 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+      <p>EDI architecture defines how business document exchange is structured, from the business application layer down to the physical transmission network.</p>
+      <div class="diagram-box">
+      <pre>
+LAYER 1: APPLICATION LAYER
+  ERP / Procurement / Order Management System
+  (internal business data in proprietary format)
+              ↕
+LAYER 2: TRANSLATION LAYER
+  EDI Translation Software (Mapper)
+  Converts internal format ↔ EDI standard format
+  (X12 850 PO / EDIFACT ORDERS)
+              ↕
+LAYER 3: EDI STANDARD FORMAT
+  Standardised message in X12 or EDIFACT
+  Envelope structure: ISA/GS/ST (X12) or UNB/UNG/UNH (EDIFACT)
+              ↕
+LAYER 4: COMMUNICATION LAYER
+  Transmission protocol:
+  • AS2 (HTTP/HTTPS-based — most common today)
+  • SFTP (file transfer)
+  • VAN (store-and-forward mailbox service)
+  • AS4 (web services based — emerging)
+              ↕
+LAYER 5: NETWORK LAYER
+  Internet or VAN Network
+  (TCP/IP transport)</pre>
+      </div>
+      <p><strong>Key architectural components:</strong></p>
+      <ul>
+        <li><strong>Translation software:</strong> Handles mapping between internal and standard formats — products: IBM Sterling, OpenText TrustedLink, Cleo.</li>
+        <li><strong>AS2:</strong> Most widely used modern protocol — sends EDI over HTTPS with MDN (Message Disposition Notification) acknowledgement.</li>
+        <li><strong>VAN:</strong> Third-party network providing secure mailboxes — trading partner stores messages, receiver retrieves on schedule. Older model, still used in some industries.</li>
+        <li><strong>Trading partner management:</strong> Stores partner profiles, communication settings, and mapping configurations.</li>
+        <li><strong>Monitoring &amp; alerting:</strong> Tracks message status — sent, received, acknowledged, failed — essential for SLA compliance.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q6</span><span class="qtext">Explain the internet industry structure with diagram.</span><span class="qmarks">5 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+      <p>The internet industry consists of multiple layers, each providing services to the layer above:</p>
+      <div class="diagram-box">
+      <pre>
+┌─────────────────────────────────────────────────────┐
+│              LAYER 5: APPLICATIONS                   │
+│  e-Commerce, Social Media, Email, Search, Streaming  │
+│  (Amazon, Google, Netflix, Facebook, Gmail)          │
+└──────────────────────┬──────────────────────────────┘
+                        │
+┌──────────────────────▼──────────────────────────────┐
+│           LAYER 4: INTERNET SERVICES                 │
+│  Web Hosting, DNS, CDN, Cloud (AWS, Azure, Google)   │
+│  Domain Registrars, SSL Certificate Authorities      │
+└──────────────────────┬──────────────────────────────┘
+                        │
+┌──────────────────────▼──────────────────────────────┐
+│       LAYER 3: INTERNET ACCESS PROVIDERS             │
+│  ISPs: Jio, Airtel, BSNL, ACT Fibernet              │
+│  Services: Broadband, Fiber, Mobile Data (4G/5G)     │
+└──────────────────────┬──────────────────────────────┘
+                        │
+┌──────────────────────▼──────────────────────────────┐
+│       LAYER 2: INTERNET BACKBONE                     │
+│  Tier 1 ISPs, Submarine cables, Internet exchanges  │
+│  (Tata Comm, NTT, AT&amp;T, DE-CIX, NIXI in India)      │
+└──────────────────────┬──────────────────────────────┘
+                        │
+┌──────────────────────▼──────────────────────────────┐
+│       LAYER 1: PHYSICAL INFRASTRUCTURE               │
+│  Fiber optic cables, data centres, routers,          │
+│  satellites, mobile towers (BTS/Node B)              │
+└─────────────────────────────────────────────────────┘</pre>
+      </div>
+      <p><strong>Key players by layer:</strong></p>
+      <ul>
+        <li><strong>Physical/Backbone:</strong> Tata Communications, BSNL, global submarine cable consortia.</li>
+        <li><strong>Access/ISP:</strong> Jio, Airtel, BSNL, ACT — connect end-users to internet backbone.</li>
+        <li><strong>Services:</strong> AWS, Google Cloud, Azure (cloud/hosting); Cloudflare, Akamai (CDN); Verisign, ICANN (DNS/domain).</li>
+        <li><strong>Applications:</strong> Google, Amazon, Facebook, Netflix, Flipkart — end-user services generating revenue.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ======== GROUP C ======== -->
+<section class="group-section" id="groupC">
+  <div class="group-header">
+    <span class="group-label">Group C</span>
+    <h2>Long Answer Questions <span class="marks-tag">Any 3 × 15 = 45</span></h2>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q7</span><span class="qtext">(a) Benefits of electronic web commerce [5] &nbsp; (b) Internet vs Intranet [5] &nbsp; (c) What is Firewall? [3] &nbsp; (d) Electronic Marketers [2]</span><span class="qmarks">15 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+
+      <h4>(a) Benefits of Electronic Web Commerce [5]</h4>
+      <ul>
+        <li><strong>Global market access:</strong> A business can reach customers worldwide — eliminating geographic barriers that limit physical stores.</li>
+        <li><strong>24×7 availability:</strong> e-Commerce never closes — orders taken at midnight, on weekends, on holidays — maximising revenue opportunity.</li>
+        <li><strong>Reduced operational cost:</strong> No retail rent, fewer staff, no physical display costs — lower overhead improves margins.</li>
+        <li><strong>Personalised experience:</strong> AI-driven recommendation engines suggest relevant products → higher average order value and customer satisfaction.</li>
+        <li><strong>Faster transactions:</strong> Digital payments, instant order confirmation, automated fulfilment — the entire order-to-delivery cycle is compressed.</li>
+        <li><strong>Rich customer data:</strong> Every click, search, and purchase tracked → data-driven decisions on inventory, marketing, and product development.</li>
+        <li><strong>Scalability:</strong> Technology infrastructure scales to handle traffic spikes (Diwali sale, Big Billion Day) without proportional cost increases.</li>
+      </ul>
+
+      <h4>(b) Internet vs Intranet [5]</h4>
+      <table class="cmp-table">
+        <thead><tr><th>Feature</th><th>Internet</th><th>Intranet</th></tr></thead>
+        <tbody>
+          <tr><td>Access</td><td>Public — anyone worldwide</td><td>Private — employees only (via VPN for remote access)</td></tr>
+          <tr><td>Ownership</td><td>No single owner — distributed</td><td>Owned and controlled by the organisation</td></tr>
+          <tr><td>Security</td><td>Open — requires application-layer security</td><td>Protected by firewalls, authentication, VPN</td></tr>
+          <tr><td>Content</td><td>Public websites, social media, email, news</td><td>Internal docs, HR systems, project tools, wikis</td></tr>
+          <tr><td>Purpose</td><td>Global communication, commerce, information sharing</td><td>Internal collaboration, knowledge sharing, employee self-service</td></tr>
+          <tr><td>Protocol</td><td>TCP/IP, HTTP, HTTPS</td><td>Same protocols (TCP/IP, HTTP) on a private network</td></tr>
+          <tr><td>Examples</td><td>Google, Amazon, YouTube</td><td>Company SharePoint, internal HR portal, project management tools</td></tr>
+        </tbody>
+      </table>
+
+      <h4>(c) What is Firewall? [3]</h4>
+      <p>A <strong>firewall</strong> is a network security system that monitors and controls incoming and outgoing network traffic based on predefined security rules — creating a barrier between a trusted internal network and untrusted external networks (internet). Implemented at routers/gateways connecting intranet to internet. Types: packet-filtering, stateful inspection, application proxy, NGFW. In e-commerce: protects web servers, databases, and payment systems from unauthorised access, DoS attacks, and malicious traffic.</p>
+
+      <h4>(d) Electronic Marketers [2]</h4>
+      <p><strong>Electronic marketers (e-marketers)</strong> are individuals or organisations that use digital channels and technologies to market products or services online. They leverage SEO, social media, email campaigns, PPC advertising, content marketing, and analytics to attract, engage, and convert customers. e-Marketers operate across all customer lifecycle stages — awareness, consideration, purchase, retention, and advocacy. Tools: Google Analytics, HubSpot, Mailchimp, Hootsuite, SEMrush.</p>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q8</span><span class="qtext">(a) 5 types of Electronic Payment Systems [10] &nbsp; (b) Impact of e-commerce on Marketing and Finance [5]</span><span class="qmarks">15 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+
+      <h4>(a) 5 Types of Electronic Payment Systems [10]</h4>
+
+      <h4>1. Credit/Debit Card Payment</h4>
+      <p>Most common online payment method. Customer enters card number, expiry, and CVV → processed via payment gateway (Razorpay, Stripe) → authorised by card network (Visa/MC) and issuing bank → funds transferred to merchant. Protected by SSL/TLS, 3D Secure (OTP), and CVV verification.</p>
+
+      <h4>2. Net Banking (Online Banking Transfer)</h4>
+      <p>Customer selects their bank → redirected to bank's internet banking portal → logs in and authorises payment → funds transferred via NEFT/IMPS/RTGS. Widely used in India for high-value transactions. No card required — directly debits bank account.</p>
+
+      <h4>3. Mobile Wallets / UPI</h4>
+      <p><strong>UPI (Unified Payments Interface):</strong> India's real-time payment system — links bank accounts via VPA (Virtual Payment Address). Instant 24×7 transfers. Apps: Google Pay, PhonePe, Paytm. Scan QR code or enter VPA → authenticate with PIN → funds transferred instantly.<br/>
+      <strong>Mobile Wallets:</strong> Pre-loaded balance stored digitally — Paytm wallet, Amazon Pay, Mobikwik. Spend from wallet balance without card/bank details each time.</p>
+
+      <h4>4. e-Cash / Digital Cash</h4>
+      <p>Digitally signed coin tokens representing monetary value — stored in customer's e-wallet. Bank issues blind-signed tokens after debiting account. Customer pays merchant with tokens. Merchant deposits tokens with bank. Provides anonymity (like physical cash). Examples: early DigiCash, now implemented in central bank digital currencies (CBDC — RBI's Digital Rupee).</p>
+
+      <h4>5. Cryptocurrency</h4>
+      <p>Decentralised digital currency on a blockchain — Bitcoin, Ethereum, USDC (stablecoin). Peer-to-peer transactions without banks. Customer sends crypto from their wallet → merchant receives in their wallet → transaction recorded on blockchain. Benefits: no chargebacks, low international fees, no bank intermediary. Challenges: price volatility (except stablecoins), regulatory uncertainty, limited merchant acceptance.</p>
+
+      <h4>(b) Impact of e-Commerce on Marketing and Finance [5]</h4>
+      <p><strong>Impact on Marketing:</strong></p>
+      <ul>
+        <li>Shifted from mass marketing to hyper-targeted, personalised marketing.</li>
+        <li>Real-time campaign performance data — immediate A/B testing and optimisation.</li>
+        <li>Customer journey tracking from first ad click to purchase — full attribution.</li>
+        <li>Social commerce — buying directly from social media posts (Instagram Shop, WhatsApp Business).</li>
+        <li>Influencer and affiliate marketing as scalable customer acquisition channels.</li>
+      </ul>
+      <p><strong>Impact on Finance and Accounting:</strong></p>
+      <ul>
+        <li>Automated invoicing, payment matching, and reconciliation — reduced manual accounting work.</li>
+        <li>Real-time revenue reporting — instant visibility into sales, refunds, and net revenue.</li>
+        <li>Multi-currency and multi-country taxation complexity — GST, VAT compliance across jurisdictions.</li>
+        <li>Digital payment trails provide complete audit records — easier compliance and tax filing.</li>
+        <li>Subscription billing and recurring revenue recognition — new accounting challenges.</li>
+        <li>Chargeback management — financial risk unique to online card payments.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q9</span><span class="qtext">(a) Define Convergence, Collaborative Computing, Content Management &amp; Call Center [10] &nbsp; (b) e-mail for E-Commerce — usefulness and security [5]</span><span class="qmarks">15 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+
+      <h4>(a) Key Definitions [10]</h4>
+
+      <h4>Convergence</h4>
+      <p><strong>Technological convergence</strong> is the merging of different technologies, industries, and media into integrated digital platforms. A smartphone converges phone, computer, camera, GPS, TV, bank, and shop. For e-commerce: one app handles browsing, payment, tracking, and customer service — previously separate systems merged into one customer journey. Also: convergence of physical and digital retail (phygital) — QR codes in stores, click-and-collect, virtual try-ons.</p>
+
+      <h4>Collaborative Computing</h4>
+      <p><strong>Collaborative computing</strong> enables multiple people in different locations to work together on shared tasks using technology. Tools: video conferencing (Zoom, Teams), shared document editing (Google Docs), project management (Jira), wikis, virtual whiteboards. In e-commerce: cross-functional teams collaborate on promotions, CPFR with suppliers, customer service knowledge bases. Benefits: faster decisions, global talent access, 24×7 collaboration across time zones. See 2011-12 Q11(d) for full detail.</p>
+
+      <h4>Content Management</h4>
+      <p><strong>Content Management</strong> (CMS — Content Management System) is the process and technology for creating, organising, publishing, and maintaining digital content. A <strong>CMS</strong> (WordPress, Magento, Drupal, Contentful) allows non-technical users to manage website content without coding. In e-commerce: product descriptions, images, pricing, blog posts, landing pages — all managed through a CMS. Key features: WYSIWYG editing, version control, workflow (draft → review → publish), multi-channel publishing (website, app, social).</p>
+
+      <h4>Call Center</h4>
+      <p>A centralised facility handling customer communications (phone, email, chat, social) — providing customer service, sales, and technical support. Equipment: ACD, IVR, CTI, headsets, CRM software, LAN, PBX, call recording. Modes: inbound, outbound, blended, virtual. Modern evolution: omni-channel contact centre — seamlessly handles phone + email + WhatsApp + live chat. KPIs: AHT (Average Handle Time), FCR (First Call Resolution), CSAT, NPS. In e-commerce: handles order queries, returns, payment disputes, product questions. See 2008-09 Q8 for full detail.</p>
+
+      <h4>(b) e-Mail in e-Commerce — Usefulness and Security [5]</h4>
+      <p><strong>How e-mail is useful for e-Commerce:</strong></p>
+      <ul>
+        <li><strong>Transactional emails:</strong> Order confirmation, payment receipt, shipping notification, delivery confirmation, return confirmation — essential for customer trust and transparency.</li>
+        <li><strong>Marketing campaigns:</strong> Promotional emails, new product launches, seasonal sales — highest ROI digital channel (~$42 per $1 spent).</li>
+        <li><strong>Cart abandonment:</strong> Automated emails reminding customers of items left in cart — recover 5–15% of abandoned carts.</li>
+        <li><strong>Customer service:</strong> Support tickets, issue resolution, follow-up — asynchronous communication channel.</li>
+        <li><strong>B2B communication:</strong> Order discussions, contract negotiations, supplier coordination.</li>
+      </ul>
+      <p><strong>Is e-mail secure for transactions? — Explain and Justify:</strong></p>
+      <p><strong>No — email alone is NOT secure for transmitting sensitive transaction data</strong> because:</p>
+      <ul>
+        <li>Standard email is transmitted in plaintext — can be intercepted by ISPs, email servers, or MITM attackers.</li>
+        <li>Email spoofing — attackers forge "From" addresses, sending phishing emails that appear to come from banks or e-commerce sites.</li>
+        <li>Attachments can carry malware — invoice attachments commonly used to deliver ransomware.</li>
+      </ul>
+      <p><strong>Mitigations used:</strong> TLS encryption for email in transit (STARTTLS), S/MIME or PGP for end-to-end encryption, SPF/DKIM/DMARC records to prevent spoofing, 2FA for email accounts. Never transmit card numbers or passwords via email.</p>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q10</span><span class="qtext">(a) e-Business vs e-Commerce [5] &nbsp; (b) How e-Commerce helps business success [5] &nbsp; (c) Tangible and Intangible benefits of e-Business [5]</span><span class="qmarks">15 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+
+      <h4>(a) e-Business vs e-Commerce [5]</h4>
+      <table class="cmp-table">
+        <thead><tr><th>Parameter</th><th>e-Commerce</th><th>e-Business</th></tr></thead>
+        <tbody>
+          <tr><td>Definition</td><td>Buying and selling of goods/services over the internet</td><td>Conducting all business operations using digital/internet technologies</td></tr>
+          <tr><td>Scope</td><td>Narrower — focuses on transactions (buy/sell)</td><td>Broader — includes e-commerce + all internal operations + partner collaboration</td></tr>
+          <tr><td>Activities</td><td>Product listing, shopping cart, payment, order management</td><td>All e-commerce activities + SCM, ERP, CRM, HR, collaboration, analytics</td></tr>
+          <tr><td>Parties</td><td>Buyer and seller</td><td>Customers, employees, suppliers, partners, government — all stakeholders</td></tr>
+          <tr><td>Revenue focus</td><td>Directly generates revenue through sales</td><td>Both revenue generation and operational efficiency</td></tr>
+          <tr><td>Example</td><td>Amazon's online store selling products</td><td>Amazon's entire operation — store + AWS + logistics + Alexa + Prime</td></tr>
+          <tr><td>Relationship</td><td>e-Commerce is a subset of e-Business</td><td>e-Business is a superset that includes e-Commerce</td></tr>
+        </tbody>
+      </table>
+
+      <h4>(b) How e-Commerce Helps Business Success [5]</h4>
+      <ul>
+        <li><strong>Market expansion:</strong> Reach customers in new cities, states, or countries without physical infrastructure — exponentially grows total addressable market.</li>
+        <li><strong>Lower barriers to entry:</strong> A startup can launch a global e-commerce store for a fraction of the cost of opening physical retail stores.</li>
+        <li><strong>Data-driven decisions:</strong> Customer behaviour data enables better product decisions, pricing optimisation, and inventory planning.</li>
+        <li><strong>Customer retention:</strong> Loyalty programmes, personalised recommendations, and proactive communication (email, push notifications) increase repeat purchase rates.</li>
+        <li><strong>Operational efficiency:</strong> Automated order processing, inventory management, and accounting reduce cost per transaction as volume scales.</li>
+        <li><strong>Competitive agility:</strong> Price changes, promotions, and new product launches deployed instantly — respond to market conditions faster than physical retail.</li>
+        <li><strong>Omni-channel integration:</strong> Connecting online and offline channels (click-and-collect, returns at store) provides seamless customer experience — drives both channels.</li>
+      </ul>
+
+      <h4>(c) Tangible and Intangible Benefits of e-Business [5]</h4>
+      <p><strong>Tangible (measurable, quantifiable) benefits:</strong></p>
+      <ul>
+        <li>Revenue increase from new online sales channels</li>
+        <li>Reduced operating costs (lower staff, no retail rent, automated processes)</li>
+        <li>Inventory reduction through better demand visibility and JIT</li>
+        <li>Reduced procurement cost through e-procurement and competitive bidding</li>
+        <li>Faster order-to-cash cycle — improved cash flow</li>
+        <li>Lower marketing cost per acquisition (digital vs traditional)</li>
+        <li>Reduced error rates and associated correction costs</li>
+      </ul>
+      <p><strong>Intangible (non-measurable, qualitative) benefits:</strong></p>
+      <ul>
+        <li>Improved brand awareness and global visibility</li>
+        <li>Better customer relationships and loyalty through personalisation</li>
+        <li>Improved employee productivity and satisfaction (collaboration tools, remote work)</li>
+        <li>Enhanced competitive positioning — "digital-first" brand perception</li>
+        <li>Greater organisational agility — faster response to market changes</li>
+        <li>Improved partner relationships through seamless digital collaboration</li>
+        <li>Sustainability — reduced paper, travel, and physical infrastructure</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="qblock">
+    <div class="qblock-header"><span class="qno">Q11</span><span class="qtext">(a) Architecture of online shopping e-commerce portal [10] &nbsp; (b) How e-Commerce helps business success [5]</span><span class="qmarks">15 Marks</span></div>
+    <div class="answer-box"><div class="ans-label">✓ Answer</div>
+
+      <h4>(a) Architecture of an Online Shopping e-Commerce Portal [10]</h4>
+      <div class="diagram-box">
+      <pre>
+                        USERS (Browser / Mobile App)
+                               │ HTTPS
+                               ▼
+                    ┌──────────────────┐
+                    │  CDN / Load       │  ← Cloudflare/Akamai
+                    │  Balancer         │    (Static assets + DDoS)
+                    └────────┬─────────┘
+                             │
+                    ┌────────▼─────────┐
+                    │  Web Server       │  ← Nginx / Apache
+                    │  (Presentation)   │    (Serves HTML/CSS/JS)
+                    └────────┬─────────┘
+                             │
+              ┌──────────────▼───────────────┐
+              │     Application Server        │  ← Node.js / Java / .NET
+              │  ┌────────┐  ┌────────────┐  │
+              │  │Catalogue│  │Order Mgmt  │  │
+              │  │Service │  │Service     │  │
+              │  └────────┘  └────────────┘  │
+              │  ┌────────┐  ┌────────────┐  │
+              │  │Search  │  │User/Auth   │  │
+              │  │Service │  │Service     │  │
+              │  └────────┘  └────────────┘  │
+              └───┬──────────────────────┬───┘
+                  │                      │
+       ┌──────────▼──┐         ┌────────▼──────┐
+       │  Databases   │         │ External APIs  │
+       │ ─────────── │         │ ─────────────  │
+       │ Product DB  │         │ Payment GW     │
+       │ (MySQL)     │         │ (Razorpay)     │
+       │ Orders DB   │         │ SMS (Twilio)   │
+       │ Customer DB │         │ Email (SES)    │
+       │ (PostgreSQL)│         │ Maps (Google)  │
+       │ Search Index│         │ Logistics API  │
+       │ (Elastic.)  │         └───────────────┘
+       └──────────────┘
+              │
+   ┌──────────▼──────────┐
+   │   Backend Systems    │
+   │  ERP (Inventory,     │
+   │  Finance, Shipping)  │
+   │  Warehouse Mgmt      │
+   └─────────────────────┘</pre>
+      </div>
+
+      <p><strong>Layers explained:</strong></p>
+      <ul>
+        <li><strong>CDN / Load Balancer:</strong> Distributes traffic across multiple servers; serves static assets (images, CSS, JS) from edge nodes near users — fast global performance; absorbs DDoS attacks.</li>
+        <li><strong>Web Server:</strong> Handles HTTP requests; serves the front-end application (HTML/CSS/JS rendered by browser or React/Next.js SPA).</li>
+        <li><strong>Application Server / Microservices:</strong> Business logic — product catalogue, search, cart, checkout, order management, user authentication, recommendations. Modern architecture uses microservices (each service independently deployable).</li>
+        <li><strong>Databases:</strong> Product data (item descriptions, images, pricing), customer data (accounts, addresses), order data, inventory levels. Search index (Elasticsearch) enables fast product search.</li>
+        <li><strong>External APIs:</strong> Payment gateway (PCI-compliant card processing), SMS/email notifications, logistics carrier APIs (tracking), maps (delivery address validation).</li>
+        <li><strong>Backend ERP/WMS:</strong> Order placed online triggers inventory reservation in ERP → warehouse management system picks and ships → tracking updates flow back to customer portal.</li>
+      </ul>
+
+      <h4>(b) How e-Commerce Helps Business Success [5]</h4>
+      <p>See Q10(b) above for the complete answer — identical question. Key points: market expansion, lower entry barriers, data-driven decisions, customer retention, operational efficiency, competitive agility, and omni-channel integration.</p>
+    </div>
+  </div>
+
+</section>
+</main>
+
+<footer class="paper-footer">
+  <div class="footer-inner">
+    <a href="ecom_paper_2015.html" class="back-btn-footer">← 2015–16</a>
+    <span>2022–23 | E-Commerce &amp; ERP | MAKAUT</span>
+    <a href="ecom_paper_2023.html" class="back-btn-footer">Next: 2023–24 →</a>
+  </div>
+</footer>
+
+</body>
+</html>

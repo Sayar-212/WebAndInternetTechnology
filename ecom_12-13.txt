@@ -1,0 +1,102 @@
+CS/B.TECH/CSE/SEM-8/CS-801E/2013
+E-COMMERCE AND ERP
+Time Allotted: 3 Hours                          Full Marks: 70
+
+GROUP - A (Multiple Choice Type Questions)
+1. Choose the correct answers for the following: (10 x 1 = 10)
+
+i) What combines purchase requests from multiple buyers into a single large order, which justifies a discount from the business?
+   a) Digital divide
+   b) Global digital divide
+   c) Demand aggregation
+   d) None of these.
+
+ii) Which segment do eBay, Amazon.com and LandsEnd.com belong?
+   a) B2Bs
+   b) B2Cs
+   c) C2Bs
+   d) C2Cs.
+
+iii) Digital products are best suited for B2C e-commerce because they
+   a) are commodity like products
+   b) can be mass-customized and personalized
+   c) can be delivered at the time of purchase
+   d) all of these.
+
+iv) All of the following are techniques B2C e-commerce companies use to attract customers, except
+   a) Registering with search engines
+   b) Viral marketing
+   c) Online ads
+   d) Virtual marketing.
+
+v) What is the percentage of customers who visit a Web site and actually buy something called?
+   a) Affiliate programs
+   b) Click-throughs
+   c) Spam
+   d) Conversion rate.
+
+vi) What are plastic cards of the size of a credit card that contains an embedded chip on which digital information can be stored?
+   a) Customer relationship management systems cards
+   b) E-government identity cards
+   c) FEDI cards
+   d) Smart cards.
+
+vii) Which of the following are advantages normally associated with B2B e-commerce?
+   a) Shorter cycle times
+   b) Reduction in costs
+   c) Reaches wider audiences
+   d) All of these.
+
+viii) If the suppliers in a particular industry hold a lot of power, the industry is
+   a) saturated with alternative products or services
+   b) using information technology to gain a competitive advantage
+   c) more attractive to enter
+   d) none of these.
+
+ix) Which statement describes switching costs?
+   a) There are many alternatives to using the product or service
+   b) There are few alternatives to using the product or service
+   c) High costs that make customers reluctant to switch to another product or service
+   d) Low costs that make customers want to switch to another product or service.
+
+x) Which of the following is a useful tool when considering business strategy and IT?
+   a) Porter's Five Forces Model
+   b) Competitive Intelligence
+   c) General Business Model
+   d) B2B model.
+
+GROUP - B (Short Answer Type Questions)
+Answer any three of the following. (3 x 5 = 15)
+
+2. Can ERP software package be applied in
+   i) Process Industry
+   ii) Service Industry?
+   Justify.
+3. What are the risks for a small company connecting itself electronically with major customers?
+4. Briefly explain the supply chain planning and a few software for SCP.
+5. Define WAP. What are the handheld devices?
+6. What are the advantages and disadvantages of E-Cash?
+
+GROUP - C (Long Answer Type Questions)
+Answer any three of the following. (3 x 15 = 45)
+
+7. a) What steps are to be followed while implementing IT software packages for SCM?
+   b) Do these steps vary from package to package? How are they standardized?
+
+8. a) Give a list of potential benefits of using EDI.
+   b) Who are the service providers of EDI in India and what are their terms and conditions?
+   c) Compare and contrast Extranet and Intranet.
+
+9. a) What are the main disadvantages of E-Commerce?
+   b) What are the four C's? Describe briefly with structured diagram what each 'C' means.
+
+10. a) Define ERP. Give its tangible and intangible benefits.
+    b) Why does a company pursue a new ERP solution?
+    c) What are the functional modules and technical modules in ERP package?
+
+11. Write short notes on any three of the following: (3 x 5 = 15)
+    a) B2B
+    b) Data Warehouse
+    c) SCE Framework
+    d) Data Encryption methodology
+    e) Decision Support System.

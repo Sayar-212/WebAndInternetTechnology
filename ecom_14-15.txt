@@ -1,0 +1,91 @@
+CS/B.Tech/CSE/Even/Sem-8th/CS-802E/2015
+E-COMMERCE (IT)
+Time Allotted: 3 Hours                          Full Marks: 70
+
+GROUP A (Multiple Choice Type Questions)
+1. Answer all questions. (10 x 1 = 10)
+
+i) Electronic Commerce is commerce enabled by
+   A) EDP era technologies
+   B) MIS era technologies
+   C) Internet era technologies
+   D) All of these
+
+ii) SHA is more secure than MD5 by the factor of
+   A) 2^16
+   B) 2^64
+   C) 2^8
+   D) 2^32
+
+iii) In EAN coding system, within the EAN code manufacturer is of __ bit/s and check digit is of __ bit/s.
+   A) 4, 2
+   B) 3, 3
+   C) 5, 1
+   D) 1, 4
+
+iv) Friction in a transaction is defined as
+   A) overhead
+   B) loss
+   C) profit
+   D) none of these
+
+v) If Z=160 and E=7, then for what value of D, (ED mod z = 1) will be satisfied?
+   A) 33
+   B) 22
+   C) 45
+   D) 23
+
+vi) 'Flood Attack' by attackers happens on
+   A) router
+   B) hub
+   C) switch
+   D) server
+
+vii) "Mouse Rollover Effect" is the example of
+   A) Server Side Scripting
+   B) Client Side Scripting
+   C) Both (A) and (B)
+   D) None of these
+
+viii) Which of the following is ASCII protocol?
+   A) SNMP
+   B) SMTP
+   C) SET
+   D) PGP
+
+ix) Use the SHIFT CIPHER with key=17 to encrypt the message "WBUT". The cipher text will be
+   A) XCVU
+   B) NSLK
+   C) ALSEC
+   D) KLMPN
+
+x) Which of the following card contains a microprocessor and a storage unit?
+   A) Smart Card
+   B) Debit Card
+   C) Credit Card
+   D) None of these
+
+GROUP B (Short Answer Type Questions)
+Answer any three questions. (3 x 5 = 15)
+
+2. What is E-business? How does it help the marketing? Write down various advantages of e-business?
+3. Explain about Internet, Intranet & Extranet.
+4. What do you mean by online payment? How does it differ from e-payment?
+5. What is firewall? What do you know about DNS?
+6. Write short notes on any three of the following:
+   a) Copyright
+   b) E-governance
+   c) Smart Card
+   d) E-mail
+   e) HTML
+
+GROUP C (Long Answer Type Questions)
+Answer any three questions. (3 x 15 = 45)
+
+7. What do you know about e-cash? What is digital signature? How it relates with e-commerce? What do you mean by digital library? Write down the application of digital library.
+
+8. What is EDI? How EDI works? Explain with diagram. Write down the advantages of EDI. How does it help e-commerce business strategy?
+
+9. What is tele marketing & online marketing? How e-commerce differs from m-commerce? What do you know about supply chain management? How it relates with e-commerce?
+
+10. What is cryptography? Explain various types of cryptography. Why cryptography is needed for e-commerce? What do you know about RSA algorithm? Explain.

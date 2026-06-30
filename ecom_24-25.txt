@@ -1,0 +1,55 @@
+CS/B.TECH(N)/EVEN/SEM-8/8261/2024-2025/1130
+MAULANA ABUL KALAM AZAD UNIVERSITY OF TECHNOLOGY, WEST BENGAL
+Paper Code: OEC-CS802A/OECIT802A          E-Commerce and ERP
+Time Allotted: 3 Hours                          Full Marks: 70
+
+Group-A (Very Short Answer Type Question)
+1. Answer any ten of the following: (1 x 10 = 10)
+
+(I)   SET protocol is used for ________
+(II)  What type of ad appears on top of a web page?
+(III) What is the name of the card which can be used by the buyers during the purchase and in which the amount will be immediately debited from the buyer's account?
+(IV)  What is the name for direct computer-to-computer transfer of transaction information contained in standard business documents?
+(V)   What is e-business?
+(VI)  OLX is an example of ________ E-commerce segment.
+(VII) ________ type of E-Commerce has trade and transaction dealings between business establishments.
+(VIII) SCM is a game of 4 C's Collaboration, Co-operation, Co-ordination and ________
+(IX)  What is the full form of CGI?
+(X)   What is the purpose of supply chain management?
+(XI)  What are the characteristics of Digital Cash?
+(XII) What is virtual store front?
+
+Group-B (Short Answer Type Question)
+Answer any three of the following: (5 x 3 = 15)
+
+2. What are digital signatures? How do they differ from digital certificates? [5]
+3. What are the main disadvantages of E-Commerce? [5]
+4. Compare and contrast Extranet and Intranet. [5]
+5. Describe the advantages and disadvantages of E-marketing over normal marketing. [5]
+6. What are the key technologies of B2B E-Commerce. Explain the architectural model of B2B E-Commerce. [5]
+
+Group-C (Long Answer Type Question)
+Answer any three of the following: (15 x 3 = 45)
+
+7. (a) What do you mean by supply chain of E-commerce? [2]
+   (b) Why is Supply Chain Management vital for E-commerce? [3]
+   (c) Explain the role played by E-supply Chain planning tools in managing the supply chain of an E-business. [5]
+   (d) How does supply chain management portals help E-commerce in managing supply chain? [5]
+
+8. (a) Define firewall and state its functions in e-commerce. [5]
+   (b) Explain the working principle of RSA algorithm. [5]
+   (c) What is e-cash? Explain with example how an online banking system works. [5]
+
+9. (a) What is ERP? Why BPR is required prior to ERP implementation? [4]
+   (b) What are the reasons for the growth of ERP market? [5]
+   (c) What are the advantages of ERP system? [6]
+
+10. (a) What is call center? Discuss about the call center equipment. [5]
+    (b) What are the modes of operation of call center? [5]
+    (c) What is customer premises equipment (CPE)? What do you mean by Denial of Service attacks? [5]
+
+11. (a) What is EDI? [1]
+    (b) Briefly describe the basic components of EDI. [4]
+    (c) What role does it play in E-commerce? [4]
+    (d) Explain EDIFACT. [4]
+    (e) Write the benefits of EDI. [2]
